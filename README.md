@@ -1,5 +1,5 @@
-# @texastribune/queso-ui
-> Centralizing styles for product development at The Texas Tribune
+# @wbez/design-system
+> Centralizing styles for product development at WBEZ
 
 This repo contains a library of styles and icons available to import via npm.
 
@@ -7,7 +7,7 @@ Along with the library, we set up a few tools that help document updates. CSS co
 
 Our goal is that as we iterate upon the design of our products, we document everything along the way. This keeps our **style docs current and allows for continuous optimization our CSS.**
 
-We named it "queso" because we wanted a Texas-esque name and an easy way to refer to it internally. Also as we all know, everything is better with queso 🧀. 
+> This repo is forked from [texastribune/queso-ui@v3.2.0](https://github.com/texastribune/queso-ui/releases/tag/v3.2.0). Much thanks and props for building out such a great base for us to launch from.
 
 ## Getting started
 To preview these assets and accompanying docs locally, run the following commands:
@@ -29,10 +29,10 @@ This spins up a browsersync server and watch task for all SCSS and HTML files.
 ## Installing as a dependency
 
 ```sh
-yarn add @texastribune/queso-ui --dev
+yarn add @wbez/design-system --dev
 ```
 ```sh
-npm install @texastribune/queso-ui --save-dev
+npm install @wbez/design-system --save-dev
 ```
 
 ## Folders
@@ -50,7 +50,7 @@ When you add a new class, component, scss variable, mixin, etc., you'll want to 
 ### SCSS docs boilerplate
 > How to document a new CSS class
 
-We use a comment parser along with some [extra logic](https://github.com/texastribune/queso-ui/blob/master/tasks/style-doc.js) to generate our docs. To add a new section of documentation, add a boilerplate above your CSS rules like the one below: 
+We use a comment parser along with some [extra logic](https://github.com/wbez/design-system/blob/master/tasks/style-doc.js) to generate our docs. To add a new section of documentation, add a boilerplate above your CSS rules like the one below: 
 
 ```scss
 // Title of Section (root-class-name)
@@ -144,14 +144,14 @@ The npm helper we use for versioning simplifies matching version numbers with th
 
 Generally, you could base your increment type on the following list:
 
-- MAJOR version = CSS changes that visually break layouts where `queso-ui` is used on production
+- MAJOR version = CSS changes that visually break layouts where `design-system` is used on production
 - MINOR version = CSS changes that have no visual effect on production
 - PATCH version = CSS changes that fix a previous bug introduced on production or in development 
 
 ### Steps to test breaking changes:
 1. Publish these changes on npm: `npm run release`. Copy the version number.
 2. Create a new branch in the repo in question.
-3. `yarn add @texastribune/queso-ui@VERSION`
+3. `yarn add @wbez/design-system@VERSION`
 4. Compile the CSS
 5. Scan the various places where queso-ui is used. At the time of writing, the following pages heavily rely upon this CSS so be sure to check those if you're deprecating/changing classes.
 * [ ] [/podcasts](http://local.texastribune.org:8000/podcasts)

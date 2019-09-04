@@ -1,12 +1,12 @@
 {
-  "name": "@texastribune/queso-ui",
-  "version": "3.2.0",
+  "name": "@wbez/design-system",
+  "version": "0.0.0-dev",
   "description": "Asset library of SCSS and SVG files",
   "scripts": {
     "prettier": "prettier --write './docs/**/*.js'",
     "stylelint": "stylelint 'assets/**/**.scss'",
     "lint": "eslint docs/config",
-    "deploy": "npm run build && surge ./docs/dist --domain 'https://ttds.surge.sh/'",
+    "deploy": "npm run build && surge ./docs/dist --domain ''",
     "build": "node docs/config/tasks/build.js",
     "dev": "node docs/config/tasks/dev.js",
     "prepublish": "yarn run lint && yarn run build",
@@ -17,7 +17,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/texastribune/queso-ui.git"
+    "url": "https://github.com/wbez/design-system.git"
   },
   "publishConfig": {
     "access": "public"
@@ -96,11 +96,11 @@
     }
   },
   "license": "MIT",
-  "author": "The Texas Tribune Engineering Team <tech@texastribune.org>",
+  "author": "CPM Digital Product Team <tech@wbez.org>",
   "bugs": {
-    "url": "https://github.com/texastribune/queso-ui/issues"
+    "url": "https://github.com/wbez/design-system/issues"
   },
-  "homepage": "https://github.com/texastribune/queso-ui#readme",
+  "homepage": "https://github.com/wbez/design-system#readme",
   "devDependencies": {
     "@texastribune/queso-tools": "1.3.0",
     "browser-sync": "^2.26.3",

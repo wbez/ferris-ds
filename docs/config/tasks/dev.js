@@ -23,7 +23,7 @@ async function dev() {
     {
       logConnections: true,
       logLevel: 'silent',
-      logPrefix: 'queso-ui',
+      logPrefix: 'design-system',
       notify: false,
       open: false,
       port: 3000,
