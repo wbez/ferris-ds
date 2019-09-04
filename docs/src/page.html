@@ -13,7 +13,6 @@
   <meta content="ie=edge" http-equiv="X-UA-Compatible" />
   <title>{{name}} | Style Docs for The Texas Tribune.</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../../css/all-legacy.css" />
   <link rel="stylesheet" href="../../css/all.css" />
   <link rel="stylesheet" href="../../css/ds.css" />
 </head>
@@ -30,13 +29,12 @@
           <p class="menu-label">
             <div class="box buttons has-text-centered">
               <a href="../../index.html" class="button is-primary is-outlined is-fullwidth">< Back</a>
-              <button class="button is-primary is-fullwidth" id="showLegacy"><span class="ds-version-toggle">Show</span><span>Hide</span>&nbsp;Legacy</button>
             </div>
           </p>
           <ul class="menu-list ds-menu box has-background-light">
             {% for item in list %}
               {% if item.depth !== 1 %}
-              <li class="has-text-weight-bold {% if item.deprecated %} ds-legacy{% endif %}">
+              <li class="has-text-weight-bold">
                 <a class="" href="#{{ item.slug }}">
                 {{ item.prettyName }}
                 {% if item.experimental === true %}
@@ -61,7 +59,7 @@
           {% set isTool = item.isTool %}
           {# <span class="ds-breathe"></span> #}
           {% if item.depth !== 1 %}
-          <div class="section ds-spacer{% if item.deprecated %} ds-legacy{% endif %}">
+          <div class="section ds-spacer">
             <a class="ds-anchor" id="{{ item.slug }}"></a>
             {{ titleBar(name, item) }}
             <div class="ds-breathe-vert">
@@ -69,9 +67,6 @@
               {{ item.prettyName }}
               {% if item.experimental %}
               <span class="ds-version-tag"><span class="tag is-info">V2</span></span>
-              {% endif %}
-              {% if item.deprecated %}
-              <span class="ds-version-tag"><span class="tag is-warning">Legacy</span></span>
               {% endif %}
               </h2>
               <div class="subtitle ds-desc">
