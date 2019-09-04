@@ -1,0 +1,114 @@
+// Button (c-button)
+//
+// Buttons rely on color helpers for background and text color. The variations are simply sizes. One catch is that are buttons run small in sizes so the names aren't true to their padding and font-size assignments.
+//
+// .c-button--l - Uses size-l for font size and padding
+// .c-button--s - One step down from default
+// .c-button--xs - Two steps down from default
+// .c-button--circle - Circular button (experimentally used for back to top)
+// .c-button--outline - Hover effect of outline (used on social)
+// .c-button--compact - Removes vertical padding (used on social)
+// .c-button--round - For the most part, buttons associated with revenue are rounded.
+//
+// Markup: 6-components/button/button.html
+//
+// Styleguide 6.1.1
+.c-button {
+  background-color: $color-blue-light;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: $size-xs;
+  letter-spacing: $font-letter-spacing;
+  padding: $size-xs;
+  text-align: center;
+  text-transform: uppercase;
+  transition: opacity 0.3s;
+
+  &:disabled,
+  &[disabled]
+  &:not([disabled="false"]) {
+    cursor: initial;
+    opacity: 0.4;
+
+    &:hover,
+    &:active {
+      opacity: 0.4;
+    }
+  }
+
+  @media (hover: hover) {
+    &:hover,
+    &:active {
+      opacity: 0.7;
+    }
+  }
+
+  &--l {
+    font-size: $size-l;
+    padding: $size-l;
+  }
+
+  &--s {
+    font-size: $size-xxs;
+    padding: $size-xxs;
+  }
+
+  &--xs {
+    font-size: $size-xxxs;
+    padding: $size-xxxs;
+  }
+
+  &--circle {
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+  }
+
+  &__inner {
+    color: #fff;
+  }
+
+  &--outline {
+    border: 2px solid currentColor;
+    transition: background-color 0.3s;
+
+    @media (hover: hover) {
+      &:hover,
+      &:active {
+        background-color: #fff;
+        color: currentColor;
+        opacity: 1;
+
+        .c-button__inner {
+          color: currentColor;
+        }
+      }
+    }
+  }
+
+  &--compact {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &--round {
+    border-radius: $border-radius-l;
+  }
+}
+
+// Link button (c-link-button)
+//
+// Sometimes, we need buttons to look like links (see Talk embed log in/log out buttons)
+//
+// Markup: <button class="c-link-button">Click me, I'm Irish</button>
+//
+// Styleguide 6.1.1
+//
+.c-link-button {
+  @include underlined-link;
+  cursor: pointer;
+  line-height: normal;
+}

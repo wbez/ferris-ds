@@ -1,0 +1,63 @@
+html {
+  font-size: $font-root;
+  @include mq($until: bp-s) {
+    font-size: $font-root-mobile;
+  }
+}
+
+body {
+  @include font-setting('primary');
+  color: $color-black-off;
+}
+
+// We made some tag decisions here based on repeated overriding of browser defaults
+html,
+body,
+dd,
+dl,
+div,
+dt,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+// We want all of our cite elements to not be italicized
+cite {
+  font-style: normal;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+// No bullets by default
+ul {
+  list-style: none;
+}
+
+hr {
+  border: 1px solid $color-gray-light;
+}
+
+// By default we add leading to paragraphs, lists, and captions
+p,
+ul,
+figcaption {
+  line-height: $line-height-b;
+}

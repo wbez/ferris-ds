@@ -1,0 +1,59 @@
+// Story Body (c-story-body)
+//
+// Story bodies are a special component because we have limited control over the class names within them. We must deviate from BEM and create catch-all tag selectors to allow the greatest flexibility of the markup.
+//
+// Markup: 6-components/story-body/story-body.html
+//
+// Styleguide 6.1.3
+
+$story-padding-buffer: 2em; // must be em for SASSmq helper
+$story-narrow-bp: ($story-narrow / 1rem) + $story-padding-buffer;
+
+.c-story-body {
+  > p,
+  > h2,
+  > h3,
+  > h4,
+  > h5,
+  > h6,
+  > ul,
+  > span,
+  > hr {
+    max-width: $story-narrow;
+    margin: $size-b auto;
+    line-height: 1.4;
+    @include mq($until: $story-narrow-bp) {
+      padding: 0 $size-xs;
+    }
+  }
+
+  > p,
+  > h3,
+  > ul li {
+    @include font-setting('secondary');
+    @include underlined-link-parent;
+  }
+
+  > ul {
+    list-style: disc;
+    padding: 0 $size-b 0 3.5rem;
+
+    li {
+      margin-bottom: $size-b;
+    }
+  }
+
+
+  sub, sup {
+    position: initial;
+  }
+
+  hr {
+    margin: $size-xl auto;
+  }
+  // h3s are a dropdown option in the CMS
+  // we hard-set the font size for this reason
+  h3 {
+    font-size: $size-m;
+  }
+}

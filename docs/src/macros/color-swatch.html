@@ -1,0 +1,11 @@
+{% macro colorSwatch(name, color, description) %}
+<div class="card">
+    <div class="section has-text-centered" style="background-color: {{ color }}"><code>{{ color }}</code></div>
+    <div class="card-content">
+        <div class="title is-6">{{ name }}</div>
+        <p class="subtitle is-6">
+            {{ description | safe }}
+        </p>
+    </div>
+</div>
+{% endmacro %}
