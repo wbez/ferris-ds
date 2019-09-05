@@ -1,6 +1,6 @@
 // Font families
 //
-// **Todo:** Two font variables used throughout our CSS
+// Experimental: Two font variables used throughout our CSS
 //
 // $font-family-primary = 'Source Sans Pro', sans-serif - Main font applied to :root.
 // $font-family-secondary = 'CharterITCStd-Bold', serif - Accent font in our case used for editorial purposes.
@@ -17,7 +17,7 @@ $font-family-secondary-fallback: serif;
 
 // Font sizings
 //
-// **Todo:** Font sizes used at :root
+// Experimental: Font sizes used at :root
 //
 // $font-root = 16px - Desktop font root size
 // $font-root-tablet = 16px - Tablet font root size
@@ -39,7 +39,7 @@ $font-root-mobile: 15px;
 
 // Letter spacing
 //
-// **Todo:** Consistent letter-spacing value
+// Experimental: Consistent letter-spacing value
 //
 // $font-letter-spacing-sm = .02em - Used sometimes in card headline
 // $font-letter-spacing = .03em - Default used with uppercase usually
@@ -52,7 +52,7 @@ $font-letter-spacing-lg: .05em;
 
 // Line height
 //
-// **Todo:** Consistent line-height values
+// Experimental: Consistent line-height values
 //
 // $line-height-s = 1.25 - Tight leading
 // $line-height-b = 1.4 - Default leading used on p tags

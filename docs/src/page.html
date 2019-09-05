@@ -30,18 +30,16 @@
           <p class="menu-label">
             <div class="box buttons has-text-centered">
               <a href="../../index.html" class="button is-primary is-outlined is-fullwidth">< Back</a>
-              <button class="button is-primary is-fullwidth" id="showLegacy"><span class="ds-version-toggle">Show</span><span>Hide</span>&nbsp;Legacy</button>
+              <button class="button is-warning is-fullwidth" id="showLegacy"><span class="ds-version-toggle">Show</span><span>Hide</span>&nbsp;Legacy</button>
+              <button class="button is-info is-fullwidth" id="showExperimental"><span class="ds-version-toggle">Show</span><span>Hide</span>&nbsp;Experimental</button>
             </div>
           </p>
           <ul class="menu-list ds-menu box has-background-light">
             {% for item in list %}
               {% if item.depth !== 1 %}
-              <li class="has-text-weight-bold {% if item.deprecated %} ds-legacy{% endif %}">
+              <li class="has-text-weight-bold{% if item.deprecated %} ds-legacy{% endif %}{% if item.experimental %} ds-experimental{% endif %}">
                 <a class="" href="#{{ item.slug }}">
                 {{ item.prettyName }}
-                {% if item.experimental === true %}
-                  <span class="has-text-info ds-version-tag">V2</span>
-                {% endif %}
                 </a>
               </li>
               {% endif %}
@@ -61,14 +59,14 @@
           {% set isTool = item.isTool %}
           {# <span class="ds-breathe"></span> #}
           {% if item.depth !== 1 %}
-          <div class="section ds-spacer{% if item.deprecated %} ds-legacy{% endif %}">
+          <div class="section ds-spacer{% if item.deprecated %} ds-legacy{% endif %}{% if item.experimental %} ds-experimental{% endif %}">
             <a class="ds-anchor" id="{{ item.slug }}"></a>
             {{ titleBar(name, item) }}
             <div class="ds-breathe-vert">
               <h2 class="title is-{{ item.depth }} is-spaced">
               {{ item.prettyName }}
               {% if item.experimental %}
-              <span class="ds-version-tag"><span class="tag is-info">V2</span></span>
+              <span class="ds-version-tag"><span class="tag is-info">Experimental</span></span>
               {% endif %}
               {% if item.deprecated %}
               <span class="ds-version-tag"><span class="tag is-warning">Legacy</span></span>

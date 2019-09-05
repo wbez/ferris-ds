@@ -35,7 +35,7 @@ $mq-breakpoints: (
 
 // Story containers
 //
-// **Todo:** Our stories have varying containers on them. There is a bit of overlap with our `$mq-breakpoints`; in the future, we might consider revisiting these.
+// Experimental: Our stories have varying containers on them. There is a bit of overlap with our `$mq-breakpoints`; in the future, we might consider revisiting these.
 //
 // $story-small = 30rem - This is our smallest story container; used for plugins
 // $story-narrow = 41.5rem - This is the text story container; used for text and plugins
@@ -49,7 +49,7 @@ $story-giant: 60rem;
 
 // Size units
 //
-// **Todo:** Sizes in comparison to base pixel root
+// Experimental: Sizes in comparison to base pixel root
 //
 // $size-xxxl = 3rem - size xxxl
 // $size-giant = 2.5rem - size giant

@@ -108,6 +108,7 @@ module.exports = async () => {
             ...item,
           },
         });
+        
         // build raw preview
         componentArr.push({
           in: previewPathInRaw,

@@ -23,7 +23,8 @@
       <div class="tile is-parent is-vertical is-3">
         <aside class="menu ds-stick-it">
           <div class="box buttons has-text-centered">
-              <button class="button is-primary is-fullwidth" id="showLegacy"><span class="ds-version-toggle">Show</span><span>Hide</span>&nbsp;Legacy</button>
+              <button class="button is-warning is-fullwidth" id="showLegacy"><span class="ds-version-toggle">Show</span><span>Hide</span>&nbsp;Legacy</button>
+              <button class="button is-info is-fullwidth" id="showExperimental"><span class="ds-version-toggle">Show</span><span>Hide</span>&nbsp;Experimental</button>
             </div>
           <p class="menu-label">
             Sections
@@ -57,7 +58,12 @@
               <ul class="menu-list ds-multicols ds-breathe">      
               {% for rule in list %}
                 {% if rule.depth !== 1 %}
-                  <li class="{% if rule.deprecated %} ds-legacy{% endif %} ds-multicol"><a href="pages/{{ slug + '/index.html#' + rule.slug }}">{{ rule.prettyName }} {% if item.name != "Starter CSS" and item.name != "Settings" and item.name != "Tools" %}| <span class="has-text-weight-semibold">.{{rule.mainClass}}</span>{% endif %}</a></li>
+                  <li class="{% if rule.deprecated %} ds-legacy{% endif %}{% if rule.experimental %} ds-experimental{% endif %} ds-multicol">
+                    <a href="pages/{{ slug + '/index.html#' + rule.slug }}">
+                      {{ rule.prettyName }}
+                      {% if item.name != "Starter CSS" and item.name != "Settings" and item.name != "Tools" %}| <span class="has-text-weight-semibold">.{{rule.mainClass}}</span>{% endif %}
+                    </a>
+                  </li>
                 {% endif %}
               {% endfor %}
               </ul>
@@ -100,10 +106,7 @@
   <footer class="footer">
     <div class="content has-text-centered">
       <p>
-        <strong>
-          Style Docs</strong>
-        for
-        <a href="https://www.wbez.org/">WBEZ</a>.
+        <strong>Style Docs</strong> for <a href="https://www.wbez.org/">WBEZ</a>.
       </p>
     </div>
   </footer>

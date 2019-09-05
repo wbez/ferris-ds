@@ -7,6 +7,15 @@ if (showLegacy) {
   });
 }
 
+// toggle experimental styles
+var showExperimental = document.querySelector('#showExperimental');
+if (showExperimental) {
+  showExperimental.addEventListener('click', function() {
+    document.body.classList.toggle('js-ds-show-experimental');
+    this.classList.toggle('is-active');
+  })
+}
+
 var baseFontSize = parseFloat(
   window.getComputedStyle(document.documentElement).fontSize
 );
