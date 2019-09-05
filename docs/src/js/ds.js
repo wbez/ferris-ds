@@ -1,3 +1,12 @@
+// toggle legacy styles
+var showLegacy = document.querySelector('#showLegacy');
+if (showLegacy) {
+  showLegacy.addEventListener('click', function() {
+    document.body.classList.toggle('js-ds-show-legacy');
+    this.classList.toggle('is-active');
+  });
+}
+
 var baseFontSize = parseFloat(
   window.getComputedStyle(document.documentElement).fontSize
 );
