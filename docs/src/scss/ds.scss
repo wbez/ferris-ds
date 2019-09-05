@@ -179,6 +179,17 @@ strong {
   display: inline-block;
 }
 
+.js-ds-show-legacy li.ds-legacy a::after {
+  content:  "";
+  width: .8em;
+  height: .8em;
+  background: #ffdd57;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1ch;
+}
+
 // Hide arrow for HTML code snippet
 ::-webkit-details-marker {
   display: none;
