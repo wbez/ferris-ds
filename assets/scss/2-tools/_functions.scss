@@ -1,6 +1,6 @@
 // @function str-replace
 //
-// String replace for class names just like in JS. Used to rename map variables. Stolen from [CSS Tricks](https://css-tricks.com/snippets/sass/str-replace-function/).
+// Experimental: String replace for class names just like in JS. Used to rename map variables. Stolen from [CSS Tricks](https://css-tricks.com/snippets/sass/str-replace-function/).
 //
 // $string = '' - {String} Initial string (required)
 // $search = '' - {String} Substring to replace (required)
@@ -20,7 +20,7 @@
 
 // @function px-to-rem
 //
-// Convert pixels to rem. EX: `px-to-rem(16px)`
+// Experimental: Convert pixels to rem. EX: `px-to-rem(16px)`
 //
 // $pixel-size = '' - {String} Pixel value to convert (required)
 // $context = $font-root - {String} Substring to replace (defaults to $font-root)
