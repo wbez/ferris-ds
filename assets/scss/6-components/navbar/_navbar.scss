@@ -27,7 +27,7 @@
     background-color: $color-black-off;
 
     .c-icon {
-      color: $color-yellow-tribune;
+      color: $color-wbez-red;
     }
   }
 
@@ -111,7 +111,7 @@
       @include mq($from: bp-l) {
         &:hover {
           &:after {
-            background-color: $color-yellow-tribune;
+            background-color: $color-wbez-red;
           }
         }
       }
@@ -119,7 +119,7 @@
 
     &.is-active {
       &:after {
-        background-color: $color-yellow-tribune;
+        background-color: $color-wbez-red;
       }
     }
 

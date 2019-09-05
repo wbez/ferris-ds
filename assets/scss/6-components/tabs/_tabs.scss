@@ -10,7 +10,7 @@
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  border-bottom: 5px solid $color-yellow-tribune;
+  border-bottom: 5px solid $color-wbez-red;
   
   &__tab {
     &--wide {
@@ -31,7 +31,7 @@
     }
 
     &--active {
-      background-color: $color-yellow-tribune;
+      background-color: $color-wbez-red;
       color: $color-black-off;
       font-weight: 700;
     }

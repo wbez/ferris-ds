@@ -1,0 +1,15 @@
+// Breakpoints - Bootstrap
+//
+// Deprecated: We used bootstrap's grid, overriding breakpoints with our own
+// values. Our custom breakpoints are as follows:
+//
+// $screen-xs-min = 480px - Mobile
+// $screen-sm-min = 750px - Tablet
+// $screen-md-min = 1010px - Desktop
+// $screen-lg-min = 1010px - Large Desktop
+//
+// Styleguide 1.3.1
+$screen-xs-min: 480px;
+$screen-sm-min: 750px;
+$screen-md-min: 1010px;
+$screen-lg-min: 1010px;

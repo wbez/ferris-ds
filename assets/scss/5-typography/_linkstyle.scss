@@ -12,18 +12,12 @@
 //
 .t-linkstyle {
   a:not(.t-unlink) {
-    color: $color-teal-gray;
+    color: $color-teal;
     font-weight: bold;
   }
 
   a:hover {
     text-decoration: underline;
-  }
-
-  &--blue {
-    a:not(.t-unlink) {
-      color: $color-blue-dark;
-    }
   }
 
   &--underlined {

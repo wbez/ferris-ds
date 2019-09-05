@@ -1,22 +1,23 @@
-// Font Families
+// Font families
 //
-// Two font variables used throughout our CSS
+// **Todo:** Two font variables used throughout our CSS
 //
-// $font-family-primary = 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif - Main font applied to :root.
-// $font-family-secondary = 'PT Serif', Georgia, serif - Accent font in our case used for editorial purposes.
-// $font-family-primary-fallback = 'Helvetica Neue', Helvetica, Arial, sans-serif - This displays as the primary font before fonts load.
-// $font-family-secondary-fallback = Georgia, serif - This displays as the secondary font before fonts load.
+// $font-family-primary = 'Source Sans Pro', sans-serif - Main font applied to :root.
+// $font-family-secondary = 'CharterITCStd-Bold', serif - Accent font in our case used for editorial purposes.
+// $font-family-primary-fallback = sans-serif - This displays as the primary font before fonts load.
+// $font-family-secondary-fallback = serif - This displays as the secondary font before fonts load.
 //
 // Styleguide 1.2.1
-$font-family-primary: 'Open Sans', 'Helvetica Neue', Helvetica, Arial,
-  sans-serif;
-$font-family-secondary: 'PT Serif', Georgia, serif;
-$font-family-primary-fallback: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-family-secondary-fallback: Georgia, serif;
+$sans-type: 'Source Sans Pro', sans-serif;
+$slab-type: 'CharterITCStd-Bold', serif;
+$font-family-primary: $sans-type;
+$font-family-secondary: $slab-type;
+$font-family-primary-fallback: sans-serif;
+$font-family-secondary-fallback: serif;
 
-// Font Sizings
+// Font sizings
 //
-// Font sizes used at :root
+// **Todo:** Font sizes used at :root
 //
 // $font-root = 16px - Desktop font root size
 // $font-root-tablet = 16px - Tablet font root size
@@ -36,9 +37,9 @@ $font-root-mobile: 15px;
   font-family: $font-family-secondary;
 }
 
-// Letter Spacing
+// Letter spacing
 //
-// Consistent letter-spacing value
+// **Todo:** Consistent letter-spacing value
 //
 // $font-letter-spacing-sm = .02em - Used sometimes in card headline
 // $font-letter-spacing = .03em - Default used with uppercase usually
@@ -49,9 +50,9 @@ $font-letter-spacing-sm: .02em;
 $font-letter-spacing: .03em;
 $font-letter-spacing-lg: .05em;
 
-// Line Height
+// Line height
 //
-// Consistent line-height values
+// **Todo:** Consistent line-height values
 //
 // $line-height-s = 1.25 - Tight leading
 // $line-height-b = 1.4 - Default leading used on p tags
