@@ -4,7 +4,7 @@ $mq-responsive: true;
 
 // Breakpoints
 //
-// We import the sass-mq library for our responsive utilities. Our own custom breakpoints are as follows:
+// Experimental: We import the sass-mq library for our responsive utilities. Our own custom breakpoints are as follows:
 //
 // $bp-xs = 320px - Mobile
 // $bp-s = 520px - Mobile
@@ -32,6 +32,22 @@ $mq-breakpoints: (
   bp-xxl: $bp-xxl,
   bp-default: $bp-default
 );
+
+// Breakpoints - Bootstrap
+//
+// We use bootstrap's grid, overriding breakpoints with our own
+// values. Our custom breakpoints are as follows:
+//
+// $screen-xs-min = 480px - Mobile
+// $screen-sm-min = 750px - Tablet
+// $screen-md-min = 1010px - Desktop
+// $screen-lg-min = 1010px - Large Desktop
+//
+// Styleguide 1.3.1
+$screen-xs-min: 480px;
+$screen-sm-min: 750px;
+$screen-md-min: 1010px;
+$screen-lg-min: 1010px;
 
 // Story containers
 //

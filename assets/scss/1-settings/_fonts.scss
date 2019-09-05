@@ -1,15 +1,17 @@
 // Font families
 //
-// Experimental: Two font variables used throughout our CSS
+// Two font variables used throughout our CSS
 //
-// $font-family-primary = 'Source Sans Pro', sans-serif - Main font applied to :root.
-// $font-family-secondary = 'CharterITCStd-Bold', serif - Accent font in our case used for editorial purposes.
+// $sans-type = 'Source Sans Pro', Arial, sans-serif - &nbsp;
+// $slab-type = 'CharterITCStd-Bold', 'Palatino Bold', serif - &nbsp;
+// $font-family-primary = $sans-type - Main font applied to :root.
+// $font-family-secondary = $slab-type - Accent font in our case used for editorial purposes.
 // $font-family-primary-fallback = sans-serif - This displays as the primary font before fonts load.
 // $font-family-secondary-fallback = serif - This displays as the secondary font before fonts load.
 //
 // Styleguide 1.2.1
-$sans-type: 'Source Sans Pro', sans-serif;
-$slab-type: 'CharterITCStd-Bold', serif;
+$sans-type: 'Source Sans Pro', Arial, sans-serif;
+$slab-type: 'CharterITCStd-Bold','Palatino Bold', serif;
 $font-family-primary: $sans-type;
 $font-family-secondary: $slab-type;
 $font-family-primary-fallback: sans-serif;
