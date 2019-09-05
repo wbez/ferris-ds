@@ -345,26 +345,6 @@
   }
 }
 
-// Byline
-//
-// Deprecated: Needs naming update, removal of extend method, and BEM update.
-//
-// Markup: <span class="byline"><span class="byline--item">By Bob Buttons</span></span>
-//
-//
-// Styleguide 5.3.5
-.byline {
-  @extend .smallcaps--light;
-  @extend %link--teal;
-  font-size: $size-xs;
-  margin: $size-b/2 0 0;
-
-  &--item {
-    display: inline-block;
-    padding-right: $size-b;
-  }
-}
-
 // Description
 //
 // Deprecated: Needs naming update and removal of extend method.

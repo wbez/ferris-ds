@@ -32,7 +32,14 @@ blockquote {
 }
 
 a {
+  color: $color-primary;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: #23527c;
+    text-decoration: underline;
+  }
 }
 
 // We want all of our cite elements to not be italicized

@@ -1,19 +1,23 @@
-// Byline (t-byline)
+// Byline (byline)
 //
-// Used for attribution of content. Does not include size, which in theory varies by context.
+// Used for attribution of content.
 //
-// Markup: 5-typography/byline.html
+// Markup: <div class="byline"><a href="/staff/Dan+Mihalopoulos">Dan Mihalopoulos</a>, <a href="/staff/Kate+McGee">Kate McGee</a></div>
 //
 //
 // Styleguide 5.3.5
 //
-.t-byline {
-  letter-spacing: $font-letter-spacing-lg;
-  margin: $size-b/2 0 0;
-  text-transform: uppercase;
+.byline {
+  color: $legacy-color-gray;
+  font-size: 14px;
+  line-height: .5;
 
-  &__item {
-    display: inline-block;
-    padding-right: $size-b;
+  a {
+    color: $color-wbez-red;
+  }
+
+  a:hover,
+  a:focus {
+    color: $color-link-hover;
   }
 }
