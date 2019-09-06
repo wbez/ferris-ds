@@ -1,6 +1,100 @@
-// Button (c-button)
+// Button (bez-button)
 //
 // Buttons rely on color helpers for background and text color. The variations are simply sizes. One catch is that are buttons run small in sizes so the names aren't true to their padding and font-size assignments.
+//
+// .bez-button--round - For the most part, buttons associated with the player are rounded.
+//
+// Markup: 6-components/button/bez-button.html
+//
+// Styleguide 6.1.1
+.bez-button {
+  @include font-setting('primary');
+  background-color: $color-primary;
+  border: none;
+  border-radius: 0;
+  color: $color-on-primary;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: $font-letter-spacing;
+  line-height: 40px;
+  padding: 0 14px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+
+  @media (hover: hover) {
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $color-primary-dark;
+    }
+  }
+
+  &--l {
+    font-size: $size-l;
+    padding: $size-l;
+  }
+
+  &--s {
+    font-size: $size-xxs;
+    padding: $size-xxs;
+  }
+
+  &--xs {
+    font-size: $size-xxxs;
+    padding: $size-xxxs;
+  }
+
+  &--circle {
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+  }
+
+  &__inner {
+    color: #fff;
+  }
+
+  &--outline {
+    border: 2px solid currentColor;
+    transition: background-color 0.3s;
+
+    @media (hover: hover) {
+      &:hover,
+      &:active {
+        background-color: #fff;
+        color: currentColor;
+        opacity: 1;
+
+        .c-button__inner {
+          color: currentColor;
+        }
+      }
+    }
+  }
+
+  &--compact {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &--round {
+    border-radius: $border-radius-l;
+  }
+
+  &__sprite {
+    line-height: 40px;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+    margin: 0 .2rem;
+  }
+}
+
+// Button (c-button)
+//
+// Experimental: Buttons rely on color helpers for background and text color. The variations are simply sizes. One catch is that are buttons run small in sizes so the names aren't true to their padding and font-size assignments.
 //
 // .c-button--l - Uses size-l for font size and padding
 // .c-button--s - One step down from default
@@ -101,7 +195,7 @@
 
 // Link button (c-link-button)
 //
-// Sometimes, we need buttons to look like links (see Talk embed log in/log out buttons)
+// Experimental: Sometimes, we need buttons to look like links (see Talk embed log in/log out buttons)
 //
 // Markup: <button class="c-link-button">Click me, I'm Irish</button>
 //

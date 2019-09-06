@@ -1,6 +1,6 @@
 // Back to top (c-back-to-top)
 //
-// This component is is opinionated on position. There is an optional `c-back-to-top-viewport` class, which is used to conditionally show back-to-top when the viewport is scrolled for a bit. That feature requires some [extra JS](https://github.com/texastribune/texastribune/blob/master/snollygoster/common/js/modules/entry-utils/ui/index.js#L18-L34). <h4>Note:</h4><ol><li>Place this class outside of your back to top button because `position: sticky` works best on direct children of body.</li><li>To use `position: sticky` on Safari, you need a block-level element.</li></ol>
+// Experimental: This component is is opinionated on position. There is an optional `c-back-to-top-viewport` class, which is used to conditionally show back-to-top when the viewport is scrolled for a bit. That feature requires some [extra JS](https://github.com/texastribune/texastribune/blob/master/snollygoster/common/js/modules/entry-utils/ui/index.js#L18-L34). <h4>Note:</h4><ol><li>Place this class outside of your back to top button because `position: sticky` works best on direct children of body.</li><li>To use `position: sticky` on Safari, you need a block-level element.</li></ol>
 //
 //
 // Markup: 6-components/back-to-top/back-to-top.html

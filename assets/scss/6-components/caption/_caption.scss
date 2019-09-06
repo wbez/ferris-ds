@@ -1,6 +1,31 @@
-// Caption (c-caption)
+// Caption (bez-caption)
 //
 // This is a block of text, which gives context to media. We generally use helper classes for text styles and use this component simply for spacing.
+//
+// Markup: 6-components/caption/bez-caption.html
+//
+// Styleguide 6.0.1
+.bez-caption {
+  background: $legacy-color-off-white;
+	color: $legacy-color-lightish-gray;
+	font-size: 12px;
+	padding: 7px;
+
+	.credit {
+		line-height: 12px;
+		margin-bottom: 10px;
+		text-align: right;
+	}
+
+	.caption {
+		font-size: 13px;
+		line-height: 16px;
+	}
+}
+
+// Caption (c-caption)
+//
+// Experimental: This is a block of text, which gives context to media. We generally use helper classes for text styles and use this component simply for spacing.
 //
 // c-caption--wide - The removal of padding comes a bit sooner.
 //

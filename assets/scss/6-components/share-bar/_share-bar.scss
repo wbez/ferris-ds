@@ -11,11 +11,6 @@ $share-border-facebook: #9fb2da;
 $share-border-twitter: #92d2ea;
 $share-border-url: #ee9999;
 
-@mixin hoverIcon($off, $over, $displayType: inline-block) {
-    & > i.wbez-sprite { @include sprite($off, $displayType); }
-    &:hover i.wbez-sprite { @include sprite($over, $displayType); }
-}
-
 .share_bar {
 
     margin-bottom: 10px;

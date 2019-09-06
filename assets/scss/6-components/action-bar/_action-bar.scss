@@ -1,0 +1,20 @@
+// Action bar (action_bar)
+//
+// Markup: 6-components/action-bar/action-bar.html
+//
+// Styleguide 6.1.1
+//
+.action_bar {
+    background: $color-wbez-gray;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 10px;
+
+    .play_button {
+        @include setIcon($play_content);
+    }
+
+    .queue_button {
+        @include setIcon($queue_white);
+    }
+}

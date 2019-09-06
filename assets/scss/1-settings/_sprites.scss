@@ -230,3 +230,12 @@ $social_default: -0px -8204px 608px 413px;
 .wbez-sprite {
   background-image: url('https://www.wbez.org/img/spritesheet.png');
 }
+
+@mixin setIcon($class, $displayType: inline-block) {
+  & > i.wbez-sprite { @include sprite($class, $displayType); text-indent: -9999px; }
+}
+
+@mixin hoverIcon($off, $over, $displayType: inline-block) {
+  & > i.wbez-sprite { @include sprite($off, $displayType); }
+  &:hover i.wbez-sprite { @include sprite($over, $displayType); }
+}

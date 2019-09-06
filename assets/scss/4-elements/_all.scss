@@ -73,5 +73,9 @@ figcaption {
   line-height: $line-height-b;
 }
 
+button {
+  cursor: pointer;
+}
+
 @import 'blockquote';
 @import 'headings';
