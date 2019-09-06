@@ -1,6 +1,6 @@
 // Text font variant (t-<font-variant>)
 //
-// Uses new mixin and naming convention {{isHelper}}
+// Experimental: Uses new mixin and naming convention {{isHelper}}
 //
 // .t-serif - Default serif
 // .t-sans - Default sans
@@ -19,7 +19,7 @@
 
 // Text case (t-<case>)
 //
-// Adds new naming convention {{isHelper}}
+// Experimental: Adds new naming convention {{isHelper}}
 //
 // .t-titlecase - Text transformed to Title Case
 // .t-uppercase - Text transformed to UPPERCASE
@@ -48,7 +48,7 @@
 
 // Text align (t-align-<dir>)
 //
-// Adds new naming convention {{isHelper}}
+// Experimental: Adds new naming convention {{isHelper}}
 //
 // .t-align-left - Left aligned
 // .t-align-center - Center aligned
@@ -74,7 +74,7 @@
 
 // Text line-height (t-space-<type>)
 //
-// New utility to help eliminate repitition. {{isHelper}}
+// Experimental: New utility to help eliminate repitition. {{isHelper}}
 //
 // t-space-base - Base leading | line-height: 1.4 (used on paragraphs)
 // t-space-heading-s - More spaced out | line-height: 1.25
@@ -101,7 +101,7 @@ $line-height-type: (
 
 // Word break (t-wrap-<setting>)
 //
-// Helper classes for handling how words are allowed to wrap and break. {{isHelper}}
+// Experimental: Helper classes for handling how words are allowed to wrap and break. {{isHelper}}
 // 
 // .t-wrap-break - Allow a word to wrap to the next line mid-word
 //

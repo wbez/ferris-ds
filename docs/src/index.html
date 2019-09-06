@@ -61,7 +61,7 @@
                   <li class="{% if rule.deprecated %} ds-legacy{% endif %}{% if rule.experimental %} ds-experimental{% endif %} ds-multicol">
                     <a href="pages/{{ slug + '/index.html#' + rule.slug }}">
                       {{ rule.prettyName }}
-                      {% if item.name != "Starter CSS" and item.name != "Settings" and item.name != "Tools" %}| <span class="has-text-weight-semibold">.{{rule.mainClass}}</span>{% endif %}
+                      {% if item.name != "Starter CSS" and item.name != "Settings" and item.name != "Tools" and item.name != "Elements" %}| <span class="has-text-weight-semibold">.{{rule.mainClass}}</span>{% endif %}
                     </a>
                   </li>
                 {% endif %}

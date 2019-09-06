@@ -1,0 +1,17 @@
+// Blockquote
+//
+// Markup: <blockquote>“I know we used to make so much stuff in Chicago. I guess a lot of it got made there.”</blockquote>
+//
+// Styleguide 4.1.1
+//
+blockquote {
+    @include font-setting('secondary');
+    border-left: solid 2px $color-primary;
+    color: $color-wbez-black;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 28px;
+    margin: 30px auto 40px;
+    padding: 0 20px;
+    width: 100%;
+}

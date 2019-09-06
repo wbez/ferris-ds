@@ -1,21 +1,21 @@
-// Prose (t-prose)
+// Article copy (article_copy)
 //
-// V2 of prose relies on <code>font-setting</code> and <code>underlined-link-parent</code> mixins
+// The .article_copy class can be extended around a group of <p> to apply our default serif prose styles.
 //
-// Markup: <div class="t-prose"><p>Lorem ipsum. <a>Link text</a></p></div>
+// Markup: <div class="article_copy"><p>Lorem ipsum. <a>Link text</a></p></div>
 //
 //
 // Styleguide 5.2.9
-.t-prose {
-  p {
-    @include font-setting('secondary');
-    @include underlined-link-parent;
-    color: $color-black-off;
-    line-height: 1.4;
-    margin: $size-b 0;
+.article_copy {
+	color: $legacy-color-dark-gray;
+	font-size: 16px;
+	line-height: 24px;
 
-    &:first-of-type {
-      margin: 0 0 $size-b;
-    }
-  }
+	img {
+		max-width: 100%;
+	}
+
+	p {
+		margin-bottom: 20px;
+	}
 }

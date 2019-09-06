@@ -1,6 +1,6 @@
 // Links (t-linkstyle)
 //
-// Although we can now use the mixin underlined-link to style links, we still need a helper class at times to apply it. NOTE: Apply this to a parent to have descendant a tags inherit the respective link style.
+// Experimental: Although we can now use the mixin underlined-link to style links, we still need a helper class at times to apply it. NOTE: Apply this to a parent to have descendant a tags inherit the respective link style.
 //
 // .t-linkstyle--blue - Blue instead of default teal.
 // .t-linkstyle--underlined - Give our underlined look to all links.
@@ -31,7 +31,7 @@
 
 // Non-links (t-unlink)
 //
-// Force a link to look like regular text.
+// Experimental: Force a link to look like regular text.
 //
 // Markup: <p class="t-linkstyle">The unlink class removes default link styles. <a>This is a regular link</a> and <a class="t-unlink">this is a link with the t-unlink class.</a></p>
 //

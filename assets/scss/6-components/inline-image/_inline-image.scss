@@ -1,0 +1,23 @@
+// Inline image (inline_image)
+//
+// Markup: 6-components/inline-image/inline-image.html
+//
+// Styleguide 6.0.1
+
+figcaption {
+	background: $legacy-color-off-white;
+	color: $legacy-color-lightish-gray;
+	font-size: 12px;
+	padding: 7px;
+
+	.credit {
+		line-height: 12px;
+		margin-bottom: 10px;
+		text-align: right;
+	}
+
+	.caption {
+		font-size: 13px;
+		line-height: 16px;
+	}
+}
