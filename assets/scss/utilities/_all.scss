@@ -2,10 +2,29 @@
 //
 // Helper overrides for various utilities. V2 will use prefixes of .l-, .has-, .is-
 //
-// Styleguide 8.0
+// Styleguide 9.0
 @import 'color-helpers';
 @import 'hidden';
 @import 'notch';
 @import 'shadows';
 @import 'spacing';
 @import 'vert-bar';
+
+.has-overlay-on-hover {
+    &::before {
+        background: rgba(233,234,235,0.2);
+        content: '';
+        display: block;
+        height: 100%;
+        opacity: 0;
+        position: absolute;
+        transition: opacity .3s ease;
+        width: 100%;
+      }
+
+      @include media-hover {
+          &::before {
+              opacity: 1;
+          }
+      }
+}

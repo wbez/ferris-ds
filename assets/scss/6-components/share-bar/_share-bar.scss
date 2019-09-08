@@ -1,6 +1,8 @@
-// Share bar (share_bar)
+// Share bar (share-bar)
 //
 // Social share buttons.
+//
+// .share-bar--row - ...
 //
 // Markup: 6-components/share-bar/share-bar.html
 //
@@ -11,94 +13,100 @@ $share-border-facebook: #9fb2da;
 $share-border-twitter: #92d2ea;
 $share-border-url: #ee9999;
 
-.share_bar {
+.share-bar {
+  i.wbez-sprite {
+    margin-top: 5px;
+    margin-left: 4px;
+  }
 
-    margin-bottom: 10px;
+  a {
+    background-repeat: no-repeat;
+    border: 2px solid $legacy-color-darker-middle-grayish-white;
+    border-radius: 50%;
+    display: inline-block;
+    height: 38px;
+    width: 38px;
+    margin: 5px;
 
-    i.wbez-sprite {
-        margin-top: 5px;
-        margin-left: 4px;
+    @media (min-width: $screen-sm-min) {
+      display: block;
     }
 
-    a {
+    &.facebook {
+      @include hoverIcon($social_facebook, $social_facebook_hover);
+      i.wbez-sprite {
+        margin-left: 0px;
+      }
 
-        background-repeat: no-repeat;
-        border: 2px solid $legacy-color-darker-middle-grayish-white;
-        border-radius: 50%;
-        display: inline-block;
-        height: 38px;
-        width: 38px;
-        margin: 5px;
-
-        @media (min-width: $screen-sm-min) {
-            display: block;
+      @media (min-width: $screen-sm-min) {
+        i.wbez-sprite {
+          margin-left: 7px;
+          margin-top: 5px;
         }
+      }
 
-        &.facebook {
-            @include hoverIcon($social_facebook, $social_facebook_hover);
-            i.wbez-sprite {
-                margin-left: 0px;
-            }
-
-            @media (min-width: $screen-sm-min) {
-                i.wbez-sprite { margin-left: 7px; margin-top: 5px; }
-            }
-
-            &:hover {
-                border-color: $share-border-facebook;
-            }
-        }
-
-        &.mail {
-            @include hoverIcon($social_mail, $social_mail_hover);
-
-            i.wbez-sprite {
-                margin-left: 1px;
-            }
-
-            @media (min-width: $screen-sm-min) {
-                i.wbez-sprite { margin-left: 5px; margin-top: 5px; }
-            }
-            &:hover {
-               border-color: $share-border-mail;
-            }
-        }
-
-        &.twitter {
-            @include hoverIcon($social_twitter, $social_twitter_hover);
-            i.wbez-sprite { margin-left: 2px; }
-
-            @media (min-width: $screen-sm-min) {
-                i.wbez-sprite { margin-left: 4px; margin-top: 6px; }
-            }
-
-            &:hover {
-                border-color: $share-border-twitter;
-            }
-        }
-
-
-        &.url {
-            @include hoverIcon($social_url, $social_url_hover);
-
-            i.wbez-sprite {
-                margin-left: 2px;
-            }
-
-            @media (min-width: $screen-sm-min) {
-                i.wbez-sprite { margin-left: 5px; margin-top: 6px; }
-            }
-
-            &:hover {
-                border-color: $share-border-url;
-            }
-        }
-
-    } /* a */
-
-    /* inside show, playlist hero header */
-    .hero & a {
-        display: inline-block !important;
+      &:hover {
+        border-color: $share-border-facebook;
+      }
     }
 
-} /* share bar */
+    &.mail {
+      @include hoverIcon($social_mail, $social_mail_hover);
+
+      i.wbez-sprite {
+        margin-left: 1px;
+      }
+
+      @media (min-width: $screen-sm-min) {
+        i.wbez-sprite {
+          margin-left: 5px;
+          margin-top: 5px;
+        }
+      }
+      &:hover {
+        border-color: $share-border-mail;
+      }
+    }
+
+    &.twitter {
+      @include hoverIcon($social_twitter, $social_twitter_hover);
+      i.wbez-sprite {
+        margin-left: 2px;
+      }
+
+      @media (min-width: $screen-sm-min) {
+        i.wbez-sprite {
+          margin-left: 4px;
+          margin-top: 6px;
+        }
+      }
+
+      &:hover {
+        border-color: $share-border-twitter;
+      }
+    }
+
+    &.url {
+      @include hoverIcon($social_url, $social_url_hover);
+
+      i.wbez-sprite {
+        margin-left: 2px;
+      }
+
+      @media (min-width: $screen-sm-min) {
+        i.wbez-sprite {
+          margin-left: 5px;
+          margin-top: 6px;
+        }
+      }
+
+      &:hover {
+        border-color: $share-border-url;
+      }
+    }
+  }
+
+  &--row {
+      a { display: inline-block; }
+  }
+}

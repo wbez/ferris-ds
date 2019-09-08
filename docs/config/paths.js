@@ -19,7 +19,7 @@ const mappedStyles = [
   },
 ];
 
-const docsStyles = './assets/scss/';
+const docsStyles = './assets/scss';
 
 const mappedIcons = [
   {

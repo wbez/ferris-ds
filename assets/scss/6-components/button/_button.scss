@@ -2,94 +2,90 @@
 //
 // Buttons rely on color helpers for background and text color. The variations are simply sizes. One catch is that are buttons run small in sizes so the names aren't true to their padding and font-size assignments.
 //
+// .bez-button--primary - Red background
 // .bez-button--round - For the most part, buttons associated with the player are rounded.
+// .bez-button--circle - Action icons, etc.
+// .bez-button--small - ...
 //
 // Markup: 6-components/button/bez-button.html
 //
 // Styleguide 6.1.1
 .bez-button {
+  $button-height: 8em / 3;
+
   @include font-setting('primary');
-  background-color: $color-primary;
-  border: none;
+  background-color: $legacy-color-ghost-white;
+  border: 2px solid $legacy-color-darker-middle-grayish-white;
   border-radius: 0;
-  color: $color-on-primary;
+  color: $legacy-color-gray;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 1rem;
+  height: $button-height;
   letter-spacing: $font-letter-spacing;
-  line-height: 40px;
-  padding: 0 14px;
+  line-height: calc(#{$button-height} - 2 * 2px);
+  padding: 0 1em;
   text-align: center;
   text-transform: uppercase;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
 
-  @media (hover: hover) {
-    &:hover,
-    &:focus,
-    &:active {
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  @include media-hover {
+    background-color: $legacy-color-ghost-whitish;
+    color: $legacy-color-gray;
+  }
+
+  &--primary {
+    background-color: $color-primary;
+    border-color: $color-primary;
+    color: $color-on-primary;
+
+    @include media-hover {
       background-color: $color-primary-dark;
+      border-color: $color-primary-dark;
+      color: $color-on-primary-dark;
     }
-  }
-
-  &--l {
-    font-size: $size-l;
-    padding: $size-l;
-  }
-
-  &--s {
-    font-size: $size-xxs;
-    padding: $size-xxs;
-  }
-
-  &--xs {
-    font-size: $size-xxxs;
-    padding: $size-xxxs;
   }
 
   &--circle {
     border-radius: 50%;
-    width: 4rem;
-    height: 4rem;
-    position: relative;
-  }
-
-  &__inner {
-    color: #fff;
-  }
-
-  &--outline {
-    border: 2px solid currentColor;
-    transition: background-color 0.3s;
-
-    @media (hover: hover) {
-      &:hover,
-      &:active {
-        background-color: #fff;
-        color: currentColor;
-        opacity: 1;
-
-        .c-button__inner {
-          color: currentColor;
-        }
-      }
-    }
-  }
-
-  &--compact {
-    padding-top: 0;
-    padding-bottom: 0;
+    width: $button-height;
+    padding: 0;
   }
 
   &--round {
     border-radius: $border-radius-l;
   }
 
+  &--small {
+    font-size: .75rem;
+  }
+
+  &--small &__sprite {
+    transform: scale(.75);
+    transform-origin: center;
+  }
+
   &__sprite {
-    line-height: 40px;
     vertical-align: middle;
     position: relative;
     top: -2px;
-    margin: 0 .2rem;
   }
+
+  &--circle &__sprite {
+    vertical-align: unset;
+    top: unset;
+  }
+}
+
+.play_button {
+  @include setIcon($play_content);
+}
+
+.queue_button {
+  @include setIcon($queue);
 }
 
 // Button (c-button)
@@ -121,8 +117,7 @@
   transition: opacity 0.3s;
 
   &:disabled,
-  &[disabled]
-  &:not([disabled="false"]) {
+  &[disabled] &:not([disabled='false']) {
     cursor: initial;
     opacity: 0.4;
 
@@ -132,11 +127,8 @@
     }
   }
 
-  @media (hover: hover) {
-    &:hover,
-    &:active {
-      opacity: 0.7;
-    }
+  @include media-hover {
+    opacity: 0.7;
   }
 
   &--l {
@@ -169,16 +161,13 @@
     border: 2px solid currentColor;
     transition: background-color 0.3s;
 
-    @media (hover: hover) {
-      &:hover,
-      &:active {
-        background-color: #fff;
-        color: currentColor;
-        opacity: 1;
+    @include media-hover {
+      background-color: #fff;
+      color: currentColor;
+      opacity: 1;
 
-        .c-button__inner {
-          color: currentColor;
-        }
+      .c-button__inner {
+        color: currentColor;
       }
     }
   }

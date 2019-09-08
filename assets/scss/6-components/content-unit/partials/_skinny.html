@@ -1,0 +1,32 @@
+<article class="content-unit content-unit--skinny">
+  <div class="button-overlay">
+    <a href="#" class="has-overlay-on-hover">
+      <img
+        src="{{ data.imageUrl }}"
+        alt="{{ data.headline }}"
+      />
+    </a>
+    <div class="button-overlay__inner">
+      <button class="bez-button bez-button--circle bez-button--primary bez-button--small play_button">
+        <i
+          class="bez-button__sprite wbez-sprite"
+          style="position: relative; left: 1px;"
+        ></i>
+      </button>
+
+      <button class="bez-button bez-button--circle bez-button--small queue_button">
+        <i
+          class="bez-button__sprite wbez-sprite"
+        ></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="content-unit__copy">
+    {% if data.overline %}
+      <p class="content-unit__overline"><a href="#">{{ data.overline }}</a></p>
+    {% endif %}
+    <h3 class="content-unit__headline"><a href="#">{{ data.headline }}</a></h3>
+    <time class="datestamp">{{ data.datestamp }}</time>
+  </div>
+</article>

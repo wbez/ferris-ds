@@ -18,7 +18,7 @@
 // Markup: <ul><li class="{{ className }} margin-demo" style="border:2px solid black;">Example</li><li style="border:2px solid black;">Example</li></ul>
 //
 //
-// Styleguide 8.0.1
+// Styleguide 9.0.1
 //
 
 // hack - We need one more size for very small margins but only for margins
@@ -42,7 +42,7 @@
 // Markup: <div style="border: 2px solid #000; background: #eee" class="{{ className }}"><div style="background: #000;color: #fff;">{{ className }}</div></div>
 //
 //
-// Styleguide 8.0.1
+// Styleguide 9.0.1
 //
 .has-padding {
   padding: $size-b;

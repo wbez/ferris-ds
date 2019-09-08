@@ -93,3 +93,19 @@
   grid-gap: $size;
   gap: $size;
 }
+
+
+// @mixin media-hover
+//
+//
+// Styleguide 2.1.4
+//
+@mixin media-hover() {
+  @media (hover: hover) {
+    &:hover,
+    &:focus,
+    &:active {
+      @content
+    }
+  }
+}

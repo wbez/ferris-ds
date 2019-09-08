@@ -1,10 +1,15 @@
 
 {% if className === 'bez-button--circle' or className === 'bez-button--circle-responsive' %}
-Use with vertical centering helper. <code>.l-align-center-y</code>
-<button class="bez-button {{ className }}">
-    <span class="l-align-center-y t-size-xxs"><span class="c-icon c-icon--arrow-up l-display-block"><svg aria-hidden="true">
-        <use xlink:href="#arrow-up"></use>
-    </svg></span>Back to Top</span>
+<button class="bez-button bez-button--circle bez-button--primary play_button">
+    <i
+        class="bez-button__sprite wbez-sprite"
+        style="position: relative; left: 1px;"
+    ></i>
+</button>
+<button class="bez-button bez-button--circle queue_button">
+    <i
+        class="bez-button__sprite wbez-sprite"
+    ></i>
 </button>
 {% elif className === 'bez-button--outline' %}
 <button class="bez-button bez-button--outline has-text-facebook has-bg-facebook has-text-hover-facebook l-align-center-children">

@@ -1,0 +1,35 @@
+<article class="content-unit content-unit--row">
+  <div class="flex-row" style="display: flex; justify-content: space-between;">
+    <div class="content-unit__copy">
+      {% if data.overline %}
+        <p class="content-unit__overline"><a href="#">{{ data.overline }}</a></p>
+      {% endif %}
+      <h2 class="content-unit__headline">
+        <a href="#">{{ data.headline }}</a>
+      </h2>
+      {% if data.teaser %}
+        <p class="content-unit__teaser">{{ data.teaser }}</p>
+      {% endif %}
+      <time class="datestamp">{{ data.datestamp }}</time>
+    </div>
+    <div
+      class="content-unit__buttons"
+      style="flex: 0 0 auto; margin-left: 5px;"
+    >
+      <button
+        class="bez-button bez-button--primary bez-button--circle play_button"
+      >
+        <i
+          class="bez-button__sprite wbez-sprite"
+          style="position: relative; left: 1px;"
+        ></i>
+      </button>
+
+      <button class="bez-button bez-button--circle queue_button">
+        <i
+          class="bez-button__sprite wbez-sprite"
+        ></i>
+      </button>
+    </div>
+  </div>
+</article>
