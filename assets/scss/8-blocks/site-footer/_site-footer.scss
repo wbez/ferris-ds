@@ -1,0 +1,205 @@
+// Site footer (b-site-footer)
+//
+// Markup: 8-blocks/site-footer/site-footer.html
+//
+// Styleguide 8.1.3
+
+.b-site-footer {
+  padding: 10px;
+
+  &__row {
+    margin: 25px 0;
+  }
+
+  // Top //
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__logo {
+    > img {
+      max-height: 2rem;
+      width: auto;
+    }
+  }
+
+  &__logo,
+  &__social-icons {
+      margin-top: 5px;
+      margin-bottom: 5px;
+  }
+
+  &__social-icon {
+    display: inline-block;
+    vertical-align: top;
+
+    .bez-button {
+      border-color: transparent;
+    }
+  }
+
+  // Menus //
+  &__menus {
+    display: grid;
+    grid-template-columns: 250px repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 20px;
+
+    h3 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+    }
+
+    a {
+      color: #ccc;
+    }
+  }
+
+  &__sections {
+    display: flex;
+    flex-direction: column;
+
+    .bez-button {
+      margin-bottom: 5px;
+      text-decoration: none;
+      width: 100%;
+
+      i.wbez-sprite {
+        margin-right: auto;
+      }
+
+      span {
+        text-align: left;
+        width: 150px;
+      }
+    }
+  }
+
+  // Promos //
+  &__promos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+  }
+
+  &__promo {
+    background: black;
+    border-radius: $border-radius-b;
+    color: #ccc;
+    padding: 15px;
+
+    a {
+      color: #ccc;
+    }
+
+    h3 {
+      color: #ccc;
+      font-size: 1rem;
+      margin-bottom: 5px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    p {
+      color: #86898e;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+
+        > .form-element {
+            flex: 1 0 auto;
+
+            > input {
+                background-color: transparentize(white, .05);
+            }
+
+            > input:active + label,
+            > input:focus + label,
+            > input:not(:placeholder-shown) + label {
+                color: #86898e;
+            }
+        }
+
+        > button {
+            background-color: transparent;
+            border-color: #ccc;
+            color: #ccc;
+            flex: 0 0 auto;
+            font-size: 15px;
+            margin-left: 10px;
+            line-height: 2em;
+            height: 2em;
+            box-sizing: content-box;
+        }
+    }
+
+    > ul {
+        // display: flex;
+        // justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .os_container > .bez-button {
+       border-color: transparent;
+    }    
+  }
+
+  // Support //
+  &__support {
+      h3 {
+          color: transparentize(#ccc, .2);
+          font-size: 12px;
+          font-weight: normal;
+          letter-spacing: 0;
+          text-align: center;
+          text-transform: uppercase;
+      }
+
+      img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+      }
+  }
+
+  // Copyright //
+  &__copyright {
+      color: #86898e;
+      font-size: 11px;
+
+      a {
+          color: #ccc;
+      }
+
+      ul {
+          text-align: center;
+      }
+  }
+}
+
+@import 'site-footer-social';
+
+.bez-button {
+  &.shows {
+    @include setIcon($section_shows);
+  }
+
+  &.schedules {
+    @include setIcon($section_schedule);
+  }
+
+  &.topics {
+    @include setIcon($section_topics);
+  }
+
+  &.vocalo {
+    @include setIcon($section_vocalo);
+  }
+}
