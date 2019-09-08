@@ -16,6 +16,7 @@
   max-width: px-to-rem($bp-default);
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 @each $size-label, $value in $mq-breakpoints {

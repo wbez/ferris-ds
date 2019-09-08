@@ -3,9 +3,11 @@
 // Buttons rely on color helpers for background and text color. The variations are simply sizes. One catch is that are buttons run small in sizes so the names aren't true to their padding and font-size assignments.
 //
 // .bez-button--primary - Red background
+// .bez-button--dark - Dark background
 // .bez-button--round - For the most part, buttons associated with the player are rounded.
 // .bez-button--circle - Action icons, etc.
-// .bez-button--small - ...
+// .bez-button--s - Small button
+// .bez-button--l - Large button
 //
 // Markup: 6-components/button/bez-button.html
 //
@@ -39,13 +41,23 @@
 
   &--primary {
     background-color: $color-primary;
-    border-color: $color-primary;
+    border-color: transparent;
     color: $color-on-primary;
 
     @include media-hover {
       background-color: $color-primary-dark;
-      border-color: $color-primary-dark;
       color: $color-on-primary-dark;
+    }
+  }
+
+  &--dark {
+    background-color: transparentize(#000, .4);
+    border-color: transparent;
+    color: transparentize(white, .05);
+
+    @include media-hover {
+      background-color: transparentize(#000, .2);
+      color: transparentize(white, .05); 
     }
   }
 
@@ -59,13 +71,17 @@
     border-radius: $border-radius-l;
   }
 
-  &--small {
+  &--s {
     font-size: .75rem;
   }
 
-  &--small &__sprite {
+  &--s &__sprite {
     transform: scale(.75);
     transform-origin: center;
+  }
+
+  &--l {
+    font-size: 1.75rem;
   }
 
   &__sprite {

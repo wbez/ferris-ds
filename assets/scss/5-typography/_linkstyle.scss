@@ -27,6 +27,12 @@
   &--underlined-subtle {
     @include underlined-link-parent('true');
   }
+
+  &--inherit {
+    a {
+      color: inherit;
+    }
+  }
 }
 
 // Non-links (t-unlink)

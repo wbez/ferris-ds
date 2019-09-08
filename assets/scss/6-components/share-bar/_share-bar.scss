@@ -3,6 +3,7 @@
 // Social share buttons.
 //
 // .share-bar--row - ...
+// .share-bar--column - ... 
 //
 // Markup: 6-components/share-bar/share-bar.html
 //
@@ -14,11 +15,6 @@ $share-border-twitter: #92d2ea;
 $share-border-url: #ee9999;
 
 .share-bar {
-  i.wbez-sprite {
-    margin-top: 5px;
-    margin-left: 4px;
-  }
-
   a {
     background-repeat: no-repeat;
     border: 2px solid $legacy-color-darker-middle-grayish-white;
@@ -27,25 +23,16 @@ $share-border-url: #ee9999;
     height: 38px;
     width: 38px;
     margin: 5px;
-
-    @media (min-width: $screen-sm-min) {
-      display: block;
-    }
+    text-align: center;
 
     &.facebook {
       @include hoverIcon($social_facebook, $social_facebook_hover);
+
       i.wbez-sprite {
-        margin-left: 0px;
+        margin-top: 5px;
       }
 
-      @media (min-width: $screen-sm-min) {
-        i.wbez-sprite {
-          margin-left: 7px;
-          margin-top: 5px;
-        }
-      }
-
-      &:hover {
+      @include media-hover {
         border-color: $share-border-facebook;
       }
     }
@@ -54,34 +41,22 @@ $share-border-url: #ee9999;
       @include hoverIcon($social_mail, $social_mail_hover);
 
       i.wbez-sprite {
-        margin-left: 1px;
+        margin-top: 5px;
       }
 
-      @media (min-width: $screen-sm-min) {
-        i.wbez-sprite {
-          margin-left: 5px;
-          margin-top: 5px;
-        }
-      }
-      &:hover {
+      @include media-hover {
         border-color: $share-border-mail;
       }
     }
 
     &.twitter {
       @include hoverIcon($social_twitter, $social_twitter_hover);
+
       i.wbez-sprite {
-        margin-left: 2px;
+        margin-top: 6px;
       }
 
-      @media (min-width: $screen-sm-min) {
-        i.wbez-sprite {
-          margin-left: 4px;
-          margin-top: 6px;
-        }
-      }
-
-      &:hover {
+      @include media-hover {
         border-color: $share-border-twitter;
       }
     }
@@ -90,17 +65,10 @@ $share-border-url: #ee9999;
       @include hoverIcon($social_url, $social_url_hover);
 
       i.wbez-sprite {
-        margin-left: 2px;
+        margin-top: 6px;
       }
 
-      @media (min-width: $screen-sm-min) {
-        i.wbez-sprite {
-          margin-left: 5px;
-          margin-top: 6px;
-        }
-      }
-
-      &:hover {
+      @include media-hover {
         border-color: $share-border-url;
       }
     }
@@ -108,5 +76,9 @@ $share-border-url: #ee9999;
 
   &--row {
       a { display: inline-block; }
+  }
+
+  &--column {
+    a { display: block; }
   }
 }

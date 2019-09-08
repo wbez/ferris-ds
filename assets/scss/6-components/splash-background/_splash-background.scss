@@ -1,0 +1,24 @@
+// Splash background (c-splash-background)
+//
+// Markup: 6-components/splash-background/splash-background.html
+//
+// Styleguide 6.1.1
+
+.c-splash-background {
+  position: relative;
+  overflow: hidden;
+
+  background-color: #252525;
+  color: #fff;
+
+  &::before {
+    background: url('/img/logo_tile_bg.png');
+    content: '';
+    position: absolute;
+    top: -150%;
+    left: 0;
+    height: 400%;
+    width: 100%;
+    transform: rotate(-15deg);
+  }
+}

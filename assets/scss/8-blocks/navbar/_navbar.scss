@@ -1,0 +1,104 @@
+// Navbar (b-navbar)
+//
+// Markup: 8-blocks/navbar/navbar.html
+//
+// Styleguide 8.1.3
+
+.b-navbar {
+  padding: 10px;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: min-content auto min-content;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'header header header'
+      'left main right';
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__top-links {
+    color: #86898e;
+    font-size: 12px;
+    text-transform: uppercase;
+    grid-area: header;
+  }
+
+  &__logo {
+    grid-area: main;
+  }
+
+  &__main-items {
+    display: flex;
+
+    &--left {
+        grid-area: left;
+    }
+
+    &--right {
+        justify-content: flex-end;
+        grid-area: right;
+    }
+  }
+
+  &__main-item {
+      margin: 5px;
+  }
+
+  .bez-button {
+    border-width: 5px;
+    box-sizing: content-box;
+    flex-direction: column;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    line-height: 1;
+    justify-content: center;
+
+    @include media-hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.donate_button {
+  @include setIcon($nav-heart);
+
+  i.wbez-sprite {
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+}
+
+.connect_button {
+  @include setIcon($nav_connect);
+}
+
+.queue_nav_button {
+  @include setIcon($section_queue);
+
+  position: relative;
+
+  i.wbez-sprite {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .queue_count {
+    background: transparentize(#64686e, 0.2);
+    border-radius: $border-radius-l;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.5;
+    width: 2ch;
+    text-align: center;
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+  }
+}
+
+.shows_button {
+  @include setIcon($section_shows);
+}
