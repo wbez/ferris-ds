@@ -1,22 +1,24 @@
-// Form element (form-element)
+// Form element (c-form-element)
 //
-// Wrap input and label in a div with class .form-element for an animated label, similar to Google.
+// Wrap input and label in a div with class .c-form-element for an animated label, similar to Google.
 //
-// Override the small label color by setting the color for .form-element.
+// Override the small label color by setting the color for .c-form-element.
 //
 // Markup: 6-components/form-element/form-element.html
 //
 // Styleguide 6.0.1
 
-.form-element {
+.c-form-element {
     color: transparentize(black, .4);
     position: relative;
 
-    input::placeholder {
-        visibility: hidden;
+    &__input {
+        &::placeholder {
+            visibility: hidden;
+        }
     }
 
-    input + label {
+    &__input + &__label {
         color: transparentize(black, .7);
         position: absolute;
         padding-top: calc(.375em - 1px);
@@ -27,9 +29,9 @@
         transition: color .25s, transform .25s;
     }
 
-    input:not(:placeholder-shown) + label,
-    input:focus + label,
-    input:active + label {
+    &__input:not(:placeholder-shown) + &__label,
+    &__input:focus + &__label,
+    &__input:active + &__label {
         color: currentColor;
         transform: scale(.8) translateY(calc(-.375em - 1px - 1.4em));
         transition: color .3s, transform .3s;

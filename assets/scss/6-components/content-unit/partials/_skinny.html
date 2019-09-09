@@ -1,12 +1,12 @@
-<article class="content-unit content-unit--skinny">
-  <div class="button-overlay">
+<article class="c-content-unit c-content-unit--skinny">
+  <div class="c-button-overlay">
     <a href="#" class="has-overlay-on-hover">
       <img
         src="{{ data.imageUrl }}"
         alt="{{ data.headline }}"
       />
     </a>
-    <div class="button-overlay__inner">
+    <div class="c-button-overlay__inner">
       <button class="c-button c-button--circle c-button--primary c-button--s play_button">
         <i
           class="c-button__sprite wbez-sprite"
@@ -22,11 +22,11 @@
     </div>
   </div>
 
-  <div class="content-unit__copy">
+  <div class="c-content-unit__copy">
     {% if data.overline %}
-      <p class="content-unit__overline"><a href="#">{{ data.overline }}</a></p>
+      <p class="c-content-unit__overline"><a href="#">{{ data.overline }}</a></p>
     {% endif %}
-    <h3 class="content-unit__headline"><a href="#">{{ data.headline }}</a></h3>
+    <h3 class="c-content-unit__headline"><a href="#">{{ data.headline }}</a></h3>
     <time class="datestamp">{{ data.datestamp }}</time>
   </div>
 </article>

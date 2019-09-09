@@ -1,12 +1,12 @@
-<article class="content-unit content-unit--tile">
-  <div class="button-overlay">
+<article class="c-content-unit c-content-unit--tile">
+  <div class="c-button-overlay">
     <a href="#" class="has-overlay-on-hover">
       <img
         src="{{ data.imageUrl }}"
         alt="{{ data.headline }}"
       />
     </a>
-    <div class="button-overlay__inner">
+    <div class="c-button-overlay__inner">
       <button
         class="c-button c-button--circle c-button--primary play_button"
       >
@@ -24,13 +24,13 @@
     </div>
   </div>
 
-  <div class="content-unit__copy">
+  <div class="c-content-unit__copy">
     {% if data.overline %}
-      <p class="content-unit__overline"><a href="#">{{ data.overline }}</a></p>
+      <p class="c-content-unit__overline"><a href="#">{{ data.overline }}</a></p>
     {% endif %}
-    <h2 class="content-unit__headline">
+    <h2 class="c-content-unit__headline">
       <a href="#">{{ data.headline }}</a>
     </h2>
-    <p class="content-unit__teaser">{{ data.teaser }}</p>
+    <p class="c-content-unit__teaser">{{ data.teaser }}</p>
   </div>
 </article>

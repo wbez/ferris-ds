@@ -1,9 +1,9 @@
-// Share bar (share-bar)
+// Share bar (c-share-bar)
 //
 // Social share buttons.
 //
-// .share-bar--row - ...
-// .share-bar--column - ... 
+// .c-share-bar--row - ...
+// .c-share-bar--col - ... 
 //
 // Markup: 6-components/share-bar/share-bar.html
 //
@@ -14,7 +14,7 @@ $share-border-facebook: #9fb2da;
 $share-border-twitter: #92d2ea;
 $share-border-url: #ee9999;
 
-.share-bar {
+.c-share-bar {
   a {
     background-repeat: no-repeat;
     border: 2px solid $legacy-color-darker-middle-grayish-white;
@@ -78,7 +78,7 @@ $share-border-url: #ee9999;
       a { display: inline-block; }
   }
 
-  &--column {
+  &--col {
     a { display: block; }
   }
 }
