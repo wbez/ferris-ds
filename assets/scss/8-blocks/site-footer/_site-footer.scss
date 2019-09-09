@@ -97,6 +97,17 @@ $b-site-footer__color-background: #1a1a1a;
     }
   }
 
+  &__menu {
+    li {
+      margin: 5px 0;
+    }
+
+    a {
+      display: block;
+      line-height: 1.2;
+    }
+  }
+
   // Promos //
   &__promos {
     display: grid;
