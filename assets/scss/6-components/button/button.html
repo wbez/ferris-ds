@@ -1,10 +1,15 @@
 
 {% if className === 'c-button--circle' or className === 'c-button--circle-responsive' %}
-Use with vertical centering helper. <code>.l-align-center-y</code>
-<button class="c-button {{ className }}">
-    <span class="l-align-center-y t-size-xxs"><span class="c-icon c-icon--arrow-up l-display-block"><svg aria-hidden="true">
-        <use xlink:href="#arrow-up"></use>
-    </svg></span>Back to Top</span>
+<button class="c-button c-button--circle c-button--primary play_button">
+    <i
+        class="c-button__sprite wbez-sprite"
+        style="position: relative; left: 1px;"
+    ></i>
+</button>
+<button class="c-button c-button--circle queue_button">
+    <i
+        class="c-button__sprite wbez-sprite"
+    ></i>
 </button>
 {% elif className === 'c-button--outline' %}
 <button class="c-button c-button--outline has-text-facebook has-bg-facebook has-text-hover-facebook l-align-center-children">

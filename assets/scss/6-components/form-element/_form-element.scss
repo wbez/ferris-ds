@@ -2,11 +2,14 @@
 //
 // Wrap input and label in a div with class .form-element for an animated label, similar to Google.
 //
+// Override the small label color by setting the color for .form-element.
+//
 // Markup: 6-components/form-element/form-element.html
 //
 // Styleguide 6.0.1
 
 .form-element {
+    color: transparentize(black, .4);
     position: relative;
 
     input::placeholder {
@@ -27,7 +30,7 @@
     input:not(:placeholder-shown) + label,
     input:focus + label,
     input:active + label {
-        color: transparentize(black, .4);
+        color: currentColor;
         transform: scale(.8) translateY(calc(-.375em - 1px - 1.4em));
         transition: color .3s, transform .3s;
     }

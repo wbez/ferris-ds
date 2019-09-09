@@ -112,3 +112,31 @@ $line-height-type: (
 .t-wrap-break {
   word-break: break-all;
 }
+
+// Text font-weight (t-weight-<type>)
+//
+// Experimental: New utility to help eliminate repitition. {{isHelper}}
+//
+// t-weight-normal - Normal
+// t-weight-bold - Bold
+//
+// Markup: <p style="height: 100px" class="{{ className }} t-headline t-l">Texas again mistakenly flags voters for citizenship reviews</p>
+//
+//
+// Styleguide 5.2.7
+//
+.t-weight-normal {
+  font-weight: 400;
+}
+
+.t-weight-bold {
+  font-weight: 700;
+}
+
+.t-weight-400 {
+  @extend .t-weight-normal;
+}
+
+.t-weight-700 {
+  @extend .t-weight-bold;
+}

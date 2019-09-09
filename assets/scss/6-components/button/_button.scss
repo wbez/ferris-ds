@@ -1,18 +1,19 @@
-// Button (bez-button)
+// Button (c-button)
 //
 // Buttons rely on color helpers for background and text color. The variations are simply sizes. One catch is that are buttons run small in sizes so the names aren't true to their padding and font-size assignments.
 //
-// .bez-button--primary - Red background
-// .bez-button--dark - Dark background
-// .bez-button--round - For the most part, buttons associated with the player are rounded.
-// .bez-button--circle - Action icons, etc.
-// .bez-button--s - Small button
-// .bez-button--l - Large button
+// .c-button--primary - Red background
+// .c-button--dark - Dark background
+// .c-button--round - For the most part, buttons associated with the player are rounded.
+// .c-button--circle - Action icons, etc.
+// .c-button--s - Small button
+// .c-button--l - Large button
+// .c-button--no-border - Sets border-color to transparent
 //
-// Markup: 6-components/button/bez-button.html
+// Markup: 6-components/button/button.html
 //
 // Styleguide 6.1.1
-.bez-button {
+.c-button {
   $button-height: 8em / 3;
 
   @include font-setting('primary');
@@ -94,6 +95,10 @@
     vertical-align: unset;
     top: unset;
   }
+
+  &--no-border {
+    border-color: transparent;
+  }
 }
 
 .play_button {
@@ -102,100 +107,6 @@
 
 .queue_button {
   @include setIcon($queue);
-}
-
-// Button (c-button)
-//
-// Experimental: Buttons rely on color helpers for background and text color. The variations are simply sizes. One catch is that are buttons run small in sizes so the names aren't true to their padding and font-size assignments.
-//
-// .c-button--l - Uses size-l for font size and padding
-// .c-button--s - One step down from default
-// .c-button--xs - Two steps down from default
-// .c-button--circle - Circular button (experimentally used for back to top)
-// .c-button--outline - Hover effect of outline (used on social)
-// .c-button--compact - Removes vertical padding (used on social)
-// .c-button--round - For the most part, buttons associated with revenue are rounded.
-//
-// Markup: 6-components/button/button.html
-//
-// Styleguide 6.1.1
-.c-button {
-  background-color: $color-primary;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: $size-xs;
-  letter-spacing: $font-letter-spacing;
-  padding: $size-xs;
-  text-align: center;
-  text-transform: uppercase;
-  transition: opacity 0.3s;
-
-  &:disabled,
-  &[disabled] &:not([disabled='false']) {
-    cursor: initial;
-    opacity: 0.4;
-
-    &:hover,
-    &:active {
-      opacity: 0.4;
-    }
-  }
-
-  @include media-hover {
-    opacity: 0.7;
-  }
-
-  &--l {
-    font-size: $size-l;
-    padding: $size-l;
-  }
-
-  &--s {
-    font-size: $size-xxs;
-    padding: $size-xxs;
-  }
-
-  &--xs {
-    font-size: $size-xxxs;
-    padding: $size-xxxs;
-  }
-
-  &--circle {
-    border-radius: 50%;
-    width: 4rem;
-    height: 4rem;
-    position: relative;
-  }
-
-  &__inner {
-    color: #fff;
-  }
-
-  &--outline {
-    border: 2px solid currentColor;
-    transition: background-color 0.3s;
-
-    @include media-hover {
-      background-color: #fff;
-      color: currentColor;
-      opacity: 1;
-
-      .c-button__inner {
-        color: currentColor;
-      }
-    }
-  }
-
-  &--compact {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  &--round {
-    border-radius: $border-radius-l;
-  }
 }
 
 // Link button (c-link-button)
