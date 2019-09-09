@@ -8,6 +8,7 @@
 .c-mini-form {
   display: grid;
   grid-template-columns: 1fr 6rem;
+  grid-column-gap: 10px;
 
   &__input {
     grid-column: 1;
@@ -18,7 +19,9 @@
   }
 
   .c-text-input__input,
+  .c-text-input__label,
   .c-button {
-    height: 45px;
+    height: 40px;
+    line-height: 40px;
   }
 }

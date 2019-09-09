@@ -1,37 +1,57 @@
 // Text input (c-text-input)
 //
-// Experimental: Text form inputs. Can be used with type="text", type="email", etc. Add .is-valid if the value is not valid.
+// Wrap input and label in a div with class .c-text-input for an animated label, similar to Google.
+//
+// Override the small label color by setting the color for .c-text-input.
 //
 // Markup: 6-components/text-input/text-input.html
 //
-// Styleguide 6.1.5
+// Styleguide 6.0.1
+
 .c-text-input {
-  &__input {
-    -webkit-appearance: none;
-    border-color: $color-gray-light;
-    border-radius: 0;
-    border-style: solid;
-    border-width: 1px;
-    outline: none;
-    padding: $size-xxs;
-    transition: box-shadow .15s ease-in-out;
+    color: transparentize(black, .4);
+    position: relative;
 
-    // kill X button that appears on IE and edge
-    // because it doesn't handle JS input event correctly
-    &::-ms-clear {
-      display: none;
+    &__input {
+        height: 100%;
+        
+        &::placeholder {
+            visibility: hidden;
+        }
     }
 
-    &:focus {
-      box-shadow: 0 0 0 .2rem rgba($color-primary, .4);
+    &__input + &__label {
+        color: transparentize(black, .7);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: calc(.625em - 1px);
+        pointer-events: none;
+        transform-origin: top left;
+        transition: color .25s, transform .25s;
+
+        display: flex;
+        align-items: center;
     }
 
-    &.is-invalid {
-      border-color: $color-error;
-
-      &:focus {
-        box-shadow: 0 0 0 .2rem rgba($color-error, .4);
-      }
+    &__input:not(:placeholder-shown) + &__label,
+    &__input:focus + &__label,
+    &__input:active + &__label {
+        color: currentColor;
+        transform: scale(.8) translateY(calc(-.5em - 3px - 50%)); // -word - border - box
+        transition: color .3s, transform .3s;
     }
-  }
+
+    // Invalid
+    &__input.is-invalid {
+        border-color: $color-error;
+
+        &:focus {
+            box-shadow: 0 0 0 .2rem rgba($color-error, .4);
+        }
+    }
+
+    &__input.is-invalid + &__label {
+        color: $color-error;
+    }
 }

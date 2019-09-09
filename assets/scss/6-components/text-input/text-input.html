@@ -1,23 +1,45 @@
-<div class="c-text-input has-b-btm-marg">
-  <h3 class="has-s-btm-marg">Valid state example</h3>
-  <label for="firstName" class="l-display-block has-xxxs-btm-marg t-size-s">
-    <strong>First name</strong>
-  </label>
-  <input id="firstName" name="firstName" type="text" value="Cosmo Kramer" class="c-text-input__input l-display-block l-width-full has-text-gray-dark t-space-base">
+<div class="c-text-input" style="margin-top: 10px;">
+  <input
+    class="c-text-input__input"
+    type="email"
+    name="email"
+    placeholder="Your email address"
+    required
+  />
+  <label class="c-text-input__label" for="email">Your email address</label>
 </div>
 
-<div class="c-text-input">
-  <h3 class="has-s-btm-marg">Invalid state example</h3>
-  <label for="firstName" class="l-display-block has-xxxs-btm-marg t-size-s">
-    <strong>First name</strong>
-  </label>
-  <input id="firstName" name="firstName" type="text" value="Cosmo Kramer" class="c-text-input__input is-invalid l-display-block l-width-full has-text-gray-dark has-xxxs-btm-marg t-space-base" aria-invalid="true">
-  <ul>
-    <li class="has-text-error has-xxxs-btm-marg t-size-xs">
-      First validation error
-    </li>
-    <li class="has-text-error t-size-xs">
-      Second validation error
-    </li>
-  </ul>
+<div class="c-text-input" style="margin-top: 30px; color: blue; height: 50px;">
+  <input
+    class="c-text-input__input"
+    type="email"
+    name="email"
+    placeholder="Your email address"
+    required
+  />
+  <label class="c-text-input__label" for="email">Your email address</label>
 </div>
+
+<h3 class="has-m-btm-marg" style="margin-top: 1.5rem;">Invalid state example</h3>
+<div class="c-text-input">
+  <input
+    id="firstName"
+    name="firstName"
+    type="text"
+    placeholder="First name"
+    value="Cosmo Kramer"
+    class="c-text-input__input is-invalid"
+    aria-invalid="true"
+  />
+  <label for="firstName" class="c-text-input__label">
+    First name
+  </label>
+</div>
+<ul>
+  <li class="has-text-error has-xxxs-btm-marg t-size-xs">
+    First validation error
+  </li>
+  <li class="has-text-error t-size-xs">
+    Second validation error
+  </li>
+</ul>

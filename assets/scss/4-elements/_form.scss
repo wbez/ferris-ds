@@ -2,6 +2,16 @@
 //
 // Styleguide 4.1.1
 //
+button,
+input[type='submit'],
+input[type='button'] {
+    cursor: pointer;
+
+    &[disabled] {
+        cursor: unset;
+    }
+}
+
 input {
     background-color: #fff;
     border: 1px solid #dbdbdb;
