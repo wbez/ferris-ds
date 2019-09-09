@@ -1,6 +1,6 @@
 // Story body (c-story-body)
 //
-// Experimental: Story bodies are a special component because we have limited control over the class names within them. We must deviate from BEM and create catch-all tag selectors to allow the greatest flexibility of the markup.
+// Story bodies are a special component because we have limited control over the class names within them. We must deviate from BEM and create catch-all tag selectors to allow the greatest flexibility of the markup.
 //
 // Markup: 6-components/story-body/story-body.html
 //
@@ -11,14 +11,17 @@ $story-narrow-bp: ($story-narrow / 1rem) + $story-padding-buffer;
 
 .c-story-body {
   > p,
+  > h1,
   > h2,
   > h3,
   > h4,
   > h5,
   > h6,
   > ul,
+  > ol,
   > span,
-  > hr {
+  > hr,
+  > details {
     max-width: $story-narrow;
     margin: $size-b auto;
     line-height: 1.4;
@@ -27,22 +30,50 @@ $story-narrow-bp: ($story-narrow / 1rem) + $story-padding-buffer;
     }
   }
 
+  > aside,
+  > blockquote,
+  > div,
+  > figure {
+    margin: $size-b auto;
+  }
+
   > p,
   > h3,
   > ul li {
-    @include font-setting('secondary');
+    // @include font-setting('secondary');
     @include underlined-link-parent;
   }
 
-  > ul {
-    list-style: disc;
+  > ul,
+  > ol {
     padding: 0 $size-b 0 3.5rem;
 
     li {
       margin-bottom: $size-b;
     }
+
+    ul,
+    ol {
+      margin: $size-b auto;
+      padding: 0 $size-b 0 3.5rem;
+    }
   }
 
+  > ul {
+    list-style: disc;
+
+    ul {
+      list-style: unset;
+    }
+  }
+
+  > ol {
+    list-style: decimal;
+
+    ol {
+      list-style: unset;
+    }
+  }
 
   sub, sup {
     position: initial;
@@ -55,5 +86,21 @@ $story-narrow-bp: ($story-narrow / 1rem) + $story-padding-buffer;
   // we hard-set the font size for this reason
   h3 {
     font-size: $size-m;
+  }
+
+  figure {
+    display: table;
+
+    > * {
+      display: block;
+      width: 100%
+    }
+
+    > figcaption {
+      @extend .c-caption;
+  
+      display: table-caption;
+      caption-side: bottom;
+    }
   }
 }

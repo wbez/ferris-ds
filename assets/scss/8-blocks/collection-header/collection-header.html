@@ -54,9 +54,30 @@
   <h3>Tag</h3>
 </div>
 <!-- Preview desc -->
-<div class="b-collection-header b-collection-header">
+<div class="b-collection-header">
   <div class="b-collection-header__copy">
     <h1 class="b-collection-header__title">#rahm emanuel</h1>
+  
+    <button
+      class="c-button c-button--round c-button--primary play_button"
+    >
+      <i class="wbez-sprite c-button__sprite" style="position: relative; margin-right: 10px; top: 1px;"></i>
+      Play
+    </button>
+
+    {% set className = 'c-share-bar--row' %}
+    {% include '../../6-components/share-bar/share-bar.html' %}
+  </div>
+</div>
+
+<!-- Preview desc -->
+<div class="ds-breathe-vert">
+  <h3>Topic</h3>
+</div>
+<!-- Preview desc -->
+<div class="b-collection-header b-collection-header--topic" style="background-image: url(https://api.wbez.org/v2/images/0fb53179-8deb-4c34-b1f7-339ecb42bcba.jpg?width=728&amp;height=260&amp;mode=FILL&amp;threshold=0);">
+  <div class="b-collection-header__copy">
+    <h1 class="b-collection-header__title">Politics</h1>
   
     <button
       class="c-button c-button--round c-button--primary play_button"

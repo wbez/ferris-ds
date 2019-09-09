@@ -7,15 +7,15 @@
 // Styleguide 6.0.1
 .c-caption {
   background: $legacy-color-off-white;
-	color: $legacy-color-lightish-gray;
+  color: $legacy-color-lightish-gray;
   font-size: $size-s;
   line-height: 16px;
-	padding: 7px;
+  padding: 7px;
 
-	&__credit {
+  &__credit {
     font-size: $size-xxs;
-		line-height: 12px;
-		margin-bottom: 10px;
-		text-align: right;
-	}
+    line-height: 12px;
+    margin-bottom: 10px;
+    text-align: right;
+  }
 }

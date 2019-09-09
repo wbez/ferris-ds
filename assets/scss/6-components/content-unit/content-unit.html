@@ -15,7 +15,8 @@
     'imageUrl': 'https://api.wbez.org/v2/images/0afc1386-105b-48ea-87ec-889d6593a0a1.jpg?width=640&height=312&mode=FILL&threshold=0',
     'teaser': 'Chicago Public Schools students get free CTA rides on the first day of school. Students say they need the help year-round.
     ',
-    'overline': 'Education'
+    'overline': 'Education',
+    'datestamp': 'September 6, 2019'
   } %}
   {% include './partials/_tile.html' %}
 
@@ -39,5 +40,20 @@
     'datestamp': 'September 6, 2019'
   } %}
   {% include './partials/_row-featured.html' %}
+
+{% elif className === 'c-content-unit--event' %}
+
+  {% include './partials/_event.html' %}
+
+{% else %}
+
+  {% set data = {
+    'imageUrl': 'https://api.wbez.org/v2/images/60a26a31-a0ea-4025-817e-d243977fc7bb.jpg?width=640&height=312&mode=FILL&threshold=0',
+    'overline': 'Morning Shift',
+    'headline': 'What’s That Building? This Chicago Industrial Park Was The Nation’s First',
+    'teaser': 'Today, these South Side buildings are mostly empty — but in the early 1900s they produced everything from tires to coffee.',
+    'datestamp': 'September 6, 2019'
+  } %}
+  {% include './partials/_default.html' %}
 
 {% endif %}

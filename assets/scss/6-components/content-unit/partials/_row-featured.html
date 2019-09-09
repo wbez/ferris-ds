@@ -35,7 +35,9 @@
       {% if data.teaser %}
         <p class="c-content-unit__teaser">{{ data.teaser }}</p>
       {% endif %}
-      <time class="t-datestamp">{{ data.datestamp }}</time>
+      {% if data.datestamp %}
+        <time class="t-datestamp">{{ data.datestamp }}</time>
+      {% endif %}
     </div>
   </div>
 </article>

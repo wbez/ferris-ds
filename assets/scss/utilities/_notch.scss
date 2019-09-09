@@ -5,8 +5,10 @@
 // .has-notch--short -  Shorter in width and height
 // .has-notch--thin -  Shorter in height. Used in footer
 // .has-notch--full -  Stretches to full width
+// .has-notch--100 - Stretches to 100px
+// .has-notch--centered - Centers the notch
 //
-// Markup: <div class="has-notch {{ className }} has-bg-yellow"></div>
+// Markup: <div class="has-notch {{ className }} has-bg-red"></div>
 //
 //
 // Styleguide 9.0.3
@@ -14,7 +16,6 @@
 .has-notch {
   clear: both;
   height: 5px;
-  text-align: left;
   width: 40px;
 
   &--short {
@@ -28,5 +29,14 @@
 
   &--full {
     width: 100%;
+  }
+
+  &--100 {
+    width: 100px;
+  }
+
+  &--centered {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

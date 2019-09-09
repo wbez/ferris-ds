@@ -6,50 +6,52 @@ $flickr_bg: #fff;
 $tumblr_bg: #33475b;
 $feedburner_bg: #1371bf;
 
-.twitter {
+.b-site-footer__social-icon {
+  > .twitter {
     @include hoverIcon($social_twitter_dark, $social_twitter_lite);
 
     @include media-hover {
-        background-color: $twitter_bg;
+      background-color: $twitter_bg;
     }
-}
+  }
 
-.facebook {
+  > .facebook {
     @include hoverIcon($social_facebook_dark, $social_facebook_lite);
 
     @include media-hover {
-        background-color: $facebook_bg;
+      background-color: $facebook_bg;
     }
-}
+  }
 
-.instagram {
+  > .instagram {
     @include hoverIcon($social_instagram_dark, $social_instagram_lite);
 
     @include media-hover {
-        background-color: $instagram_bg;
+      background-color: $instagram_bg;
     }
-}
+  }
 
-.youtube {
+  > .youtube {
     @include hoverIcon($social_youtube_dark, $social_youtube_lite);
 
     @include media-hover {
-        background-color: $youtube_bg;
+      background-color: $youtube_bg;
     }
-}
+  }
 
-.tumblr {
+  > .tumblr {
     @include hoverIcon($social_tumblr_dark, $social_tumblr_lite);
 
     @include media-hover {
-        background-color: $tumblr_bg;
+      background-color: $tumblr_bg;
     }
-}
+  }
 
-.feedburner {
+  > .feedburner {
     @include hoverIcon($social_feedburner_dark, $social_feedburner_lite);
 
     @include media-hover {
-        background-color: $feedburner_bg;
+      background-color: $feedburner_bg;
     }
+  }
 }

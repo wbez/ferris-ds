@@ -1,5 +1,5 @@
-<article class="c-content-unit c-content-unit--tile">
-  <div class="c-button-overlay">
+<article class="c-content-unit">
+  <div class="c-button-overlay" style="margin-bottom: .5rem;">
     <a href="#" class="has-overlay-on-hover">
       <img
         src="{{ data.imageUrl }}"
@@ -7,9 +7,7 @@
       />
     </a>
     <div class="c-button-overlay__inner">
-      <button
-        class="c-button c-button--circle c-button--primary play_button"
-      >
+      <button class="c-button c-button--circle c-button--primary play_button">
         <i
           class="c-button__sprite wbez-sprite"
           style="position: relative; left: 1px;"
@@ -28,10 +26,10 @@
     {% if data.overline %}
       <p class="c-content-unit__overline"><a href="#">{{ data.overline }}</a></p>
     {% endif %}
-    <h2 class="c-content-unit__headline">
-      <a href="#">{{ data.headline }}</a>
-    </h2>
-    <p class="c-content-unit__teaser">{{ data.teaser }}</p>
+    <h3 class="c-content-unit__headline"><a href="#">{{ data.headline }}</a></h3>
+    {% if data.teaser %}
+      <p class="c-content-unit__teaser">{{ data.teaser }}</p>
+    {% endif %}
     {% if data.datestamp %}
       <time class="t-datestamp">{{ data.datestamp }}</time>
     {% endif %}
