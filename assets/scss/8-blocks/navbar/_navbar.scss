@@ -9,7 +9,7 @@
 
   &__grid {
     display: grid;
-    grid-template-columns: min-content auto min-content;
+    grid-template-columns: min-content 1fr min-content;
     grid-template-rows: auto;
     grid-template-areas:
       'header header header'
@@ -28,6 +28,7 @@
 
   &__logo {
     grid-area: main;
+    text-align: center;
   }
 
   &__main-items {
@@ -101,4 +102,13 @@
 
 .shows_button {
   @include setIcon($section_shows);
+}
+
+.menu_button {
+  @include setIcon($nav_hamburger);
+
+  i.wbez-sprite {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
 }

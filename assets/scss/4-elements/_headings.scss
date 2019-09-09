@@ -25,7 +25,7 @@ h1 {
 	font-size: 26px;
 	line-height: 30px;
 	margin: 5px 0 10px;
-	@media (min-width: $screen-sm-min) {
+	@media (min-width: $bp-m) {
 		font-size: 36px;
 		line-height: 42px;
 	}

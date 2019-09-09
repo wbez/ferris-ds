@@ -66,7 +66,7 @@
       width: 100%;
       object-fit: cover;
 
-      @media (min-width: $screen-sm-min) {
+      @media (min-width: $bp-m) {
         height: 300px;
       }
     }

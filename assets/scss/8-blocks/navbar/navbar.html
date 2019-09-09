@@ -1,11 +1,12 @@
 <nav class="b-navbar c-splash-background">
   <div class="l-container b-navbar__grid">
     <a class="b-navbar__logo" href="/" title="Homepage">
-      <img src="/img/wbez-logo-full.png" alt="WBEZ 91.5 Chicago" />
+      <img class="is-hidden-from-bp-m" src="/img/wbez-logo-short.png" alt="WBEZ 91.5 Chicago" />
+      <img class="is-hidden-until-bp-m" src="/img/wbez-logo-full.png" alt="WBEZ 91.5 Chicago" />
     </a>
 
     <ul
-      class="b-navbar__top-links l-list-inline is-hidden-until-bp-m t-align-right t-linkstyle--inherit"
+      class="b-navbar__top-links l-list-inline t-align-right t-linkstyle--inherit"
     >
       <li><a target="_blank" href="http://wbez.org/members">Account</a></li>
       <li><a class="search" href="/search">Search</a></li>
@@ -21,7 +22,7 @@
           <span class="t-size-xs">Donate</span>
         </a>
       </li>
-      <li class="b-navbar__main-item">
+      <li class="b-navbar__main-item is-hidden-until-bp-l">
         <a
           class="c-button c-button--circle c-button--dark c-button--l connect_button"
           href="#"
@@ -33,7 +34,7 @@
     </ul>
 
     <ul class="b-navbar__main-items b-navbar__main-items--right">
-      <li class="b-navbar__main-item">
+      <li class="b-navbar__main-item is-hidden-until-bp-l">
         <a
           class="c-button c-button--circle c-button--dark c-button--l queue_nav_button"
           href="#"
@@ -43,13 +44,22 @@
           <sup class="queue_count">1</sup>
         </a>
       </li>
-      <li class="b-navbar__main-item">
+      <li class="b-navbar__main-item is-hidden-until-bp-l">
         <a
           class="c-button c-button--circle c-button--dark c-button--l shows_button"
           href="#"
         >
           <i class="wbez-sprite"></i>
           <span class="t-size-xs">Shows A–Z</span>
+        </a>
+      </li>
+      <li class="b-navbar__main-item is-hidden-from-bp-l">
+        <button
+          class="c-button c-button--circle c-button--dark c-button--l menu_button"
+          href="#"
+        >
+          <i class="wbez-sprite"></i>
+          <span class="t-size-xs">Menu</span>
         </a>
       </li>
     </ul>
