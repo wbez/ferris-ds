@@ -1,8 +1,6 @@
 # @wbez/design-system
 > Centralizing styles for product development at WBEZ
 
-[![amplifybutton](https://oneclick.amplifyapp.com/button.svg)](https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/wbez/design-system)
-
 This repo contains a library of styles and icons available to import via npm.
 
 Along with the library, we set up a few tools that help document updates. CSS comments are parsed to create a JSON object of documentation. That data is rendered with nunjucks to give us a visual representation of the various components and rule-sets we're building.
