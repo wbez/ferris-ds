@@ -18,31 +18,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "eslintConfig": {
-    "extends": [
-      "airbnb",
-      "prettier"
-    ],
-    "env": {
-      "jest": true,
-      "node": true
-    },
-    "rules": {
-      "no-console": "error",
-      "no-underscore-dangle": [
-        "error",
-        {
-          "allowAfterThis": true
-        }
-      ],
-      "import/no-extraneous-dependencies": [
-        "error",
-        {
-          "devDependencies": true
-        }
-      ]
-    }
-  },
   "license": "MIT",
   "author": "CPM Digital Product Team <tech@wbez.org>",
   "bugs": {
