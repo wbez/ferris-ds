@@ -43,14 +43,6 @@
       ]
     }
   },
-  "prettier": {
-    "bracketSpacing": true,
-    "printWidth": 80,
-    "semi": true,
-    "singleQuote": true,
-    "tabWidth": 2,
-    "trailingComma": "es5"
-  },
   "license": "MIT",
   "author": "CPM Digital Product Team <tech@wbez.org>",
   "bugs": {
