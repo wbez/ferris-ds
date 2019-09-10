@@ -5,8 +5,21 @@ repos:
     -   id: prettier
         files: '/.*\.(js|html)$'
   - repo: 'https://github.com/awebdeveloper/pre-commit-stylelint'
-    sha: 'c4c991cd38b0218735858716b09924f8b20e3812'
+    rev: 'c4c991cd38b0218735858716b09924f8b20e3812'
     hooks:
     -   id: stylelint
         additional_dependencies: ['stylelint@9.10.1']
-        files: '/.*\.(scss$)'
+        files: '/.*\.(scss)$'
+  - repo: https://github.com/pre-commit/mirrors-eslint
+    rev: 'b9ab52bbd195c8f951905fba4988e901d392b2d0'
+    hooks:
+    -   id: eslint
+        additional_dependencies:
+        - 'eslint@5.16.0'
+        - 'eslint-config-airbnb@17.1.0'
+        - 'eslint-config-prettier@5.0.0'
+        - 'eslint-plugin-import@2.17.3'
+        - 'eslint-plugin-jsx-a11y@6.2.1'
+        - 'eslint-plugin-react@7.13.0'
+        # files: '/.*\.(js)$'
+        files: 'docs/config'
