@@ -13,7 +13,7 @@
 #### How should this be manually tested?
 `yarn dev`
 
-See: [your-link](http://localhost:3000/)
+See: [your-link](http://wbez.local:3000/)
 
 
 #### Does this introduce a breaking change where queso-ui is used in the wild? If so, is there a relevant branch/PR to accompany this release?

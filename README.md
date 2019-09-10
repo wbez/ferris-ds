@@ -1,13 +1,15 @@
 # @wbez/design-system
 > Centralizing styles for product development at WBEZ
 
+[![amplifybutton](https://oneclick.amplifyapp.com/button.svg)](https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/wbez/design-system)
+
 This repo contains a library of styles and icons available to import via npm.
 
 Along with the library, we set up a few tools that help document updates. CSS comments are parsed to create a JSON object of documentation. That data is rendered with nunjucks to give us a visual representation of the various components and rule-sets we're building.
 
 Our goal is that as we iterate upon the design of our products, we document everything along the way. This keeps our **style docs current and allows for continuous optimization our CSS.**
 
-> This repo is forked from [texastribune/queso-ui@v3.2.0](https://github.com/texastribune/queso-ui/releases/tag/v3.2.0). Much thanks and props for building out such a great base for us to launch from.
+This repo is forked from [texastribune/queso-ui@v3.2.0](https://github.com/texastribune/queso-ui/releases/tag/v3.2.0). Much thanks and props for building out such a great base for us to launch from.
 
 ## Getting started
 To preview these assets and accompanying docs locally, run the following commands:
@@ -18,12 +20,12 @@ yarn
 ```sh
 yarn dev
 ```
-Visit http://localhost:3000
+Visit http://wbez.local:3000
 
 This spins up a browsersync server and watch task for all SCSS and HTML files.
 
 **Requirements**
-- node >=8.11.3 (to be replaced with a docker container)
+- node >=8.11.3
 
 
 ## Installing as a dependency
@@ -69,7 +71,10 @@ We use a comment parser along with some [extra logic](https://github.com/wbez/de
 ```
 - `{{isWide}}` is used to display the demo of each modifier at full width
 - `{{isHelper}}` is used to hide main demo and only display modifiers
-- `// Deprecated` is used to signify a class to be removed. See _Deprecating a CSS class_ for details.
+- `// Deprecated` is used to signify a class to be removed.
+- `// Experimental` is used to signify a class we're considering.
+
+**Deprecated** and **Experimental** are named per [KSS syntax](https://warpspire.com/kss/syntax/).
 
 
 ### Naming and organization
@@ -77,7 +82,9 @@ We use a comment parser along with some [extra logic](https://github.com/wbez/de
 When building CSS dispersed on a variety of platforms, it can be difficult to know where certain style rules should live and what to call them. We use the following guideline to help with those decisions as we scale our framework.
 
 #### ITCSS
-We organize our SCSS files with the [inverted triangle](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/) approach in mind. We put our own spin on it by adding a `typography` and `layouts` folder, but the general idea is all the same; increased specificity as you move down the stylesheet.
+We organize our SCSS files with the [inverted triangle](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/) approach in mind. We put our own spin on it by adding a `typography`, `layouts` and `blocks` folder, but the general idea is all the same; increased specificity as you move down the stylesheet.
+
+See also Brad Frost's write-up on atomic design for the rationale behind composable components. (`components` → `blocks` → `pages`)
 
 #### BEM
 We closely follow the BEM (Block Element Modifier) class naming convention in our `components` folder, but we break BEM rules in other places. This is a deliberate attempt to create a hybrid approach of using BEM when scoped to a component and helper classes when styling globally in a more ad hoc context.
@@ -111,6 +118,14 @@ _Example: `l-container`_
 
 ---
 
+Blocks
+```css
+.b-block-name {}
+```
+_Example: `b-site-footer`_
+
+---
+
 Utilities
 ```css
 .[is|has]-state {}
@@ -131,6 +146,9 @@ This system is experimental and under rapid development. Use it in situations wh
 - Making a small CSS change to the legacy system (tiny visual tweak to our main repo)
 - The system creates an unnecessarily layer of complexity (take the path of least resistance)
 
+--
+
+## Todo... 
 
 ## Publishing
 

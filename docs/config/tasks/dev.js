@@ -26,8 +26,7 @@ async function dev() {
       logPrefix: 'design-system',
       notify: false,
       open: false,
-      // port: 3000,
-      port: 80,
+      port: 3000,
       server: {
         baseDir: ['./docs/dist'],
       },
