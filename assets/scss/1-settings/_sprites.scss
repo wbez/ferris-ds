@@ -250,7 +250,8 @@ $social_default: -0px -8204px 608px 413px;
     @include sprite($off, $displayType);
   }
 
-  &:hover i.wbez-sprite {
+  &:hover i.wbez-sprite,
+  &:focus i.wbez-sprite {
     @include sprite($over, $displayType);
   }
 }

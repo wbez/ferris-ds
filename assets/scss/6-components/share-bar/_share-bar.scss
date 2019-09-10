@@ -32,7 +32,8 @@ $share-border-url: #e99;
         margin-top: 5px;
       }
 
-      @include media-hover {
+      &:hover,
+      &:focus {
         border-color: $share-border-facebook;
       }
     }
@@ -44,7 +45,8 @@ $share-border-url: #e99;
         margin-top: 5px;
       }
 
-      @include media-hover {
+      &:hover,
+      &:focus {
         border-color: $share-border-mail;
       }
     }
@@ -56,7 +58,8 @@ $share-border-url: #e99;
         margin-top: 6px;
       }
 
-      @include media-hover {
+      &:hover,
+      &:focus {
         border-color: $share-border-twitter;
       }
     }
@@ -68,7 +71,8 @@ $share-border-url: #e99;
         margin-top: 6px;
       }
 
-      @include media-hover {
+      &:hover,
+      &:focus {
         border-color: $share-border-url;
       }
     }

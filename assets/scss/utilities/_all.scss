@@ -22,7 +22,8 @@
     width: 100%;
   }
 
-  @include media-hover {
+  &:hover,
+  &:focus {
     &::before {
       opacity: 1;
     }

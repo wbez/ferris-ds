@@ -27,7 +27,8 @@
     color: $color-wbez-red;
     font-weight: bold;
 
-    @include media-hover {
+    &:hover,
+    &:focus {
       color: $color-wbez-red;
       text-decoration: underline;
     }

@@ -10,7 +10,8 @@ $feedburner_bg: #1371bf;
   > .twitter {
     @include hoverIcon($social_twitter_dark, $social_twitter_lite);
 
-    @include media-hover {
+    &:hover,
+    &:focus {
       background-color: $twitter_bg;
     }
   }
@@ -18,7 +19,8 @@ $feedburner_bg: #1371bf;
   > .facebook {
     @include hoverIcon($social_facebook_dark, $social_facebook_lite);
 
-    @include media-hover {
+    &:hover,
+    &:focus {
       background-color: $facebook_bg;
     }
   }
@@ -26,7 +28,8 @@ $feedburner_bg: #1371bf;
   > .instagram {
     @include hoverIcon($social_instagram_dark, $social_instagram_lite);
 
-    @include media-hover {
+    &:hover,
+    &:focus {
       background-color: $instagram_bg;
     }
   }
@@ -34,7 +37,8 @@ $feedburner_bg: #1371bf;
   > .youtube {
     @include hoverIcon($social_youtube_dark, $social_youtube_lite);
 
-    @include media-hover {
+    &:hover,
+    &:focus {
       background-color: $youtube_bg;
     }
   }
@@ -42,7 +46,8 @@ $feedburner_bg: #1371bf;
   > .tumblr {
     @include hoverIcon($social_tumblr_dark, $social_tumblr_lite);
 
-    @include media-hover {
+    &:hover,
+    &:focus {
       background-color: $tumblr_bg;
     }
   }
@@ -50,8 +55,16 @@ $feedburner_bg: #1371bf;
   > .feedburner {
     @include hoverIcon($social_feedburner_dark, $social_feedburner_lite);
 
-    @include media-hover {
+    &:hover,
+    &:focus {
       background-color: $feedburner_bg;
+    }
+  }
+
+  &:active {
+    > .c-button {
+      opacity: 0.7;
+      @include box-shadow-default;
     }
   }
 }

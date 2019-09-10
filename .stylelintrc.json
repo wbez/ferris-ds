@@ -12,7 +12,8 @@
           "after-comment"
         ],
         "ignoreAtRules": [
-          "else"
+          "else",
+          "include"
         ]
       }
     ],
