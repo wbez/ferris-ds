@@ -1,12 +1,11 @@
 // Text color (has-text-<color>)
 //
-// Set the color of text. {{isHelper}}
+// Experimental: Set the color of text. {{isHelper}}
 //
 // .has-text-black -  black text color
 // .has-text-black-off - black-off text color
 // .has-text-white -  white text color
 // .has-text-white-off -  white off text color
-// .has-text-teal -  teal text color
 // .has-text-gray -  gray text color
 // .has-text-gray-light - gray-light text color
 // .has-text-gray-dark - gray-dark text color
@@ -27,13 +26,12 @@
 
 // Text color:hover (has-text-hover-<color>)
 //
-// Set the color of text on hover. {{isHelper}}
+// Experimental: Set the color of text on hover. {{isHelper}}
 //
 // .has-text-hover-black -  black text-hover color
 // .has-text-hover-black-off - black-off text-hover color
 // .has-text-hover-white -  white text-hover color
 // .has-text-hover-white-off -  white off text-hover color
-// .has-text-hover-teal -  teal text-hover color
 // .has-text-hover-gray -  gray text-hover color
 // .has-text-hover-gray-light - gray-light text-hover color
 // .has-text-hover-gray-dark - gray-dark text-hover color
@@ -54,13 +52,12 @@
 
 // Background Color (has-bg-<color>)
 //
-// Set the background-color of an element. {{isHelper}}
+// Experimental: Set the background-color of an element. {{isHelper}}
 //
 // .has-bg-black -  black background color
 // .has-bg-black-off - black-off background color
 // .has-bg-white -  white background color
 // .has-bg-white-off -  white off background color
-// .has-bg-teal -  teal background color
 // .has-bg-gray -  gray background color
 // .has-bg-gray-light - gray-light background color
 // .has-bg-gray-dark - gray-dark background color
@@ -84,7 +81,6 @@ $color-map: (
   'black-off': $color-black-off,
   'white': $color-white-pure,
   'white-off': $color-white-off,
-  'teal': $color-teal,
   'gray': $color-gray-medium,
   'gray-light': $color-gray-light,
   'gray-dark': $color-gray-dark,

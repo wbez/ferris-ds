@@ -1,12 +1,7 @@
 // Smallcaps (t-smallcaps)
 //
-// Experimental: V2 of smallcaps more reliant on helper classes and a more DRY approach.
-//
-// Currently, this is used to style mini-headers, "read more" links, button text and bylines.
-//
 // .t-smallcaps--light - Applies a lighter font weight and increases the letter-spacing
 // .t-smallcaps--section - Applies bottom margin and bumps down font-size
-// .t-smallcaps--bordered - Applies a top border
 //
 // Markup: <span class="t-smallcaps {{ className }}">Lorem ipsum</span>
 //
@@ -27,9 +22,5 @@
   &--section {
     font-size: $size-s;
     margin-bottom: $size-b/4;
-  }
-
-  &--bordered {
-    border-top: 2px solid $color-black-off;
   }
 }

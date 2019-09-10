@@ -1,6 +1,6 @@
 // Text font variant (t-<font-variant>)
 //
-// Experimental: Uses new mixin and naming convention {{isHelper}}
+// {{isHelper}}
 //
 // .t-serif - Default serif
 // .t-sans - Default sans
@@ -19,7 +19,7 @@
 
 // Text case (t-<case>)
 //
-// Experimental: Adds new naming convention {{isHelper}}
+// Adds new naming convention {{isHelper}}
 //
 // .t-titlecase - Text transformed to Title Case
 // .t-uppercase - Text transformed to UPPERCASE
@@ -48,7 +48,7 @@
 
 // Text align (t-align-<dir>)
 //
-// Experimental: Adds new naming convention {{isHelper}}
+// Adds new naming convention {{isHelper}}
 //
 // .t-align-left - Left aligned
 // .t-align-center - Center aligned
@@ -71,9 +71,9 @@
   text-align: right;
 }
 
-// Text line-height (t-space-<type>)
+// Text line height (t-space-<type>)
 //
-// Experimental: New utility to help eliminate repitition. {{isHelper}}
+// {{isHelper}}
 //
 // t-space-base - Base leading | line-height: 1.4 (used on paragraphs)
 // t-space-heading-s - More spaced out | line-height: 1.25
@@ -98,28 +98,14 @@ $line-height-type: (
   }
 }
 
-// Word break (t-wrap-<setting>)
+// Text font weight (t-weight-<type>)
 //
-// Experimental: Helper classes for handling how words are allowed to wrap and break. {{isHelper}}
-//
-// .t-wrap-break - Allow a word to wrap to the next line mid-word
-//
-// Markup: <p class="t-wrap-break" style="width: 150px;">barbara.gervin.hawkins@house.texas.gov</p>
-//
-//
-// Styleguide 5.3.6
-.t-wrap-break {
-  word-break: break-all;
-}
-
-// Text font-weight (t-weight-<type>)
-//
-// Experimental: New utility to help eliminate repitition. {{isHelper}}
+// {{isHelper}}
 //
 // t-weight-normal - Normal
 // t-weight-bold - Bold
 //
-// Markup: <p style="height: 100px" class="{{ className }} t-headline t-l">Texas again mistakenly flags voters for citizenship reviews</p>
+// Markup: <p style="height: 100px" class="{{ className }} t-sans t-l">Texas again mistakenly flags voters for citizenship reviews</p>
 //
 //
 // Styleguide 5.2.7
