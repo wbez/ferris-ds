@@ -23,7 +23,7 @@
     &--xxxs-gap {
       @include gap($size-xxxs);
     }
-    
+
     @include mq($until: bp-m) {
       &--1x1-until-bp-m {
         grid-template-columns: 1fr;

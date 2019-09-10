@@ -24,8 +24,8 @@ $color-primary-dark: $color-wbez-red-dark;
 $color-wbez-gray: #f5f5f5;
 $color-wbez-gray-dark: #64686e;
 
-$color-on-primary: transparentize(#fff, .02);
-$color-on-primary-dark: transparentize(#fff, .02);
+$color-on-primary: transparentize(#fff, 0.02);
+$color-on-primary-dark: transparentize(#fff, 0.02);
 
 // Swatch set - Branding - Secondary
 //
@@ -103,7 +103,7 @@ $color-twitter: #55acee;
 $color-link-underline: $color-primary;
 $color-link-hover: #23527c;
 $color-error: #f51c1c;
-$color-success: #11A06B;
+$color-success: #11a06b;
 $color-sponsor: #3366cc;
 
 // Legacy colors
@@ -120,7 +120,7 @@ $legacy-color-gray-ish: #64686e;
 $legacy-color-grayer: #d8dce3;
 $legacy-color-lightest-gray: #7f7f7f;
 $legacy-color-lightish-gray: #848687;
-$legacy-color-separator-gray: #BCBCBC;
+$legacy-color-separator-gray: #bcbcbc;
 $legacy-color-light-gray: #86898e;
 $legacy-color-grayish-white: #8a8e92;
 $legacy-color-grayish-dark-white: #979a9e;
@@ -141,7 +141,7 @@ $legacy-color-progress-red: #f90000;
 $legacy-color-progress-red-secondary: #df0000;
 $legacy-color-pencil-ad-bg: #72a2a9;
 $legacy-color-pencil-ad-link-hover: #1a545c;
-$legacy-color-gray-schedule-bg: #F8F8F8;
+$legacy-color-gray-schedule-bg: #f8f8f8;
 $legacy-color-vocalo-yellow: #ffb718;
 $legacy-color-segment-active: rgb(135, 138, 143);
 $legacy-color-segment-bg: rgb(115, 115, 115);

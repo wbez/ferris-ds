@@ -11,25 +11,25 @@
 @import 'vert-bar';
 
 .has-overlay-on-hover {
-    &::before {
-        background: rgba(233,234,235,0.2);
-        content: '';
-        display: block;
-        height: 100%;
-        opacity: 0;
-        position: absolute;
-        transition: opacity .3s ease;
-        width: 100%;
-      }
+  &::before {
+    background: rgba(233, 234, 235, 0.2);
+    content: '';
+    display: block;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.3s ease;
+    width: 100%;
+  }
 
-      @include media-hover {
-          &::before {
-              opacity: 1;
-          }
-      }
+  @include media-hover {
+    &::before {
+      opacity: 1;
+    }
+  }
 }
 
 .sr-only {
-    visibility: hidden;
-    font-size: 0;
+  visibility: hidden;
+  font-size: 0;
 }

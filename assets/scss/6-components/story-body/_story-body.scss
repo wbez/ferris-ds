@@ -75,7 +75,8 @@ $story-narrow-bp: ($story-narrow / 1rem) + $story-padding-buffer;
     }
   }
 
-  sub, sup {
+  sub,
+  sup {
     position: initial;
   }
 
@@ -93,12 +94,12 @@ $story-narrow-bp: ($story-narrow / 1rem) + $story-padding-buffer;
 
     > * {
       display: block;
-      width: 100%
+      width: 100%;
     }
 
     > figcaption {
       @extend .c-caption;
-  
+
       display: table-caption;
       caption-side: bottom;
     }

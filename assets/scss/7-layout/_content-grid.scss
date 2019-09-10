@@ -30,7 +30,7 @@ $content-grid-sidebar: px-to-rem(310px);
       grid-template-areas: 'side content';
       grid-template-columns: $content-grid-sidebar 1fr;
     }
-    
+
     &--flush {
       @include gap(0);
     }

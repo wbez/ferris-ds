@@ -11,7 +11,7 @@
 //
 // Styleguide 1.2.1
 $sans-type: 'Source Sans Pro', Arial, sans-serif;
-$slab-type: 'ITC Charter Std','Palatino Bold', serif;
+$slab-type: 'ITC Charter Std', 'Palatino Bold', serif;
 $font-family-primary: $sans-type;
 $font-family-secondary: $slab-type;
 $font-family-primary-fallback: sans-serif;
@@ -48,9 +48,9 @@ $font-root-mobile: 15px;
 // $font-letter-spacing-lg = .05em - Bring on that kerning
 //
 // Styleguide 1.2.3
-$font-letter-spacing-sm: .02em;
-$font-letter-spacing: .03em;
-$font-letter-spacing-lg: .05em;
+$font-letter-spacing-sm: 0.02em;
+$font-letter-spacing: 0.03em;
+$font-letter-spacing-lg: 0.05em;
 
 // Line height
 //

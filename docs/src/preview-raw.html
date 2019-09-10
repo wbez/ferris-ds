@@ -1,36 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" class="fonts-loaded">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>{{mainClass}} | Standalone</title>
-</head>
-<body style="margin: 20px;border:1px dashed gray">
-<div style="display: none">
-  {% include '../dist/sprites/base.html' %}
-</div>
-<!-- {{ mainClass }} -->
-<section style="margin-bottom: 20px">
-{% if isFile %}
-  {% include "../../assets/scss/" + markup %}
-{% else %}
-  {{ markup | safe }}
-{% endif %}
-</section>
-{% for modifier in modifiers %}
-{% set className = modifier.className %}
-<!-- {{ className }} -->
-<section style="margin-bottom: 20px">
-{% if isFile %}
-  {% include "../../assets/scss/" + markup %}
-{% else %}
-  {{ modifier.markup | safe }}
-{% endif %}
-</section>
-{% endfor %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{{mainClass}} | Standalone</title>
+  </head>
+  <body style="margin: 20px;border:1px dashed gray">
+    <div style="display: none">{% include '../dist/sprites/base.html' %}</div>
+    <!-- {{ mainClass }} -->
+    <section style="margin-bottom: 20px">
+      {% if isFile %} {% include "../../assets/scss/" + markup %} {% else %} {{
+      markup | safe }} {% endif %}
+    </section>
+    {% for modifier in modifiers %} {% set className = modifier.className %}
+    <!-- {{ className }} -->
+    <section style="margin-bottom: 20px">
+      {% if isFile %} {% include "../../assets/scss/" + markup %} {% else %} {{
+      modifier.markup | safe }} {% endif %}
+    </section>
+    {% endfor %}
 
-<!-- demo JS -->
-<script src="../../../js/ds.js"></script>
-</body>
+    <!-- demo JS -->
+    <script src="../../../js/ds.js"></script>
+  </body>
 </html>

@@ -37,16 +37,15 @@
 
   ol,
   ul {
-    margin: .5rem;
+    margin: 0.5rem;
     padding-left: 2rem;
     font-size: medium;
 
     li {
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
     }
   }
 }
-
 
 .ds-menu {
   overflow: scroll;
@@ -69,7 +68,6 @@
 .ds-anchor {
   position: absolute;
 }
-
 
 .ds-grid-example div[class^='col'] {
   border: 1px solid #ccc;
@@ -121,7 +119,6 @@
   break-inside: avoid-column;
 }
 
-
 .ds-icon {
   fill: #fff;
   position: absolute;
@@ -158,7 +155,6 @@ strong {
   height: 95vh;
 }
 
-
 .ds-legacy,
 .ds-experimental,
 // .ds-version-tag,
@@ -193,25 +189,25 @@ strong {
 }
 
 .js-ds-show-legacy li.ds-legacy a::after {
-  content:  "";
-  width: .8em;
-  height: .8em;
+  content: '';
+  width: 0.8em;
+  height: 0.8em;
   background: #ffdd57;
   border-radius: 50%;
   display: inline-block;
   vertical-align: middle;
-  margin-left: 1ch;
+  margin-left: 0.5em;
 }
 
 .js-ds-show-experimental li.ds-experimental a::after {
-  content:  "";
-  width: .8em;
-  height: .8em;
+  content: '';
+  width: 0.8em;
+  height: 0.8em;
   background: #209cee;
   border-radius: 50%;
   display: inline-block;
   vertical-align: middle;
-  margin-left: 1ch;
+  margin-left: 0.5em;
 }
 
 // Hide arrow for HTML code snippet
@@ -226,5 +222,4 @@ strong {
     position: absolute;
     z-index: 2;
   }
-  
 }

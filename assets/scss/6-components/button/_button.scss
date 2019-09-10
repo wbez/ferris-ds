@@ -52,13 +52,13 @@
   }
 
   &--dark {
-    background-color: transparentize(#000, .4);
+    background-color: transparentize(#000, 0.4);
     border-color: transparent;
-    color: transparentize(white, .05);
+    color: transparentize(white, 0.05);
 
     @include media-hover {
-      background-color: transparentize(#000, .2);
-      color: transparentize(white, .05); 
+      background-color: transparentize(#000, 0.2);
+      color: transparentize(white, 0.05);
     }
   }
 
@@ -73,11 +73,11 @@
   }
 
   &--s {
-    font-size: .75rem;
+    font-size: 0.75rem;
   }
 
   &--s &__sprite {
-    transform: scale(.75);
+    transform: scale(0.75);
     transform-origin: center;
   }
 

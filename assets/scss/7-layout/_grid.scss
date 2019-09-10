@@ -82,7 +82,6 @@ $column-slug: col !default;
   }
 }
 
-
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -93,7 +92,6 @@ $column-slug: col !default;
     @extend %flex-grid;
     flex-wrap: nowrap;
   }
-
 
   &_order {
     &--primary {

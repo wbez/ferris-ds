@@ -71,7 +71,6 @@
   text-align: right;
 }
 
-
 // Text line-height (t-space-<type>)
 //
 // Experimental: New utility to help eliminate repitition. {{isHelper}}
@@ -102,7 +101,7 @@ $line-height-type: (
 // Word break (t-wrap-<setting>)
 //
 // Experimental: Helper classes for handling how words are allowed to wrap and break. {{isHelper}}
-// 
+//
 // .t-wrap-break - Allow a word to wrap to the next line mid-word
 //
 // Markup: <p class="t-wrap-break" style="width: 150px;">barbara.gervin.hawkins@house.texas.gov</p>

@@ -4,61 +4,65 @@
 //
 // Styleguide 4.1.1
 //
-h1, h3, h4, h5, h6 {
-    color: $color-wbez-black-dark;
-    font-family: $slab-type;
-    font-weight: 700;
+h1,
+h3,
+h4,
+h5,
+h6 {
+  color: $color-wbez-black-dark;
+  font-family: $slab-type;
+  font-weight: 700;
 }
 
 h2 {
-    color: $color-wbez-black-dark;
-    font-family: $sans-type;
+  color: $color-wbez-black-dark;
+  font-family: $sans-type;
 }
 
 h1 {
+  font-size: 36px;
+  line-height: 42px;
+}
+
+h1 {
+  color: $color-wbez-black-dark;
+  font-size: 26px;
+  line-height: 30px;
+  margin: 5px 0 10px;
+  @media (min-width: $bp-m) {
     font-size: 36px;
     line-height: 42px;
-}
-
-h1 {
-	color: $color-wbez-black-dark;
-	font-size: 26px;
-	line-height: 30px;
-	margin: 5px 0 10px;
-	@media (min-width: $bp-m) {
-		font-size: 36px;
-		line-height: 42px;
-	}
+  }
 }
 
 h2 {
-	font-family: $sans-type;
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 1;
-	margin: 0;
+  font-family: $sans-type;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
 
-	a {
-		color: $legacy-color-brighter-red;
+  a {
+    color: $legacy-color-brighter-red;
 
-		&:hover {
-			text-decoration: underline;
-		}
-	}
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 h3 {
-	color: $color-wbez-black-dark;
-	font-family: $sans-type;
-	font-size: 20px;
-	font-weight: 700;
-	line-height: 22px;
+  color: $color-wbez-black-dark;
+  font-family: $sans-type;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
 }
 
 h4 {
-	font-family: $sans-type;
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 22px;
-	margin-bottom: 20px;
+  font-family: $sans-type;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  margin-bottom: 20px;
 }

@@ -5,12 +5,12 @@
 // Styleguide 8.1.1
 //
 .b-action-bar {
-    background: $color-wbez-gray;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    padding: 10px;
+  background: $color-wbez-gray;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding: 10px;
 
-    .queue_button {
-        @include setIcon($queue-white);
-    }
+  .queue_button {
+    @include setIcon($queue-white);
+  }
 }

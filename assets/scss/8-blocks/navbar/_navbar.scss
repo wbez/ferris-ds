@@ -11,9 +11,11 @@
     display: grid;
     grid-template-columns: min-content 1fr min-content;
     grid-template-rows: auto;
+    /* stylelint-disable */
     grid-template-areas:
       'header header header'
       'left main right';
+    /* stylelint-enable */
     grid-gap: 10px;
     align-items: center;
     justify-content: space-between;
@@ -35,17 +37,17 @@
     display: flex;
 
     &--left {
-        grid-area: left;
+      grid-area: left;
     }
 
     &--right {
-        justify-content: flex-end;
-        grid-area: right;
+      justify-content: flex-end;
+      grid-area: right;
     }
   }
 
   &__main-item {
-      margin: 5px;
+    margin: 5px;
   }
 
   .c-button {
@@ -92,7 +94,7 @@
     font-size: 12px;
     font-weight: 700;
     line-height: 1.5;
-    width: 2ch;
+    width: 0.8rem;
     text-align: center;
     position: absolute;
     top: 0.5rem;

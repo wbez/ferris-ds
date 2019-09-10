@@ -7,6 +7,8 @@ const fs = require('fs-extra');
 const Purgecss = require('purgecss');
 const purgeHtml = require('purgecss-from-html');
 const path = require('path');
+const { parse: parseHtml } = require('node-html-parser');
+
 const styleDocRunner = require('./style-doc');
 const iconDocRunner = require('./icon-doc');
 const htmlRunner = require('./html');
@@ -47,9 +49,15 @@ const clean = async (html, deprecated) => {
   // create a styled preview
   try {
     const htmlStr = await fs.readFileSync(html, 'utf-8');
+    const document = parseHtml(htmlStr);
+    const htmlStyle = parseHtml(`<style>${purgecssParsed}</style>`, {
+      style: true,
+    });
+    document.querySelector('head').appendChild(htmlStyle);
+
     await fs.outputFile(
       `${dir}/${file}-preview.html`,
-      `<style>${purgecssParsed}</style>\n${htmlStr}`
+      `<!DOCTYPE html>\n${document.toString()}`
     );
   } catch (err) {
     throw err;
@@ -108,7 +116,7 @@ module.exports = async () => {
             ...item,
           },
         });
-        
+
         // build raw preview
         componentArr.push({
           in: previewPathInRaw,

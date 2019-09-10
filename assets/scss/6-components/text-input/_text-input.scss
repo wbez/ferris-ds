@@ -9,49 +9,49 @@
 // Styleguide 6.0.1
 
 .c-text-input {
-    color: transparentize(black, .4);
-    position: relative;
+  color: transparentize(black, 0.4);
+  position: relative;
 
-    &__input {
-        height: 100%;
-        
-        &::placeholder {
-            visibility: hidden;
-        }
+  &__input {
+    height: 100%;
+
+    &::placeholder {
+      visibility: hidden;
     }
+  }
 
-    &__input + &__label {
-        color: transparentize(black, .7);
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: calc(.625em - 1px);
-        pointer-events: none;
-        transform-origin: top left;
-        transition: color .25s, transform .25s;
+  &__input + &__label {
+    color: transparentize(black, 0.7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: calc(0.625em - 1px);
+    pointer-events: none;
+    transform-origin: top left;
+    transition: color 0.25s, transform 0.25s;
 
-        display: flex;
-        align-items: center;
+    display: flex;
+    align-items: center;
+  }
+
+  &__input:not(:placeholder-shown) + &__label,
+  &__input:focus + &__label,
+  &__input:active + &__label {
+    color: currentColor;
+    transform: scale(0.8) translateY(calc(-0.5em - 3px - 50%)); // -word - border - box
+    transition: color 0.3s, transform 0.3s;
+  }
+
+  // Invalid
+  &__input.is-invalid {
+    border-color: $color-error;
+
+    &:focus {
+      box-shadow: 0 0 0 0.2rem rgba($color-error, 0.4);
     }
+  }
 
-    &__input:not(:placeholder-shown) + &__label,
-    &__input:focus + &__label,
-    &__input:active + &__label {
-        color: currentColor;
-        transform: scale(.8) translateY(calc(-.5em - 3px - 50%)); // -word - border - box
-        transition: color .3s, transform .3s;
-    }
-
-    // Invalid
-    &__input.is-invalid {
-        border-color: $color-error;
-
-        &:focus {
-            box-shadow: 0 0 0 .2rem rgba($color-error, .4);
-        }
-    }
-
-    &__input.is-invalid + &__label {
-        color: $color-error;
-    }
+  &__input.is-invalid + &__label {
+    color: $color-error;
+  }
 }

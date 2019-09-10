@@ -7,7 +7,7 @@
 // .l-clearfix - **Clears floats** Clear out everything after a float.
 //
 // Markup: 7-layout/display.html
-// 
+//
 //
 // Styleguide 7.0.4
 .l-display-ib {
@@ -20,7 +20,7 @@
 
 .l-clearfix {
   &:after {
-    content: "";
+    content: '';
     display: table;
     clear: both;
   }

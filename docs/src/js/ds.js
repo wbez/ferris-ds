@@ -13,7 +13,7 @@ if (showExperimental) {
   showExperimental.addEventListener('click', function() {
     document.body.classList.toggle('js-ds-show-experimental');
     this.classList.toggle('is-active');
-  })
+  });
 }
 
 var baseFontSize = parseFloat(

@@ -1,7 +1,7 @@
 <script>
-function validateForm() {
+  function validateForm() {
     return false;
-}
+  }
 </script>
 
 <aside class="b-newsletter-signup">
@@ -13,18 +13,22 @@ function validateForm() {
     data-gtm-location="DIGITAL-WBEZ-STORY-INSIDE"
     class="c-mini-form b-newsletter-signup__form"
     onsubmit="validateForm"
-    {# method="post" #}
-    {# action="/newsletter-signup" #}
+    {#
+    method="post"
+    #}
+    {#
+    action="/newsletter-signup"
+    #}
   >
     <div class="c-text-input">
-        <input
+      <input
         class="c-text-input__input"
         type="email"
         name="email"
         placeholder="Your email address"
         required
-        />
-        <label class="c-text-input__label" for="email">Your email address</label>
+      />
+      <label class="c-text-input__label" for="email">Your email address</label>
     </div>
 
     <input

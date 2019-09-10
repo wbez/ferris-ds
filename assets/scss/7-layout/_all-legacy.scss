@@ -15,7 +15,7 @@
 .clearfix,
 .clear {
   &:after {
-    content: "";
+    content: '';
     display: table;
     clear: both;
   }

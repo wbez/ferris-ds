@@ -208,10 +208,10 @@ $social_default: -0px -8204px 608px 413px;
   height: nth($sprite, 4);
 }
 @function sprite-width($sprite) {
-   @return nth($sprite, 3);
+  @return nth($sprite, 3);
 }
 @function sprite-height($sprite) {
-   @return nth($sprite, 4);
+  @return nth($sprite, 4);
 }
 @mixin sprite-position($sprite) {
   $sprite-offset-x: nth($sprite, 1);
@@ -219,7 +219,7 @@ $social_default: -0px -8204px 608px 413px;
   background-position: $sprite-offset-x $sprite-offset-y;
 }
 @mixin sprite($sprite, $display: block) {
-   @include sprite-position($sprite);
+  @include sprite-position($sprite);
   background-repeat: no-repeat;
   overflow: hidden;
   display: $display;
@@ -233,10 +233,18 @@ $social_default: -0px -8204px 608px 413px;
 }
 
 @mixin setIcon($class, $displayType: inline-block) {
-  & > i.wbez-sprite { @include sprite($class, $displayType); text-indent: -9999px; }
+  & > i.wbez-sprite {
+    @include sprite($class, $displayType);
+    text-indent: -9999px;
+  }
 }
 
 @mixin hoverIcon($off, $over, $displayType: inline-block) {
-  & > i.wbez-sprite { @include sprite($off, $displayType); }
-  &:hover i.wbez-sprite { @include sprite($over, $displayType); }
+  & > i.wbez-sprite {
+    @include sprite($off, $displayType);
+  }
+
+  &:hover i.wbez-sprite {
+    @include sprite($over, $displayType);
+  }
 }

@@ -10,7 +10,7 @@
 // Styleguide 6.1.2
 .c-icon {
   display: inline-flex;
-  
+
   svg {
     fill: currentColor;
     height: 1.1em;
@@ -20,7 +20,7 @@
   &--baseline {
     svg {
       position: relative;
-      top: .15em;
+      top: 0.15em;
     }
   }
 
@@ -30,5 +30,4 @@
       fill: $color-wbez-red;
     }
   }
-
 }

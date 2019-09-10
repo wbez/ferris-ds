@@ -8,26 +8,26 @@
 //
 // Styleguide 6.0.1
 .c-calendar-date {
-    @include font-setting;
-    border-radius: $border-radius-b;
-    font-weight: bold;
-    overflow: hidden;
-    text-align: center;
-    width: 60px;
+  @include font-setting;
+  border-radius: $border-radius-b;
+  font-weight: bold;
+  overflow: hidden;
+  text-align: center;
+  width: 60px;
 
-    &__month {
-        background: $color-primary;
-        color: white;
-        text-transform: uppercase;
-    }
+  &__month {
+    background: $color-primary;
+    color: white;
+    text-transform: uppercase;
+  }
 
-    &__day {
-        background: white;
-        font-size: $size-xl;
-    }
+  &__day {
+    background: white;
+    font-size: $size-xl;
+  }
 
-    &--dark &__day {
-        background: $legacy-color-darker-gray;
-        color: white;
-    }
+  &--dark &__day {
+    background: $legacy-color-darker-gray;
+    color: white;
+  }
 }

@@ -25,7 +25,7 @@
 // Styleguide 9.0.1
 //
 
-// Text color:hover (has-text-hover-<color>) 
+// Text color:hover (has-text-hover-<color>)
 //
 // Set the color of text on hover. {{isHelper}}
 //
@@ -52,7 +52,7 @@
 // Styleguide 9.0.2
 //
 
-// Background Color (has-bg-<color>) 
+// Background Color (has-bg-<color>)
 //
 // Set the background-color of an element. {{isHelper}}
 //
@@ -80,23 +80,23 @@
 //
 
 $color-map: (
-  "black": $color-black-pure,
-  "black-off": $color-black-off,
-  "white": $color-white-pure,
-  "white-off": $color-white-off,
-  "teal": $color-teal,
-  "gray": $color-gray-medium,
-  "gray-light": $color-gray-light,
-  "gray-dark": $color-gray-dark,
-  "red": $color-wbez-red,
-  "primary": $color-primary,
-  "red-dark": $color-wbez-red-dark,
-  "primary-dark": $color-primary-dark,
-  "error": $color-error,
-  "success": $color-success,
-  "sponsor": $color-sponsor,
-  "twitter": $color-twitter,
-  "facebook": $color-facebook,
+  'black': $color-black-pure,
+  'black-off': $color-black-off,
+  'white': $color-white-pure,
+  'white-off': $color-white-off,
+  'teal': $color-teal,
+  'gray': $color-gray-medium,
+  'gray-light': $color-gray-light,
+  'gray-dark': $color-gray-dark,
+  'red': $color-wbez-red,
+  'primary': $color-primary,
+  'red-dark': $color-wbez-red-dark,
+  'primary-dark': $color-primary-dark,
+  'error': $color-error,
+  'success': $color-success,
+  'sponsor': $color-sponsor,
+  'twitter': $color-twitter,
+  'facebook': $color-facebook,
 );
 
 @each $color, $value in $color-map {

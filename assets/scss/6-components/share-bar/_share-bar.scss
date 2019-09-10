@@ -3,7 +3,7 @@
 // Social share buttons.
 //
 // .c-share-bar--row - ...
-// .c-share-bar--col - ... 
+// .c-share-bar--col - ...
 //
 // Markup: 6-components/share-bar/share-bar.html
 //
@@ -75,10 +75,14 @@ $share-border-url: #ee9999;
   }
 
   &--row {
-      a { display: inline-block; }
+    a {
+      display: inline-block;
+    }
   }
 
   &--col {
-    a { display: block; }
+    a {
+      display: block;
+    }
   }
 }
