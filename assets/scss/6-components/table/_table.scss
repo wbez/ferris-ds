@@ -45,16 +45,16 @@
     table-layout: fixed;
   }
 
+  &--bordered {
+    tbody > tr {
+      border-top: 1px solid $color-white-off;
+    }
+  }
+
   &--striped {
     tbody > tr:nth-child(odd) {
       // not a standard color
       background-color: #f7f7f7;
-    }
-  }
-
-  &--bordered {
-    tbody > tr {
-      border-top: 1px solid $color-white-off;
     }
   }
 }

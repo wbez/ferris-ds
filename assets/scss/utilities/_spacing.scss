@@ -39,7 +39,7 @@
 // .has-page-padding-at-bp-l - Custom setting for story page lead art
 // .has-section-padding - Top/bottom responsive padding
 //
-// Markup: <div style="border: 2px solid #000; background: #eee" class="{{ className }}"><div style="background: #000;color: #fff;">{{ className }}</div></div>
+// Markup: <div style="border: 2px solid black; background: #eee" class="{{ className }}"><div style="background: black;color: #fff;">{{ className }}</div></div>
 //
 //
 // Styleguide 9.0.1
@@ -62,9 +62,11 @@
 
 .has-page-padding {
   padding: 0 $size-xs;
+
   @include mq($from: bp-m, $until: bp-xl) {
     padding: 0 $size-b;
   }
+
   @include mq($from: bp-xl) {
     padding: 0;
   }
@@ -79,6 +81,7 @@
 .has-section-padding {
   padding-top: $size-xxxl;
   padding-bottom: $size-xxxl;
+  
   @include mq($until: bp-m) {
     padding-top: $size-xl;
     padding-bottom: $size-xl;

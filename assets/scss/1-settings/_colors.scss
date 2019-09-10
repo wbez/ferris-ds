@@ -4,28 +4,28 @@
 //
 // Colors:
 // $color-wbez-black: #252525 - Body copy
-// $color-wbez-black-dark: #000
+// $color-wbez-black-dark: black
 // $color-wbez-red: #ec0101 - Primary branding, aka $color-primary
 // $color-wbez-red-dark: #cf0000 - aka $color-primary-dark
-// $color-wbez-gray: #f5f5f5 - Fields of gray
+// $color-wbez-gray: whitesmoke - Fields of gray
 // $color-wbez-gray-dark: #64686e
-// $color-on-primary: #fff
+// $color-on-primary: white
 //
 // Styleguide 1.1.1
 //
 $color-wbez-black: #252525;
-$color-wbez-black-dark: #000;
+$color-wbez-black-dark: black;
 
 $color-wbez-red: #ec0101;
 $color-primary: $color-wbez-red;
 $color-wbez-red-dark: #cf0000;
 $color-primary-dark: $color-wbez-red-dark;
 
-$color-wbez-gray: #f5f5f5;
+$color-wbez-gray: whitesmoke;
 $color-wbez-gray-dark: #64686e;
 
-$color-on-primary: transparentize(#fff, 0.02);
-$color-on-primary-dark: transparentize(#fff, 0.02);
+$color-on-primary: transparentize(white, 0.02);
+$color-on-primary-dark: transparentize(white, 0.02);
 
 // Swatch set - Branding - Secondary
 //
@@ -57,23 +57,23 @@ $color-lightgray-dark: #b1b1b1;
 // Experimental: In search of that perfect gray.
 //
 // Colors:
-// $color-white-pure: #fff - White
+// $color-white-pure: white - White
 // $color-white-off: #f3f3f3 - Kinda white
 // $color-gray-light: #d0d0d0 - Gray light
 // $color-gray-medium: #797979 - A little bit darker now
 // $color-gray-dark: #4a4a4a - A little bit darker now
 // $color-black-off: #222 - A little bit darker now
-// $color-black-pure: #000 - True black
+// $color-black-pure: black - True black
 //
 // Styleguide 1.1.2
 //
-$color-white-pure: #fff;
+$color-white-pure: white;
 $color-white-off: #f3f3f3;
 $color-gray-light: #d0d0d0;
 $color-gray-medium: #797979;
 $color-gray-dark: #4a4a4a;
 $color-black-off: #222;
-$color-black-pure: #000;
+$color-black-pure: black;
 
 // Swatch set - Social
 //
@@ -95,8 +95,8 @@ $color-twitter: #55acee;
 // Colors:
 // $color-link-underline: $color-primary - Link Underline
 // $color-error: #f51c1c - Error
-// $color-success: #11A06B - Success
-// $color-sponsor: #3366cc - Sponsored content signifier
+// $color-success: #11a06b - Success
+// $color-sponsor: #36c - Sponsored content signifier
 //
 // Styleguide 1.1.4
 //
@@ -104,7 +104,7 @@ $color-link-underline: $color-primary;
 $color-link-hover: #23527c;
 $color-error: #f51c1c;
 $color-success: #11a06b;
-$color-sponsor: #3366cc;
+$color-sponsor: #36c;
 
 // Legacy colors
 $legacy-color-darkest-gray: #141414;
@@ -130,7 +130,7 @@ $legacy-color-persistent-player-gray: #666;
 $legacy-color-middle-grayish-white: #ccc;
 $legacy-color-ghost-white: #e5e5e5;
 $legacy-color-ghost-whitish: #ececec;
-$legacy-color-off-white: #f5f5f5;
+$legacy-color-off-white: whitesmoke;
 $legacy-color-redder: #c90000;
 $legacy-color-red: #cb0000;
 $legacy-color-bright-red: #ec0101;

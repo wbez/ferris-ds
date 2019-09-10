@@ -40,6 +40,12 @@
     color: $legacy-color-gray;
   }
 
+  &__sprite {
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+  }
+
   &--primary {
     background-color: $color-primary;
     border-color: transparent;
@@ -52,12 +58,12 @@
   }
 
   &--dark {
-    background-color: transparentize(#000, 0.4);
+    background-color: transparentize(black, 0.4);
     border-color: transparent;
     color: transparentize(white, 0.05);
 
     @include media-hover {
-      background-color: transparentize(#000, 0.2);
+      background-color: transparentize(black, 0.2);
       color: transparentize(white, 0.05);
     }
   }
@@ -83,12 +89,6 @@
 
   &--l {
     font-size: 1.75rem;
-  }
-
-  &__sprite {
-    vertical-align: middle;
-    position: relative;
-    top: -2px;
   }
 
   &--circle &__sprite {

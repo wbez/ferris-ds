@@ -21,6 +21,7 @@
 
 @each $size-label, $value in $mq-breakpoints {
   $label: str-replace($size-label, 'bp-', '');
+  
   @if $size-label != 'default' {
     .l-container--#{$label} {
       max-width: px-to-rem($value);

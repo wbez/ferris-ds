@@ -16,6 +16,24 @@ $b-site-footer__color-background: #1a1a1a;
     color: $b-site-footer__color-link;
   }
 
+  .c-button {
+    &.shows {
+      @include setIcon($section_shows);
+    }
+
+    &.schedules {
+      @include setIcon($section_schedule);
+    }
+
+    &.topics {
+      @include setIcon($section_topics);
+    }
+
+    &.vocalo {
+      @include setIcon($section_vocalo);
+    }
+  }
+
   &__heading {
     color: transparentize($b-site-footer__color-link, 0.2);
     font-size: 1em;
@@ -162,21 +180,3 @@ $b-site-footer__color-background: #1a1a1a;
 }
 
 @import 'site-footer-social';
-
-.c-button {
-  &.shows {
-    @include setIcon($section_shows);
-  }
-
-  &.schedules {
-    @include setIcon($section_schedule);
-  }
-
-  &.topics {
-    @include setIcon($section_topics);
-  }
-
-  &.vocalo {
-    @include setIcon($section_vocalo);
-  }
-}

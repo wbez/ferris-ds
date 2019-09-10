@@ -14,7 +14,7 @@
 // Styleguide 7.0.4
 .clearfix,
 .clear {
-  &:after {
+  &::after {
     content: '';
     display: table;
     clear: both;
@@ -105,7 +105,7 @@
 //
 // Styleguide 7.0.4
 .hidden {
-  display: none !important;
+  display: none !important; // stylelint-disable-line declaration-no-important
 }
 
 // Accessible Hidden
@@ -130,7 +130,7 @@
 .print {
   &__hide {
     @media print {
-      display: none !important;
+      display: none !important; // stylelint-disable-line declaration-no-important
     }
   }
 }

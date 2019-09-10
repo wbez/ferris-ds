@@ -201,30 +201,36 @@ $spinner: -0px -7834px 118px 118px;
 $member_supported_lg: -0px -7952px 249px 122px;
 $Event_flag_lg: -0px -8074px 71px 130px;
 $social_default: -0px -8204px 608px 413px;
+
 @mixin sprite-width($sprite) {
   width: nth($sprite, 3);
 }
+
 @mixin sprite-height($sprite) {
   height: nth($sprite, 4);
 }
+
 @function sprite-width($sprite) {
   @return nth($sprite, 3);
 }
+
 @function sprite-height($sprite) {
   @return nth($sprite, 4);
 }
+
 @mixin sprite-position($sprite) {
   $sprite-offset-x: nth($sprite, 1);
   $sprite-offset-y: nth($sprite, 2);
   background-position: $sprite-offset-x $sprite-offset-y;
 }
+
 @mixin sprite($sprite, $display: block) {
   @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
   background-repeat: no-repeat;
   overflow: hidden;
   display: $display;
-  @include sprite-width($sprite);
-  @include sprite-height($sprite);
   // background-size: contain;
 }
 

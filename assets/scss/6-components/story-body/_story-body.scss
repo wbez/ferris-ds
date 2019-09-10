@@ -25,6 +25,7 @@ $story-narrow-bp: ($story-narrow / 1rem) + $story-padding-buffer;
     max-width: $story-narrow;
     margin: $size-b auto;
     line-height: 1.4;
+    
     @include mq($until: $story-narrow-bp) {
       padding: 0 $size-xs;
     }
@@ -44,6 +45,14 @@ $story-narrow-bp: ($story-narrow / 1rem) + $story-padding-buffer;
     @include underlined-link-parent;
   }
 
+  > ul {
+    list-style: disc;
+  }
+
+  > ol {
+    list-style: decimal;
+  }
+
   > ul,
   > ol {
     padding: 0 $size-b 0 3.5rem;
@@ -56,21 +65,6 @@ $story-narrow-bp: ($story-narrow / 1rem) + $story-padding-buffer;
     ol {
       margin: $size-b auto;
       padding: 0 $size-b 0 3.5rem;
-    }
-  }
-
-  > ul {
-    list-style: disc;
-
-    ul {
-      list-style: unset;
-    }
-  }
-
-  > ol {
-    list-style: decimal;
-
-    ol {
       list-style: unset;
     }
   }

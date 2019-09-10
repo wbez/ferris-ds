@@ -1,3 +1,5 @@
+// stylelint-disable declaration-no-important
+
 // Hidden (is-hidden-<specifier>)
 //
 // Contain !important flags to override other display rules. {{isHelper}}
@@ -25,6 +27,7 @@
 //
 // Styleguide 9.0.1
 //
+
 .is-hidden,
 .hidden {
   display: none !important;

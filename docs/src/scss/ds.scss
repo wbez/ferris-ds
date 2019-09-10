@@ -120,7 +120,7 @@
 }
 
 .ds-icon {
-  fill: #fff;
+  fill: white;
   position: absolute;
   right: 1em;
   top: 50%;
@@ -154,6 +154,8 @@ strong {
   width: 100%;
   height: 95vh;
 }
+
+// stylelint-disable selector-max-id
 
 .ds-legacy,
 .ds-experimental,
@@ -209,6 +211,8 @@ strong {
   vertical-align: middle;
   margin-left: 0.5em;
 }
+
+// stylelint-enable
 
 // Hide arrow for HTML code snippet
 ::-webkit-details-marker {

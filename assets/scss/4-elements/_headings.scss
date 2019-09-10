@@ -14,21 +14,12 @@ h6 {
   font-weight: 700;
 }
 
-h2 {
-  color: $color-wbez-black-dark;
-  font-family: $sans-type;
-}
-
-h1 {
-  font-size: 36px;
-  line-height: 42px;
-}
-
 h1 {
   color: $color-wbez-black-dark;
   font-size: 26px;
   line-height: 30px;
   margin: 5px 0 10px;
+
   @media (min-width: $bp-m) {
     font-size: 36px;
     line-height: 42px;
@@ -36,6 +27,7 @@ h1 {
 }
 
 h2 {
+  color: $color-wbez-black-dark;
   font-family: $sans-type;
   font-size: 16px;
   font-weight: 700;
@@ -44,7 +36,7 @@ h2 {
 
   a {
     color: $legacy-color-brighter-red;
-
+    
     &:hover {
       text-decoration: underline;
     }

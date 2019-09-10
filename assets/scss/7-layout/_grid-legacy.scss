@@ -385,7 +385,7 @@ $column-slug: col !default;
   .hide_from {
     &--#{$size} {
       @include mq($from: $bp) {
-        display: none !important;
+        display: none !important; // stylelint-disable-line declaration-no-important
       }
     }
   }
@@ -395,21 +395,22 @@ $column-slug: col !default;
   .hide_until {
     &--#{$size} {
       @include mq($until: $bp) {
-        display: none !important;
+        display: none !important; // stylelint-disable-line declaration-no-important
       }
     }
   }
-}
 
-.col_omega {
-  margin-right: 0;
-}
+  .col_omega {
+    margin-right: 0;
+  }
 
-.section_padded {
-  padding-top: $size-xxxl;
-  padding-bottom: $size-xxxl;
-  @include mq($until: bp-m) {
-    padding-top: $size-xl;
-    padding-bottom: $size-xl;
+  .section_padded {
+    padding-top: $size-xxxl;
+    padding-bottom: $size-xxxl;
+    
+    @include mq($until: bp-m) {
+      padding-top: $size-xl;
+      padding-bottom: $size-xl;
+    }
   }
 }
