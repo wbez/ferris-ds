@@ -42,7 +42,6 @@
     "media-feature-range-operator-space-after": "always",
     "media-feature-range-operator-space-before": "always",
     "number-leading-zero": "always",
-    "property-no-vendor-prefix": true,
     "rule-empty-line-before": [
       "always",
       {
@@ -60,7 +59,6 @@
     "selector-max-id": 0,
     "selector-no-vendor-prefix": true,
     "selector-pseudo-element-colon-notation": "double",
-    "string-quotes": "single",
-    "value-no-vendor-prefix": true
+    "string-quotes": "single"
   }
 }
