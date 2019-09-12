@@ -1,0 +1,112 @@
+// Schedule (b-schedule)
+//
+//
+// Markup: 8-blocks/schedule/schedule.html
+//
+// Styleguide 8.1.3
+
+@mixin fade-overflow-outer {
+  &::before,
+  &::after {
+    content: '';
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 25px;
+    z-index: 1;
+  }
+
+  &::before {
+    background-image: linear-gradient(270deg,rgba(255,255,255,0),white 70%);
+    left: 0;
+  }
+
+  &::after {
+    background-image: linear-gradient(90deg,rgba(255,255,255,0),white 70%);
+    right: 0;
+  }
+}
+
+@mixin fade-overflow-inner {
+  &::before,
+  &::after {
+    content: '';
+    background: transparent;
+    border: 1px solid #d8dce3;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 25px;
+    z-index: 2;
+  }
+
+  &::before {
+    left: 0;
+    border-right-width: 0;
+  }
+
+  &::after {
+    right: 0;
+    border-left-width: 0;
+  }
+}
+
+.b-schedule {
+  &__dates {
+    position: relative;
+
+    @include fade-overflow-outer;
+  }
+
+  &__dates-table-outer {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 5px;
+    position: relative;
+    width: 100%;
+  }
+
+  &__dates-table {
+    background: white;
+    border-collapse: collapse;
+    display: table;
+    position: relative;
+    table-layout: fixed;
+
+    @include fade-overflow-inner;
+  }
+
+  &__date {
+    border: 1px solid #d8dce3;
+    color: #595e64;
+    display: table-cell;
+    font-size: 14px;
+    line-height: 1.2rem;
+    min-width: 55px;
+    padding: 5px 20px;
+    position: relative;
+    text-align: center;
+  }
+
+  &__date-active {
+    background: #ec0101;
+    border-top-color: #ec0101;
+    color: white;
+
+    &::after {
+      content: '';
+      background: #ec0101;
+      border-radius: $border-radius-b;
+      height: 10px;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  &__shows {
+    display: none;
+  }
+}
