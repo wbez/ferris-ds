@@ -5,25 +5,30 @@
 //
 // Styleguide 8.1.3
 
+$b-schedule-color-background: white;
+// $b-schedule-color-background: rgba(255, 0, 0, .1);
+$b-schedule-color-border: #d8dce3;
+// $b-schedule-color-border: rgba(255, 0, 0, .5);
+
 @mixin fade-overflow-outer {
   &::before,
   &::after {
     content: '';
-    height: 100%;
     pointer-events: none;
     position: absolute;
     top: 0;
-    width: 25px;
+    bottom: 5px;
+    width: 15px;
     z-index: 1;
   }
 
   &::before {
-    background-image: linear-gradient(270deg,rgba(255,255,255,0),white 70%);
+    background-image: linear-gradient(270deg,rgba(255,255,255,0),$b-schedule-color-background 70%);
     left: 0;
   }
 
   &::after {
-    background-image: linear-gradient(90deg,rgba(255,255,255,0),white 70%);
+    background-image: linear-gradient(90deg,rgba(255,255,255,0),$b-schedule-color-background 70%);
     right: 0;
   }
 }
@@ -33,11 +38,12 @@
   &::after {
     content: '';
     background: transparent;
-    border: 1px solid #d8dce3;
+    border: 1px solid $b-schedule-color-border;
+    border-bottom-width: 0;
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 25px;
+    width: 15px;
     z-index: 2;
   }
 
@@ -53,6 +59,20 @@
 }
 
 .b-schedule {
+  position: relative;
+
+  // outer border for schedule
+  &::before {
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid $b-schedule-color-border;
+    z-index: 2;
+  }
+
+  // DATES //
   &__dates {
     position: relative;
 
@@ -68,35 +88,35 @@
   }
 
   &__dates-table {
-    background: white;
+    background: $b-schedule-color-background;
     border-collapse: collapse;
-    display: table;
     position: relative;
     table-layout: fixed;
 
-    @include fade-overflow-inner;
+    // @include fade-overflow-inner;
   }
 
   &__date {
-    border: 1px solid #d8dce3;
+    border: 1px solid $b-schedule-color-border;
+    border-bottom: 0;
     color: #595e64;
     display: table-cell;
     font-size: 14px;
     line-height: 1.2rem;
-    min-width: 55px;
-    padding: 5px 20px;
+    min-width: 60px;
+    padding: 5px 15px;
     position: relative;
     text-align: center;
   }
 
   &__date-active {
-    background: #ec0101;
-    border-top-color: #ec0101;
-    color: white;
+    background: $color-primary;
+    border-top-color: $color-primary;
+    color: $color-on-primary;
 
     &::after {
       content: '';
-      background: #ec0101;
+      background: $color-primary;
       border-radius: $border-radius-b;
       height: 10px;
       position: absolute;
@@ -106,7 +126,61 @@
     }
   }
 
+  // SHOWS //
   &__shows {
+    background: $b-schedule-color-background;
+    border-top: 1px solid $b-schedule-color-border;
+    margin-top: -5px;
+    max-height: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  &__show-summary {
+    border: 1px solid $b-schedule-color-border;
+    border-bottom: 0;
+    font-size: $size-s;
+    padding: 5px 10px;
+
+    display: grid;
+    grid-template-columns: 39px;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  &__show:first-child &__show-summary {
+    border-top: 0;
+  }
+
+  &__show-time {
+    font-size: $size-xs;
+    font-weight: 700;
+    letter-spacing: $font-letter-spacing-s;
+    text-align: center;
+
+    > span {
+      clear: both;
+      display: block;
+      font-size: $size-xxxs;
+      font-weight: 400;
+      opacity: 0.8;
+    }
+  }
+  
+  &__show-divider {
+    display: block;
+    height: 100%;
+    width: 1px;
+    margin: 0 10px;
+    border-left: 1px solid $b-schedule-color-border;
+  }
+
+  &__show-title {
+    font-size: inherit;
+  }
+
+  &__show-detail {
     display: none;
   }
 }
