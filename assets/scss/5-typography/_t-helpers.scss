@@ -38,11 +38,11 @@
   text-transform: uppercase;
 
   &--wide {
-    letter-spacing: $font-letter-spacing;
+    letter-spacing: $font-letter-spacing-b;
   }
 
   &--extra-wide {
-    letter-spacing: $font-letter-spacing-lg;
+    letter-spacing: $font-letter-spacing-l;
   }
 }
 

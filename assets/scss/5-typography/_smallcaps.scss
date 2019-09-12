@@ -9,14 +9,14 @@
 // Styleguide 5.3.4
 .t-smallcaps {
   font-weight: 700;
-  letter-spacing: $font-letter-spacing;
+  letter-spacing: $font-letter-spacing-b;
   padding: 0.2em 0;
   text-transform: uppercase;
 
   // Byline
   &--light {
     font-weight: 400;
-    letter-spacing: $font-letter-spacing-lg;
+    letter-spacing: $font-letter-spacing-l;
   }
 
   &--section {
