@@ -7,19 +7,38 @@
 //
 // Styleguide 2.1.1
 @mixin font-setting($type: 'primary') {
-  @if $type == 'secondary' {
-    font-family: $font-family-secondary-fallback;
-
-    .fonts-loaded & {
-      font-family: $font-family-secondary;
-    }
-  } @else {
+  @if $type == 'primary' {
     font-family: $font-family-primary-fallback;
 
     .fonts-loaded & {
       font-family: $font-family-primary;
     }
   }
+
+  @if $type == 'secondary' {
+    font-family: $font-family-secondary-fallback;
+
+    .fonts-loaded & {
+      font-family: $font-family-secondary;
+    }
+  }
+  
+  @if $type == 'sans' {
+    font-family: $font-family-primary-fallback;
+
+    .fonts-loaded & {
+      font-family: $font-family-primary;
+    }
+  }
+  
+  @if $type == 'serif' {
+    font-family: $font-family-secondary-fallback;
+
+    .fonts-loaded & {
+      font-family: $font-family-secondary;
+    }
+  }
+
 }
 
 // @mixin underlined-link
