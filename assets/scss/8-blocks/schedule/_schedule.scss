@@ -83,7 +83,7 @@ $b-schedule-dates-bottom-padding: 10px;
 
   &__dates-table-outer {
     overflow-x: auto;
-    overflow-y: hidden;
+    overflow-y: visible;
     padding-bottom: $b-schedule-dates-bottom-padding;
     position: relative;
     width: 100%;
@@ -105,15 +105,37 @@ $b-schedule-dates-bottom-padding: 10px;
     font-size: 14px;
     line-height: 1.2rem;
     min-width: 60px;
-    padding: 5px 15px;
+    padding: 0;
     position: relative;
     text-align: center;
+  }
+
+  &__date > a {
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 15px;
+    position: relative;
+    align-items: center;
+    text-decoration: underline;
+    text-decoration-color: transparentize(#595e64, 1);
+    transition: text-decoration-color 0.15s;
+
+    &:hover,
+    &:focus {
+      text-decoration-color: transparentize(#595e64, 0);
+      //   background-color: whitesmoke;
+      //   color: $color-primary;
+      //   transition: background-color 0.2s, color 0.2s;
+      //   z-index: 3;
+    }
   }
 
   &__date-active {
     background: $color-primary;
     border-top-color: $color-primary;
     color: $color-on-primary;
+    padding: 5px 15px;
     z-index: 3;
 
     &::before {
