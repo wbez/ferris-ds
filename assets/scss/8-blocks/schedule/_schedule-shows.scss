@@ -29,7 +29,7 @@
     line-height: $line-height-s;
   }
 
-  i.wbez-sprite {
+  i.wbez-sprite:not(.c-button__sprite) {
     float: right;
     margin-right: 0.5rem;
     margin-left: 0.5rem;
