@@ -30,6 +30,10 @@ const mappedIcons = [
     in: './assets/icons/base/',
     out: `${buildDir}sprites/base.html`,
   },
+  {
+    in: './assets/icons/wbez/',
+    out: `${buildDir}sprites/wbez.html`,
+  },
 ];
 
 const docsIcons = ['./assets/icons/'];

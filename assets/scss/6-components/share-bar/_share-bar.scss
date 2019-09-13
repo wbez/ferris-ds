@@ -9,84 +9,14 @@
 //
 // Styleguide 6.0.1
 
-$share-border-mail: #e99;
-$share-border-facebook: #9fb2da;
-$share-border-twitter: #92d2ea;
-$share-border-url: #e99;
-
 .c-share-bar {
-  a {
-    background-repeat: no-repeat;
-    border: 2px solid $legacy-color-darker-middle-grayish-white;
-    border-radius: 50%;
-    display: inline-block;
-    height: 38px;
-    width: 38px;
-    margin: 5px;
-    text-align: center;
-
-    &.facebook {
-      @include hoverIcon($social_facebook, $social_facebook_hover);
-
-      i.wbez-sprite {
-        margin-top: 5px;
-      }
-
-      &:hover,
-      &:focus {
-        border-color: $share-border-facebook;
-      }
-    }
-
-    &.mail {
-      @include hoverIcon($social_mail, $social_mail_hover);
-
-      i.wbez-sprite {
-        margin-top: 5px;
-      }
-
-      &:hover,
-      &:focus {
-        border-color: $share-border-mail;
-      }
-    }
-
-    &.twitter {
-      @include hoverIcon($social_twitter, $social_twitter_hover);
-
-      i.wbez-sprite {
-        margin-top: 6px;
-      }
-
-      &:hover,
-      &:focus {
-        border-color: $share-border-twitter;
-      }
-    }
-
-    &.url {
-      @include hoverIcon($social_url, $social_url_hover);
-
-      i.wbez-sprite {
-        margin-top: 6px;
-      }
-
-      &:hover,
-      &:focus {
-        border-color: $share-border-url;
-      }
-    }
-  }
-
-  &--row {
-    a {
-      display: inline-block;
-    }
-  }
-
   &--col {
-    a {
-      display: block;
+    overflow: hidden;
+
+    > .c-button {
+      float: left;
+      clear: both;
+      margin-bottom: 0.2rem;
     }
   }
 }

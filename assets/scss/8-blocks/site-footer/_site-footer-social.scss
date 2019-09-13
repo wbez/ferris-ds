@@ -1,63 +1,10 @@
-$twitter_bg: #00aced;
-$facebook_bg: #3b5998;
-$instagram_bg: #517fa4;
-$youtube_bg: #bb0000;
-$flickr_bg: white;
-$tumblr_bg: #33475b;
-$feedburner_bg: #1371bf;
-
 .b-site-footer__social-icon {
-  > .twitter {
-    @include hoverIcon($social_twitter_dark, $social_twitter_lite);
+  > .c-button {
+    color: $color-black-off;
 
     &:hover,
     &:focus {
-      background-color: $twitter_bg;
-    }
-  }
-
-  > .facebook {
-    @include hoverIcon($social_facebook_dark, $social_facebook_lite);
-
-    &:hover,
-    &:focus {
-      background-color: $facebook_bg;
-    }
-  }
-
-  > .instagram {
-    @include hoverIcon($social_instagram_dark, $social_instagram_lite);
-
-    &:hover,
-    &:focus {
-      background-color: $instagram_bg;
-    }
-  }
-
-  > .youtube {
-    @include hoverIcon($social_youtube_dark, $social_youtube_lite);
-
-    &:hover,
-    &:focus {
-      background-color: $youtube_bg;
-    }
-  }
-
-  > .tumblr {
-    @include hoverIcon($social_tumblr_dark, $social_tumblr_lite);
-
-    &:hover,
-    &:focus {
-      background-color: $tumblr_bg;
-    }
-  }
-
-  > .feedburner {
-    @include hoverIcon($social_feedburner_dark, $social_feedburner_lite);
-
-    &:hover,
-    &:focus {
-      background-color: $feedburner_bg;
+      color: $color-white-pure;
     }
   }
 

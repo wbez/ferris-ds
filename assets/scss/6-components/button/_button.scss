@@ -9,6 +9,7 @@
 // .c-button--s - Small button
 // .c-button--l - Large button
 // .c-button--no-border - Sets border-color to transparent
+// .c-button--outline - Hover effect of outline
 //
 // Markup: 6-components/button/button.html
 //
@@ -101,6 +102,28 @@
 
   &--no-border {
     border-color: transparent;
+  }
+
+  &__inner {
+    color: $color-white-pure;
+  }
+
+  &--outline {
+    border: 2px solid currentColor;
+    transition: background-color 0.3s;
+
+    @media (hover: hover) {
+      &:hover,
+      &:active {
+        background-color: transparent;
+        color: currentColor;
+        opacity: 1;
+
+        .c-button__inner {
+          color: currentColor;
+        }
+      }
+    }
   }
 }
 

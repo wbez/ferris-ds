@@ -93,11 +93,23 @@ $color-map: (
   'sponsor': $color-sponsor,
   'twitter': $color-twitter,
   'facebook': $color-facebook,
+  'instagram': $color-instagram,
+  'youtube': $color-youtube,
+  'feedburner': $color-feedburner
 );
 
 @each $color, $value in $color-map {
   .has-bg-#{$color} {
     background-color: $value;
+  }
+}
+
+@each $color, $value in $color-map {
+  .has-bg-hover-#{$color} {
+    &:hover,
+    &:focus {
+      background-color: $value;
+    }
   }
 }
 
