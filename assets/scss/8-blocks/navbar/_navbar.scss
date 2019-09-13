@@ -64,28 +64,8 @@
   }
 }
 
-.donate_button {
-  @include setIcon($nav-heart);
-
-  i.wbez-sprite {
-    margin-top: 3px;
-    margin-bottom: 3px;
-  }
-}
-
-.connect_button {
-  @include setIcon($nav_connect);
-}
-
 .queue_nav_button {
-  @include setIcon($section_queue);
-
   position: relative;
-
-  i.wbez-sprite {
-    margin-top: 8px;
-    margin-bottom: 8px;
-  }
 
   .queue_count {
     background: transparentize(#64686e, 0.2);
@@ -98,18 +78,5 @@
     position: absolute;
     top: 0.5rem;
     right: 1rem;
-  }
-}
-
-.shows_button {
-  @include setIcon($section_shows);
-}
-
-.menu_button {
-  @include setIcon($nav_hamburger);
-
-  i.wbez-sprite {
-    margin-top: 8px;
-    margin-bottom: 8px;
   }
 }

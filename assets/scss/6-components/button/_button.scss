@@ -15,7 +15,7 @@
 //
 // Styleguide 6.1.1
 .c-button {
-  $button-height: 8em / 3;
+  $button-height: 7em / 3;
 
   @include font-setting('primary');
   background-color: $legacy-color-ghost-white;
@@ -125,10 +125,6 @@
       }
     }
   }
-}
-
-.play_button {
-  @include setIcon($play_content);
 }
 
 .queue_button {

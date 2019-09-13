@@ -17,10 +17,6 @@ $b-site-footer__color-background: #1a1a1a;
   }
 
   .c-button {
-    &.shows {
-      @include setIcon($section_shows);
-    }
-
     &.schedules {
       @include setIcon($section_schedule);
     }
