@@ -29,6 +29,7 @@
   &__show-summary {
     $border-width: 3px;
     $border-hover-color: $b-schedule-color-accent;
+    list-style: none;
     transition: background-color 0.2s, color 0.2s;
 
     @include setIcon($schedule_arrow_open);
@@ -44,8 +45,9 @@
       pointer-events: none;
       height: 100%;
       width: 100%;
-      top: 0;
+      bottom: -1px;
       left: 0;
+      z-index: 2;
 
       transition: box-shadow 0.2s;
     }
