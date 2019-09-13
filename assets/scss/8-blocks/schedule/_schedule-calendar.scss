@@ -37,6 +37,12 @@
 
     // Create a fade out effect for overflowing elements at the beginning and end of the visible section.
     @include fade-overflow;
+
+    @include mq($from: bp-s) {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
   }
 
   &__dates-table-outer {
@@ -49,7 +55,7 @@
   }
 
   &__dates-table {
-    background: $b-schedule-color-background;
+    background: transparentize($b-schedule-color-background, 0.02);
     border-collapse: collapse;
     display: table;
     table-layout: fixed;
@@ -76,6 +82,7 @@
     position: absolute;
     left: 50%;
     margin-left: -50vw;
+    top: 0;
     width: 100vw;
   }
 

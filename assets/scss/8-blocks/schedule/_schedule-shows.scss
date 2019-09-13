@@ -2,9 +2,6 @@
   &__shows {
     background: $b-schedule-color-background;
     display: block;
-    max-height: 400px;
-    overflow-x: hidden;
-    overflow-y: auto;
   }
 
   &__show-top {
@@ -36,7 +33,7 @@
     float: right;
     margin-right: 0.5rem;
     margin-left: 0.5rem;
-    margin-top: 1.8rem;
+    margin-top: 1.6rem;
   }
 
   &__show-description {

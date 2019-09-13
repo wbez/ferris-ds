@@ -20,6 +20,7 @@ $b-schedule-dates-bottom-padding: 10px;
   border-top: 0; // top-border comes from date cells
   color: $b-schedule-color-text;
 
+  // hide components until they're imported
   &__calendar {
     display: none;
   }
@@ -27,6 +28,8 @@ $b-schedule-dates-bottom-padding: 10px;
   &__shows {
     display: none;
   }
+
+
 }
 
 @import 'schedule-calendar';
