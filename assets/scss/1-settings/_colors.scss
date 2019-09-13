@@ -101,7 +101,8 @@ $color-twitter: #55acee;
 // Styleguide 1.1.4
 //
 $color-link-underline: $color-primary;
-$color-link-hover: #23527c;
+// $color-link-hover: #23527c;
+$color-link-hover: $color-primary;
 $color-error: #f51c1c;
 $color-success: #11a06b;
 $color-sponsor: #36c;

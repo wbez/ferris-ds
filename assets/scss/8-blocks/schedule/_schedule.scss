@@ -6,276 +6,29 @@
 // Styleguide 8.1.3
 
 $b-schedule-color-background: white;
-// $b-schedule-color-background: rgba(255, 0, 0, .1);
 $b-schedule-color-border: #d8dce3;
-// $b-schedule-color-border: rgba(255, 0, 0, .5);
+$b-schedule-color-text: $color-black-off;
+$b-schedule-color-alt: $legacy-color-gray;
+$b-schedule-color-accent: $color-primary;
 $b-schedule-dates-bottom-padding: 10px;
-
-@mixin fade-overflow-outer {
-  &::before,
-  &::after {
-    content: '';
-    pointer-events: none;
-    position: absolute;
-    top: 1px;
-    bottom: calc(#{$b-schedule-dates-bottom-padding} + 1px);
-    width: 15px;
-    z-index: 1;
-  }
-
-  &::before {
-    background-image: linear-gradient(270deg,rgba(255,255,255,0),$b-schedule-color-background 70%);
-    left: 0;
-  }
-
-  &::after {
-    background-image: linear-gradient(90deg,rgba(255,255,255,0),$b-schedule-color-background 70%);
-    right: 0;
-  }
-}
-
-@mixin fade-overflow-inner {
-  &::before,
-  &::after {
-    content: '';
-    background: transparent;
-    border: 1px solid $b-schedule-color-border;
-    border-bottom-width: 0;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 15px;
-    z-index: 2;
-  }
-
-  &::before {
-    left: 0;
-    border-right-width: 0;
-  }
-
-  &::after {
-    right: 0;
-    border-left-width: 0;
-  }
-}
 
 .b-schedule {
   position: relative;
 
-  // outer border for schedule
-  &::before {
-    content: '';
-    pointer-events: none;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 1px solid $b-schedule-color-border;
-    border-top: 0;
-    z-index: 2;
-  }
+  background: $b-schedule-color-background;
+  border: 1px solid $b-schedule-color-border;
+  border-top: 0; // top-border comes from date cells
+  color: $b-schedule-color-text;
 
-  // DATES //
-  &__dates {
-    position: relative;
-
-    @include fade-overflow-outer;
-  }
-
-  &__dates-table-outer {
-    overflow-x: auto;
-    overflow-y: visible;
-    padding-bottom: $b-schedule-dates-bottom-padding;
-    position: relative;
-    width: 100%;
-  }
-
-  &__dates-table {
-    background: $b-schedule-color-background;
-    border-collapse: collapse;
-    position: relative;
-    table-layout: fixed;
-
-    // @include fade-overflow-inner;
-  }
-
-  &__date {
-    border: 1px solid $b-schedule-color-border;
-    color: #595e64;
-    display: table-cell;
-    font-size: 14px;
-    line-height: 1.2rem;
-    min-width: 60px;
-    padding: 0;
-    position: relative;
-    text-align: center;
-  }
-
-  &__date > a {
-    color: inherit;
-    display: flex;
-    flex-direction: column;
-    padding: 5px 15px;
-    position: relative;
-    align-items: center;
-    text-decoration: underline;
-    text-decoration-color: transparentize(#595e64, 1);
-    transition: text-decoration-color 0.15s;
-
-    &:hover,
-    &:focus {
-      text-decoration-color: transparentize(#595e64, 0);
-      //   background-color: whitesmoke;
-      //   color: $color-primary;
-      //   transition: background-color 0.2s, color 0.2s;
-      //   z-index: 3;
-    }
-  }
-
-  &__date-active {
-    background: $color-primary;
-    border-top-color: $color-primary;
-    color: $color-on-primary;
-    padding: 5px 15px;
-    z-index: 3;
-
-    &::before {
-      content: '';
-      background: $color-primary;
-      height: 15px;
-      position: absolute;
-      top: -10px;
-      left: 0;
-      width: 100%;
-    }
-
-    &::after {
-      content: '';
-      background: $color-primary;
-      border-radius: 0 0 $border-radius-b $border-radius-b;
-      box-shadow: 0 2px 2px 0 $color-box-shadow-default;
-      height: 6px;
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-      width: 100%;
-    }
-  }
-
-  // SHOWS //
-  &__shows {
-    background: $b-schedule-color-background;
-    box-shadow: inset 0 3px 3px -3px $color-box-shadow-default;
-    margin-top: -$b-schedule-dates-bottom-padding;
-    max-height: 400px;
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-
-  &__show-summary {
-    border: 1px solid $b-schedule-color-border;
-    border-bottom: 0;
-    font-size: $size-b;
-    padding: 5px 10px;
-    position: relative;
-
-    display: grid;
-    grid-template-columns: 3rem 33px 1fr ;
-    grid-auto-flow: column;
-    justify-content: start;
-    align-items: center;
-
-    @include setIcon($schedule_arrow_open);
-  }
-
-  [open] &__show-summary {
-    @include setIcon($schedule_arrow_close);
-  }
-
-  i.wbez-sprite {
-    margin-right: 1rem;
-    margin-left: 1rem;
-  }
-
-  &__live-tag {
-    background: $color-primary;
-    border-radius: $border-radius-b;
-    color: $color-on-primary;
-    font-size: $size-xxs;
-    padding: 5px;
-    line-height: 1;
-    text-align: center;
-    text-transform: uppercase;
-
-    > span {
-      font-size: $size-s;
-      letter-spacing: $font-letter-spacing-l;
-    }
-  }
-
-  &__show-time {
-    font-size: $size-s;
-    font-weight: 700;
-    letter-spacing: $font-letter-spacing-s;
-    text-align: center;
-
-    > span {
-      clear: both;
-      display: block;
-      font-size: $size-xxs;
-      font-weight: 400;
-      opacity: 0.8;
-    }
-  }
-
-  &__live-tag ~ &__show-time {
-    visibility: hidden;
-    width: 0;
-  }
-  
-  &__show-divider {
-    display: block;
-    height: 100%;
-    width: 1px;
-    margin: 0 10px;
-    border-left: 1px solid $b-schedule-color-border;
-  }
-
-  &__live-tag ~ &__show-divider {
+  &__calendar {
     display: none;
   }
 
-  &__show-title {
-    font-size: inherit;
-    line-height: 1.3;
-  }
-
-  &__live-tag ~ &__show-title {
-    color: $color-primary;
-  }
-
-  &__show-description {
-    font-size: $size-b;
-    padding: 5px 10px 10px;
-
-    p {
-      margin-bottom: 10px;
-    }
-
-    p:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  &__show-summary:hover {
-    cursor: pointer;
-  }
-
-  &__show-summary:hover > &__show-title,
-  &__show-summary:focus > &__show-title {
-    text-decoration: underline;
-  }
-
-  &__show:first-child &__show-summary {
-    border-top: 0;
+  &__shows {
+    display: none;
   }
 }
+
+@import 'schedule-calendar';
+@import 'schedule-shows';
+@import 'schedule-details';

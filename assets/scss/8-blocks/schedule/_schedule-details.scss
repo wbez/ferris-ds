@@ -1,0 +1,75 @@
+// animate unveiling of details
+@keyframes b-schedule-invisiblyGrowFontSize {
+  0% {
+    font-size: 0;
+    opacity: 0;
+  }
+
+  100% {
+    font-size: 1em;
+    opacity: 0;
+  }
+}
+
+@keyframes b-schedule-fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.b-schedule {
+  &__show-details {
+    position: relative;
+  }
+
+  &__show-summary {
+    $border-width: 3px;
+    $border-hover-color: $b-schedule-color-accent;
+    transition: background-color 0.2s, color 0.2s;
+
+    @include setIcon($schedule_arrow_open);
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    // create underline pseudo-element... this way we're styling the details on summary:hover/:focus
+    &::after {
+      content: '';
+      position: absolute;
+      pointer-events: none;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+
+      transition: box-shadow 0.2s;
+    }
+
+    &:hover,
+    &:focus {
+      color: $border-hover-color;
+      cursor: pointer;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      box-shadow: inset 0 #{-$border-width} 0 0 $border-hover-color;
+    }
+  }
+
+  &__show-details[open] &__show-summary {
+    @include setIcon($schedule_arrow_close);
+  }
+
+  &__show-details[open] &__show-summary ~ * {
+    animation-name: b-schedule-invisiblyGrowFontSize, b-schedule-fadeIn;
+    animation-duration: 300ms, 250ms;
+    animation-delay: 0ms, 300ms;
+    transition-timing-function: ease-in-out, ease-out;
+  }
+}

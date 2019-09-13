@@ -1,0 +1,22 @@
+// Prose (t-prose)
+//
+// Apply this class to add element styles for user-generated markup.
+//
+// Markup: 5-typography/prose.html
+//
+//
+// Styleguide 5.3.1
+.t-prose {
+  p:not(:last-child) {
+    margin-bottom: $size-s;
+  }
+
+  // Handle extra <br>'s from dirty content
+  br + br {
+    display: none;
+  }
+
+  br:first-child:last-child {
+    display: none;
+  }
+}
