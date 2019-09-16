@@ -32,8 +32,6 @@
     list-style: none;
     transition: background-color 0.2s, color 0.2s;
 
-    @include setIcon($schedule_arrow_open);
-
     &::-webkit-details-marker {
       display: none;
     }
@@ -64,8 +62,8 @@
     }
   }
 
-  &__show-details[open] &__show-summary {
-    @include setIcon($schedule_arrow_close);
+  &__show-details[open] &__chevron {
+    transform: rotate(180deg);
   }
 
   &__show-details[open] &__show-summary ~ * {
@@ -73,12 +71,5 @@
     animation-duration: 250ms, 150ms;
     animation-delay: 0ms, 250ms;
     animation-timing-function: ease-in-out, ease-out;
-  }
-
-  .b-action-bar {
-    i.wbez-sprite {
-      margin-top: 4px;
-      margin-right: 0.5rem;
-    }
   }
 }

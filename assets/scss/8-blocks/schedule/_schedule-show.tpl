@@ -11,7 +11,9 @@
         <span class="b-schedule__live-tag t-smallcaps">Live on air</span>
         {% endif %}
       </time>
-      <i class="wbez-sprite"></i>
+       <i class="b-schedule__chevron c-icon c-icon__inner t-size-b"
+        ><svg aria-hidden="true"><use xlink:href="#chevron-down"></use></svg
+      ></i>
       <h2 class="b-schedule__show-title t-headline">{{ title }}</h2>
     </summary>
 
