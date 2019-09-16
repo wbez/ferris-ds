@@ -1,101 +1,101 @@
+{% import "./_schedule-date.tpl" as scheduleDate with context %}
+
 <div class="b-schedule l-container--l">
   <div class="b-schedule__calendar">
     <div class="b-schedule__dates-table-outer">
       <table class="b-schedule__dates-table">
         <tbody class="b-schedule__dates-tbody">
           <tr class="b-schedule__dates-tr">
-            <td class="b-schedule__dates-td b-schedule__date">
-              <a href="#">
-                <span class="b-schedule__date-title t-smallcaps">Thu</span>
-                <span class="b-schedule__date-datestamp">9/5</span>
-              </a>
-            </td>
-            <td class="b-schedule__date">
-              <a href="#">
-                <span class="b-schedule__date-title t-smallcaps">Fri</span>
-                <span class="b-schedule__date-datestamp">9/6</span>
-              </a>
-            </td>
-            <td class="b-schedule__date">
-              <a href="#">
-                <span class="b-schedule__date-title t-smallcaps">Sat</span>
-                <span class="b-schedule__date-datestamp">9/7</span>
-              </a>
-            </td>
-            <td class="b-schedule__date">
-              <a href="#">
-                <span class="b-schedule__date-title t-smallcaps">Sun</span>
-                <span class="b-schedule__date-datestamp">9/8</span>
-              </a>
-            </td>
-            <td class="b-schedule__date">
-              <a href="#">
-                <span class="b-schedule__date-title t-smallcaps">Mon</span>
-                <span class="b-schedule__date-datestamp">9/9</span>
-              </a>
-            </td>
-            <td class="b-schedule__date">
-              <a href="#">
-                <span class="b-schedule__date-anchor" id="d-2019-09-10"></span>
-                <span class="b-schedule__date-title t-smallcaps">Tue</span>
-                <span class="b-schedule__date-datestamp">9/10</span>
-              </a>
-            </td>
-            <td class="b-schedule__date">
-              <a href="#">
-                <span class="b-schedule__date-anchor" id="d-2019-09-11"></span>
-                <span class="b-schedule__date-title t-smallcaps">Wed</span>
-                <span class="b-schedule__date-datestamp">9/11</span>
-              </a>
-            </td>
-            <td class="b-schedule__date b-schedule__date-active">
-              <span class="b-schedule__date-anchor" id="today"></span>
-              <span class="b-schedule__date-anchor" id="d-2019-09-12"></span>
-              <div class="b-schedule__date-title t-smallcaps">TODAY</div>
-              <div class="b-schedule__date-datestamp">9/12</div>
-            </td>
-            <td class="b-schedule__date">
-              <a href="#">
-                <span class="b-schedule__date-title t-smallcaps">Fri</span>
-                <span class="b-schedule__date-datestamp">9/13</span>
-              </a>
-            </td>
-            <td class="b-schedule__date">
-              <a href="#">
-                <span class="b-schedule__date-title t-smallcaps">Sat</span>
-                <span class="b-schedule__date-datestamp">9/14</span>
-              </a>
-            </td>
-            <td class="b-schedule__date">
-              <a href="#">
-                <span class="b-schedule__date-title t-smallcaps">Sun</span>
-                <span class="b-schedule__date-datestamp">9/15</span>
-              </a>
-            </td>
-            <td class="b-schedule__date">
-              <a href="#">
-                <span class="b-schedule__date-title t-smallcaps">Mon</span>
-                <span class="b-schedule__date-datestamp">9/16</span>
-              </a>
-            </td>
-            <td class="b-schedule__date">
-              <a href="#">
-                <span class="b-schedule__date-title t-smallcaps">Tue</span>
-                <span class="b-schedule__date-datestamp">9/17</span>
-              </a>
-            </td>
-            <td class="b-schedule__date">
-              <a href="#">
-                <span class="b-schedule__date-title t-smallcaps">Wed</span>
-                <span class="b-schedule__date-datestamp">9/18</span>
-              </a>
-            </td>
-            <td class="b-schedule__date">
-              <a href="#">
-                <span class="b-schedule__date-title t-smallcaps">Thu</span>
-                <span class="b-schedule__date-datestamp">9/19</span>
-              </a>
-            </td>
+            {{ scheduleDate.render(
+              anchors=['d-2019-09-05'],
+              name='Thu',
+              datestamp='9/5',
+              isActive=false
+            ) }}
+            {{ scheduleDate.render(
+              anchors=['d-2019-09-06'],
+              name='Fri',
+              datestamp='9/6',
+              isActive=false
+            ) }}
+            {{ scheduleDate.render(
+              anchors=['d-2019-09-07'],
+              name='Sat',
+              datestamp='9/7',
+              isActive=false
+            ) }}
+            {{ scheduleDate.render(
+              anchors=['d-2019-09-08'],
+              name='Sun',
+              datestamp='9/8',
+              isActive=false
+            ) }}
+            {{ scheduleDate.render(
+              anchors=['d-2019-09-09'],
+              name='Mon',
+              datestamp='9/9',
+              isActive=false
+            ) }}
+            {{ scheduleDate.render(
+              anchors=['d-2019-09-10'],
+              name='Tue',
+              datestamp='9/10',
+              isActive=false
+            ) }}
+            {{ scheduleDate.render(
+              anchors=['d-2019-09-11'],
+              name='Wed',
+              datestamp='9/11',
+              isActive=false
+            ) }}
+            {{ scheduleDate.render(
+              anchors=['d-2019-09-12', 'today'],
+              name='TODAY',
+              datestamp='9/12',
+              isActive=true
+            ) }}
+            {{ scheduleDate.render(
+              anchors=['d-2019-09-13'],
+              name='Fri',
+              datestamp='9/13',
+              isActive=false
+            ) }}
+            {{ scheduleDate.render(
+              anchors=['d-2019-09-14'],
+              name='Sat',
+              datestamp='9/14',
+              isActive=false
+            ) }}
+            {{ scheduleDate.render(
+              anchors=['d-2019-09-15'],
+              name='Sun',
+              datestamp='9/15',
+              isActive=false
+            ) }}
+            {{ scheduleDate.render(
+              anchors=['d-2019-09-16'],
+              name='Mon',
+              datestamp='9/16',
+              isActive=false
+            ) }}
+            {{ scheduleDate.render(
+              anchors=['d-2019-09-17'],
+              name='Tue',
+              datestamp='9/17',
+              isActive=false
+            ) }}
+            {{ scheduleDate.render(
+              anchors=['d-2019-09-18'],
+              name='Wed',
+              datestamp='9/18',
+              isActive=false
+            ) }}
+            {{ scheduleDate.render(
+              anchors=['d-2019-09-19'],
+              name='Thu',
+              datestamp='9/19',
+              isActive=false
+            ) }}
           </tr>
         </tbody>
       </table>
