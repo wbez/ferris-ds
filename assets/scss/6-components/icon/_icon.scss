@@ -10,6 +10,10 @@
 .c-icon {
   display: inline-flex;
 
+  img {
+    max-width: 100%;
+  }
+
   svg {
     fill: currentColor;
     height: 1.1em;

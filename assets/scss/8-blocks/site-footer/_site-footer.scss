@@ -16,20 +16,6 @@ $b-site-footer__color-background: #1a1a1a;
     color: $b-site-footer__color-link;
   }
 
-  .c-button {
-    &.schedules {
-      @include setIcon($section_schedule);
-    }
-
-    &.topics {
-      @include setIcon($section_topics);
-    }
-
-    &.vocalo {
-      @include setIcon($section_vocalo);
-    }
-  }
-
   &__heading {
     color: transparentize($b-site-footer__color-link, 0.2);
     font-size: 1em;
@@ -99,10 +85,6 @@ $b-site-footer__color-background: #1a1a1a;
       margin-bottom: 5px;
       text-decoration: none;
       width: 100%;
-
-      i.wbez-sprite {
-        margin-right: auto;
-      }
 
       span {
         text-align: left;
