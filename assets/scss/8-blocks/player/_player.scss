@@ -59,12 +59,17 @@ $b-player-color-text: $legacy-color-ghost-whitish;
     display: flex;
     align-items: center;
 
-    &[disabled] {
-      opacity: 0.5;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: 1;
     }
 
-    > i.wbez-sprite {
-      font-size: 0;
+    &[disabled] {
+      opacity: 0.5;
     }
 
     &--previous,
@@ -72,36 +77,11 @@ $b-player-color-text: $legacy-color-ghost-whitish;
       display: inline-flex;
     }
 
-    &--previous {
-      @include setIcon($player_previous_white_hover);
-    }
-
-    &--next {
-      @include setIcon($player_next_white_hover);
-    }
-
-    &--jump-back {
-      @include hoverIcon(
-        $player_jump_back_white,
-        $player_jump_back_white_hover,
-        block
-      );
-    }
-
-    &--jump-forward {
-      @include hoverIcon(
-        $player_jump_forward_white,
-        $player_jump_forward_white_hover,
-        block
-      );
-    }
-
     &--play {
-      @include hoverIcon(
-        $player_play_persistent,
-        $player_play_persistent_hover,
-        block
-      );
+      background: transparent;
+      flex: 0 0 auto;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
     }
   }
 
