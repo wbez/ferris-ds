@@ -9,10 +9,10 @@ const mappedStyles = [
     in: './assets/scss/all.scss',
     out: `${buildDir}css/all.css`,
   },
-  {
-    in: './assets/scss/all-legacy.scss',
-    out: `${buildDir}css/all-legacy.css`,
-  },
+  // {
+  //   in: './assets/scss/all-legacy.scss',
+  //   out: `${buildDir}css/all-legacy.css`,
+  // },
   {
     in: './assets/scss/no-resets.scss',
     out: `${buildDir}css/no-resets.css`,
@@ -22,14 +22,6 @@ const mappedStyles = [
 const docsStyles = './assets/scss';
 
 const mappedIcons = [
-  {
-    in: './assets/icons/amp/',
-    out: `${buildDir}sprites/amp.html`,
-  },
-  {
-    in: './assets/icons/base/',
-    out: `${buildDir}sprites/base.html`,
-  },
   {
     in: './assets/icons/wbez/',
     out: `${buildDir}sprites/wbez.html`,
