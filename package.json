@@ -8,6 +8,8 @@
     "prepublish": "yarn run build",
     "release": "np --any-branch"
   },
+  "style": "/assets/dist/css/all.css",
+  "sass": "/assets/scss/all.scss",
   "files": [
     "/assets"
   ],
