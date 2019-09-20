@@ -15,7 +15,14 @@ const nunjucks = require('nunjucks');
 const processHTML = async dirMap => {
   try {
     const env = nunjucks.configure('./');
-    const rendered = env.render(dirMap.in, dirMap.data);
+
+    // pass npm package version to template
+    const { npm_package_version } = process.env; // eslint-disable-line camelcase
+
+    const rendered = env.render(dirMap.in, {
+      ...dirMap.data,
+      npm_package_version,
+    });
     fs.outputFile(dirMap.out, rendered);
     return `✓ ${dirMap.out}`;
   } catch (err) {
