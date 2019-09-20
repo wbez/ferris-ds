@@ -57,6 +57,10 @@ const mappedCopies = [
     in: './assets/logos',
     out: `${buildDir}logos`,
   },
+  {
+    in: './docs/src/favicon.ico',
+    out: `${buildDir}favicon.ico`,
+  },
 ];
 
 module.exports = {

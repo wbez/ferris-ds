@@ -16,7 +16,7 @@
 
 See: [your-link](http://wbez.local:3000/)
 
-#### Does this introduce a breaking change where queso-ui is used in the wild? If so, is there a relevant branch/PR to accompany this release?
+#### Does this introduce a breaking change where ferris-ds is used in the wild? If so, is there a relevant branch/PR to accompany this release?
 
 #### TODOs / next steps:
 

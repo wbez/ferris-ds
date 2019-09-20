@@ -1,4 +1,4 @@
-# @wbez/design-system
+# @wbez/ferris-ds
 
 > Centralizing styles for product development at WBEZ
 
@@ -33,11 +33,11 @@ This spins up a browsersync server and watch task for all SCSS and HTML files.
 ## Installing as a dependency
 
 ```sh
-yarn add @wbez/design-system --dev
+yarn add @wbez/ferris-ds --dev
 ```
 
 ```sh
-npm install @wbez/design-system --save-dev
+npm install @wbez/ferris-ds --save-dev
 ```
 
 ## Folders
@@ -56,7 +56,7 @@ When you add a new class, component, scss variable, mixin, etc., you'll want to 
 
 > How to document a new CSS class
 
-We use a comment parser along with some [extra logic](https://github.com/wbez/design-system/blob/master/tasks/style-doc.js) to generate our docs. To add a new section of documentation, add a boilerplate above your CSS rules like the one below:
+We use a comment parser along with some [extra logic](https://github.com/wbez/ferris-ds/blob/master/tasks/style-doc.js) to generate our docs. To add a new section of documentation, add a boilerplate above your CSS rules like the one below:
 
 ```scss
 // Title of Section (root-class-name)
@@ -184,7 +184,7 @@ The npm helper we use for versioning simplifies matching version numbers with th
 
 Generally, you could base your increment type on the following list:
 
-- MAJOR version = CSS changes that visually break layouts where `design-system` is used on production
+- MAJOR version = CSS changes that visually break layouts where `ferris-ds` is used on production
 - MINOR version = CSS changes that have no visual effect on production
 - PATCH version = CSS changes that fix a previous bug introduced on production or in development
 

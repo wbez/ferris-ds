@@ -14,7 +14,7 @@ const md = require('markdown-it')({ html: true });
 // internal
 const { slugify, stripTags } = require('./utils');
 
-const GITHUB_URL = 'https://github.com/wbez/design-system/blob/master';
+const GITHUB_URL = 'https://github.com/wbez/ferris-ds/blob/master';
 
 const createMap = arr => {
   const object = {};

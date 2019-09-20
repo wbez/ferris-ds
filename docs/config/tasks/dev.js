@@ -23,7 +23,7 @@ async function dev() {
     {
       logConnections: true,
       logLevel: 'silent',
-      logPrefix: 'design-system',
+      logPrefix: 'ferris-ds',
       notify: false,
       open: false,
       port: 3000,
