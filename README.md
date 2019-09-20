@@ -171,8 +171,6 @@ This system is experimental and under rapid development. Use it in situations wh
 
 --
 
-## Todo...
-
 ## Publishing
 
 Make sure you're authenticated for npm publishing.
@@ -190,31 +188,6 @@ Generally, you could base your increment type on the following list:
 - MINOR version = CSS changes that have no visual effect on production
 - PATCH version = CSS changes that fix a previous bug introduced on production or in development
 
-### Steps to test breaking changes:
+### Deploying our docs
 
-1. Publish these changes on npm: `npm run release`. Copy the version number.
-2. Create a new branch in the repo in question.
-3. `yarn add @wbez/design-system@VERSION`
-4. Compile the CSS
-5. Scan the various places where queso-ui is used. At the time of writing, the following pages heavily rely upon this CSS so be sure to check those if you're deprecating/changing classes.
-
-- [ ] [/podcasts](http://local.texastribune.org:8000/podcasts)
-- [ ] [/support-us/donors-and-members](http://local.texastribune.org:8000/support-us/donors-and-members)
-- [ ] [/newsletters/slug](http://local.texastribune.org:8000/newsletters/tribweek)
-- [ ] [/theblast/\*](http://local.texastribune.org:8000/theblast)
-
-## Features/Wishlist
-
-- [x] Watch task
-- [x] Pre commit linting
-- [x] Fix code preview
-- [x] Allow for hiding main demo
-- [x] GitHub search feature (needs automation)
-- [x] Cache busting hash options for assets
-- [ ] File size tracker
-- [ ] Component status tracker
-- [ ] Accessibility compliance checking
-- [ ] VS code comment snippet
-- [ ] Way to easily build universal stylesheet
-- [ ] Way to easily build universal sprite
-- [ ] Establish a merge to master deployment flow
+Our docs are automatically published from the `master` branch by AWS Amplify.
