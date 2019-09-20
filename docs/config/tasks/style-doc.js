@@ -44,9 +44,7 @@ const processSection = (section, dir) => {
     section.description.replace(isWideStr, '').replace(isHelperStr, '')
   );
   const cleanDesc = stripTags(description);
-  const githubLink = `${GITHUB_URL}/${section.source.path}#L${
-    section.source.line
-  }`;
+  const githubLink = `${GITHUB_URL}/${section.source.path}#L${section.source.line}`;
 
   // create an order number
   const ref = section.referenceURI;

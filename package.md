@@ -24,6 +24,21 @@ These are used in local development.
 
 ### Testing
 
+These are used to test and lint our code, executed through autoconfigured git hooks.
+
+- `husky`
+- `lint-staged`
+- `prettier`
+- `stylelint`
+- `stylelint-scss`
+- `stylelint-config-recommended-scss`
+- `eslint`
+- `eslint-config-airbnb`
+- `eslint-config-prettier`
+- `eslint-plugin-import`
+- `eslint-plugin-jsx-a11y`
+- `eslint-plugin-react`
+
 ### Deploying
 
 These are used to manage package deployment.
