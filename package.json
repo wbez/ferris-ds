@@ -17,9 +17,7 @@
     "type": "git",
     "url": "https://github.com/wbez/design-system.git"
   },
-  "publishConfig": {
-    "access": "public"
-  },
+  "private": true,
   "license": "MIT",
   "author": "CPM Digital Development <webteam@wbez.org>",
   "bugs": {
