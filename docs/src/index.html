@@ -47,6 +47,9 @@
               <li class="has-text-weight-bold">
                 <a class="" href="#icons"> Icons </a>
               </li>
+              <li class="has-text-weight-bold">
+                <a class="" href="#logos"> Logos </a>
+              </li>
             </ul>
           </aside>
         </div>
@@ -115,6 +118,33 @@
                     {% endfor %}
                   </div>
                 {% endfor %}
+              </div>
+            </section>
+            <section class="ds-spacer">
+              <a class="ds-anchor" id="logos"></a>
+              <h4
+                class="title is-size-6 ds-breathe menu-label ds-stick-it has-background-white ds-title-bar"
+              >
+                Logos
+              </h4>
+              <div class="ds-breathe">
+                <div class="columns ds-two-cols">
+                  {% for name, srcDict in logoDocs %}
+                    <div class="column ds-spacer">
+                      <div class="card t-align-center">
+                        <div class="section has-background-light">
+                          <img src="/logos/{{ srcDict.png }}">
+                        </div>
+                        <div class="card-content">
+                          <h4 class="subtitle is-4">{{ name }}</h4>
+                          {% for ext, src in srcDict %}
+                            <a class="c-button" href="/logos/{{ src }}">Get {{ext}}</a>
+                          {% endfor %}
+                        </div>
+                      </div>
+                    </div>
+                  {% endfor %}
+                </div>
               </div>
             </section>
           </main>

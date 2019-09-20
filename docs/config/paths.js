@@ -42,6 +42,8 @@ const mappedIcons = [
 
 const docsIcons = ['./assets/icons/'];
 
+const docsLogos = ['./assets/logos'];
+
 const mappedCopies = [
   {
     in: './docs/src/img',
@@ -51,6 +53,10 @@ const mappedCopies = [
     in: './docs/src/js',
     out: `${buildDir}js`,
   },
+  {
+    in: './assets/logos',
+    out: `${buildDir}logos`,
+  },
 ];
 
 module.exports = {
@@ -58,6 +64,7 @@ module.exports = {
   docsStyles,
   mappedIcons,
   docsIcons,
+  docsLogos,
   mappedCopies,
   buildDir,
 };

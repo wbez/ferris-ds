@@ -11,9 +11,10 @@ const { parse: parseHtml } = require('node-html-parser');
 
 const styleDocRunner = require('./style-doc');
 const iconDocRunner = require('./icon-doc');
+const logoDocRunner = require('./logo-doc');
 const htmlRunner = require('./html');
 
-const { docsStyles, docsIcons } = require('../paths.js');
+const { docsStyles, docsIcons, docsLogos } = require('../paths.js');
 
 const COMPONENT_CSS_FILE = 'all.css';
 const LEGACY_CSS_FILE = 'all-legacy.css';
@@ -68,12 +69,15 @@ module.exports = async () => {
   // creates object for docs
   const styleDocs = await styleDocRunner(docsStyles);
   const iconDocs = await iconDocRunner(docsIcons);
+  const logoDocs = await logoDocRunner(docsLogos);
 
   // loop through classes and add github data
   const allDocs = {
     styleDocs,
     iconDocs,
+    logoDocs,
   };
+
   try {
     await fs.outputFile(
       './docs/dist/data/docs.json',

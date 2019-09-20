@@ -131,6 +131,15 @@
   }
 }
 
+.ds-two-cols.ds-two-cols {
+  column-count: 2;
+  display: block;
+
+  .card {
+    break-inside: avoid-column;
+  }
+}
+
 /* Bulma overrides */
 strong {
   color: inherit;
