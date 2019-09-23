@@ -5,9 +5,9 @@
 // Styleguide 8.1.3
 
 .b-newsletter-signup {
-  background: #dbdbdb;
-  color: #4c4c4c;
-  padding: 10px;
+  background: $color-gray-light;
+  color: $color-gray-dark;
+  padding: $size-xxs;
 
   display: flex;
   flex-wrap: wrap;

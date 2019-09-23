@@ -6,13 +6,11 @@
 // Styleguide 5.3.2
 .t-section-heading {
   @include font-setting;
-  background: $legacy-color-off-white;
-  border: 1px solid $legacy-color-ghost-white;
-  color: $legacy-color-light-gray;
-  font-size: 14px;
+  background: $color-white-off;
+  border: 1px solid $color-gray-light;
+  color: $color-gray-medium;
+  font-size: $size-s;
   font-weight: 400;
-  line-height: 1;
-  margin: 0;
-  padding: 5px;
+  padding: $size-xxxs;
   text-transform: uppercase;
 }

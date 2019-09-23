@@ -8,16 +8,8 @@
 // Styleguide 5.3.5
 //
 .t-byline {
-  color: $legacy-color-gray;
-  font-size: 14px;
-  line-height: 0.5;
+  color: $color-gray-medium;
+  font-size: $size-s;
 
-  a {
-    color: $color-wbez-red;
-  }
-
-  a:hover,
-  a:focus {
-    color: $color-link-hover;
-  }
+  @include underlined-link-parent;
 }

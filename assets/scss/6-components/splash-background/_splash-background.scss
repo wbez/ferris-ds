@@ -8,8 +8,8 @@
   position: relative;
   overflow: hidden;
 
-  background-color: #252525;
-  color: white;
+  background-color: $color-black-off;
+  color: $color-white-pure;
 
   &::before {
     content: '';

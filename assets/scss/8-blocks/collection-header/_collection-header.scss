@@ -35,9 +35,9 @@
   }
 
   &.-profile &__subtitle {
-    color: #64686e;
-    font-size: 1.5rem;
-    line-height: 1.2;
+    color: $color-gray-medium;
+    font-size: $size-l;
+    line-height: $line-height-s;
   }
 
   // TOPIC //

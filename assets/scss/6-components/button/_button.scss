@@ -15,15 +15,15 @@
 //
 // Styleguide 6.1.1
 .c-button {
-  $button-height: 7em / 3;
+  $button-height: 2em;
 
   @include font-setting('primary');
-  background-color: $legacy-color-ghost-white;
-  border: 2px solid $legacy-color-darker-middle-grayish-white;
+  background-color: transparentize($color-white-off, 0.1);
+  border: 2px solid $color-gray-light;
   border-radius: $border-radius-b;
-  color: $legacy-color-gray;
+  color: transparentize($color-gray-medium, 0.2);
   font-weight: 700;
-  font-size: 1rem;
+  font-size: $size-b;
   height: $button-height;
   letter-spacing: $font-letter-spacing-b;
   line-height: calc(#{$button-height} - 2 * 2px);
@@ -38,14 +38,8 @@
 
   &:hover,
   &:focus {
-    background-color: $legacy-color-ghost-whitish;
-    color: $legacy-color-gray;
-  }
-
-  &__sprite {
-    vertical-align: middle;
-    position: relative;
-    top: -2px;
+    background-color: $color-white-off;
+    color: $color-gray-medium;
   }
 
   &.-primary {
@@ -61,14 +55,14 @@
   }
 
   &.-dark {
-    background-color: transparentize(black, 0.4);
+    background-color: transparentize($color-black-pure, 0.4);
     border-color: transparent;
-    color: transparentize(white, 0.05);
+    color: transparentize($color-white-pure, 0.05);
 
     &:hover,
     &:focus {
-      background-color: transparentize(black, 0.2);
-      color: transparentize(white, 0.05);
+      background-color: transparentize($color-black-pure, 0.2);
+      color: transparentize($color-white-pure, 0.05);
     }
   }
 
@@ -83,21 +77,15 @@
   }
 
   &.-s {
-    font-size: 0.75rem;
-  }
-
-  &.-s &__sprite {
-    transform: scale(0.75);
-    transform-origin: center;
+    font-size: $size-s;
   }
 
   &.-l {
-    font-size: 1.75rem;
+    font-size: $size-l;
   }
 
-  &.-circle &__sprite {
-    vertical-align: unset;
-    top: unset;
+  &.-xxl {
+    font-size: $size-xxl;
   }
 
   &.-no-border {

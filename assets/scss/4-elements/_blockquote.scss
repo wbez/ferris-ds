@@ -6,12 +6,11 @@
 //
 blockquote {
   @include font-setting('secondary');
-  border-left: solid 2px $color-primary;
-  color: $color-wbez-black;
-  font-size: 18px;
+  border-left: solid 3px $color-primary;
+  color: $color-black-off;
+  font-size: $size-m;
   font-style: italic;
-  line-height: 28px;
-  margin: 30px auto;
-  padding: 0 20px;
+  line-height: $line-height-b;
+  padding: $size-s $size-l;
   width: 100%;
 }

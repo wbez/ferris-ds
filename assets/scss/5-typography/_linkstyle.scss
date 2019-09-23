@@ -30,6 +30,7 @@
   &.-inherit {
     a { // stylelint-disable-line no-descending-specificity
       color: inherit;
+      font-weight: inherit;
     }
   }
 }

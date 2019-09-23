@@ -20,7 +20,11 @@
   }
 
   &__overline {
-    margin-bottom: 5px;
+    margin-bottom: $size-tiny;
+  }
+
+  &__headline {
+    margin: $size-tiny 0;
   }
 
   // SKINNY //
@@ -33,14 +37,14 @@
   }
 
   &.-skinny &__overline {
-    font-size: 14px;
+    font-size: $size-xs;
   }
 
   &.-skinny &__headline {
-    font-size: 15px;
+    font-size: $size-s;
     font-weight: 400;
     height: auto;
-    line-height: 18px;
+    line-height: $line-height-s;
     margin-bottom: 0;
   }
 
@@ -62,20 +66,20 @@
   }
 
   &.-tile &__headline {
-    font-size: 22px;
-    margin: 5px 0;
+    font-size: $size-l;
+    margin: $size-tiny 0;
   }
 
   // ROW //
   &.-row &__headline,
   &.-row-featured &__headline {
-    font-size: 18px;
+    font-size: $size-m;
   }
 
   &.-row &__teaser,
   &.-row-featured &__teaser {
-    font-size: 14px;
-    margin-top: 5px;
+    font-size: $size-s;
+    margin-top: $size-xs;
   }
 
   // EVENT //

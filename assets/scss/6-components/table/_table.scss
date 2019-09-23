@@ -54,7 +54,7 @@
   &.-striped {
     tbody > tr:nth-child(odd) {
       // not a standard color
-      background-color: #f7f7f7;
+      background-color: $color-white-off;
     }
   }
 }

@@ -62,7 +62,7 @@ $color-lightgray-dark: #b1b1b1;
 // $color-gray-light: #d0d0d0 - Gray light
 // $color-gray-medium: #797979 - A little bit darker now
 // $color-gray-dark: #4a4a4a - A little bit darker now
-// $color-black-off: #222 - A little bit darker now
+// $color-black-off: #252525 - A little bit darker now
 // $color-black-pure: black - True black
 //
 // Styleguide 1.1.2
@@ -72,7 +72,7 @@ $color-white-off: #f3f3f3;
 $color-gray-light: #d0d0d0;
 $color-gray-medium: #797979;
 $color-gray-dark: #4a4a4a;
-$color-black-off: #222;
+$color-black-off: #252525; // same as $color-wbez-dark
 $color-black-pure: black;
 
 // Swatch set - Social
@@ -111,46 +111,5 @@ $color-link-underline: $color-primary;
 $color-link-hover: $color-primary;
 $color-error: #f51c1c;
 $color-success: #11a06b;
-$color-sponsor: #36c;
-
-// Legacy colors
-$legacy-color-darkest-gray: #141414;
-$legacy-color-darker-gray: #1d1d1d;
-
-$legacy-color-dark-gray: #252525;
-$legacy-color-middle-darker-gray: #303030;
-$legacy-color-middle-dark-gray: #44474a;
-$legacy-color-darkesh-gray: #494949;
-$legacy-color-darkish-gray: #585e64;
-$legacy-color-gray: #595e64;
-$legacy-color-gray-ish: #64686e;
-$legacy-color-grayer: #d8dce3;
-$legacy-color-lightest-gray: #7f7f7f;
-$legacy-color-lightish-gray: #848687;
-$legacy-color-separator-gray: #bcbcbc;
-$legacy-color-light-gray: #86898e;
-$legacy-color-grayish-white: #8a8e92;
-$legacy-color-grayish-dark-white: #979a9e;
-$legacy-color-darker-middle-grayish-white: #bdbdbd;
-$legacy-color-dark-middle-grayish-white: #c5c5c5;
-$legacy-color-persistent-player-gray: #666;
-$legacy-color-middle-grayish-white: #ccc;
-$legacy-color-ghost-white: #e5e5e5;
-$legacy-color-ghost-whitish: #ececec;
-$legacy-color-off-white: whitesmoke;
-$legacy-color-redder: #c90000;
-$legacy-color-red: #cb0000;
-$legacy-color-bright-red: #ec0101;
-$legacy-color-brighter-red: #ef0000;
-$legacy-color-ghost-overlay: rgba(233, 234, 235, 0.2);
-$legacy-color-wwdtm-bg: #ef5032;
-$legacy-color-progress-red: #f90000;
-$legacy-color-progress-red-secondary: #df0000;
-$legacy-color-pencil-ad-bg: #72a2a9;
-$legacy-color-pencil-ad-link-hover: #1a545c;
-$legacy-color-gray-schedule-bg: #f8f8f8;
-$legacy-color-vocalo-yellow: #ffb718;
-$legacy-color-segment-active: rgb(135, 138, 143);
-$legacy-color-segment-bg: rgb(115, 115, 115);
 
 $color-box-shadow-default: rgba(171, 168, 168, 0.75);

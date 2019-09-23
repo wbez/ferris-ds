@@ -4,57 +4,58 @@
 //
 // Styleguide 4.1.1
 //
-h1,
-h3,
-h4,
-h5,
-h6 {
-  color: $color-wbez-black-dark;
-  font-family: $slab-type;
+%heading {
+  color: $color-black-pure;
   font-weight: 700;
+  line-height: $line-height-s;
+  margin: $size-xxl 0 $size-tiny;
+
+  &:first-child {
+    margin-top: $size-tiny;
+  }
+  
+  @include underlined-link-parent;
 }
 
 h1 {
-  color: $color-wbez-black-dark;
-  font-size: 26px;
-  line-height: 30px;
-  margin: 5px 0 10px;
+  @extend %heading;
+  @include font-setting('secondary');
 
-  @media (min-width: $bp-m) {
-    font-size: 36px;
-    line-height: 42px;
-  }
+  font-size: $size-giant;
 }
 
 h2 {
-  color: $color-wbez-black-dark;
-  font-family: $sans-type;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1;
-  margin: 0;
+  @extend %heading;
+  @include font-setting('primary');
 
-  a {
-    color: $legacy-color-brighter-red;
-    
-    &:hover {
-      text-decoration: underline;
-    }
-  }
+  font-size: $size-xl;
 }
 
 h3 {
-  color: $color-wbez-black-dark;
-  font-family: $sans-type;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 22px;
+  @extend %heading;
+  @include font-setting('primary');
+
+  font-size: $size-l;
 }
 
 h4 {
-  font-family: $sans-type;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 22px;
-  margin-bottom: 20px;
+  @extend %heading;
+  @include font-setting('primary');
+
+  font-size: $size-m;
+}
+
+h5 {
+  @extend %heading;
+  @include font-setting('secondary');
+
+  font-size: $size-b;
+}
+
+h6 {
+  @extend %heading;
+  @include font-setting('secondary');
+
+  font-size: $size-s;
+  margin-bottom: $size-tiny;
 }

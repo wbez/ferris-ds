@@ -5,12 +5,12 @@
 //
 // Styleguide 8.1.3
 
-$b-schedule-color-background: white;
-$b-schedule-color-border: #d8dce3;
+$b-schedule-color-background: $color-white-pure;
+$b-schedule-color-border: $color-gray-light;
 $b-schedule-color-text: $color-black-off;
-$b-schedule-color-alt: $legacy-color-gray;
+$b-schedule-color-alt: $color-gray-medium;
 $b-schedule-color-accent: $color-primary;
-$b-schedule-dates-bottom-padding: 10px;
+$b-schedule-dates-bottom-padding: $size-xs;
 
 .b-schedule {
   position: relative;

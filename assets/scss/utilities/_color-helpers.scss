@@ -1,6 +1,6 @@
-// Text color (has-text-<color>)
+// Text color (has-text-hover-<color>)
 //
-// Experimental: Set the color of text. {{isHelper}}
+// Set the color of text. {{isHelper}}
 //
 // .has-text-black -  black text color
 // .has-text-black-off - black-off text color
@@ -9,14 +9,15 @@
 // .has-text-gray -  gray text color
 // .has-text-gray-light - gray-light text color
 // .has-text-gray-dark - gray-dark text color
-// .has-text-yellow -  yellow text color
-// .has-text-blue - blue text color
-// .has-text-blue-dark - blue dark text color
+// .has-text-red - red text color
+// .has-text-red-dark - red dark text color
 // .has-text-error - error text color
 // .has-text-success - success text color
-// .has-text-sponsor - sponsor text color
 // .has-text-facebook - facebook text color
 // .has-text-twitter - twitter text color
+// .has-text-instagram - instagram text color
+// .has-text-youtube - youtube text color
+// .has-text-feedburner - feedburner text color
 //
 // Markup: <p class="{{ className }}">Example</p>
 //
@@ -24,25 +25,26 @@
 // Styleguide 9.0.1
 //
 
-// Text color:hover (has-text-hover-<color>)
+// Text color:hover (has-text-hover-hover-<color>)
 //
-// Experimental: Set the color of text on hover. {{isHelper}}
+// Set the color of text on hover. {{isHelper}}
 //
-// .has-text-hover-black -  black text-hover color
-// .has-text-hover-black-off - black-off text-hover color
-// .has-text-hover-white -  white text-hover color
-// .has-text-hover-white-off -  white off text-hover color
-// .has-text-hover-gray -  gray text-hover color
-// .has-text-hover-gray-light - gray-light text-hover color
-// .has-text-hover-gray-dark - gray-dark text-hover color
-// .has-text-hover-yellow -  yellow text-hover color
-// .has-text-hover-blue - blue text-hover color
-// .has-text-hover-blue-dark - blue dark text-hover color
-// .has-text-hover-error - error text-hover color
-// .has-text-hover-success - success text-hover color
-// .has-text-hover-sponsor - sponsor text-hover color
-// .has-text-hover-facebook - facebook text-hover color
-// .has-text-hover-twitter - twitter text-hover color
+// .has-text-hover-black -  black text color
+// .has-text-hover-black-off - black-off text color
+// .has-text-hover-white -  white text color
+// .has-text-hover-white-off -  white off text color
+// .has-text-hover-gray -  gray text color
+// .has-text-hover-gray-light - gray-light text color
+// .has-text-hover-gray-dark - gray-dark text color
+// .has-text-hover-red - red text color
+// .has-text-hover-red-dark - red dark text color
+// .has-text-hover-error - error text color
+// .has-text-hover-success - success text color
+// .has-text-hover-facebook - facebook text color
+// .has-text-hover-twitter - twitter text color
+// .has-text-hover-instagram - instagram text color
+// .has-text-hover-youtube - youtube text color
+// .has-text-hover-feedburner - feedburner text color
 //
 // Markup: <p class="{{ className }}">Hover me</p>
 //
@@ -52,7 +54,7 @@
 
 // Background Color (has-bg-<color>)
 //
-// Experimental: Set the background-color of an element. {{isHelper}}
+// Set the background-color of an element. {{isHelper}}
 //
 // .has-bg-black -  black background color
 // .has-bg-black-off - black-off background color
@@ -61,19 +63,47 @@
 // .has-bg-gray -  gray background color
 // .has-bg-gray-light - gray-light background color
 // .has-bg-gray-dark - gray-dark background color
-// .has-bg-red -  red background color
-// .has-bg-blue - blue background color
-// .has-bg-blue-dark - blue dark background color
+// .has-bg-red - red background color
+// .has-bg-red-dark - red dark background color
 // .has-bg-error - error background color
 // .has-bg-success - success background color
-// .has-bg-sponsor - sponsor background color
 // .has-bg-facebook - facebook background color
 // .has-bg-twitter - twitter background color
+// .has-bg-instagram - instagram background color
+// .has-bg-youtube - youtube background color
+// .has-bg-feedburner - feedburner background color
 //
 // Markup: <div class="has-padding {{ className }}">Example</div>
 //
 //
 // Styleguide 9.0.3
+//
+
+// Background Color:hover (has-bg-hover-<color>)
+//
+// Set the background-color of an element. {{isHelper}}
+//
+// .has-bg-hover-black -  black background color
+// .has-bg-hover-black-off - black-off background color
+// .has-bg-hover-white -  white background color
+// .has-bg-hover-white-off -  white off background color
+// .has-bg-hover-gray -  gray background color
+// .has-bg-hover-gray-light - gray-light background color
+// .has-bg-hover-gray-dark - gray-dark background color
+// .has-bg-hover-red - red background color
+// .has-bg-hover-red-dark - red dark background color
+// .has-bg-hover-error - error background color
+// .has-bg-hover-success - success background color
+// .has-bg-hover-facebook - facebook background color
+// .has-bg-hover-twitter - twitter background color
+// .has-bg-hover-instagram - instagram background color
+// .has-bg-hover-youtube - youtube background color
+// .has-bg-hover-feedburner - feedburner background color
+//
+// Markup: <div class="has-padding {{ className }}">Hover me</div>
+//
+//
+// Styleguide 9.0.4
 //
 
 $color-map: (
@@ -90,13 +120,27 @@ $color-map: (
   'primary-dark': $color-primary-dark,
   'error': $color-error,
   'success': $color-success,
-  'sponsor': $color-sponsor,
   'twitter': $color-twitter,
   'facebook': $color-facebook,
   'instagram': $color-instagram,
   'youtube': $color-youtube,
   'feedburner': $color-feedburner
 );
+
+@each $color, $value in $color-map {
+  .has-text-#{$color} {
+    color: $value;
+  }
+}
+
+@each $color, $value in $color-map {
+  .has-text-hover-#{$color} {
+    &:hover,
+    &:focus {
+      color: $value;
+    }
+  }
+}
 
 @each $color, $value in $color-map {
   .has-bg-#{$color} {
@@ -110,19 +154,5 @@ $color-map: (
     &:focus {
       background-color: $value;
     }
-  }
-}
-
-@include mq($from: bp-m) {
-  @each $color, $value in $color-map {
-    .has-text-hover-#{$color}:hover {
-      color: $value;
-    }
-  }
-}
-
-@each $color, $value in $color-map {
-  .has-text-#{$color} {
-    color: $value;
   }
 }

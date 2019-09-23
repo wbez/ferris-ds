@@ -4,15 +4,16 @@
 //
 // Styleguide 8.1.3
 
-$b-site-footer__color-text: $legacy-color-light-gray;
-$b-site-footer__color-link: $legacy-color-middle-grayish-white;
-$b-site-footer__color-background: #1a1a1a;
+$b-site-footer__color-text: $color-gray-medium;
+$b-site-footer__color-link: $color-gray-light;
+$b-site-footer__color-background: $color-black-off;
 
 .b-site-footer {
   color: $b-site-footer__color-text;
-  padding: 10px;
+  padding: $size-s;
 
-  a {
+  a,
+  .c-button {
     color: $b-site-footer__color-link;
   }
 
@@ -82,13 +83,16 @@ $b-site-footer__color-background: #1a1a1a;
     flex-direction: column;
 
     .c-button {
-      margin-bottom: 5px;
+      font-size: $size-s;
+      margin-bottom: $size-tiny;
+      padding-top: $size-s;
+      padding-bottom: $size-s;
       text-decoration: none;
       width: 100%;
 
       span {
         text-align: left;
-        width: 150px;
+        width: 140px;
       }
     }
   }

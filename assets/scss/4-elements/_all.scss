@@ -38,12 +38,16 @@ blockquote {
 
 a {
   color: $color-primary;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration 0.15s;
 
   &:hover,
   &:focus {
     color: $color-link-hover;
-    text-decoration: underline;
+    text-decoration-color: currentColor;
+    text-decoration-skip-ink: auto;
+    // text-decoration: underline;
   }
 }
 

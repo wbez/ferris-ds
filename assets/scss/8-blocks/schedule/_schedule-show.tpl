@@ -19,7 +19,7 @@
 
     {% if hasAudio %}
     <div class="b-action-bar">
-      <button class="c-button -round -primary">
+      <button class="c-button -round -primary -s">
         <i
           class="c-icon c-button__inner t-size-b"
           style="margin-right: .5rem;"

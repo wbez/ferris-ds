@@ -6,16 +6,15 @@
 //
 // Styleguide 6.0.1
 .c-caption {
-  background: $legacy-color-off-white;
-  color: $legacy-color-lightish-gray;
+  background: $color-white-off;
+  color: $color-gray-medium;
   font-size: $size-s;
-  line-height: 16px;
-  padding: 7px;
+  line-height: $line-height-s;
+  padding: $size-xxs;
 
   &__credit {
     font-size: $size-xxs;
-    line-height: 12px;
-    margin-bottom: 10px;
+    margin-bottom: $size-tiny;
     text-align: right;
   }
 }

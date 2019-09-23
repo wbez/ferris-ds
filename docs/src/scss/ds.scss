@@ -1,3 +1,13 @@
+.button {
+  text-decoration: none;
+  transition: all 0.2s;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
 .ds-header {
   &__link {
     position: absolute;

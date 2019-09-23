@@ -20,8 +20,9 @@
   }
 
   &__top-links {
-    color: #86898e;
-    font-size: 12px;
+    color: $color-gray-light;
+    font-size: $size-xs;
+    font-weight: 400;
     text-transform: uppercase;
     grid-area: header;
   }
@@ -56,6 +57,7 @@
     letter-spacing: -0.5px;
     line-height: 1;
     justify-content: center;
+    white-space: nowrap;
 
     &:hover,
     &:focus {
@@ -70,7 +72,7 @@
   .queue_count {
     background: transparentize(#64686e, 0.2);
     border-radius: $border-radius-l;
-    font-size: 12px;
+    font-size: $size-xxs;
     font-weight: 700;
     line-height: 1.5;
     width: 0.8rem;
