@@ -29,26 +29,26 @@
   }
 
   // PROFILE //
-  &--profile &__title {
+  &.-profile &__title {
     @include font-setting('primary');
     margin-bottom: 5px;
   }
 
-  &--profile &__subtitle {
+  &.-profile &__subtitle {
     color: #64686e;
     font-size: 1.5rem;
     line-height: 1.2;
   }
 
   // TOPIC //
-  &--topic {
+  &.-topic {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
   }
 
-  &--topic &__title {
+  &.-topic &__title {
     color: white;
   }
 }

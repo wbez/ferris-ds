@@ -2,11 +2,11 @@
 //
 // Max width container, centered with margin auto. Note: Demo is best viewed in [standalone preview](/pages/layout/l-container/raw-preview.html).
 //
-// l-container--s - Maxed at 520px
-// l-container--m - Maxed at 650px
-// l-container--l - Maxed at 845px
-// l-container--xl - Maxed at 1080px
-// l-container--xxl - Maxed at 1300px
+// -s - Maxed at 520px
+// -m - Maxed at 650px
+// -l - Maxed at 845px
+// -xl - Maxed at 1080px
+// -xxl - Maxed at 1300px
 //
 // Markup: 7-layout/container.html
 //
@@ -23,7 +23,7 @@
   $label: str-replace($size-label, 'bp-', '');
   
   @if $size-label != 'default' {
-    .l-container--#{$label} {
+    .-#{$label} {
       max-width: px-to-rem($value);
     }
   }

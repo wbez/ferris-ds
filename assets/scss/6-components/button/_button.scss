@@ -2,14 +2,14 @@
 //
 // Buttons rely on color helpers for background and text color. The variations are simply sizes. One catch is that are buttons run small in sizes so the names aren't true to their padding and font-size assignments.
 //
-// .c-button--primary - Red background
-// .c-button--dark - Dark background
-// .c-button--round - For the most part, buttons associated with the player are rounded.
-// .c-button--circle - Action icons, etc.
-// .c-button--s - Small button
-// .c-button--l - Large button
-// .c-button--no-border - Sets border-color to transparent
-// .c-button--outline - Hover effect of outline
+// -primary - Red background
+// -dark - Dark background
+// -round - For the most part, buttons associated with the player are rounded.
+// -circle - Action icons, etc.
+// -s - Small button
+// -l - Large button
+// -no-border - Sets border-color to transparent
+// -outline - Hover effect of outline
 //
 // Markup: 6-components/button/button.html
 //
@@ -48,7 +48,7 @@
     top: -2px;
   }
 
-  &--primary {
+  &.-primary {
     background-color: $color-primary;
     border-color: transparent;
     color: $color-on-primary;
@@ -60,7 +60,7 @@
     }
   }
 
-  &--dark {
+  &.-dark {
     background-color: transparentize(black, 0.4);
     border-color: transparent;
     color: transparentize(white, 0.05);
@@ -72,35 +72,35 @@
     }
   }
 
-  &--circle {
+  &.-circle {
     border-radius: 50%;
     width: $button-height;
     padding: 0;
   }
 
-  &--round {
+  &.-round {
     border-radius: $border-radius-l;
   }
 
-  &--s {
+  &.-s {
     font-size: 0.75rem;
   }
 
-  &--s &__sprite {
+  &.-s &__sprite {
     transform: scale(0.75);
     transform-origin: center;
   }
 
-  &--l {
+  &.-l {
     font-size: 1.75rem;
   }
 
-  &--circle &__sprite {
+  &.-circle &__sprite {
     vertical-align: unset;
     top: unset;
   }
 
-  &--no-border {
+  &.-no-border {
     border-color: transparent;
   }
 
@@ -108,7 +108,7 @@
     color: $color-white-pure;
   }
 
-  &--outline {
+  &.-outline {
     border: 2px solid currentColor;
     transition: background-color 0.3s;
 
@@ -116,7 +116,6 @@
       &:hover,
       &:active {
         background-color: transparent;
-        color: currentColor;
         opacity: 1;
 
         .c-button__inner {

@@ -1,18 +1,18 @@
-<article class="c-content-unit c-content-unit--skinny">
+<article class="c-content-unit -skinny">
   <div class="c-button-overlay">
     <a href="#" class="has-overlay-on-hover">
       <img src="{{ data.imageUrl }}" alt="{{ data.headline }}" />
     </a>
     <div class="c-button-overlay__inner">
       <button
-        class="c-button c-button--circle c-button--primary c-button--s"
+        class="c-button -circle -primary -s"
       >
         <i class="c-icon c-button__inner t-size-b"
           ><svg aria-hidden="true"><use xlink:href="#play"></use></svg
         ></i>
       </button>
 
-      {# <button class="c-button c-button--circle c-button--s">
+      {# <button class="c-button -circle -s">
           <i class="c-icon c-button__inner t-size-xxs" style="color: currentColor;"
             ><svg aria-hidden="true"><use xlink:href="#plus"></use></svg
           ></i>
@@ -22,7 +22,7 @@
 
   <div class="c-content-unit__copy">
     {% if data.overline %}
-    <p class="c-content-unit t-overline"><a href="#">{{ data.overline }}</a></p>
+    <p class="t-overline"><a href="#">{{ data.overline }}</a></p>
     {% endif %}
     <h3 class="c-content-unit__headline t-headline">
       <a href="#">{{ data.headline }}</a>

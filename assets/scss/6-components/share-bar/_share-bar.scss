@@ -2,15 +2,15 @@
 //
 // Social share buttons.
 //
-// .c-share-bar--row - ...
-// .c-share-bar--col - ...
+// .-row - ...
+// .-col - ...
 //
 // Markup: 6-components/share-bar/share-bar.html
 //
 // Styleguide 6.0.1
 
 .c-share-bar {
-  &--col {
+  &.-col {
     overflow: hidden;
 
     > .c-button {

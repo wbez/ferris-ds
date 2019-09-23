@@ -1,4 +1,4 @@
-{% if className === 'c-content-unit--skinny' %} 
+{% if className === '-skinny' %} 
 {% set data = { 
   'headline': 'Widespread Hospitalizations, One Death In Illinois Prompt Investigation Into Vaping',
   'imageUrl': 'https://api.wbez.org/v2/images/3b0bf719-1b89-4a8e-9f5f-3918c47e16b8.jpg?width=145&height=145&mode=FILL&threshold=0',
@@ -6,7 +6,7 @@
 } %} 
 {% include './partials/_skinny.html' %}
 
-{% elif className === 'c-content-unit--tile' %}
+{% elif className === '-tile' %}
 {% set data = { 
   'headline': 'Teens Say Free CTA Rides On First Day Of School Are Not Enough',
   'imageUrl': 'https://api.wbez.org/v2/images/0afc1386-105b-48ea-87ec-889d6593a0a1.jpg?width=640&height=312&mode=FILL&threshold=0',
@@ -16,7 +16,7 @@
 } %} 
 {% include './partials/_tile.html' %}
 
-{% elif className === 'c-content-unit--row' %}
+{% elif className === '-row' %}
 {% set data = {
   'overline': 'Morning Shift',
   'headline': 'What’s That Building? This Chicago Industrial Park Was The Nation’s First',
@@ -25,7 +25,7 @@
 } %}
 {% include './partials/_row.html' %}
 
-{% elif className === 'c-content-unit--row-featured' %}
+{% elif className === '-row-featured' %}
 {% set data = {
   'imageUrl': 'https://api.wbez.org/v2/images/60a26a31-a0ea-4025-817e-d243977fc7bb.jpg?width=120&height=120&mode=FILL&threshold=0',
   'overline': 'Morning Shift',
@@ -35,7 +35,7 @@
 } %}
 {% include './partials/_row-featured.html' %}
 
-{% elif className === 'c-content-unit--event' %}
+{% elif className === '-event' %}
 {% include './partials/_event.html' %}
 
 {% else %}

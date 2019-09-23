@@ -1,11 +1,15 @@
-{% from "../../src/macros/data-list.html" import dataList %} {% macro
-snippet(name, code, modifier, isFile, description, codeSnippet, mainClass) %}
+{% from "../../src/macros/data-list.html" import dataList %}
+{% macro snippet(name, code, modifier, isFile, description, codeSnippet, mainClass) %}
 <div class="card">
-  {% set className = modifier.className %} {% if className %}
+  {% set className = modifier.className %}
+  
+  {% if className %}
   <div class="card-header has-background-light">
-    <pre class="has-text-info">.{{className}}</pre>
+    <pre class="has-text-info">.{{className | replace(" ", ".")}}</pre>
   </div>
-  {% endif %} {% if mainClass %}
+  {% endif %}
+  
+  {% if mainClass %}
   <div class="card-header has-background-light">
     <pre class="has-text-info">.{{mainClass}}</pre>
     <div class="ds-icon buttons">

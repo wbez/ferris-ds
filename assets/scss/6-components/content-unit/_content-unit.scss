@@ -1,10 +1,10 @@
 // Content unit (c-content-unit)
 //
-// .c-content-unit--skinny - ...
-// .c-content-unit--tile - ...
-// .c-content-unit--row - ...
-// .c-content-unit--row-featured - ...
-// .c-content-unit--event - ...
+// .-skinny - ...
+// .-tile - ...
+// .-row - ...
+// .-row-featured - ...
+// .-event - ...
 //
 // Markup: 6-components/content-unit/content-unit.html
 //
@@ -24,19 +24,19 @@
   }
 
   // SKINNY //
-  &--skinny {
+  &.-skinny {
     max-width: 145px;
   }
 
-  &--skinny &__copy {
+  &.-skinny &__copy {
     padding: 5px 0;
   }
 
-  &--skinny &__overline {
+  &.-skinny &__overline {
     font-size: 14px;
   }
 
-  &--skinny &__headline {
+  &.-skinny &__headline {
     font-size: 15px;
     font-weight: 400;
     height: auto;
@@ -45,7 +45,7 @@
   }
 
   // TILE //
-  &--tile {
+  &.-tile {
     img {
       width: 100%;
       object-fit: cover;
@@ -56,30 +56,30 @@
     }
   }
 
-  &--tile &__copy {
+  &.-tile &__copy {
     background: whitesmoke;
     padding: 10px;
   }
 
-  &--tile &__headline {
+  &.-tile &__headline {
     font-size: 22px;
     margin: 5px 0;
   }
 
   // ROW //
-  &--row &__headline,
-  &--row-featured &__headline {
+  &.-row &__headline,
+  &.-row-featured &__headline {
     font-size: 18px;
   }
 
-  &--row &__teaser,
-  &--row-featured &__teaser {
+  &.-row &__teaser,
+  &.-row-featured &__teaser {
     font-size: 14px;
     margin-top: 5px;
   }
 
   // EVENT //
-  &--event {
+  &.-event {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -90,17 +90,17 @@
     }
   }
 
-  &--event &__copy {
+  &.-event &__copy {
     flex: 1 0 200px;
   }
 
-  &--event &__headline {
+  &.-event &__headline {
     @include font-setting;
     font-size: $size-xl;
     margin: 10px 0;
   }
 
-  &--event p {
+  &.-event p {
     margin: 10px 0;
   }
 }

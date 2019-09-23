@@ -1,23 +1,20 @@
-{% if className === 'c-button--circle' or className ===
-'c-button--circle-responsive' %}
-<button class="c-button c-button--circle c-button--primary">
+{% if className === '-circle' or className === '-circle-responsive' %}
+<button class="c-button -circle -primary">
   <i class="c-icon c-button__inner t-size-l"
     ><svg aria-hidden="true"><use xlink:href="#play"></use></svg
   ></i>
 </button>
 
-{#
-<button class="c-button c-button--circle c-button--s">
-  <i class="c-icon c-button__inner t-size-xxs" style="color: currentColor;"
-    ><svg aria-hidden="true"><use xlink:href="#plus"></use></svg
-  ></i>
-</button>
-#} {% elif className === 'c-button--outline' %}
+{% elif className === '-outline' %}
 <button
-  class="c-button c-button--outline has-text-facebook has-bg-facebook has-text-hover-facebook l-align-center-children"
+  class="c-button -outline has-text-facebook has-bg-facebook has-text-hover-facebook l-align-center-children"
 >
-  <span class="c-button__inner c-icon"
-    ><svg aria-hidden="true"><use xlink:href="#facebook"></use></svg
-  ></span>
+  <span class="c-button__inner c-icon">
+    <svg aria-hidden="true"><use xlink:href="#facebook"></use></svg>
+  </span>
 </button>
-{% else %} <button class="c-button {{ className }}">Button</button> {% endif %}
+
+{% else %}
+<button class="c-button {{ className }}">Button</button>
+
+{% endif %}

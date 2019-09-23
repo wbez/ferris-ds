@@ -34,11 +34,11 @@
   &__main-items {
     display: flex;
 
-    &--left {
+    &.-left {
       grid-area: left;
     }
 
-    &--right {
+    &.-right {
       justify-content: flex-end;
       grid-area: right;
     }

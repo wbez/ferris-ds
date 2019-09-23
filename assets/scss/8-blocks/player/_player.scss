@@ -72,12 +72,12 @@ $b-player-color-text: $legacy-color-ghost-whitish;
       opacity: 0.5;
     }
 
-    &--previous,
-    &--next {
+    &.-previous,
+    &.-next {
       display: inline-flex;
     }
 
-    &--play {
+    &.-play {
       background: transparent;
       flex: 0 0 auto;
       margin-left: 0.5rem;

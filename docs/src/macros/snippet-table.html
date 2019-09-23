@@ -9,7 +9,7 @@
   {% for modifier in modifiers %}
   <tr>
     <td class="has-background-light">
-      <pre class="has-text-info">.{{ modifier.className }}</pre>
+      <pre class="has-text-info">.{{ modifier.className | replace(" ", ".") }}</pre>
     </td>
     <td>{{ modifier.description }}</td>
     <td>

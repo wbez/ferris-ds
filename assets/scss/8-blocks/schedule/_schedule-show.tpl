@@ -1,6 +1,6 @@
 {% macro render(time, title, isOpen, isLive, hasAudio, description) %}
 
-<article class="b-schedule__show{% if isLive %} b-schedule__show--live{% endif %}">
+<article class="b-schedule__show{% if isLive %} b-schedule__show -live{% endif %}">
   <details class="b-schedule__show-details" {% if isOpen %}open{% endif %}>
     <summary
       class="b-schedule__show-summary b-schedule__show-top b-schedule__grid-row"
@@ -19,7 +19,7 @@
 
     {% if hasAudio %}
     <div class="b-action-bar">
-      <button class="c-button c-button--round c-button--primary">
+      <button class="c-button -round -primary">
         <i
           class="c-icon c-button__inner t-size-b"
           style="margin-right: .5rem;"

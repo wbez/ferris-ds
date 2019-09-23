@@ -2,7 +2,7 @@
 //
 // SVG icon class. Icons will take the size of parent font-size. Default fill is yellow with a helper for white, teal, and gray icons.
 //
-// .c-icon--baseline - Forces a the vertical alignment to the baseline of the font.
+// .-baseline - Forces a the vertical alignment to the baseline of the font.
 //
 // Markup: 6-components/icon/icon.html
 //
@@ -20,7 +20,7 @@
     width: 1.1em;
   }
 
-  &--baseline {
+  &.-baseline {
     svg {
       position: relative;
       top: 0.15em;

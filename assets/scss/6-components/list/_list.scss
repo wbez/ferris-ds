@@ -2,7 +2,7 @@
 //
 // Experimental: Our standard list is just plain ol' bullets
 //
-// .c-list--arrows - Sometimes we add little SVG bullets
+// .-arrows - Sometimes we add little SVG bullets
 //
 // Markup: 6-components/list/list.html
 //
@@ -14,7 +14,7 @@
     list-style: disc;
   }
 
-  &--arrows {
+  &.-arrows {
     li {
       list-style: none;
       position: relative;

@@ -1,7 +1,7 @@
 // Smallcaps (t-smallcaps)
 //
-// .t-smallcaps--light - Applies a lighter font weight and increases the letter-spacing
-// .t-smallcaps--section - Applies bottom margin and bumps down font-size
+// -light - Applies a lighter font weight and increases the letter-spacing
+// -section - Applies bottom margin and bumps down font-size
 //
 // Markup: <span class="t-smallcaps {{ className }}">Lorem ipsum</span>
 //
@@ -14,12 +14,12 @@
   text-transform: uppercase;
 
   // Byline
-  &--light {
+  &.-light {
     font-weight: 400;
     letter-spacing: $font-letter-spacing-l;
   }
 
-  &--section {
+  &.-section {
     font-size: $size-s;
     margin-bottom: $size-b/4;
   }

@@ -2,7 +2,7 @@
 //
 // Todo: This should use the time element
 //
-// .c-calendar-date--dark - ...
+// .-dark - ...
 //
 // Markup: 6-components/calendar-date/calendar-date.html
 //
@@ -26,7 +26,7 @@
     font-size: $size-xl;
   }
 
-  &--dark &__day {
+  &.-dark &__day {
     background: $legacy-color-darker-gray;
     color: white;
   }
