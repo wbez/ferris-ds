@@ -36,8 +36,8 @@ $color-on-primary-dark: transparentize(white, 0.02);
 // $color-teal-dark: #5c8e96
 // $color-gold: #f9b816
 // $color-gold-dark: #e3a816
-// $color-gray: #888b90
-// $color-gray-dark: #6d6f73
+// $color-bluegray: #888b90
+// $color-bluegray-dark: #6d6f73
 // $color-lightgray: #c5c5c5
 // $color-lightgray-dark: #b1b1b1
 //
@@ -54,7 +54,7 @@ $color-lightgray-dark: #b1b1b1;
 
 // Swatch set - Grays
 //
-// Experimental: In search of that perfect gray.
+// In search of that perfect gray.
 //
 // Colors:
 // $color-white-pure: white - White
@@ -77,7 +77,7 @@ $color-black-pure: black;
 
 // Swatch set - Social
 //
-// Experimental: Used for social sites branding consistency.
+// Used for social sites branding consistency.
 //
 // Colors:
 // $color-facebook: #2d60c4 - Facebook
@@ -96,18 +96,14 @@ $color-feedburner: #1371bf;
 
 // Swatch set - States and promos
 //
-// Experimental: These are special variables assigned to specific elements and states.
+// These are special variables assigned to specific elements and states.
 //
 // Colors:
-// $color-link-underline: $color-primary - Link Underline
 // $color-error: #f51c1c - Error
 // $color-success: #11a06b - Success
-// $color-sponsor: #36c - Sponsored content signifier
 //
 // Styleguide 1.1.4
 //
-$color-link-underline: $color-primary;
-// $color-link-hover: #23527c;
 $color-link-hover: $color-primary;
 $color-error: #f51c1c;
 $color-success: #11a06b;
