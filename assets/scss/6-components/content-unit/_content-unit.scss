@@ -33,7 +33,7 @@
   }
 
   &.-skinny &__copy {
-    padding: 5px 0;
+    padding: $size-tiny 0;
   }
 
   &.-skinny &__overline {
@@ -62,7 +62,7 @@
 
   &.-tile &__copy {
     background: whitesmoke;
-    padding: 10px;
+    padding: $size-s;
   }
 
   &.-tile &__headline {
@@ -89,8 +89,8 @@
     align-items: flex-start;
 
     .c-calendar-date {
-      margin-right: 15px;
-      margin-bottom: 15px;
+      margin-right: $size-b;
+      margin-bottom: $size-b;
     }
   }
 
@@ -101,10 +101,10 @@
   &.-event &__headline {
     @include font-setting;
     font-size: $size-xl;
-    margin: 10px 0;
+    margin: $size-s 0;
   }
 
   &.-event p {
-    margin: 10px 0;
+    margin: $size-xs 0;
   }
 }

@@ -6,7 +6,7 @@
 
 .b-collection-header {
   background: whitesmoke;
-  padding: 5px;
+  padding: $size-xxs;
 
   display: flex;
   flex-wrap: wrap;
@@ -15,12 +15,12 @@
 
   &__image {
     flex: 0 0 200px;
-    margin: 5px;
+    margin: $size-xxs;
   }
 
   &__copy {
     flex: 1 0 250px;
-    margin: 5px;
+    margin: $size-xxs;
     text-align: center;
 
     > * {
@@ -31,7 +31,7 @@
   // PROFILE //
   &.-profile &__title {
     @include font-setting('primary');
-    margin-bottom: 5px;
+    margin-bottom: $size-tiny;
   }
 
   &.-profile &__subtitle {

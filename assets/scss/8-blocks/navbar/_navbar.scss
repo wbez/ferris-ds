@@ -5,7 +5,7 @@
 // Styleguide 8.1.3
 
 .b-navbar {
-  padding: 10px;
+  padding: $size-s;
 
   &__grid {
     display: grid;
@@ -14,7 +14,7 @@
     grid-template-areas: // stylelint-disable declaration-colon-space-after
       'header header header'
       'left main right';
-    @include gap(10px);
+    @include gap($size-s);
     align-items: center;
     justify-content: space-between;
   }
@@ -46,7 +46,7 @@
   }
 
   &__main-item {
-    margin: 5px;
+    margin: $size-tiny;
   }
 
   .c-button {

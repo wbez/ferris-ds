@@ -20,7 +20,7 @@ $b-player-color-text: $color-white-off;
 .b-player {
   background: $b-player-color-background;
   color: $b-player-color-text;
-  padding-bottom: 10px;
+  padding-bottom: $size-s;
   width: 100%;
 
   a {
@@ -51,7 +51,7 @@ $b-player-color-text: $color-white-off;
   }
 
   &__controls {
-    padding: 0 5px;
+    padding: 0 $size-xxs;
   }
 
   &__control {
@@ -81,8 +81,8 @@ $b-player-color-text: $color-white-off;
     &.-play {
       background: transparent;
       flex: 0 0 auto;
-      margin-left: 0.5rem;
-      margin-right: 0.5rem;
+      margin-left: $size-xxs;
+      margin-right: $size-xxs;
     }
   }
 
@@ -91,7 +91,7 @@ $b-player-color-text: $color-white-off;
     @include font-setting('secondary');
     font-size: $size-xs;
     @include line-clamp($lineCount: 3);
-    padding: 0 10px;
+    padding: 0 $size-s;
     width: 130px;
 
     :hover > &,
@@ -109,7 +109,7 @@ $b-player-color-text: $color-white-off;
   }
 
   &__copy {
-    padding: 0 10px;
+    padding: 0 $size-s;
   }
 
   &__text-meta {
@@ -128,7 +128,7 @@ $b-player-color-text: $color-white-off;
   &__divider {
     align-self: stretch;
     background: transparentize(black, 0.5);
-    margin: 0 15px;
+    margin: 0 $size-m;
     width: 2px;
   }
 }

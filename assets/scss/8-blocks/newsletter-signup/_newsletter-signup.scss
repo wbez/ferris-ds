@@ -17,14 +17,14 @@
   &__text {
     @include font-setting('secondary');
     flex: 1 0 250px;
-    margin: 10px;
+    margin: $size-xs;
   }
 
   &__form {
     flex: 100 0 300px;
     display: flex;
     align-items: center;
-    margin: 10px;
+    margin: $size-xs;
 
     > .c-text-input {
       flex: 1 0 auto;
@@ -34,7 +34,7 @@
     > .c-button {
       box-sizing: content-box;
       flex: 0 0 auto;
-      margin-left: 10px;
+      margin-left: $size-xs;
       height: 35px;
       line-height: 35px;
     }

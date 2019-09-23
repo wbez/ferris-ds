@@ -13,7 +13,7 @@
   font-weight: bold;
   overflow: hidden;
   text-align: center;
-  width: 60px;
+  width: px-to-rem(60px);
 
   &__month {
     background: $color-primary;

@@ -7,7 +7,7 @@
   &__show-top {
     border-top: 1px solid $b-schedule-color-border;
     font-size: $size-b;
-    padding: 5px $size-s;
+    padding: $size-xxs $size-s;
   }
 
   &__show-time {
@@ -32,13 +32,13 @@
 
   &__chevron {
     float: right;
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
-    margin-top: 1.6rem;
+    margin-right: $size-xxs;
+    margin-left: $size-xxs;
+    margin-top: $size-b;
   }
 
   &__show-description {
-    font-size: $size-b;
+    font-size: $size-m;
     padding: $size-xxs $size-s $size-b;
   }
 

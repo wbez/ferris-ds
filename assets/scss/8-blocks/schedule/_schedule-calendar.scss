@@ -88,7 +88,7 @@
 
   &__date > a {
     color: inherit;
-    padding: 5px 15px;
+    padding: $size-xxs $size-b;
 
     // Text decoration
     text-decoration: underline;
@@ -109,7 +109,7 @@
   &__date-active {
     background: $b-schedule-color-accent;
     color: $color-on-primary;
-    padding: 5px 15px;
+    padding: $size-xxs $size-b;
     z-index: 3;
 
     &::before {

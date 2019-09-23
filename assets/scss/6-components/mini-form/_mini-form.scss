@@ -8,7 +8,7 @@
 .c-mini-form {
   display: grid;
   grid-template-columns: 1fr 6rem;
-  grid-column-gap: 10px;
+  grid-column-gap: $size-s;
 
   &__input {
     grid-column: 1;
