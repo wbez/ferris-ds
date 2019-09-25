@@ -57,11 +57,6 @@
   }
 }
 
-.ds-menu {
-  overflow: scroll;
-  height: 75vh;
-}
-
 .ds-menu__child {
   padding-left: 1rem;
 }
@@ -245,4 +240,23 @@ strong {
     position: absolute;
     z-index: 2;
   }
+}
+
+main .menu-list {
+  a {
+    text-decoration: none;
+    transition: background-color 0.15s;
+
+    &:hover,
+    &:focus {
+      transition-duration: 0.2s;
+    }
+  }
+}
+
+.menu.ds-stick-it {
+  margin-bottom: 2rem;
+  max-height: 100vh;
+  overflow-y: scroll;
+  padding: 1rem;
 }

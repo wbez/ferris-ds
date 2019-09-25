@@ -4,12 +4,12 @@
 //
 // Colors:
 // $color-wbez-black: #252525 - Body copy
-// $color-wbez-black-dark: black
+// $color-wbez-black-dark: #000000 - Black
 // $color-wbez-red: #ec0101 - Primary branding, aka $color-primary
 // $color-wbez-red-dark: #cf0000 - aka $color-primary-dark
-// $color-wbez-gray: whitesmoke - Fields of gray
+// $color-wbez-gray: #f5f5f5 - Whitesmoke
 // $color-wbez-gray-dark: #64686e
-// $color-on-primary: white
+// $color-on-primary: #ffffff - White
 //
 // Styleguide 1.1.1
 //
@@ -21,7 +21,7 @@ $color-primary: $color-wbez-red;
 $color-wbez-red-dark: #cf0000;
 $color-primary-dark: $color-wbez-red-dark;
 
-$color-wbez-gray: whitesmoke;
+$color-wbez-gray: #f5f5f5;
 $color-wbez-gray-dark: #64686e;
 
 $color-on-primary: transparentize(white, 0.02);
@@ -57,13 +57,13 @@ $color-lightgray-dark: #b1b1b1;
 // In search of that perfect gray.
 //
 // Colors:
-// $color-white-pure: white - White
+// $color-white-pure: #ffffff - White
 // $color-white-off: #f3f3f3 - Kinda white
 // $color-gray-light: #d0d0d0 - Gray light
 // $color-gray-medium: #797979 - A little bit darker now
 // $color-gray-dark: #4a4a4a - A little bit darker now
 // $color-black-off: #252525 - A little bit darker now
-// $color-black-pure: black - True black
+// $color-black-pure: #000000 - True black
 //
 // Styleguide 1.1.2
 //

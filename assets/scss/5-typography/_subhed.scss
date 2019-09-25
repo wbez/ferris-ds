@@ -1,0 +1,22 @@
+// Subhed (t-subhed)
+//
+// Our default subhed formatting. Does not include size.
+//
+// Headlines are typically `<h2>` elements, but you can apply the styles to any header element to size appropriately. Linked headlines will be given a red underline style on hover.
+//
+// -article - Article subheds are special and have a designated font size.
+//
+// Markup: <h2 class="t-subhed {{ className }}">Story subhed text <a>with link.</a></h2>
+//
+//
+// Styleguide 5.3.1
+.t-subhed {
+  @include font-setting;
+  color: $color-black-off;
+  font-weight: 700;
+
+  &.-article {
+    font-size: $size-l;
+    line-height: 1.2;
+  }
+}

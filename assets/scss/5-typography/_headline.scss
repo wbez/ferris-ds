@@ -4,7 +4,7 @@
 //
 // Headlines are typically `<h1>` elements, but you can apply the styles to any header element to size appropriately. Linked headlines will be given a red underline style on hover.
 //
-// -article - Article headlines are special and have responsive font-sizing. The size after bp-s falls outside of our scale; this might be worth revisiting.
+// -article - Article headlines are special and have responsive font-sizing.
 //
 // Markup: <h1 class="t-headline {{ className }}">Story headline text <a>with link.</a></h1>
 //

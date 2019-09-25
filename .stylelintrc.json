@@ -16,7 +16,6 @@
       }
     ],
     "color-hex-case": "lower",
-    "color-named": "always-where-possible",
     "comment-whitespace-inside": "always",
     "declaration-block-trailing-semicolon": "always",
     "declaration-colon-space-after": "always",

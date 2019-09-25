@@ -7,7 +7,7 @@
 //
 // Styleguide 5.3.1
 .t-prose {
-  p:not(:last-child) {
+  > :not(:last-child) {
     margin-bottom: $size-s;
   }
 
