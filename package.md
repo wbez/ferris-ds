@@ -23,6 +23,8 @@ These are used in our build process.
 - `autoprefixer`
 - `@texastribune/postcss-amp`
 - `clean-css`
+- `svgo`
+- `svgstore`
 
 ### Developing
 
