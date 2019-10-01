@@ -33,11 +33,63 @@ This spins up a browsersync server and watch task for all SCSS and HTML files.
 ## Installing as a dependency
 
 ```sh
-yarn add @wbez/ferris-ds --dev
+yarn add @wbez/ferris-ds
 ```
 
 ```sh
-npm install @wbez/ferris-ds --save-dev
+npm install @wbez/ferris-ds
+```
+
+## Using assets
+
+SCSS
+
+```scss
+@import '~@wbez/ferris-ds';
+```
+
+CSS in `<head>` via CDN
+
+```html
+<link
+  rel="stylesheet"
+  href="//unpkg.com/@wbez/ferris-ds@:version/assets/dist/css/all.css"
+/>
+```
+
+Single icon
+
+```js
+import linkIcon from '@wbez/ferris-ds/assets/icons/wbez/link.svg';
+
+<img src={linkIcon} alt="" />;
+```
+
+Icon using spritesheet
+
+```jsx
+import icons from '@wbez/ferris-ds/assets/dist/sprites/wbez.svg';
+
+<svg aria-hidden="true">
+  <use xlinkHref={`${icons}#link`} />
+</svg>;
+```
+
+Logo (CDN)
+
+```html
+<img
+  src="//unpkg.com/@wbez/ferris-ds@:version/assets/logos/wbez/wbez-chicago-logo-oneline.svg"
+  alt="WBEZ Chicago logo"
+/>
+```
+
+Logo (direct)
+
+```jsx
+import logo from "@wbez/ferris-ds/assets/logos/wbez/wbez-chicago-logo-oneline.svg";
+
+<img src={logo} alt="WBEZ Chicago logo">
 ```
 
 ## Folders
@@ -46,6 +98,7 @@ npm install @wbez/ferris-ds --save-dev
 | ------------ | ----------------------------------------------------------------------------------------------------------- |
 | assets/scss  | Various SASS files establishing our CSS framework                                                           |
 | assets/icons | Sets of individual SVG icons used throughout our products                                                   |
+| assets/logos | Individual SVG/PNG logos used throughout our products                                                       |
 | docs         | Tools and templates to statically render documentation, code examples, and usage info for our design system |
 
 ## Adding to the CSS Framework
@@ -103,7 +156,7 @@ Use namespacing for quick reference of the function of a CSS class. The followin
 Components
 
 ```css
-.c-component-name[__<element>|--<-modifier>] {
+.c-component-name[__<element>|-<-modifier>] {
 }
 ```
 
@@ -169,7 +222,7 @@ This system is experimental and under rapid development. Use it in situations wh
 - Making a small CSS change to the legacy system (tiny visual tweak to our main repo)
 - The system creates an unnecessarily layer of complexity (take the path of least resistance)
 
---
+---
 
 ## Publishing
 
