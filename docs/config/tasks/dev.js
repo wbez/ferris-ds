@@ -5,7 +5,8 @@
 
 const watch = require('glob-watcher');
 const browserSync = require('browser-sync');
-const { styles, icons, utils } = require('@texastribune/queso-tools');
+const { icons, utils } = require('@texastribune/queso-tools');
+const styles = require('../tools/styles');
 const copyRunner = require('./copy');
 const docsRunner = require('./docs.js');
 

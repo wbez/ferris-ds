@@ -15,6 +15,15 @@ These are used in our build process.
 - `purgecss`
 - `purgecss-from-html`
 
+#### docs/config/tools
+
+- `@texastribune/queso-tools`
+- `postcss`
+- `node-sass`
+- `autoprefixer`
+- `@texastribune/postcss-amp`
+- `clean-css`
+
 ### Developing
 
 These are used in local development.

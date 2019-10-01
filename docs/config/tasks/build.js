@@ -3,7 +3,8 @@
  *
  */
 
-const { styles, icons } = require('@texastribune/queso-tools');
+const { icons } = require('@texastribune/queso-tools');
+const styles = require('../tools/styles');
 const copy = require('./copy');
 const docs = require('./docs.js');
 
