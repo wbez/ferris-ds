@@ -32,11 +32,11 @@ const docsStyles = './assets/scss';
 const mappedIcons = [
   {
     in: './assets/icons/wbez/',
-    out: `${buildDir}sprites/wbez.html`,
+    out: `${buildDir}sprites/wbez.svg`,
   },
   {
     in: './assets/icons/wbez/',
-    out: `./assets/dist/sprites/wbez.html`,
+    out: `./assets/dist/sprites/wbez.svg`,
   },
 ];
 
