@@ -24,11 +24,7 @@ $story-narrow-bp: ($story-narrow / 1rem) + $story-padding-buffer;
   > details {
     max-width: $story-narrow;
     margin: $size-b auto;
-    line-height: 1.4;
-    
-    @include mq($until: $story-narrow-bp) {
-      padding: 0 $size-xs;
-    }
+    line-height: 1.6;
   }
 
   > aside,
@@ -39,9 +35,10 @@ $story-narrow-bp: ($story-narrow / 1rem) + $story-padding-buffer;
   }
 
   > p,
-  > h3,
-  > ul li {
+  > ul li,
+  > ol li {
     // @include font-setting('secondary');
+    font-family: Georgia, serif;
     @include underlined-link-parent;
   }
 

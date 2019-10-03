@@ -2,7 +2,7 @@
 //
 // Used for attribution of content.
 //
-// Markup: <div class="t-byline"><a href="/staff/Dan+Mihalopoulos">Dan Mihalopoulos</a>, Kate McGee</div>
+// Markup: <div class="t-byline">By <a href="/staff/Dan+Mihalopoulos">Dan Mihalopoulos</a> and <span>Kate McGee</span></div>
 //
 //
 // Styleguide 5.3.5
@@ -10,6 +10,12 @@
 .t-byline {
   color: $color-gray-medium;
   font-size: $size-s;
+  font-style: italic;
 
   @include underlined-link-parent;
+
+  > span,
+  > a {
+    font-style: normal;
+  }
 }
