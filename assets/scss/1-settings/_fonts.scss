@@ -23,12 +23,12 @@ $font-family-secondary-fallback: serif;
 //
 // $font-root = 18px - Desktop font root size
 // $font-root-tablet = 18px - Tablet font root size
-// $font-root-mobile = 18px - Mobile font root size
+// $font-root-mobile = 16px - Mobile font root size
 //
 // Styleguide 1.2.2
 $font-root: 18px;
 $font-root-tablet: 18px;
-$font-root-mobile: 18px;
+$font-root-mobile: 16px;
 
 // Silent class helpers
 %font-serif {
