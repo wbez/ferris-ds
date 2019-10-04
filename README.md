@@ -10,6 +10,16 @@ Our goal is that as we iterate upon the design of our products, we document ever
 
 This repo is forked from [texastribune/queso-ui@v3.2.0](https://github.com/texastribune/queso-ui/releases/tag/v3.2.0). Much thanks and props for building out such a great base for us to launch from.
 
+## Index
+
+- [Getting started](#getting-started)
+- [Installing as a dependency](#installing-as-a-dependency)
+- [Using assets](#using-assets)
+- [Folders](#folders)
+- [Adding to the CSS framework](#adding-to-the-css-framework)
+- [Using this system in our products](#using-this-system-in-our-products)
+- [Publishing](#publishing)
+
 ## Getting started
 
 To preview these assets and accompanying docs locally, run the following commands:
@@ -101,7 +111,7 @@ import logo from "@wbez/ferris-ds/assets/logos/wbez/wbez-chicago-logo-oneline.sv
 | assets/logos | Individual SVG/PNG logos used throughout our products                                                       |
 | docs         | Tools and templates to statically render documentation, code examples, and usage info for our design system |
 
-## Adding to the CSS Framework
+## Adding to the CSS framework
 
 When you add a new class, component, scss variable, mixin, etc., you'll want to add a short bit of syntax to enable it to appear in the docs. Use the boilerplate below to get started.
 
