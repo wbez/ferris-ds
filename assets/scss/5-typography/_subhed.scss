@@ -18,5 +18,11 @@
   &.-article {
     font-size: $size-l;
     line-height: 1.2;
+    margin-top: $size-l;
+    margin-bottom: $size-l / 3;
+
+    + * {
+      margin-top: 0;
+    }
   }
 }
