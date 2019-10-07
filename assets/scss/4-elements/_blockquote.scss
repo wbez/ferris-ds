@@ -5,11 +5,9 @@
 // Styleguide 4.1.1
 //
 blockquote {
-  @include font-setting('secondary');
+  @include font-setting;
   border-left: solid 3px $color-primary;
   color: $color-black-off;
-  font-size: $size-m;
-  font-style: italic;
   line-height: $line-height-b;
   padding: $size-s $size-l;
   width: 100%;

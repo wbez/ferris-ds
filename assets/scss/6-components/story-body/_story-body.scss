@@ -21,14 +21,14 @@ $story-narrow-bp: ($story-narrow / 1rem) + $story-padding-buffer;
   > ol,
   > span,
   > hr,
-  > details {
+  > details,
+  > blockquote {
     max-width: $story-narrow;
     margin: $size-b auto;
     line-height: 1.6;
   }
 
   > aside,
-  > blockquote,
   > div,
   > figure {
     margin: $size-b auto;
@@ -89,6 +89,7 @@ $story-narrow-bp: ($story-narrow / 1rem) + $story-padding-buffer;
 
   figure {
     display: table;
+    width: 100%;
 
     > * {
       display: block;
