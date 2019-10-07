@@ -49,14 +49,15 @@
 //
 // Styleguide 2.1.2
 //
-@mixin underlined-link($subtle: false, $border-width: 1px) {
-  // Set color var
-  $border-hover-color: $color-primary;
+@mixin underlined-link($subtle: false, $border-width: 1px, $border-top: 2 * $border-width, $link-color: $color-primary) {
+  // Set color vars
+  $border-color: transparentize($link-color, 0.4);
+  $border-hover-color: transparentize($link-color, 0.2);
 
   @if ($subtle == false) {
     // Include on non hover state if not subtle (default)
-    border-bottom: $border-width solid $color-primary;
-    box-shadow: inset 0 0 0 0 $color-primary;
+    box-shadow: inset 0 #{-($border-top - $border-width)} 0 0 #fff,
+      inset 0 #{-$border-top} 0 0 $border-color;
   }
   
   font-weight: inherit;
@@ -65,9 +66,9 @@
 
   &:hover,
   &:focus {
-    border-bottom: $border-width solid $border-hover-color;
-    box-shadow: inset 0 #{-$border-width} 0 0 $border-hover-color;
-    color: $color-primary;
+    box-shadow: inset 0 #{-($border-top - (2 * $border-width))} 0 0 #fff,
+      inset 0 #{-$border-top} 0 0 $border-hover-color;
+    color: $link-color;
     text-decoration: none;
   }
 }
@@ -82,7 +83,7 @@
 //
 @mixin underlined-link-parent($subtle: false) {
   a:not(.t-unlink) {
-    @include underlined-link($subtle);
+    @include underlined-link($subtle, $border-width: 0.1ex, $border-top: 0.3ex);
   }
 }
 

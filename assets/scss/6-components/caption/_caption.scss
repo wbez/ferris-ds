@@ -6,11 +6,8 @@
 //
 // Styleguide 6.0.1
 .c-caption {
-  font-size: $size-s;
+  color: $color-gray-medium;
+  font-size: $size-xs;
   line-height: $line-height-s;
   padding: $size-xxs 0;
-
-  &__credit {
-    color: $color-gray-medium;
-  }
 }

@@ -8,12 +8,7 @@
 // Styleguide 5.3.5
 //
 .t-byline {
-  font-style: italic;
+  font-style: normal;
 
   @include underlined-link-parent;
-
-  > span,
-  > a {
-    font-style: normal;
-  }
 }
