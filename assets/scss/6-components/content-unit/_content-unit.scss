@@ -78,8 +78,9 @@
 
   &.-row &__teaser,
   &.-row-featured &__teaser {
-    font-size: $size-s;
-    margin-top: $size-xs;
+    font-size: $size-xs;
+    margin-top: $size-tiny;
+    margin-bottom: $size-tiny;
   }
 
   // EVENT //

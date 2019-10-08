@@ -4,8 +4,9 @@
 //
 // Styleguide 4.1.1
 //
-%heading {
+%heading {  
   color: $color-black-pure;
+  @include font-setting('primary');
   font-weight: 700;
   line-height: $line-height-s;
   margin: $size-xxl 0 $size-tiny;
@@ -19,7 +20,7 @@
 
 h1 {
   @extend %heading;
-  @include font-setting('secondary');
+  @include font-setting('primary');
 
   font-size: $size-giant;
 }

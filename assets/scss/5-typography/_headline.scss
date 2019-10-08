@@ -11,9 +11,7 @@
 //
 // Styleguide 5.3.1
 .t-headline {
-  @include font-setting;
-  color: $color-black-off;
-  font-weight: 700;
+  @extend %heading;
 
   &.-article {
     font-size: $size-xl;
