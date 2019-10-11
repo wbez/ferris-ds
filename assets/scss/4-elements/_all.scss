@@ -79,6 +79,10 @@ figcaption {
   line-height: $line-height-b;
 }
 
+img {
+  max-width: 100%;
+}
+
 @import 'animation';
 @import 'blockquote';
 @import 'form';
