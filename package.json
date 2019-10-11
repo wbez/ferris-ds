@@ -1,6 +1,6 @@
 {
   "name": "@wbez/ferris-ds",
-  "version": "1.0.0-5",
+  "version": "1.0.0-6",
   "description": "Asset library of SCSS and SVG files",
   "scripts": {
     "build": "node docs/config/tasks/build.js",
