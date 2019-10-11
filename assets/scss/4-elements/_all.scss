@@ -5,7 +5,7 @@
 html {
   font-size: $font-root;
 
-  @include mq($until: bp-s) {
+  @include breakpoint-max(bp-s) {
     font-size: $font-root-mobile;
   }
 }

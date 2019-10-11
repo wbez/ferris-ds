@@ -60,8 +60,7 @@
     "svgstore": "^3.0.0-2"
   },
   "dependencies": {
-    "normalize.css": "^8.0.1",
-    "sass-mq": "^5.0.0"
+    "normalize.css": "^8.0.1"
   },
   "husky": {
     "hooks": {

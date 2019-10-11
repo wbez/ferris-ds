@@ -63,17 +63,17 @@
 .has-page-padding {
   padding: 0 $size-xs;
 
-  @include mq($from: bp-m, $until: bp-xl) {
+  @include breakpoint-range( bp-m, bp-xl ) {
     padding: 0 $size-b;
   }
 
-  @include mq($from: bp-xl) {
+  @include breakpoint-min(bp-xl) {
     padding: 0;
   }
 }
 
 .has-page-padding-at-bp-l {
-  @include mq($from: bp-l, $until: bp-xl) {
+  @include breakpoint-range( bp-l, bp-xl ) {
     padding: 0 $size-b;
   }
 }
@@ -82,7 +82,7 @@
   padding-top: $size-xxxl;
   padding-bottom: $size-xxxl;
   
-  @include mq($until: bp-m) {
+  @include breakpoint-max(bp-m) {
     padding-top: $size-xl;
     padding-bottom: $size-xl;
   }

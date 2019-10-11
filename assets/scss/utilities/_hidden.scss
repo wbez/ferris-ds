@@ -47,13 +47,13 @@
 
 @each $bp-name, $bp-value in $mq-breakpoints {
   .is-hidden-from-#{$bp-name} {
-    @include mq($from: #{$bp-name}) {
+    @include breakpoint-min(#{$bp-name}) {
       display: none !important;
     }
   }
 
   .is-hidden-until-#{$bp-name} {
-    @include mq($until: #{$bp-name}) {
+    @include breakpoint-max(#{$bp-name}) {
       display: none !important;
     }
   }

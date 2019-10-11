@@ -87,18 +87,6 @@
   }
 }
 
-// @mixin mq
-//
-// This is a mixin helper imported via NPM via the <a href="https://github.com/sass-mq/sass-mq">Sass MQ library</a> <code class="ds-breathe-m">@include mq($from: bp-m, $and: '(orientation: landscape)') {}</code>
-//
-// $from = false -  {String | Boolean} One of $mq-breakpoints
-// $until = false - {String | Boolean}  One of $mq-breakpoints
-// $and = false - {String | Boolean}  Additional media query parameters
-// $media-type - {String} ($mq-media-type) Media type: screen, print…
-//
-// Styleguide 2.1.4
-//
-
 // @mixin gap
 //
 // This is to account for the eminent deprecation of [`grid-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/gap). Some browsers honor `gap`, while others are living in the past with `grid-gap`. This keeps us working for both names. Eventually, we can remove this mixin in favor of just using gap. The new `gap` naming is introduced on Chrome 68+, Safari 11.2, Firefox 61+, and Edge 16+<br>Example: `.my-grid { @include gap($size-m) }`

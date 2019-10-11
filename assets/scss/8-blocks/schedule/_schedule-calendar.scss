@@ -37,7 +37,7 @@
     // Create a fade out effect for overflowing elements at the beginning and end of the visible section.
     @include fade-overflow;
 
-    @include mq($from: bp-s) {
+    @include breakpoint-min(bp-s) {
       position: sticky;
       top: 0;
       z-index: 3;

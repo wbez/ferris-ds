@@ -31,7 +31,7 @@ $vert-bar-thin: 4px;
     padding-left: $size-xxl;
   }
 
-  @include mq($until: bp-s) {
+  @include breakpoint-max(bp-s) {
     &.-from-bp-s {
       padding-left: 0;
       border-left: 0;
