@@ -18,6 +18,7 @@
 .l-full {
   @include full-width;
   max-width: none;
+  width: 100vw;
 }
 
 @each $bp-name, $bp-value in $mq-breakpoints {
@@ -25,6 +26,7 @@
     @include breakpoint-min(#{$bp-name}) {
       @include full-width;
       max-width: none;
+      width: 100vw;
     }
   }
 
@@ -32,6 +34,7 @@
     @include breakpoint-max(#{$bp-name}) {
       @include full-width;
       max-width: none;
+      width: 100vw;
     }
   }
 }
