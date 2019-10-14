@@ -136,9 +136,14 @@ $grid-color: red; // Grid overlay color
 // customized for each breakpoint.
 
 $breakpoints: (
-  bp-xs: (
+  bp-0: (
     cols: 4,
     min-width: 0,
+    margin: $pad,
+  ),
+  bp-xs: (
+    cols: 4,
+    min-width: $bp-xs,
     margin: $pad,
   ),
   bp-s: (
