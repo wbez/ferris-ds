@@ -1,0 +1,28 @@
+// Subhed (t-subhed)
+//
+// Our default smallhed formatting. Does not include size.
+//
+// Small heds are typically `<h3>` elements, but you can apply the styles to any header element to size appropriately. Linked headlines will be given a red underline style on hover.
+//
+// -article - Article smallheds are special and have a designated font size.
+//
+// Markup: <h3 class="t-smallhed {{ className }}">Story subhed text <a>with link.</a></h2>
+//
+//
+// Styleguide 5.3.1
+.t-smallhed {
+  @include font-setting;
+  color: $color-black-off;
+  font-weight: 700;
+
+  &.-article {
+    font-size: $size-b;
+    line-height: 1.2;
+    margin-top: $size-l;
+    margin-bottom: $size-l / 3;
+
+    + * {
+      margin-top: 0;
+    }
+  }
+}
