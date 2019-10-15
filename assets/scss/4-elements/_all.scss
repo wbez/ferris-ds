@@ -2,6 +2,8 @@
 //
 // Styleguide 4.0
 
+/* purgecss start ignore */
+
 html {
   font-size: $font-root;
 
@@ -89,3 +91,5 @@ img {
 @import 'blockquote';
 @import 'form';
 @import 'headings';
+
+/* purgecss end ignore */
