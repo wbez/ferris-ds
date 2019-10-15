@@ -16,6 +16,7 @@
   font-weight: 700;
 
   &.-article {
+    clear: left;
     font-size: $size-l;
     line-height: 1.2;
     margin-top: $size-l;

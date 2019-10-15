@@ -1,4 +1,4 @@
-// Subhed (t-subhed)
+// Subhed (t-smallhed)
 //
 // Our default smallhed formatting. Does not include size.
 //
@@ -16,6 +16,7 @@
   font-weight: 700;
 
   &.-article {
+    clear: left;
     font-size: $size-b;
     line-height: 1.2;
     margin-top: $size-l;
