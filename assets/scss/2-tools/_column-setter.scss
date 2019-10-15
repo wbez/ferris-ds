@@ -102,7 +102,7 @@
     ) !=
       number or
       unitless(
-        map-get(map-get($breakpoints, (nth(map-keys($breakpoints), $i))), cols)
+      map-get(map-get($breakpoints, (nth(map-keys($breakpoints), $i))), cols)
       ) ==
       false
     {
@@ -195,7 +195,7 @@ $colspan-lesson: "A 'colspan' function call must include the unitless numeric co
     @if (
       (type-of($target) == 'number' and unitless($target) == true) and
       (type-of($container) != 'number' or unitless($container) == false)
-      ) or
+    ) or
       (
         $target ==
           'm' and
@@ -447,7 +447,6 @@ $grid-lesson: "A 'grid' mixin call must include a valid class name, e.g. 'grid(c
           } @else {
             margin: 0 colspan(m, bp-attribute($bp, cols));
           }
-          padding: 0 colspan(p, bp-attribute($bp, cols));
         }
       }
 

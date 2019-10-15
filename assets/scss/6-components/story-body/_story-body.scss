@@ -101,9 +101,6 @@ $story-narrow-bp: ($story-narrow / 1rem) + $story-padding-buffer;
 
     > figcaption {
       @extend .c-caption;
-
-      display: table-caption;
-      caption-side: bottom;
     }
   }
 }
