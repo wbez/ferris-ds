@@ -113,7 +113,7 @@ $gap: $size-b;
 // of these variables! For any you don't need to use, just
 // assign a value of 0.
 
-$mar: 1; // Margin width
+$mar: 0; // Margin width
 $col: 6; // Column width
 $gut: 1; // Gutter width
 $pad: 1; // Padding width
@@ -145,17 +145,14 @@ $breakpoints: (
   bp-xs: (
     cols: 4,
     min-width: $bp-xs,
-    margin: 0,
   ),
   bp-s: (
     cols: 6,
     min-width: $bp-s,
-    margin: 0,
   ),
   bp-m: (
     cols: 6,
     min-width: $bp-m,
-    margin: 0,
   ),
   bp-l: (
     cols: 12,
