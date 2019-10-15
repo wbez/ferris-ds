@@ -20,7 +20,8 @@ $bp-l: 845px;
 $bp-xl: 1080px;
 $bp-xxl: 1300px;
 
-$bp-default: 960px;
+// $bp-default: 960px;
+$bp-default: $bp-xl;
 
 $mq-breakpoints: (
   bp-xs: $bp-xs,
@@ -139,36 +140,37 @@ $breakpoints: (
   bp-0: (
     cols: 4,
     min-width: 0,
-    margin: $pad,
+    margin: 0,
   ),
   bp-xs: (
     cols: 4,
     min-width: $bp-xs,
-    margin: $pad,
+    margin: 0,
   ),
   bp-s: (
     cols: 6,
     min-width: $bp-s,
-    margin: $gut,
+    margin: 0,
   ),
   bp-m: (
     cols: 6,
     min-width: $bp-m,
+    margin: 0,
   ),
   bp-l: (
-    cols: 8,
+    cols: 12,
     min-width: $bp-l,
   ),
   bp-xl: (
-    cols: 8,
+    cols: 12,
     min-width: $bp-xl,
   ),
   bp-xxl: (
-    cols: 8,
+    cols: 12,
     min-width: $bp-xxl,
   ),
   bp-default: (
-    cols: 8,
+    cols: 12,
     min-width: $bp-default,
   )
 );
