@@ -40,6 +40,7 @@
   &:focus {
     background-color: $color-white-off;
     color: $color-gray-medium;
+    text-decoration: none;
   }
 
   &.-primary {
@@ -74,6 +75,14 @@
 
   &.-round {
     border-radius: $border-radius-l;
+  }
+
+  &.-xxs {
+    font-size: $size-xxs;
+  }
+
+  &.-xs {
+    font-size: $size-xs;
   }
 
   &.-s {
