@@ -4,13 +4,21 @@
 //
 //
 // Styleguide 5.3.2
+
 .t-section-heading {
   @include font-setting;
-  background: $color-white-off;
-  border: 1px solid $color-gray-light;
   color: $color-gray-medium;
-  font-size: $size-s;
-  font-weight: 400;
-  padding: $size-xxxs;
-  text-transform: uppercase;
+  font-size: $size-b;
+  font-weight: bold;
+  margin-bottom: $size-b;
+
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: '';
+    flex-grow: 1;
+    border-top: 1px solid currentColor;
+    margin-left: $size-xs;
+  }
 }
