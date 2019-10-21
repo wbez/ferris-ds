@@ -19,4 +19,35 @@
   br:first-child:last-child {
     display: none;
   }
+
+  > ul {
+    list-style: disc;
+  }
+
+  > ol {
+    list-style: decimal;
+  }
+
+  > ul,
+  > ol {
+    list-style-position: outside;
+    padding: 0 $size-b;
+
+    li {
+      margin-left: 0;
+      padding-left: 0;
+      margin-bottom: $size-s;
+    }
+
+    ul,
+    ol {
+      margin: $size-s auto;
+      padding: 0 $size-xl;
+      list-style: unset;
+    }
+
+    p {
+      margin: $size-xxxs 0;
+    }
+  }
 }

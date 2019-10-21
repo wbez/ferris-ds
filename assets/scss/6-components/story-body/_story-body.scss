@@ -96,7 +96,6 @@ $story-narrow-bp: ($story-narrow / 1rem) + $story-padding-buffer;
   }
 
   figure {
-    display: table;
     width: 100%;
 
     > figcaption {
