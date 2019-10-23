@@ -89,6 +89,10 @@
     font-size: $size-s;
   }
 
+  &.-m {
+    font-size: $size-m;
+  }
+
   &.-l {
     font-size: $size-l;
   }
@@ -109,15 +113,14 @@
     border: 2px solid currentColor;
     transition: background-color 0.3s;
 
-    @media (hover: hover) {
-      &:hover,
-      &:active {
-        background-color: transparent;
-        opacity: 1;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: transparent;
+      opacity: 1;
 
-        .c-button__inner {
-          color: currentColor;
-        }
+      .c-button__inner {
+        color: currentColor;
       }
     }
   }
