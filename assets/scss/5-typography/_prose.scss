@@ -12,10 +12,6 @@
   }
 
   // Handle extra <br>'s from dirty content
-  br + br {
-    display: none;
-  }
-
   br:first-child:last-child {
     display: none;
   }
