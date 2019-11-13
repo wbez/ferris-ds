@@ -11,6 +11,8 @@ $story-padding-buffer: 2em; // must be em for SASSmq helper
 $story-narrow-bp: ($story-narrow / 1rem) + $story-padding-buffer;
 
 .c-story-body {
+  font-family: Georgia, serif;
+
   > p,
   > h1,
   > h2,
@@ -23,16 +25,13 @@ $story-narrow-bp: ($story-narrow / 1rem) + $story-padding-buffer;
   > span,
   > hr,
   > details,
-  > blockquote {
-    max-width: $story-narrow;
-    margin: $size-b auto;
-    line-height: 1.6;
-  }
-
+  > blockquote,
   > aside,
   > div,
   > figure {
-    margin: $size-l auto;
+    max-width: $story-narrow;
+    margin: $size-b auto;
+    line-height: 1.6;
   }
 
   > figure > figcaption {
@@ -45,7 +44,6 @@ $story-narrow-bp: ($story-narrow / 1rem) + $story-padding-buffer;
   > p,
   > ul li,
   > ol li {
-    // @include font-setting('secondary');
     font-family: Georgia, serif;
     @include underlined-link-parent;
   }
@@ -89,11 +87,6 @@ $story-narrow-bp: ($story-narrow / 1rem) + $story-padding-buffer;
   hr {
     margin: $size-xl auto;
   }
-  // h3s are a dropdown option in the CMS
-  // we hard-set the font size for this reason
-  h3 {
-    font-size: $size-m;
-  }
 
   figure {
     width: 100%;
@@ -101,5 +94,9 @@ $story-narrow-bp: ($story-narrow / 1rem) + $story-padding-buffer;
     > figcaption {
       @extend .c-caption;
     }
+  }
+
+  .breakout {
+    max-width: unset;
   }
 }

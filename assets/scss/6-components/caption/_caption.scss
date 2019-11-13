@@ -6,6 +6,7 @@
 //
 // Styleguide 6.0.1
 .c-caption {
+  @include font-setting;
   color: $color-gray-medium;
   font-size: $size-xs;
   line-height: $line-height-s;
