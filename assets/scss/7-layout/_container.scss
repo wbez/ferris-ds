@@ -17,21 +17,18 @@
 
 .l-full {
   @include full-width;
-  max-width: none;
 }
 
 @each $bp-name, $bp-value in $mq-breakpoints {
   .l-full-from-#{$bp-name} {
     @include breakpoint-min(#{$bp-name}) {
       @include full-width;
-      max-width: none;
     }
   }
 
   .l-full-until-#{$bp-name} {
     @include breakpoint-max(#{$bp-name}) {
       @include full-width;
-      max-width: none;
     }
   }
 }
