@@ -15,6 +15,10 @@
 
 @include grid( l-container );
 
+.l-container.l-container {
+  background-color: transparent;
+}
+
 .l-full {
   @include full-width;
 }
