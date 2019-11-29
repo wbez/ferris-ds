@@ -7,6 +7,13 @@
 //
 // Styleguide 5.3.1
 .t-prose {
+  @include underlined-link-parent;
+
+  > * {
+    margin: $size-b auto;
+    line-height: $line-height-b;
+  }
+
   > :not(:last-child) {
     margin-bottom: $size-s;
   }

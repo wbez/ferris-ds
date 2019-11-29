@@ -53,6 +53,10 @@ a {
   @supports (text-decoration-skip-ink: auto) {
     text-decoration-skip-ink: auto;
   }
+
+  > u {
+    text-decoration: none;
+  }
 }
 
 // We want all of our cite elements to not be italicized

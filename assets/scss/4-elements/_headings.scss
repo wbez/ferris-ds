@@ -14,6 +14,10 @@
   &:first-child {
     margin-top: $size-tiny;
   }
+
+  > b {
+    font-weight: inherit;
+  }
   
   @include underlined-link-parent;
 }

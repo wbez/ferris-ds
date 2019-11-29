@@ -30,8 +30,6 @@ $story-narrow-bp: ($story-narrow / 1rem) + $story-padding-buffer;
   > div,
   > figure {
     max-width: $story-narrow;
-    margin: $size-b auto;
-    line-height: 1.6;
   }
 
   > figure > figcaption {
@@ -45,7 +43,6 @@ $story-narrow-bp: ($story-narrow / 1rem) + $story-padding-buffer;
   > ul li,
   > ol li {
     font-family: Georgia, serif;
-    @include underlined-link-parent;
   }
 
   > ul {
