@@ -10,6 +10,7 @@ const icons = require('../tools/icons');
 const styles = require('../tools/styles');
 const copyRunner = require('./copy');
 const docsRunner = require('./docs.js');
+const githubRunner = require('./github.js');
 
 const { mappedStyles, mappedCopies, mappedIcons } = require('../paths.js');
 
@@ -101,6 +102,9 @@ async function dev() {
 
         logStatus();
       };
+
+      // build github data
+      await githubRunner();
 
       // build icons
       await icons(mappedIcons);

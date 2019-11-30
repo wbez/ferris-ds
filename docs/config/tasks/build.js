@@ -8,10 +8,14 @@ const icons = require('../tools/icons');
 const styles = require('../tools/styles');
 const copy = require('./copy');
 const docs = require('./docs.js');
+const github = require('./github.js');
 
 const { mappedStyles, mappedIcons, mappedCopies } = require('../paths.js');
 
 async function build() {
+  // grab github data
+  await github();
+
   // compile and move files
   await styles(mappedStyles);
   await icons(mappedIcons);
