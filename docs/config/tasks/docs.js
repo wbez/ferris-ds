@@ -73,7 +73,7 @@ const clean = async (html, deprecated) => {
 const merge = async styles => {
   let github = {};
   try {
-    github = await fs.readJson(mappedGithubData.out);
+    github = await fs.readJson(mappedGithubData.wbez);
   } catch (err) {
     // eslint-disable-next-line no-console
     console.error(err);
@@ -82,21 +82,27 @@ const merge = async styles => {
   const items = styles.items.map(section => {
     const list = section.list.map(classInfo => {
       const { mainClass } = classInfo;
+
+      // set githubData
       let githubData = {};
       if (typeof github[mainClass] !== 'undefined') {
-        githubData = github[mainClass].searchDataArr;
+        githubData = github[mainClass][0].searchDataArr;
       }
+
+      // set modifiers
       const modifiers = classInfo.modifiers.map(modifier => {
         const { className } = modifier;
         let githubDataMod = {};
-        if (typeof github[className] !== 'undefined') {
-          githubDataMod = github[className].searchDataArr;
+        if (typeof github[mainClass] !== 'undefined') {
+          githubDataMod = github[mainClass].find(d => d.className === className)
+            .searchDataArr;
         }
         return {
           ...modifier,
           githubData: githubDataMod,
         };
       });
+
       return {
         ...classInfo,
         githubData,
