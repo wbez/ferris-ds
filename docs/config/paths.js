@@ -65,7 +65,7 @@ const mappedCopies = [
 
 const mappedGithubData = {
   in: './docs/src/data/github.json',
-  out: './docs/dist/data/github.json',
+  out: `${buildDir}data/github.json`,
 };
 
 module.exports = {
