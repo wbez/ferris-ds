@@ -64,10 +64,8 @@ const mappedCopies = [
 ];
 
 const mappedGithubData = {
-  in:
-    'https://s3.amazonaws.com/cdn.texastribune.org/design-system/class-usage.json',
+  in: './docs/src/data/github.json',
   out: './docs/dist/data/github.json',
-  wbez: './docs/dist/data/github-wbez.json',
 };
 
 module.exports = {

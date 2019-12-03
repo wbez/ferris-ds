@@ -1,0 +1,4609 @@
+{
+  "t-byline": [
+    {
+      "name": "Byline",
+      "className": "t-byline",
+      "isModifier": false,
+      "baseClass": "t-byline",
+      "searchDataArr": [
+        {
+          "repo": "www.wbez.org",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "Byline.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/5a42176057e8fdb570baec91f89c9b1a8b3617d5/client/components/story/Byline.vue"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "t-datestamp": [
+    {
+      "name": "Datestamp",
+      "className": "t-datestamp",
+      "isModifier": false,
+      "baseClass": "t-datestamp",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 5,
+          "results": [
+            {
+              "label": "_default.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_default.html"
+            },
+            {
+              "label": "_row.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_row.html"
+            },
+            {
+              "label": "_skinny.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_skinny.html"
+            },
+            {
+              "label": "_tile.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_tile.html"
+            },
+            {
+              "label": "_row-featured.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_row-featured.html"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "t-headline": [
+    {
+      "name": "Headline",
+      "className": "t-headline",
+      "isModifier": false,
+      "baseClass": "t-headline",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 10,
+          "results": [
+            {
+              "label": "_default.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_default.html"
+            },
+            {
+              "label": "_row.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_row.html"
+            },
+            {
+              "label": "_skinny.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_skinny.html"
+            },
+            {
+              "label": "_tile.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_tile.html"
+            },
+            {
+              "label": "_event.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_event.html"
+            },
+            {
+              "label": "_row-featured.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_row-featured.html"
+            },
+            {
+              "label": "_schedule-show.tpl",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/schedule/_schedule-show.tpl"
+            },
+            {
+              "label": "_t-helpers.scss",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/5-typography/_t-helpers.scss"
+            },
+            {
+              "label": "player.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/player/player.html"
+            },
+            {
+              "label": "README.md",
+              "url": "https://github.com/wbez/ferris-ds/blob/92487b5459924f4be49c3b1eb752988a1508ba53/README.md"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 14,
+          "results": [
+            {
+              "label": "PaginatedStoryList.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/783199d693a4f1814089abffd51c17ea8568e427/client/components/PaginatedStoryList.vue"
+            },
+            {
+              "label": "SlimHeader.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/c03406f15f42289b9d93c1b802bb2ced29fe2080/client/components/show/SlimHeader.vue"
+            },
+            {
+              "label": "thank-you.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/thank-you.vue"
+            },
+            {
+              "label": "grants.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/grants.vue"
+            },
+            {
+              "label": "main.scss",
+              "url": "https://github.com/wbez/www.wbez.org/blob/1db0760f2e12cb06851b0ee5efb1b0f807a4ebdb/client/assets/main.scss"
+            },
+            {
+              "label": "matching-gifts.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/matching-gifts.vue"
+            },
+            {
+              "label": "securities.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/securities.vue"
+            },
+            {
+              "label": "contact.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/contact.vue"
+            },
+            {
+              "label": "sounding-board.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/sounding-board.vue"
+            },
+            {
+              "label": "giving-circles.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/giving-circles.vue"
+            },
+            {
+              "label": "planned-giving.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/planned-giving.vue"
+            },
+            {
+              "label": "StorySnippetPresentation.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/783199d693a4f1814089abffd51c17ea8568e427/client/components/StorySnippetPresentation.vue"
+            },
+            {
+              "label": "contact-form.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/contact-form.vue"
+            },
+            {
+              "label": "Cover.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/c03406f15f42289b9d93c1b802bb2ced29fe2080/client/components/story/Cover.vue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "-article",
+      "className": "-article",
+      "isModifier": true,
+      "baseClass": "t-headline",
+      "searchDataArr": [
+        {
+          "repo": "www.wbez.org",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "Cover.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/c03406f15f42289b9d93c1b802bb2ced29fe2080/client/components/story/Cover.vue"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "t-linkstyle": [
+    {
+      "name": "Links",
+      "className": "t-linkstyle",
+      "isModifier": false,
+      "baseClass": "t-linkstyle",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "navbar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/navbar/navbar.html"
+            },
+            {
+              "label": "story-body.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/333a6364306ceafa8f3a71fba2fa8d995a2e6ddb/assets/scss/6-components/story-body/story-body.html"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "SocialLinks.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/1db0760f2e12cb06851b0ee5efb1b0f807a4ebdb/client/components/show/SocialLinks.vue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "-underlined",
+      "className": "-underlined",
+      "isModifier": true,
+      "baseClass": "t-linkstyle",
+      "searchDataArr": []
+    },
+    {
+      "name": "-underlined-subtle",
+      "className": "-underlined-subtle",
+      "isModifier": true,
+      "baseClass": "t-linkstyle",
+      "searchDataArr": [
+        {
+          "repo": "www.wbez.org",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "SocialLinks.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/1db0760f2e12cb06851b0ee5efb1b0f807a4ebdb/client/components/show/SocialLinks.vue"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "t-meta": [
+    {
+      "name": "Meta",
+      "className": "t-meta",
+      "isModifier": false,
+      "baseClass": "t-meta",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "_byline.scss",
+              "url": "https://github.com/wbez/ferris-ds/blob/043bfbed2a998ccb5dbfba67db8ada55d5ba4ccb/assets/scss/5-typography/_byline.scss"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "Cover.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/c03406f15f42289b9d93c1b802bb2ced29fe2080/client/components/story/Cover.vue"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "t-overline": [
+    {
+      "name": "Overline",
+      "className": "t-overline",
+      "isModifier": false,
+      "baseClass": "t-overline",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 6,
+          "results": [
+            {
+              "label": "_default.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_default.html"
+            },
+            {
+              "label": "_row.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_row.html"
+            },
+            {
+              "label": "_skinny.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_skinny.html"
+            },
+            {
+              "label": "_tile.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_tile.html"
+            },
+            {
+              "label": "_row-featured.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_row-featured.html"
+            },
+            {
+              "label": "header.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/docs/src/includes/header.html"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "StoryKicker.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/8e89a28f23d74037c9bb06d276e25624d2f9fc54/client/components/StoryKicker.vue"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "t-prose": [
+    {
+      "name": "Prose",
+      "className": "t-prose",
+      "isModifier": false,
+      "baseClass": "t-prose",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 4,
+          "results": [
+            {
+              "label": "prose.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/5-typography/prose.html"
+            },
+            {
+              "label": "accent-box.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/accent-box/accent-box.html"
+            },
+            {
+              "label": "_schedule-show.tpl",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/schedule/_schedule-show.tpl"
+            },
+            {
+              "label": "story-body.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/333a6364306ceafa8f3a71fba2fa8d995a2e6ddb/assets/scss/6-components/story-body/story-body.html"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 15,
+          "results": [
+            {
+              "label": "giving-circles.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/giving-circles.vue"
+            },
+            {
+              "label": "mobile-apps.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/mobile-apps.vue"
+            },
+            {
+              "label": "directory.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/c03406f15f42289b9d93c1b802bb2ced29fe2080/client/pages/topics/directory.vue"
+            },
+            {
+              "label": "directory.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/c03406f15f42289b9d93c1b802bb2ced29fe2080/client/pages/collections/directory.vue"
+            },
+            {
+              "label": "thank-you.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/thank-you.vue"
+            },
+            {
+              "label": "grants.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/grants.vue"
+            },
+            {
+              "label": "matching-gifts.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/matching-gifts.vue"
+            },
+            {
+              "label": "securities.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/securities.vue"
+            },
+            {
+              "label": "collection.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/783199d693a4f1814089abffd51c17ea8568e427/client/pages/collections/collection.vue"
+            },
+            {
+              "label": "contact.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/contact.vue"
+            },
+            {
+              "label": "sounding-board.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/sounding-board.vue"
+            },
+            {
+              "label": "planned-giving.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/planned-giving.vue"
+            },
+            {
+              "label": "contact-form.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/contact-form.vue"
+            },
+            {
+              "label": "show.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/783199d693a4f1814089abffd51c17ea8568e427/client/pages/shows/show.vue"
+            },
+            {
+              "label": "story.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/783199d693a4f1814089abffd51c17ea8568e427/client/pages/stories/story.vue"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "t-section-heading": [
+    {
+      "name": "Sectionhead",
+      "className": "t-section-heading",
+      "isModifier": false,
+      "baseClass": "t-section-heading",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "related-stories.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/related-stories/related-stories.html"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 3,
+          "results": [
+            {
+              "label": "show.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/783199d693a4f1814089abffd51c17ea8568e427/client/pages/shows/show.vue"
+            },
+            {
+              "label": "TopStories.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/783199d693a4f1814089abffd51c17ea8568e427/client/components/TopStories.vue"
+            },
+            {
+              "label": "story.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/783199d693a4f1814089abffd51c17ea8568e427/client/pages/stories/story.vue"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "t-smallcaps": [
+    {
+      "name": "Smallcaps",
+      "className": "t-smallcaps",
+      "isModifier": false,
+      "baseClass": "t-smallcaps",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "_schedule-date.tpl",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/schedule/_schedule-date.tpl"
+            },
+            {
+              "label": "_schedule-show.tpl",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/schedule/_schedule-show.tpl"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 3,
+          "results": [
+            {
+              "label": "collection.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/783199d693a4f1814089abffd51c17ea8568e427/client/pages/collections/collection.vue"
+            },
+            {
+              "label": "StoryKicker.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/8e89a28f23d74037c9bb06d276e25624d2f9fc54/client/components/StoryKicker.vue"
+            },
+            {
+              "label": "mobile-apps.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/mobile-apps.vue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "-light",
+      "className": "-light",
+      "isModifier": true,
+      "baseClass": "t-smallcaps",
+      "searchDataArr": []
+    },
+    {
+      "name": "-section",
+      "className": "-section",
+      "isModifier": true,
+      "baseClass": "t-smallcaps",
+      "searchDataArr": []
+    }
+  ],
+  "t-smallhed": [
+    {
+      "name": "Subhed",
+      "className": "t-smallhed",
+      "isModifier": false,
+      "baseClass": "t-smallhed",
+      "searchDataArr": [
+        {
+          "repo": "www.wbez.org",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "ContentObject.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/1168b6379d4920286cb7afcff310fd86384d9586/client/components/story/ContentObject.vue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "-article",
+      "className": "-article",
+      "isModifier": true,
+      "baseClass": "t-smallhed",
+      "searchDataArr": [
+        {
+          "repo": "www.wbez.org",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "ContentObject.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/1168b6379d4920286cb7afcff310fd86384d9586/client/components/story/ContentObject.vue"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "t-subhed": [
+    {
+      "name": "Subhed",
+      "className": "t-subhed",
+      "isModifier": false,
+      "baseClass": "t-subhed",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "accent-box.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/accent-box/accent-box.html"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "ContentObject.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/1168b6379d4920286cb7afcff310fd86384d9586/client/components/story/ContentObject.vue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "-article",
+      "className": "-article",
+      "isModifier": true,
+      "baseClass": "t-subhed",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "accent-box.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/accent-box/accent-box.html"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "ContentObject.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/1168b6379d4920286cb7afcff310fd86384d9586/client/components/story/ContentObject.vue"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "undefined": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "t-align-<dir>": [
+    {
+      "name": ".t-align-left",
+      "className": "t-align-left",
+      "isModifier": true,
+      "baseClass": "t-align-<dir>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 3,
+          "results": [
+            {
+              "label": "table.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/table/table.html"
+            },
+            {
+              "label": "info-drop.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/info-drop/info-drop.html"
+            },
+            {
+              "label": "player.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/player/player.html"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 3,
+          "results": [
+            {
+              "label": "404.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/783199d693a4f1814089abffd51c17ea8568e427/client/components/error/404.vue"
+            },
+            {
+              "label": "default.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/5a42176057e8fdb570baec91f89c9b1a8b3617d5/client/components/error/default.vue"
+            },
+            {
+              "label": "collection.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/783199d693a4f1814089abffd51c17ea8568e427/client/pages/collections/collection.vue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".t-align-center",
+      "className": "t-align-center",
+      "isModifier": true,
+      "baseClass": "t-align-<dir>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 4,
+          "results": [
+            {
+              "label": "site-footer.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/site-footer/site-footer.html"
+            },
+            {
+              "label": "index.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/937308a0bfc9170a38fa2d68782577f4a8420ec7/docs/src/index.html"
+            },
+            {
+              "label": "columns.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/d5f60bfad44f5cee4d40f3c8421c1fbd7d8ea827/assets/scss/7-layout/columns.html"
+            },
+            {
+              "label": "info-drop.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/info-drop/info-drop.html"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 4,
+          "results": [
+            {
+              "label": "default.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/5a42176057e8fdb570baec91f89c9b1a8b3617d5/client/components/error/default.vue"
+            },
+            {
+              "label": "mobile-apps.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/mobile-apps.vue"
+            },
+            {
+              "label": "PaginatedStoryList.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/783199d693a4f1814089abffd51c17ea8568e427/client/components/PaginatedStoryList.vue"
+            },
+            {
+              "label": "404.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/783199d693a4f1814089abffd51c17ea8568e427/client/components/error/404.vue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".t-align-right",
+      "className": "t-align-right",
+      "isModifier": true,
+      "baseClass": "t-align-<dir>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "player.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/player/player.html"
+            },
+            {
+              "label": "navbar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/navbar/navbar.html"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "t-<case>": [
+    {
+      "name": ".t-titlecase",
+      "className": "t-titlecase",
+      "isModifier": true,
+      "baseClass": "t-<case>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".t-uppercase",
+      "className": "t-uppercase",
+      "isModifier": true,
+      "baseClass": "t-<case>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "info-drop.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/info-drop/info-drop.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".t-uppercase.-wide",
+      "className": "t-uppercase -wide",
+      "isModifier": true,
+      "baseClass": "t-<case>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".t-uppercase.-extra-wide",
+      "className": "t-uppercase -extra-wide",
+      "isModifier": true,
+      "baseClass": "t-<case>",
+      "searchDataArr": []
+    }
+  ],
+  "t-<font-variant>": [
+    {
+      "name": ".t-serif",
+      "className": "t-serif",
+      "isModifier": true,
+      "baseClass": "t-<font-variant>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".t-sans",
+      "className": "t-sans",
+      "isModifier": true,
+      "baseClass": "t-<font-variant>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "header.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/docs/src/includes/header.html"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "Donate.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/1168b6379d4920286cb7afcff310fd86384d9586/client/components/affordances/Donate.vue"
+            },
+            {
+              "label": "Subscribe.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/1168b6379d4920286cb7afcff310fd86384d9586/client/components/affordances/Subscribe.vue"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "t-weight-<type>": [
+    {
+      "name": "t-weight-normal",
+      "className": "t-weight-normal",
+      "isModifier": true,
+      "baseClass": "t-weight-<type>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "site-footer.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/site-footer/site-footer.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "t-weight-bold",
+      "className": "t-weight-bold",
+      "isModifier": true,
+      "baseClass": "t-weight-<type>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "player.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/player/player.html"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 3,
+          "results": [
+            {
+              "label": "SlimHeader.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/c03406f15f42289b9d93c1b802bb2ced29fe2080/client/components/show/SlimHeader.vue"
+            },
+            {
+              "label": "AudioControl.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/c03406f15f42289b9d93c1b802bb2ced29fe2080/client/components/story/AudioControl.vue"
+            },
+            {
+              "label": "StorySnippetPresentation.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/783199d693a4f1814089abffd51c17ea8568e427/client/components/StorySnippetPresentation.vue"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "t-space-<type>": [
+    {
+      "name": "t-space-base",
+      "className": "t-space-base",
+      "isModifier": true,
+      "baseClass": "t-space-<type>",
+      "searchDataArr": []
+    },
+    {
+      "name": "t-space-heading-s",
+      "className": "t-space-heading-s",
+      "isModifier": true,
+      "baseClass": "t-space-<type>",
+      "searchDataArr": []
+    },
+    {
+      "name": "t-space-heading-m",
+      "className": "t-space-heading-m",
+      "isModifier": true,
+      "baseClass": "t-space-<type>",
+      "searchDataArr": []
+    },
+    {
+      "name": "t-space-heading-l",
+      "className": "t-space-heading-l",
+      "isModifier": true,
+      "baseClass": "t-space-<type>",
+      "searchDataArr": []
+    }
+  ],
+  "t-size-<size>": [
+    {
+      "name": ".t-size-xxxs",
+      "className": "t-size-xxxs",
+      "isModifier": true,
+      "baseClass": "t-size-<size>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".t-size-xxs",
+      "className": "t-size-xxs",
+      "isModifier": true,
+      "baseClass": "t-size-<size>",
+      "searchDataArr": [
+        {
+          "repo": "www.wbez.org",
+          "total_count": 3,
+          "results": [
+            {
+              "label": "StoryKicker.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/8e89a28f23d74037c9bb06d276e25624d2f9fc54/client/components/StoryKicker.vue"
+            },
+            {
+              "label": "AudioControl.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/c03406f15f42289b9d93c1b802bb2ced29fe2080/client/components/story/AudioControl.vue"
+            },
+            {
+              "label": "HeaderNav.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/cf3a7f8abdfc12d2f4d94f11886e50ffb6c8dbd3/client/components/HeaderNav.vue"
+            }
+          ]
+        },
+        {
+          "repo": "ferris-ds",
+          "total_count": 9,
+          "results": [
+            {
+              "label": "info-drop.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/info-drop/info-drop.html"
+            },
+            {
+              "label": "action-bar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/action-bar/action-bar.html"
+            },
+            {
+              "label": "button-overlay.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/button-overlay/button-overlay.html"
+            },
+            {
+              "label": "_default.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_default.html"
+            },
+            {
+              "label": "_row.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_row.html"
+            },
+            {
+              "label": "_skinny.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_skinny.html"
+            },
+            {
+              "label": "_tile.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_tile.html"
+            },
+            {
+              "label": "_row-featured.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_row-featured.html"
+            },
+            {
+              "label": "site-footer.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/site-footer/site-footer.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".t-size-xs",
+      "className": "t-size-xs",
+      "isModifier": true,
+      "baseClass": "t-size-<size>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 4,
+          "results": [
+            {
+              "label": "navbar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/navbar/navbar.html"
+            },
+            {
+              "label": "mini-form.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/mini-form/mini-form.html"
+            },
+            {
+              "label": "text-input.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/text-input/text-input.html"
+            },
+            {
+              "label": "info-drop.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/info-drop/info-drop.html"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "Contributors.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/1db0760f2e12cb06851b0ee5efb1b0f807a4ebdb/client/components/show/Contributors.vue"
+            },
+            {
+              "label": "Cover.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/c03406f15f42289b9d93c1b802bb2ced29fe2080/client/components/story/Cover.vue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".t-size-s",
+      "className": "t-size-s",
+      "isModifier": true,
+      "baseClass": "t-size-<size>",
+      "searchDataArr": [
+        {
+          "repo": "www.wbez.org",
+          "total_count": 3,
+          "results": [
+            {
+              "label": "StoryKicker.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/8e89a28f23d74037c9bb06d276e25624d2f9fc54/client/components/StoryKicker.vue"
+            },
+            {
+              "label": "SubscribeFlyout.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/1168b6379d4920286cb7afcff310fd86384d9586/client/components/show/SubscribeFlyout.vue"
+            },
+            {
+              "label": "StorySnippetPresentation.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/783199d693a4f1814089abffd51c17ea8568e427/client/components/StorySnippetPresentation.vue"
+            }
+          ]
+        },
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "_event.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_event.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".t-size-b",
+      "className": "t-size-b",
+      "isModifier": true,
+      "baseClass": "t-size-<size>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 7,
+          "results": [
+            {
+              "label": "info-list.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/info-list/info-list.html"
+            },
+            {
+              "label": "site-footer.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/site-footer/site-footer.html"
+            },
+            {
+              "label": "_schedule-show.tpl",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/schedule/_schedule-show.tpl"
+            },
+            {
+              "label": "button-overlay.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/button-overlay/button-overlay.html"
+            },
+            {
+              "label": "_skinny.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_skinny.html"
+            },
+            {
+              "label": "_row-featured.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_row-featured.html"
+            },
+            {
+              "label": "story-body.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/333a6364306ceafa8f3a71fba2fa8d995a2e6ddb/assets/scss/6-components/story-body/story-body.html"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "Cover.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/c03406f15f42289b9d93c1b802bb2ced29fe2080/client/components/story/Cover.vue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".t-size-m",
+      "className": "t-size-m",
+      "isModifier": true,
+      "baseClass": "t-size-<size>",
+      "searchDataArr": [
+        {
+          "repo": "www.wbez.org",
+          "total_count": 4,
+          "results": [
+            {
+              "label": "HeaderNav.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/cf3a7f8abdfc12d2f4d94f11886e50ffb6c8dbd3/client/components/HeaderNav.vue"
+            },
+            {
+              "label": "collection.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/783199d693a4f1814089abffd51c17ea8568e427/client/pages/collections/collection.vue"
+            },
+            {
+              "label": "AudioControl.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/c03406f15f42289b9d93c1b802bb2ced29fe2080/client/components/story/AudioControl.vue"
+            },
+            {
+              "label": "StorySnippetPresentation.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/783199d693a4f1814089abffd51c17ea8568e427/client/components/StorySnippetPresentation.vue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".t-size-l",
+      "className": "t-size-l",
+      "isModifier": true,
+      "baseClass": "t-size-<size>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 9,
+          "results": [
+            {
+              "label": "navbar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/navbar/navbar.html"
+            },
+            {
+              "label": "collection-header.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/collection-header/collection-header.html"
+            },
+            {
+              "label": "player.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/player/player.html"
+            },
+            {
+              "label": "site-footer.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/site-footer/site-footer.html"
+            },
+            {
+              "label": "action-bar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/action-bar/action-bar.html"
+            },
+            {
+              "label": "button.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/button/button.html"
+            },
+            {
+              "label": "_default.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_default.html"
+            },
+            {
+              "label": "_row.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_row.html"
+            },
+            {
+              "label": "_tile.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_tile.html"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 3,
+          "results": [
+            {
+              "label": "SlimHeader.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/c03406f15f42289b9d93c1b802bb2ced29fe2080/client/components/show/SlimHeader.vue"
+            },
+            {
+              "label": "mobile-apps.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/mobile-apps.vue"
+            },
+            {
+              "label": "show.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/783199d693a4f1814089abffd51c17ea8568e427/client/pages/shows/show.vue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".t-size-xl",
+      "className": "t-size-xl",
+      "isModifier": true,
+      "baseClass": "t-size-<size>",
+      "searchDataArr": [
+        {
+          "repo": "www.wbez.org",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "AudioControl.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/c03406f15f42289b9d93c1b802bb2ced29fe2080/client/components/story/AudioControl.vue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".t-size-xxl",
+      "className": "t-size-xxl",
+      "isModifier": true,
+      "baseClass": "t-size-<size>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "player.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/player/player.html"
+            },
+            {
+              "label": "index.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/937308a0bfc9170a38fa2d68782577f4a8420ec7/docs/src/index.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".t-size-giant",
+      "className": "t-size-giant",
+      "isModifier": true,
+      "baseClass": "t-size-<size>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "player.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/player/player.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".t-size-xxxl",
+      "className": "t-size-xxxl",
+      "isModifier": true,
+      "baseClass": "t-size-<size>",
+      "searchDataArr": []
+    }
+  ],
+  "c-accent-box": [
+    {
+      "name": "Accent box",
+      "className": "c-accent-box",
+      "isModifier": false,
+      "baseClass": "c-accent-box",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "accent-box.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/accent-box/accent-box.html"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "main.scss",
+              "url": "https://github.com/wbez/www.wbez.org/blob/1db0760f2e12cb06851b0ee5efb1b0f807a4ebdb/client/assets/main.scss"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "c-button": [
+    {
+      "name": "Button",
+      "className": "c-button",
+      "isModifier": false,
+      "baseClass": "c-button",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 20,
+          "results": [
+            {
+              "label": "site-footer.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/site-footer/site-footer.html"
+            },
+            {
+              "label": "navbar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/navbar/navbar.html"
+            },
+            {
+              "label": "button.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/button/button.html"
+            },
+            {
+              "label": "share-bar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/share-bar/share-bar.html"
+            },
+            {
+              "label": "_site-footer.scss",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/site-footer/_site-footer.scss"
+            },
+            {
+              "label": "_site-footer-social.scss",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/site-footer/_site-footer-social.scss"
+            },
+            {
+              "label": "action-bar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/action-bar/action-bar.html"
+            },
+            {
+              "label": "button-overlay.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/button-overlay/button-overlay.html"
+            },
+            {
+              "label": "collection-header.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/collection-header/collection-header.html"
+            },
+            {
+              "label": "_default.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_default.html"
+            },
+            {
+              "label": "_row.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_row.html"
+            },
+            {
+              "label": "_skinny.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_skinny.html"
+            },
+            {
+              "label": "_tile.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_tile.html"
+            },
+            {
+              "label": "_row-featured.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_row-featured.html"
+            },
+            {
+              "label": "_share-bar.scss",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/share-bar/_share-bar.scss"
+            },
+            {
+              "label": "_shadows.scss",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/utilities/_shadows.scss"
+            },
+            {
+              "label": "_mini-form.scss",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/mini-form/_mini-form.scss"
+            },
+            {
+              "label": "_newsletter-signup.scss",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/newsletter-signup/_newsletter-signup.scss"
+            },
+            {
+              "label": "mini-form.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/mini-form/mini-form.html"
+            },
+            {
+              "label": "_event.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_event.html"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 9,
+          "results": [
+            {
+              "label": "PaginationNav.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/ebfc78a3bdebaadebc4045210f0d4cb0a28d642a/client/plugins/pagination/PaginationNav.vue"
+            },
+            {
+              "label": "Sharebar.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/1168b6379d4920286cb7afcff310fd86384d9586/client/components/story/Sharebar.vue"
+            },
+            {
+              "label": "Donate.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/1168b6379d4920286cb7afcff310fd86384d9586/client/components/affordances/Donate.vue"
+            },
+            {
+              "label": "Subscribe.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/1168b6379d4920286cb7afcff310fd86384d9586/client/components/affordances/Subscribe.vue"
+            },
+            {
+              "label": "SubscribeLinks.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/d200b72c2598f8f3b522721c9dfcebbecfe2f6a5/client/components/show/SubscribeLinks.vue"
+            },
+            {
+              "label": "mobile-apps.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/mobile-apps.vue"
+            },
+            {
+              "label": "404.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/783199d693a4f1814089abffd51c17ea8568e427/client/components/error/404.vue"
+            },
+            {
+              "label": "AudioControl.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/c03406f15f42289b9d93c1b802bb2ced29fe2080/client/components/story/AudioControl.vue"
+            },
+            {
+              "label": "default.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/5a42176057e8fdb570baec91f89c9b1a8b3617d5/client/components/error/default.vue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "-primary",
+      "className": "-primary",
+      "isModifier": true,
+      "baseClass": "c-button",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 11,
+          "results": [
+            {
+              "label": "collection-header.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/collection-header/collection-header.html"
+            },
+            {
+              "label": "button.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/button/button.html"
+            },
+            {
+              "label": "action-bar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/action-bar/action-bar.html"
+            },
+            {
+              "label": "button-overlay.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/button-overlay/button-overlay.html"
+            },
+            {
+              "label": "_default.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_default.html"
+            },
+            {
+              "label": "_row.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_row.html"
+            },
+            {
+              "label": "_skinny.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_skinny.html"
+            },
+            {
+              "label": "_tile.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_tile.html"
+            },
+            {
+              "label": "_row-featured.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_row-featured.html"
+            },
+            {
+              "label": "_event.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_event.html"
+            },
+            {
+              "label": "_schedule-show.tpl",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/schedule/_schedule-show.tpl"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 9,
+          "results": [
+            {
+              "label": "AudioControl.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/c03406f15f42289b9d93c1b802bb2ced29fe2080/client/components/story/AudioControl.vue"
+            },
+            {
+              "label": "Donate.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/1168b6379d4920286cb7afcff310fd86384d9586/client/components/affordances/Donate.vue"
+            },
+            {
+              "label": "404.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/783199d693a4f1814089abffd51c17ea8568e427/client/components/error/404.vue"
+            },
+            {
+              "label": "default.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/5a42176057e8fdb570baec91f89c9b1a8b3617d5/client/components/error/default.vue"
+            },
+            {
+              "label": "SubscribeFlyout.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/1168b6379d4920286cb7afcff310fd86384d9586/client/components/show/SubscribeFlyout.vue"
+            },
+            {
+              "label": "HeaderNav.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/cf3a7f8abdfc12d2f4d94f11886e50ffb6c8dbd3/client/components/HeaderNav.vue"
+            },
+            {
+              "label": "Subscribe.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/1168b6379d4920286cb7afcff310fd86384d9586/client/components/affordances/Subscribe.vue"
+            },
+            {
+              "label": "contact-form.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/contact-form.vue"
+            },
+            {
+              "label": "ways-to-give.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/ways-to-give.vue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "-dark",
+      "className": "-dark",
+      "isModifier": true,
+      "baseClass": "c-button",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 3,
+          "results": [
+            {
+              "label": "navbar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/navbar/navbar.html"
+            },
+            {
+              "label": "site-footer.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/site-footer/site-footer.html"
+            },
+            {
+              "label": "_event.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_event.html"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "mobile-apps.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/mobile-apps.vue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "-round",
+      "className": "-round",
+      "isModifier": true,
+      "baseClass": "c-button",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 7,
+          "results": [
+            {
+              "label": "collection-header.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/collection-header/collection-header.html"
+            },
+            {
+              "label": "action-bar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/action-bar/action-bar.html"
+            },
+            {
+              "label": "site-footer.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/site-footer/site-footer.html"
+            },
+            {
+              "label": "mini-form.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/mini-form/mini-form.html"
+            },
+            {
+              "label": "_event.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_event.html"
+            },
+            {
+              "label": "newsletter-signup.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/newsletter-signup/newsletter-signup.html"
+            },
+            {
+              "label": "_schedule-show.tpl",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/schedule/_schedule-show.tpl"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "AudioControl.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/c03406f15f42289b9d93c1b802bb2ced29fe2080/client/components/story/AudioControl.vue"
+            },
+            {
+              "label": "SubscribeFlyout.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/1168b6379d4920286cb7afcff310fd86384d9586/client/components/show/SubscribeFlyout.vue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "-circle",
+      "className": "-circle",
+      "isModifier": true,
+      "baseClass": "c-button",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 12,
+          "results": [
+            {
+              "label": "navbar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/navbar/navbar.html"
+            },
+            {
+              "label": "site-footer.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/site-footer/site-footer.html"
+            },
+            {
+              "label": "share-bar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/share-bar/share-bar.html"
+            },
+            {
+              "label": "button.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/button/button.html"
+            },
+            {
+              "label": "button-overlay.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/button-overlay/button-overlay.html"
+            },
+            {
+              "label": "_default.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_default.html"
+            },
+            {
+              "label": "_row.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_row.html"
+            },
+            {
+              "label": "_skinny.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_skinny.html"
+            },
+            {
+              "label": "_tile.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_tile.html"
+            },
+            {
+              "label": "_row-featured.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_row-featured.html"
+            },
+            {
+              "label": "action-bar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/action-bar/action-bar.html"
+            },
+            {
+              "label": "player.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/player/player.html"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "AudioControl.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/c03406f15f42289b9d93c1b802bb2ced29fe2080/client/components/story/AudioControl.vue"
+            },
+            {
+              "label": "HeaderNav.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/cf3a7f8abdfc12d2f4d94f11886e50ffb6c8dbd3/client/components/HeaderNav.vue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "-s",
+      "className": "-s",
+      "isModifier": true,
+      "baseClass": "c-button",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 10,
+          "results": [
+            {
+              "label": "site-footer.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/site-footer/site-footer.html"
+            },
+            {
+              "label": "button-overlay.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/button-overlay/button-overlay.html"
+            },
+            {
+              "label": "_skinny.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_skinny.html"
+            },
+            {
+              "label": "action-bar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/action-bar/action-bar.html"
+            },
+            {
+              "label": "_row-featured.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_row-featured.html"
+            },
+            {
+              "label": "_default.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_default.html"
+            },
+            {
+              "label": "_row.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_row.html"
+            },
+            {
+              "label": "_tile.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_tile.html"
+            },
+            {
+              "label": "mini-form.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/mini-form/mini-form.html"
+            },
+            {
+              "label": "_schedule-show.tpl",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/schedule/_schedule-show.tpl"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 9,
+          "results": [
+            {
+              "label": "mobile-apps.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/mobile-apps.vue"
+            },
+            {
+              "label": "PaginationNav.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/ebfc78a3bdebaadebc4045210f0d4cb0a28d642a/client/plugins/pagination/PaginationNav.vue"
+            },
+            {
+              "label": "AudioControl.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/c03406f15f42289b9d93c1b802bb2ced29fe2080/client/components/story/AudioControl.vue"
+            },
+            {
+              "label": "404.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/783199d693a4f1814089abffd51c17ea8568e427/client/components/error/404.vue"
+            },
+            {
+              "label": "default.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/5a42176057e8fdb570baec91f89c9b1a8b3617d5/client/components/error/default.vue"
+            },
+            {
+              "label": "SubscribeFlyout.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/1168b6379d4920286cb7afcff310fd86384d9586/client/components/show/SubscribeFlyout.vue"
+            },
+            {
+              "label": "HeaderNav.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/cf3a7f8abdfc12d2f4d94f11886e50ffb6c8dbd3/client/components/HeaderNav.vue"
+            },
+            {
+              "label": "contact-form.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/contact-form.vue"
+            },
+            {
+              "label": "ways-to-give.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/ways-to-give.vue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "-l",
+      "className": "-l",
+      "isModifier": true,
+      "baseClass": "c-button",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "player.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/player/player.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "-no-border",
+      "className": "-no-border",
+      "isModifier": true,
+      "baseClass": "c-button",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "site-footer.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/site-footer/site-footer.html"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "PaginationNav.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/ebfc78a3bdebaadebc4045210f0d4cb0a28d642a/client/plugins/pagination/PaginationNav.vue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "-outline",
+      "className": "-outline",
+      "isModifier": true,
+      "baseClass": "c-button",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "share-bar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/share-bar/share-bar.html"
+            },
+            {
+              "label": "button.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/button/button.html"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "c-button-overlay": [
+    {
+      "name": "Button overlay",
+      "className": "c-button-overlay",
+      "isModifier": false,
+      "baseClass": "c-button-overlay",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 5,
+          "results": [
+            {
+              "label": "button-overlay.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/button-overlay/button-overlay.html"
+            },
+            {
+              "label": "_default.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_default.html"
+            },
+            {
+              "label": "_skinny.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_skinny.html"
+            },
+            {
+              "label": "_tile.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_tile.html"
+            },
+            {
+              "label": "_row-featured.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_row-featured.html"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "c-calendar-date": [
+    {
+      "name": "Calendar date",
+      "className": "c-calendar-date",
+      "isModifier": false,
+      "baseClass": "c-calendar-date",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 3,
+          "results": [
+            {
+              "label": "calendar-date.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/calendar-date/calendar-date.html"
+            },
+            {
+              "label": "_event.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_event.html"
+            },
+            {
+              "label": "_content-unit.scss",
+              "url": "https://github.com/wbez/ferris-ds/blob/8f12386f5345f8b5f7b81ac01c0d5e961a7fb3b8/assets/scss/6-components/content-unit/_content-unit.scss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".-dark",
+      "className": "-dark",
+      "isModifier": true,
+      "baseClass": "c-calendar-date",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "_event.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_event.html"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "c-caption": [
+    {
+      "name": "Caption",
+      "className": "c-caption",
+      "isModifier": false,
+      "baseClass": "c-caption",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "caption.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/92487b5459924f4be49c3b1eb752988a1508ba53/assets/scss/6-components/caption/caption.html"
+            },
+            {
+              "label": "_story-body.scss",
+              "url": "https://github.com/wbez/ferris-ds/blob/333a6364306ceafa8f3a71fba2fa8d995a2e6ddb/assets/scss/6-components/story-body/_story-body.scss"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "BaseCaption.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/1168b6379d4920286cb7afcff310fd86384d9586/client/components/BaseCaption.vue"
+            },
+            {
+              "label": "StorySnippetPresentation.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/783199d693a4f1814089abffd51c17ea8568e427/client/components/StorySnippetPresentation.vue"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "c-content-unit": [
+    {
+      "name": "Content unit",
+      "className": "c-content-unit",
+      "isModifier": false,
+      "baseClass": "c-content-unit",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 7,
+          "results": [
+            {
+              "label": "_related-stories.scss",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/related-stories/_related-stories.scss"
+            },
+            {
+              "label": "_default.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_default.html"
+            },
+            {
+              "label": "_row.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_row.html"
+            },
+            {
+              "label": "_skinny.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_skinny.html"
+            },
+            {
+              "label": "_tile.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_tile.html"
+            },
+            {
+              "label": "_event.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_event.html"
+            },
+            {
+              "label": "_row-featured.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_row-featured.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".-skinny",
+      "className": "-skinny",
+      "isModifier": true,
+      "baseClass": "c-content-unit",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "_skinny.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_skinny.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".-tile",
+      "className": "-tile",
+      "isModifier": true,
+      "baseClass": "c-content-unit",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "_tile.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_tile.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".-row",
+      "className": "-row",
+      "isModifier": true,
+      "baseClass": "c-content-unit",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "_row.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_row.html"
+            },
+            {
+              "label": "_row-featured.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_row-featured.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".-row-featured",
+      "className": "-row-featured",
+      "isModifier": true,
+      "baseClass": "c-content-unit",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "_row-featured.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_row-featured.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".-event",
+      "className": "-event",
+      "isModifier": true,
+      "baseClass": "c-content-unit",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "_event.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_event.html"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "c-icon": [
+    {
+      "name": "Icon",
+      "className": "c-icon",
+      "isModifier": false,
+      "baseClass": "c-icon",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 18,
+          "results": [
+            {
+              "label": "player.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/player/player.html"
+            },
+            {
+              "label": "site-footer.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/site-footer/site-footer.html"
+            },
+            {
+              "label": "navbar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/navbar/navbar.html"
+            },
+            {
+              "label": "share-bar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/share-bar/share-bar.html"
+            },
+            {
+              "label": "action-bar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/action-bar/action-bar.html"
+            },
+            {
+              "label": "button-overlay.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/button-overlay/button-overlay.html"
+            },
+            {
+              "label": "button.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/button/button.html"
+            },
+            {
+              "label": "collection-header.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/collection-header/collection-header.html"
+            },
+            {
+              "label": "_default.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_default.html"
+            },
+            {
+              "label": "_row.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_row.html"
+            },
+            {
+              "label": "_skinny.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_skinny.html"
+            },
+            {
+              "label": "_tile.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_tile.html"
+            },
+            {
+              "label": "_row-featured.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_row-featured.html"
+            },
+            {
+              "label": "_schedule-show.tpl",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/schedule/_schedule-show.tpl"
+            },
+            {
+              "label": "info-drop.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/info-drop/info-drop.html"
+            },
+            {
+              "label": "icon.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/icon/icon.html"
+            },
+            {
+              "label": "_event.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/content-unit/partials/_event.html"
+            },
+            {
+              "label": "index.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/937308a0bfc9170a38fa2d68782577f4a8420ec7/docs/src/index.html"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 6,
+          "results": [
+            {
+              "label": "Donate.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/1168b6379d4920286cb7afcff310fd86384d9586/client/components/affordances/Donate.vue"
+            },
+            {
+              "label": "BaseIcon.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/1168b6379d4920286cb7afcff310fd86384d9586/client/components/BaseIcon.vue"
+            },
+            {
+              "label": "Subscribe.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/1168b6379d4920286cb7afcff310fd86384d9586/client/components/affordances/Subscribe.vue"
+            },
+            {
+              "label": "SubscribeFlyout.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/1168b6379d4920286cb7afcff310fd86384d9586/client/components/show/SubscribeFlyout.vue"
+            },
+            {
+              "label": "StoryKicker.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/8e89a28f23d74037c9bb06d276e25624d2f9fc54/client/components/StoryKicker.vue"
+            },
+            {
+              "label": "AudioControl.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/c03406f15f42289b9d93c1b802bb2ced29fe2080/client/components/story/AudioControl.vue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".-baseline",
+      "className": "-baseline",
+      "isModifier": true,
+      "baseClass": "c-icon",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "info-drop.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/info-drop/info-drop.html"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "c-info-drop": [
+    {
+      "name": "Info drop",
+      "className": "c-info-drop",
+      "isModifier": false,
+      "baseClass": "c-info-drop",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "info-drop.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/info-drop/info-drop.html"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "c-info-list": [
+    {
+      "name": "Info list",
+      "className": "c-info-list",
+      "isModifier": false,
+      "baseClass": "c-info-list",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "info-list.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/info-list/info-list.html"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "c-link-button": [
+    {
+      "name": "Link button",
+      "className": "c-link-button",
+      "isModifier": false,
+      "baseClass": "c-link-button",
+      "searchDataArr": []
+    }
+  ],
+  "c-list": [
+    {
+      "name": "List",
+      "className": "c-list",
+      "isModifier": false,
+      "baseClass": "c-list",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "list.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/list/list.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".-arrows",
+      "className": "-arrows",
+      "isModifier": true,
+      "baseClass": "c-list",
+      "searchDataArr": []
+    }
+  ],
+  "c-mini-form": [
+    {
+      "name": "Mini form",
+      "className": "c-mini-form",
+      "isModifier": false,
+      "baseClass": "c-mini-form",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "mini-form.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/mini-form/mini-form.html"
+            },
+            {
+              "label": "newsletter-signup.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/newsletter-signup/newsletter-signup.html"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "c-share-bar": [
+    {
+      "name": "Share bar",
+      "className": "c-share-bar",
+      "isModifier": false,
+      "baseClass": "c-share-bar",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "share-bar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/share-bar/share-bar.html"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "Sharebar.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/1168b6379d4920286cb7afcff310fd86384d9586/client/components/story/Sharebar.vue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".-row",
+      "className": "-row",
+      "isModifier": true,
+      "baseClass": "c-share-bar",
+      "searchDataArr": []
+    },
+    {
+      "name": ".-col",
+      "className": "-col",
+      "isModifier": true,
+      "baseClass": "c-share-bar",
+      "searchDataArr": []
+    }
+  ],
+  "c-splash-background": [
+    {
+      "name": "Splash background",
+      "className": "c-splash-background",
+      "isModifier": false,
+      "baseClass": "c-splash-background",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 3,
+          "results": [
+            {
+              "label": "splash-background.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/splash-background/splash-background.html"
+            },
+            {
+              "label": "navbar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/navbar/navbar.html"
+            },
+            {
+              "label": "site-footer.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/site-footer/site-footer.html"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "c-story-body": [
+    {
+      "name": "Story body",
+      "className": "c-story-body",
+      "isModifier": false,
+      "baseClass": "c-story-body",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "story-body.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/333a6364306ceafa8f3a71fba2fa8d995a2e6ddb/assets/scss/6-components/story-body/story-body.html"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "nuxt.config.js",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/nuxt.config.js"
+            },
+            {
+              "label": "story.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/783199d693a4f1814089abffd51c17ea8568e427/client/pages/stories/story.vue"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "c-table": [
+    {
+      "name": "Table",
+      "className": "c-table",
+      "isModifier": false,
+      "baseClass": "c-table",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "table.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/table/table.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".-striped",
+      "className": "-striped",
+      "isModifier": true,
+      "baseClass": "c-table",
+      "searchDataArr": []
+    },
+    {
+      "name": ".-bordered",
+      "className": "-bordered",
+      "isModifier": true,
+      "baseClass": "c-table",
+      "searchDataArr": []
+    },
+    {
+      "name": ".-cols-10-45-45",
+      "className": "-cols-10-45-45",
+      "isModifier": true,
+      "baseClass": "c-table",
+      "searchDataArr": []
+    },
+    {
+      "name": ".-cols-15-70-15",
+      "className": "-cols-15-70-15",
+      "isModifier": true,
+      "baseClass": "c-table",
+      "searchDataArr": []
+    }
+  ],
+  "c-tags": [
+    {
+      "name": "Tags",
+      "className": "c-tags",
+      "isModifier": false,
+      "baseClass": "c-tags",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "tags.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/tags/tags.html"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "c-text-input": [
+    {
+      "name": "Text input",
+      "className": "c-text-input",
+      "isModifier": false,
+      "baseClass": "c-text-input",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 6,
+          "results": [
+            {
+              "label": "text-input.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/text-input/text-input.html"
+            },
+            {
+              "label": "_newsletter-signup.scss",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/newsletter-signup/_newsletter-signup.scss"
+            },
+            {
+              "label": "mini-form.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/mini-form/mini-form.html"
+            },
+            {
+              "label": "newsletter-signup.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/newsletter-signup/newsletter-signup.html"
+            },
+            {
+              "label": "_site-footer.scss",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/site-footer/_site-footer.scss"
+            },
+            {
+              "label": "site-footer.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/site-footer/site-footer.html"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "l-align-<position>": [
+    {
+      "name": "l-align-center-x",
+      "className": "l-align-center-x",
+      "isModifier": true,
+      "baseClass": "l-align-<position>",
+      "searchDataArr": [
+        {
+          "repo": "www.wbez.org",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "PaginatedStoryList.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/783199d693a4f1814089abffd51c17ea8568e427/client/components/PaginatedStoryList.vue"
+            },
+            {
+              "label": "StorySnippetPresentation.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/783199d693a4f1814089abffd51c17ea8568e427/client/components/StorySnippetPresentation.vue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "l-align-center-y",
+      "className": "l-align-center-y",
+      "isModifier": true,
+      "baseClass": "l-align-<position>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "info-drop.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/info-drop/info-drop.html"
+            },
+            {
+              "label": "align.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/7-layout/align.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "l-align-center-self",
+      "className": "l-align-center-self",
+      "isModifier": true,
+      "baseClass": "l-align-<position>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "align.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/7-layout/align.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "l-align-center-children",
+      "className": "l-align-center-children",
+      "isModifier": true,
+      "baseClass": "l-align-<position>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 3,
+          "results": [
+            {
+              "label": "player.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/player/player.html"
+            },
+            {
+              "label": "button.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/button/button.html"
+            },
+            {
+              "label": "align.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/7-layout/align.html"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "mobile-apps.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/mobile-apps.vue"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "l-container": [
+    {
+      "name": "Container",
+      "className": "l-container",
+      "isModifier": false,
+      "baseClass": "l-container",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 7,
+          "results": [
+            {
+              "label": "container.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/7-layout/container.html"
+            },
+            {
+              "label": "columns.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/d5f60bfad44f5cee4d40f3c8421c1fbd7d8ea827/assets/scss/7-layout/columns.html"
+            },
+            {
+              "label": "info-drop.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/info-drop/info-drop.html"
+            },
+            {
+              "label": "navbar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/navbar/navbar.html"
+            },
+            {
+              "label": "site-footer.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/site-footer/site-footer.html"
+            },
+            {
+              "label": "README.md",
+              "url": "https://github.com/wbez/ferris-ds/blob/92487b5459924f4be49c3b1eb752988a1508ba53/README.md"
+            },
+            {
+              "label": "schedule.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/schedule/schedule.html"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 4,
+          "results": [
+            {
+              "label": "main.scss",
+              "url": "https://github.com/wbez/www.wbez.org/blob/1db0760f2e12cb06851b0ee5efb1b0f807a4ebdb/client/assets/main.scss"
+            },
+            {
+              "label": "SlimHeader.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/c03406f15f42289b9d93c1b802bb2ced29fe2080/client/components/show/SlimHeader.vue"
+            },
+            {
+              "label": "default.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/1db0760f2e12cb06851b0ee5efb1b0f807a4ebdb/client/layouts/default.vue"
+            },
+            {
+              "label": "PaginatedStoryList.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/783199d693a4f1814089abffd51c17ea8568e427/client/components/PaginatedStoryList.vue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "-s",
+      "className": "-s",
+      "isModifier": true,
+      "baseClass": "l-container",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "site-footer.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/site-footer/site-footer.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "-m",
+      "className": "-m",
+      "isModifier": true,
+      "baseClass": "l-container",
+      "searchDataArr": []
+    },
+    {
+      "name": "-l",
+      "className": "-l",
+      "isModifier": true,
+      "baseClass": "l-container",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "schedule.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/schedule/schedule.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "-xl",
+      "className": "-xl",
+      "isModifier": true,
+      "baseClass": "l-container",
+      "searchDataArr": []
+    },
+    {
+      "name": "-xxl",
+      "className": "-xxl",
+      "isModifier": true,
+      "baseClass": "l-container",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "navbar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/navbar/navbar.html"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "l-display-<prop>": [
+    {
+      "name": ".l-display-ib",
+      "className": "l-display-ib",
+      "isModifier": true,
+      "baseClass": "l-display-<prop>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "info-drop.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/info-drop/info-drop.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".l-display-block",
+      "className": "l-display-block",
+      "isModifier": true,
+      "baseClass": "l-display-<prop>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "mini-form.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/mini-form/mini-form.html"
+            },
+            {
+              "label": "caption.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/92487b5459924f4be49c3b1eb752988a1508ba53/assets/scss/6-components/caption/caption.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".l-clearfix",
+      "className": "l-clearfix",
+      "isModifier": true,
+      "baseClass": "l-display-<prop>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "display.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/7-layout/display.html"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "mobile-apps.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/mobile-apps.vue"
+            },
+            {
+              "label": "story.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/783199d693a4f1814089abffd51c17ea8568e427/client/pages/stories/story.vue"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "l-width-<size>": [
+    {
+      "name": ".l-width-full",
+      "className": "l-width-full",
+      "isModifier": true,
+      "baseClass": "l-width-<size>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 4,
+          "results": [
+            {
+              "label": "mini-form.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/mini-form/mini-form.html"
+            },
+            {
+              "label": "table.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/table/table.html"
+            },
+            {
+              "label": "caption.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/92487b5459924f4be49c3b1eb752988a1508ba53/assets/scss/6-components/caption/caption.html"
+            },
+            {
+              "label": "info-drop.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/info-drop/info-drop.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".l-width-max",
+      "className": "l-width-max",
+      "isModifier": true,
+      "baseClass": "l-width-<size>",
+      "searchDataArr": []
+    }
+  ],
+  "b-action-bar": [
+    {
+      "name": "Action bar",
+      "className": "b-action-bar",
+      "isModifier": false,
+      "baseClass": "b-action-bar",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "action-bar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/action-bar/action-bar.html"
+            },
+            {
+              "label": "_schedule-show.tpl",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/schedule/_schedule-show.tpl"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "b-collection-header": [
+    {
+      "name": "Collection header",
+      "className": "b-collection-header",
+      "isModifier": false,
+      "baseClass": "b-collection-header",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "collection-header.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/collection-header/collection-header.html"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "b-navbar": [
+    {
+      "name": "Navbar",
+      "className": "b-navbar",
+      "isModifier": false,
+      "baseClass": "b-navbar",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "navbar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/navbar/navbar.html"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "b-newsletter-signup": [
+    {
+      "name": "Newsletter signup",
+      "className": "b-newsletter-signup",
+      "isModifier": false,
+      "baseClass": "b-newsletter-signup",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "newsletter-signup.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/newsletter-signup/newsletter-signup.html"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "b-player": [
+    {
+      "name": "Player",
+      "className": "b-player",
+      "isModifier": false,
+      "baseClass": "b-player",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "player.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/player/player.html"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "b-related-stories": [
+    {
+      "name": "Related stories",
+      "className": "b-related-stories",
+      "isModifier": false,
+      "baseClass": "b-related-stories",
+      "searchDataArr": []
+    }
+  ],
+  "b-schedule": [
+    {
+      "name": "Schedule",
+      "className": "b-schedule",
+      "isModifier": false,
+      "baseClass": "b-schedule",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 4,
+          "results": [
+            {
+              "label": "_schedule-details.scss",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/schedule/_schedule-details.scss"
+            },
+            {
+              "label": "_schedule-shows.scss",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/schedule/_schedule-shows.scss"
+            },
+            {
+              "label": "_schedule-calendar.scss",
+              "url": "https://github.com/wbez/ferris-ds/blob/f1acbbad39a4f6f84d8535d2ba85c45dc9ae8f58/assets/scss/8-blocks/schedule/_schedule-calendar.scss"
+            },
+            {
+              "label": "schedule.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/schedule/schedule.html"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "b-site-footer": [
+    {
+      "name": "Site footer",
+      "className": "b-site-footer",
+      "isModifier": false,
+      "baseClass": "b-site-footer",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "site-footer.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/site-footer/site-footer.html"
+            },
+            {
+              "label": "README.md",
+              "url": "https://github.com/wbez/ferris-ds/blob/92487b5459924f4be49c3b1eb752988a1508ba53/README.md"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "has-bg-<color>": [
+    {
+      "name": ".has-bg-black",
+      "className": "has-bg-black",
+      "isModifier": true,
+      "baseClass": "has-bg-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-bg-black-off",
+      "className": "has-bg-black-off",
+      "isModifier": true,
+      "baseClass": "has-bg-<color>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "display.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/7-layout/display.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".has-bg-white",
+      "className": "has-bg-white",
+      "isModifier": true,
+      "baseClass": "has-bg-<color>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "_shadows.scss",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/utilities/_shadows.scss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".has-bg-white-off",
+      "className": "has-bg-white-off",
+      "isModifier": true,
+      "baseClass": "has-bg-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-bg-gray",
+      "className": "has-bg-gray",
+      "isModifier": true,
+      "baseClass": "has-bg-<color>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "share-bar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/share-bar/share-bar.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".has-bg-gray-light",
+      "className": "has-bg-gray-light",
+      "isModifier": true,
+      "baseClass": "has-bg-<color>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "story-body.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/333a6364306ceafa8f3a71fba2fa8d995a2e6ddb/assets/scss/6-components/story-body/story-body.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".has-bg-gray-dark",
+      "className": "has-bg-gray-dark",
+      "isModifier": true,
+      "baseClass": "has-bg-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-bg-red",
+      "className": "has-bg-red",
+      "isModifier": true,
+      "baseClass": "has-bg-<color>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 4,
+          "results": [
+            {
+              "label": "align.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/7-layout/align.html"
+            },
+            {
+              "label": "display.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/7-layout/display.html"
+            },
+            {
+              "label": "_notch.scss",
+              "url": "https://github.com/wbez/ferris-ds/blob/92487b5459924f4be49c3b1eb752988a1508ba53/assets/scss/utilities/_notch.scss"
+            },
+            {
+              "label": "share-bar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/share-bar/share-bar.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".has-bg-red-dark",
+      "className": "has-bg-red-dark",
+      "isModifier": true,
+      "baseClass": "has-bg-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-bg-error",
+      "className": "has-bg-error",
+      "isModifier": true,
+      "baseClass": "has-bg-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-bg-success",
+      "className": "has-bg-success",
+      "isModifier": true,
+      "baseClass": "has-bg-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-bg-facebook",
+      "className": "has-bg-facebook",
+      "isModifier": true,
+      "baseClass": "has-bg-<color>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "button.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/button/button.html"
+            },
+            {
+              "label": "share-bar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/share-bar/share-bar.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".has-bg-twitter",
+      "className": "has-bg-twitter",
+      "isModifier": true,
+      "baseClass": "has-bg-<color>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "share-bar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/share-bar/share-bar.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".has-bg-instagram",
+      "className": "has-bg-instagram",
+      "isModifier": true,
+      "baseClass": "has-bg-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-bg-youtube",
+      "className": "has-bg-youtube",
+      "isModifier": true,
+      "baseClass": "has-bg-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-bg-feedburner",
+      "className": "has-bg-feedburner",
+      "isModifier": true,
+      "baseClass": "has-bg-<color>",
+      "searchDataArr": []
+    }
+  ],
+  "has-bg-hover-<color>": [
+    {
+      "name": ".has-bg-hover-black",
+      "className": "has-bg-hover-black",
+      "isModifier": true,
+      "baseClass": "has-bg-hover-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-bg-hover-black-off",
+      "className": "has-bg-hover-black-off",
+      "isModifier": true,
+      "baseClass": "has-bg-hover-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-bg-hover-white",
+      "className": "has-bg-hover-white",
+      "isModifier": true,
+      "baseClass": "has-bg-hover-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-bg-hover-white-off",
+      "className": "has-bg-hover-white-off",
+      "isModifier": true,
+      "baseClass": "has-bg-hover-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-bg-hover-gray",
+      "className": "has-bg-hover-gray",
+      "isModifier": true,
+      "baseClass": "has-bg-hover-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-bg-hover-gray-light",
+      "className": "has-bg-hover-gray-light",
+      "isModifier": true,
+      "baseClass": "has-bg-hover-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-bg-hover-gray-dark",
+      "className": "has-bg-hover-gray-dark",
+      "isModifier": true,
+      "baseClass": "has-bg-hover-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-bg-hover-red",
+      "className": "has-bg-hover-red",
+      "isModifier": true,
+      "baseClass": "has-bg-hover-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-bg-hover-red-dark",
+      "className": "has-bg-hover-red-dark",
+      "isModifier": true,
+      "baseClass": "has-bg-hover-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-bg-hover-error",
+      "className": "has-bg-hover-error",
+      "isModifier": true,
+      "baseClass": "has-bg-hover-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-bg-hover-success",
+      "className": "has-bg-hover-success",
+      "isModifier": true,
+      "baseClass": "has-bg-hover-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-bg-hover-facebook",
+      "className": "has-bg-hover-facebook",
+      "isModifier": true,
+      "baseClass": "has-bg-hover-<color>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "site-footer.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/site-footer/site-footer.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".has-bg-hover-twitter",
+      "className": "has-bg-hover-twitter",
+      "isModifier": true,
+      "baseClass": "has-bg-hover-<color>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "site-footer.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/site-footer/site-footer.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".has-bg-hover-instagram",
+      "className": "has-bg-hover-instagram",
+      "isModifier": true,
+      "baseClass": "has-bg-hover-<color>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "site-footer.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/site-footer/site-footer.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".has-bg-hover-youtube",
+      "className": "has-bg-hover-youtube",
+      "isModifier": true,
+      "baseClass": "has-bg-hover-<color>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "site-footer.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/site-footer/site-footer.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".has-bg-hover-feedburner",
+      "className": "has-bg-hover-feedburner",
+      "isModifier": true,
+      "baseClass": "has-bg-hover-<color>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "site-footer.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/site-footer/site-footer.html"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "has-box-shadow": [
+    {
+      "name": "Box shadow",
+      "className": "has-box-shadow",
+      "isModifier": false,
+      "baseClass": "has-box-shadow",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "info-drop.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/info-drop/info-drop.html"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "is-hidden-<specifier>": [
+    {
+      "name": ".is-hidden",
+      "className": "is-hidden",
+      "isModifier": true,
+      "baseClass": "is-hidden-<specifier>",
+      "searchDataArr": [
+        {
+          "repo": "cpm-v2",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "css.html",
+              "url": "https://github.com/wbez/cpm-v2/blob/eca2875cc567b0fffa857bb8ead1a0422f386a74/sites/all/modules/members/bootstrap/css.html"
+            },
+            {
+              "label": "docs.css",
+              "url": "https://github.com/wbez/cpm-v2/blob/eca2875cc567b0fffa857bb8ead1a0422f386a74/sites/all/modules/members/bootstrap/docs-assets/css/docs.css"
+            }
+          ]
+        },
+        {
+          "repo": "PawtucketWBEZ",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "css.html",
+              "url": "https://github.com/wbez/PawtucketWBEZ/blob/78650105656a6f5709b5bdeb1d72f8ebf586d8b4/assets/bootstrap/src/css.html"
+            },
+            {
+              "label": "docs.css",
+              "url": "https://github.com/wbez/PawtucketWBEZ/blob/78650105656a6f5709b5bdeb1d72f8ebf586d8b4/assets/bootstrap/src/assets/css/docs.css"
+            }
+          ]
+        },
+        {
+          "repo": "CollectiveAccessWBEZ",
+          "total_count": 3,
+          "results": [
+            {
+              "label": "pikaday.css",
+              "url": "https://github.com/wbez/CollectiveAccessWBEZ/blob/d155f2db2f8863fb7eb5924e6f2873fdda397781/assets/handsontable/dist/pikaday/pikaday.css"
+            },
+            {
+              "label": "pikaday.js",
+              "url": "https://github.com/wbez/CollectiveAccessWBEZ/blob/d155f2db2f8863fb7eb5924e6f2873fdda397781/assets/handsontable/dist/pikaday/pikaday.js"
+            },
+            {
+              "label": "handsontable.full.css",
+              "url": "https://github.com/wbez/CollectiveAccessWBEZ/blob/d155f2db2f8863fb7eb5924e6f2873fdda397781/assets/handsontable/dist/handsontable.full.css"
+            }
+          ]
+        },
+        {
+          "repo": "cpm-v1",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "css.html",
+              "url": "https://github.com/wbez/cpm-v1/blob/c9a2a3e293e28d6b68dec8169ae983abd8c9d549/sites/all/modules/members/bootstrap/css.html"
+            },
+            {
+              "label": "docs.css",
+              "url": "https://github.com/wbez/cpm-v1/blob/c9a2a3e293e28d6b68dec8169ae983abd8c9d549/sites/all/modules/members/bootstrap/docs-assets/css/docs.css"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".is-hidden-print",
+      "className": "is-hidden-print",
+      "isModifier": true,
+      "baseClass": "is-hidden-<specifier>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".is-hidden-from-bp-xs",
+      "className": "is-hidden-from-bp-xs",
+      "isModifier": true,
+      "baseClass": "is-hidden-<specifier>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".is-hidden-from-bp-s",
+      "className": "is-hidden-from-bp-s",
+      "isModifier": true,
+      "baseClass": "is-hidden-<specifier>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".is-hidden-from-bp-m",
+      "className": "is-hidden-from-bp-m",
+      "isModifier": true,
+      "baseClass": "is-hidden-<specifier>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "navbar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/navbar/navbar.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".is-hidden-from-bp-l",
+      "className": "is-hidden-from-bp-l",
+      "isModifier": true,
+      "baseClass": "is-hidden-<specifier>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "navbar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/navbar/navbar.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".is-hidden-from-bp-xl",
+      "className": "is-hidden-from-bp-xl",
+      "isModifier": true,
+      "baseClass": "is-hidden-<specifier>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".is-hidden-from-bp-xxl",
+      "className": "is-hidden-from-bp-xxl",
+      "isModifier": true,
+      "baseClass": "is-hidden-<specifier>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".is-hidden-from-bp-default",
+      "className": "is-hidden-from-bp-default",
+      "isModifier": true,
+      "baseClass": "is-hidden-<specifier>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".is-hidden-until-bp-xs",
+      "className": "is-hidden-until-bp-xs",
+      "isModifier": true,
+      "baseClass": "is-hidden-<specifier>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".is-hidden-until-bp-s",
+      "className": "is-hidden-until-bp-s",
+      "isModifier": true,
+      "baseClass": "is-hidden-<specifier>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".is-hidden-until-bp-m",
+      "className": "is-hidden-until-bp-m",
+      "isModifier": true,
+      "baseClass": "is-hidden-<specifier>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "navbar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/navbar/navbar.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".is-hidden-until-bp-l",
+      "className": "is-hidden-until-bp-l",
+      "isModifier": true,
+      "baseClass": "is-hidden-<specifier>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "navbar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/navbar/navbar.html"
+            },
+            {
+              "label": "player.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/player/player.html"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "Cover.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/c03406f15f42289b9d93c1b802bb2ced29fe2080/client/components/story/Cover.vue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".is-hidden-until-bp-xl",
+      "className": "is-hidden-until-bp-xl",
+      "isModifier": true,
+      "baseClass": "is-hidden-<specifier>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".is-hidden-until-bp-xxl",
+      "className": "is-hidden-until-bp-xxl",
+      "isModifier": true,
+      "baseClass": "is-hidden-<specifier>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".is-hidden-until-bp-default",
+      "className": "is-hidden-until-bp-default",
+      "isModifier": true,
+      "baseClass": "is-hidden-<specifier>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".is-transparent",
+      "className": "is-transparent",
+      "isModifier": true,
+      "baseClass": "is-hidden-<specifier>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "info-drop.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/info-drop/info-drop.html"
+            },
+            {
+              "label": "_info-drop.scss",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/info-drop/_info-drop.scss"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "has-<size>-btm-marg": [
+    {
+      "name": ".has-xxxl-btm-marg",
+      "className": "has-xxxl-btm-marg",
+      "isModifier": true,
+      "baseClass": "has-<size>-btm-marg",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-giant-btm-marg",
+      "className": "has-giant-btm-marg",
+      "isModifier": true,
+      "baseClass": "has-<size>-btm-marg",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-xxl-btm-marg",
+      "className": "has-xxl-btm-marg",
+      "isModifier": true,
+      "baseClass": "has-<size>-btm-marg",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-xl-btm-marg",
+      "className": "has-xl-btm-marg",
+      "isModifier": true,
+      "baseClass": "has-<size>-btm-marg",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-l-btm-marg",
+      "className": "has-l-btm-marg",
+      "isModifier": true,
+      "baseClass": "has-<size>-btm-marg",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "story-body.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/333a6364306ceafa8f3a71fba2fa8d995a2e6ddb/assets/scss/6-components/story-body/story-body.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".has-m-btm-marg",
+      "className": "has-m-btm-marg",
+      "isModifier": true,
+      "baseClass": "has-<size>-btm-marg",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "text-input.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/text-input/text-input.html"
+            },
+            {
+              "label": "info-drop.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/info-drop/info-drop.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".has-b-btm-marg",
+      "className": "has-b-btm-marg",
+      "isModifier": true,
+      "baseClass": "has-<size>-btm-marg",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-s-btm-marg",
+      "className": "has-s-btm-marg",
+      "isModifier": true,
+      "baseClass": "has-<size>-btm-marg",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-xs-btm-marg",
+      "className": "has-xs-btm-marg",
+      "isModifier": true,
+      "baseClass": "has-<size>-btm-marg",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-xxs-btm-marg",
+      "className": "has-xxs-btm-marg",
+      "isModifier": true,
+      "baseClass": "has-<size>-btm-marg",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-xxxs-btm-marg",
+      "className": "has-xxxs-btm-marg",
+      "isModifier": true,
+      "baseClass": "has-<size>-btm-marg",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 3,
+          "results": [
+            {
+              "label": "mini-form.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/mini-form/mini-form.html"
+            },
+            {
+              "label": "text-input.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/text-input/text-input.html"
+            },
+            {
+              "label": "info-drop.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/info-drop/info-drop.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".has-tiny-btm-marg",
+      "className": "has-tiny-btm-marg",
+      "isModifier": true,
+      "baseClass": "has-<size>-btm-marg",
+      "searchDataArr": [
+        {
+          "repo": "www.wbez.org",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "mobile-apps.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/mobile-apps.vue"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "has-notch": [
+    {
+      "name": "Notch",
+      "className": "has-notch",
+      "isModifier": false,
+      "baseClass": "has-notch",
+      "searchDataArr": [
+        {
+          "repo": "www.wbez.org",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "mobile-apps.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/mobile-apps.vue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".-short",
+      "className": "-short",
+      "isModifier": true,
+      "baseClass": "has-notch",
+      "searchDataArr": []
+    },
+    {
+      "name": ".-thin",
+      "className": "-thin",
+      "isModifier": true,
+      "baseClass": "has-notch",
+      "searchDataArr": []
+    },
+    {
+      "name": ".-full",
+      "className": "-full",
+      "isModifier": true,
+      "baseClass": "has-notch",
+      "searchDataArr": []
+    },
+    {
+      "name": ".-w-100",
+      "className": "-w-100",
+      "isModifier": true,
+      "baseClass": "has-notch",
+      "searchDataArr": [
+        {
+          "repo": "www.wbez.org",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "mobile-apps.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/mobile-apps.vue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".-centered",
+      "className": "-centered",
+      "isModifier": true,
+      "baseClass": "has-notch",
+      "searchDataArr": [
+        {
+          "repo": "www.wbez.org",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "mobile-apps.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/e4013b99abeaba49f7e6e011abc994d7ab344049/client/pages/static/mobile-apps.vue"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "has-notch-before": [
+    {
+      "name": "Notch",
+      "className": "has-notch-before",
+      "isModifier": false,
+      "baseClass": "has-notch-before",
+      "searchDataArr": []
+    },
+    {
+      "name": ".-short",
+      "className": "-short",
+      "isModifier": true,
+      "baseClass": "has-notch-before",
+      "searchDataArr": []
+    },
+    {
+      "name": ".-thin",
+      "className": "-thin",
+      "isModifier": true,
+      "baseClass": "has-notch-before",
+      "searchDataArr": []
+    },
+    {
+      "name": ".-full",
+      "className": "-full",
+      "isModifier": true,
+      "baseClass": "has-notch-before",
+      "searchDataArr": []
+    },
+    {
+      "name": ".-w-100",
+      "className": "-w-100",
+      "isModifier": true,
+      "baseClass": "has-notch-before",
+      "searchDataArr": []
+    },
+    {
+      "name": ".-centered",
+      "className": "-centered",
+      "isModifier": true,
+      "baseClass": "has-notch-before",
+      "searchDataArr": []
+    }
+  ],
+  "has-padding": [
+    {
+      "name": "Padding",
+      "className": "has-padding",
+      "isModifier": false,
+      "baseClass": "has-padding",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 5,
+          "results": [
+            {
+              "label": "display.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/7-layout/display.html"
+            },
+            {
+              "label": "align.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/7-layout/align.html"
+            },
+            {
+              "label": "container.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/7-layout/container.html"
+            },
+            {
+              "label": "_color-helpers.scss",
+              "url": "https://github.com/wbez/ferris-ds/blob/92487b5459924f4be49c3b1eb752988a1508ba53/assets/scss/utilities/_color-helpers.scss"
+            },
+            {
+              "label": "story-body.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/333a6364306ceafa8f3a71fba2fa8d995a2e6ddb/assets/scss/6-components/story-body/story-body.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".has-padding",
+      "className": "has-padding",
+      "isModifier": true,
+      "baseClass": "has-padding",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 5,
+          "results": [
+            {
+              "label": "display.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/7-layout/display.html"
+            },
+            {
+              "label": "align.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/7-layout/align.html"
+            },
+            {
+              "label": "container.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/7-layout/container.html"
+            },
+            {
+              "label": "_color-helpers.scss",
+              "url": "https://github.com/wbez/ferris-ds/blob/92487b5459924f4be49c3b1eb752988a1508ba53/assets/scss/utilities/_color-helpers.scss"
+            },
+            {
+              "label": "story-body.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/333a6364306ceafa8f3a71fba2fa8d995a2e6ddb/assets/scss/6-components/story-body/story-body.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".has-xs-padding",
+      "className": "has-xs-padding",
+      "isModifier": true,
+      "baseClass": "has-padding",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-xl-padding",
+      "className": "has-xl-padding",
+      "isModifier": true,
+      "baseClass": "has-padding",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-page-padding",
+      "className": "has-page-padding",
+      "isModifier": true,
+      "baseClass": "has-padding",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-page-padding-at-bp-l",
+      "className": "has-page-padding-at-bp-l",
+      "isModifier": true,
+      "baseClass": "has-padding",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-section-padding",
+      "className": "has-section-padding",
+      "isModifier": true,
+      "baseClass": "has-padding",
+      "searchDataArr": []
+    }
+  ],
+  "has-text-<color>": [
+    {
+      "name": ".has-text-black",
+      "className": "has-text-black",
+      "isModifier": true,
+      "baseClass": "has-text-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-text-black-off",
+      "className": "has-text-black-off",
+      "isModifier": true,
+      "baseClass": "has-text-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-text-white",
+      "className": "has-text-white",
+      "isModifier": true,
+      "baseClass": "has-text-<color>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 3,
+          "results": [
+            {
+              "label": "display.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/7-layout/display.html"
+            },
+            {
+              "label": "title-bar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/docs/src/macros/title-bar.html"
+            },
+            {
+              "label": "info-drop.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/info-drop/info-drop.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".has-text-white-off",
+      "className": "has-text-white-off",
+      "isModifier": true,
+      "baseClass": "has-text-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-text-gray",
+      "className": "has-text-gray",
+      "isModifier": true,
+      "baseClass": "has-text-<color>",
+      "searchDataArr": [
+        {
+          "repo": "www.wbez.org",
+          "total_count": 3,
+          "results": [
+            {
+              "label": "SocialLinks.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/1db0760f2e12cb06851b0ee5efb1b0f807a4ebdb/client/components/show/SocialLinks.vue"
+            },
+            {
+              "label": "PaginatedStoryList.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/783199d693a4f1814089abffd51c17ea8568e427/client/components/PaginatedStoryList.vue"
+            },
+            {
+              "label": "collection.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/783199d693a4f1814089abffd51c17ea8568e427/client/pages/collections/collection.vue"
+            }
+          ]
+        },
+        {
+          "repo": "ferris-ds",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "header.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/docs/src/includes/header.html"
+            },
+            {
+              "label": "share-bar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/share-bar/share-bar.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".has-text-gray-light",
+      "className": "has-text-gray-light",
+      "isModifier": true,
+      "baseClass": "has-text-<color>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "navbar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/navbar/navbar.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".has-text-gray-dark",
+      "className": "has-text-gray-dark",
+      "isModifier": true,
+      "baseClass": "has-text-<color>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "mini-form.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/mini-form/mini-form.html"
+            },
+            {
+              "label": "_vert-bar.scss",
+              "url": "https://github.com/wbez/ferris-ds/blob/f1acbbad39a4f6f84d8535d2ba85c45dc9ae8f58/assets/scss/utilities/_vert-bar.scss"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".has-text-red",
+      "className": "has-text-red",
+      "isModifier": true,
+      "baseClass": "has-text-<color>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "share-bar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/share-bar/share-bar.html"
+            },
+            {
+              "label": "navbar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/8-blocks/navbar/navbar.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".has-text-red-dark",
+      "className": "has-text-red-dark",
+      "isModifier": true,
+      "baseClass": "has-text-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-text-error",
+      "className": "has-text-error",
+      "isModifier": true,
+      "baseClass": "has-text-<color>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "mini-form.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/mini-form/mini-form.html"
+            },
+            {
+              "label": "text-input.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/text-input/text-input.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".has-text-success",
+      "className": "has-text-success",
+      "isModifier": true,
+      "baseClass": "has-text-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-text-facebook",
+      "className": "has-text-facebook",
+      "isModifier": true,
+      "baseClass": "has-text-<color>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "button.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/button/button.html"
+            },
+            {
+              "label": "share-bar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/share-bar/share-bar.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".has-text-twitter",
+      "className": "has-text-twitter",
+      "isModifier": true,
+      "baseClass": "has-text-<color>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "share-bar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/share-bar/share-bar.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".has-text-instagram",
+      "className": "has-text-instagram",
+      "isModifier": true,
+      "baseClass": "has-text-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-text-youtube",
+      "className": "has-text-youtube",
+      "isModifier": true,
+      "baseClass": "has-text-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-text-feedburner",
+      "className": "has-text-feedburner",
+      "isModifier": true,
+      "baseClass": "has-text-<color>",
+      "searchDataArr": []
+    }
+  ],
+  "has-text-hover-<color>": [
+    {
+      "name": ".has-text-hover-black",
+      "className": "has-text-hover-black",
+      "isModifier": true,
+      "baseClass": "has-text-hover-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-text-hover-black-off",
+      "className": "has-text-hover-black-off",
+      "isModifier": true,
+      "baseClass": "has-text-hover-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-text-hover-white",
+      "className": "has-text-hover-white",
+      "isModifier": true,
+      "baseClass": "has-text-hover-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-text-hover-white-off",
+      "className": "has-text-hover-white-off",
+      "isModifier": true,
+      "baseClass": "has-text-hover-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-text-hover-gray",
+      "className": "has-text-hover-gray",
+      "isModifier": true,
+      "baseClass": "has-text-hover-<color>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "share-bar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/share-bar/share-bar.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".has-text-hover-gray-light",
+      "className": "has-text-hover-gray-light",
+      "isModifier": true,
+      "baseClass": "has-text-hover-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-text-hover-gray-dark",
+      "className": "has-text-hover-gray-dark",
+      "isModifier": true,
+      "baseClass": "has-text-hover-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-text-hover-red",
+      "className": "has-text-hover-red",
+      "isModifier": true,
+      "baseClass": "has-text-hover-<color>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "share-bar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/share-bar/share-bar.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".has-text-hover-red-dark",
+      "className": "has-text-hover-red-dark",
+      "isModifier": true,
+      "baseClass": "has-text-hover-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-text-hover-error",
+      "className": "has-text-hover-error",
+      "isModifier": true,
+      "baseClass": "has-text-hover-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-text-hover-success",
+      "className": "has-text-hover-success",
+      "isModifier": true,
+      "baseClass": "has-text-hover-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-text-hover-facebook",
+      "className": "has-text-hover-facebook",
+      "isModifier": true,
+      "baseClass": "has-text-hover-<color>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 2,
+          "results": [
+            {
+              "label": "button.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/button/button.html"
+            },
+            {
+              "label": "share-bar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/share-bar/share-bar.html"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "Sharebar.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/1168b6379d4920286cb7afcff310fd86384d9586/client/components/story/Sharebar.vue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".has-text-hover-twitter",
+      "className": "has-text-hover-twitter",
+      "isModifier": true,
+      "baseClass": "has-text-hover-<color>",
+      "searchDataArr": [
+        {
+          "repo": "ferris-ds",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "share-bar.html",
+              "url": "https://github.com/wbez/ferris-ds/blob/850138d836d3e76b69eabf87470fe0d5c2f99ca8/assets/scss/6-components/share-bar/share-bar.html"
+            }
+          ]
+        },
+        {
+          "repo": "www.wbez.org",
+          "total_count": 1,
+          "results": [
+            {
+              "label": "Sharebar.vue",
+              "url": "https://github.com/wbez/www.wbez.org/blob/1168b6379d4920286cb7afcff310fd86384d9586/client/components/story/Sharebar.vue"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".has-text-hover-instagram",
+      "className": "has-text-hover-instagram",
+      "isModifier": true,
+      "baseClass": "has-text-hover-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-text-hover-youtube",
+      "className": "has-text-hover-youtube",
+      "isModifier": true,
+      "baseClass": "has-text-hover-<color>",
+      "searchDataArr": []
+    },
+    {
+      "name": ".has-text-hover-feedburner",
+      "className": "has-text-hover-feedburner",
+      "isModifier": true,
+      "baseClass": "has-text-hover-<color>",
+      "searchDataArr": []
+    }
+  ],
+  "has-vert-bar": [
+    {
+      "name": "Vertical bar",
+      "className": "has-vert-bar",
+      "isModifier": false,
+      "baseClass": "has-vert-bar",
+      "searchDataArr": []
+    },
+    {
+      "name": ".-thin",
+      "className": "-thin",
+      "isModifier": true,
+      "baseClass": "has-vert-bar",
+      "searchDataArr": []
+    },
+    {
+      "name": ".-padded-l",
+      "className": "-padded-l",
+      "isModifier": true,
+      "baseClass": "has-vert-bar",
+      "searchDataArr": []
+    },
+    {
+      "name": ".-padded-xxl",
+      "className": "-padded-xxl",
+      "isModifier": true,
+      "baseClass": "has-vert-bar",
+      "searchDataArr": []
+    },
+    {
+      "name": ".-from-bp-s",
+      "className": "-from-bp-s",
+      "isModifier": true,
+      "baseClass": "has-vert-bar",
+      "searchDataArr": []
+    }
+  ]
+}
