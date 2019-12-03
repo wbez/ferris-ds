@@ -14,7 +14,12 @@ const iconDocRunner = require('./icon-doc');
 const logoDocRunner = require('./logo-doc');
 const htmlRunner = require('./html');
 
-const { docsStyles, docsIcons, docsLogos } = require('../paths.js');
+const {
+  docsStyles,
+  docsIcons,
+  docsLogos,
+  mappedGithubData,
+} = require('../paths.js');
 
 const COMPONENT_CSS_FILE = 'all.css';
 const LEGACY_CSS_FILE = 'all-legacy.css';
@@ -65,11 +70,69 @@ const clean = async (html, deprecated) => {
   }
 };
 
+const merge = async styles => {
+  let github = {};
+  try {
+    github = await fs.readJson(mappedGithubData.out);
+  } catch (err) {
+    // eslint-disable-next-line no-console
+    console.error(err);
+    return styles;
+  }
+  const items = styles.items.map(section => {
+    const list = section.list.map(classInfo => {
+      const { mainClass } = classInfo;
+
+      // set githubData
+      let githubData = {};
+      if (typeof github[mainClass] !== 'undefined') {
+        githubData = github[mainClass][0].searchDataArr;
+      }
+
+      // set modifiers
+      const modifiers = classInfo.modifiers.map(modifier => {
+        const { className } = modifier;
+        let githubDataMod = {};
+        if (typeof github[mainClass] !== 'undefined') {
+          githubDataMod = github[mainClass].find(d => d.className === className)
+            .searchDataArr;
+        }
+        return {
+          ...modifier,
+          githubData: githubDataMod,
+        };
+      });
+
+      return {
+        ...classInfo,
+        githubData,
+        modifiers,
+      };
+    });
+    return {
+      ...section,
+      list,
+    };
+  });
+  return {
+    ...styles,
+    items,
+  };
+};
+
 module.exports = async () => {
   // creates object for docs
-  const styleDocs = await styleDocRunner(docsStyles);
+  let styleDocs = await styleDocRunner(docsStyles);
   const iconDocs = await iconDocRunner(docsIcons);
   const logoDocs = await logoDocRunner(docsLogos);
+
+  // add github data
+  try {
+    styleDocs = await merge(styleDocs);
+  } catch (error) {
+    // eslint-disable-next-line no-console
+    console.log(error);
+  }
 
   // loop through classes and add github data
   const allDocs = {

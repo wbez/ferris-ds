@@ -63,8 +63,14 @@ const mappedCopies = [
   },
 ];
 
+const mappedGithubData = {
+  in: './docs/src/data/github.json',
+  out: './docs/dist/data/github.json',
+};
+
 module.exports = {
   mappedStyles,
+  mappedGithubData,
   docsStyles,
   mappedIcons,
   docsIcons,

@@ -92,6 +92,7 @@
                   {% endfor %}
                 </div>
               </div>
+              
               {% if item.parameters | length %}
               <!-- Parameters used for SCSS Variables -->
               <table class="table">
@@ -109,12 +110,13 @@
                 </tr>
                 {% endfor %}
               </table>
-
               {% endif %}
+
               <!-- GitHub counts -->
               <div class="ds-breathe-vert">
-                <!-- {{ dataList(item.githubData) }} -->
+                {{ dataList(item.githubData) }}
               </div>
+
               {% if markup %}
               <div class="columns is-multiline">
                 {% if not item.isHelper %}
