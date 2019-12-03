@@ -13,7 +13,7 @@ module.exports = async () => {
   spinner.start('Copying GitHub data from src');
   // add github data
   try {
-    await fs.copyFile(mappedGithubData.in, mappedGithubData.out);
+    await fs.copy(mappedGithubData.in, mappedGithubData.out);
     spinner.succeed('Wrote GitHub data');
   } catch (err) {
     spinner.fail('Did not copy data');
