@@ -1,0 +1,26 @@
+// Links
+//
+// Markup: <p>This is regular text. <a href="#">This is a regular link.</a></p>
+//
+// Styleguide 4.1.1
+//
+a {
+  color: $color-primary;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration 0.15s;
+
+  &:hover,
+  &:focus {
+    color: $color-link-hover;
+    text-decoration-color: currentColor;
+  }
+
+  @supports (text-decoration-skip-ink: auto) {
+    text-decoration-skip-ink: auto;
+  }
+
+  u {
+    text-decoration: none;
+  }
+}

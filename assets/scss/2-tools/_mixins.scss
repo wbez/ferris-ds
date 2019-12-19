@@ -38,53 +38,6 @@
       font-family: $font-family-secondary;
     }
   }
-
-}
-
-// @mixin underlined-link
-//
-// To use this mixin, apply to an `a` tag to add special link style. Example: <code class="ds-breathe-m"> a { @include underlined-link }</code>
-//
-// $subtle = false - Whether this is a subtle or default variation. Options: true | false
-//
-// Styleguide 2.1.2
-//
-@mixin underlined-link($subtle: false, $border-width: 1px, $border-top: 2 * $border-width, $link-color: $color-primary) {
-  // Set color vars
-  $border-color: transparentize($link-color, 0.4);
-  $border-hover-color: transparentize($link-color, 0.2);
-
-  @if ($subtle == false) {
-    // Include on non hover state if not subtle (default)
-    box-shadow: inset 0 #{-($border-top - $border-width)} 0 0 #fff,
-      inset 0 #{-$border-top} 0 0 $border-color;
-  }
-  
-  font-weight: inherit;
-  color: inherit;
-  transition: box-shadow 0.2s ease, color 0.2s ease;
-
-  &:hover,
-  &:focus {
-    box-shadow: inset 0 #{-($border-top - (2 * $border-width))} 0 0 #fff,
-      inset 0 #{-$border-top} 0 0 $border-hover-color;
-    color: $link-color;
-    text-decoration: none;
-  }
-}
-
-// @mixin underlined-link-parent
-//
-// This is an extension of the `underlined-link` mixin. This version is applied to a parent to force all descendant `a` tags get a special link style. Example: <code class="ds-breathe-m"> .text-block-with-subtle-links { @include underlined-link-parent('true') }</code>
-//
-// $subtle = false - Whether or not this a subtle or default variation. Options: true | false
-//
-// Styleguide 2.1.3
-//
-@mixin underlined-link-parent($subtle: false) {
-  a:not(.t-unlink) {
-    @include underlined-link($subtle, $border-width: 0.1ex, $border-top: 0.3ex);
-  }
 }
 
 // @mixin gap

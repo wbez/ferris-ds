@@ -38,27 +38,6 @@ blockquote {
   padding: 0;
 }
 
-a {
-  color: $color-primary;
-  text-decoration: underline;
-  text-decoration-color: transparent;
-  transition: text-decoration 0.15s;
-
-  &:hover,
-  &:focus {
-    color: $color-link-hover;
-    text-decoration-color: currentColor;
-  }
-
-  @supports (text-decoration-skip-ink: auto) {
-    text-decoration-skip-ink: auto;
-  }
-
-  > u {
-    text-decoration: none;
-  }
-}
-
 // We want all of our cite elements to not be italicized
 cite {
   font-style: normal;
@@ -95,5 +74,6 @@ img {
 @import 'blockquote';
 @import 'form';
 @import 'headings';
+@import 'link';
 
 /* purgecss end ignore */

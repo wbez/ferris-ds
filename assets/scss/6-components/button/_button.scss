@@ -125,17 +125,3 @@
     }
   }
 }
-
-// Link button (c-link-button)
-//
-// Experimental: Sometimes, we need buttons to look like links (see Talk embed log in/log out buttons)
-//
-// Markup: <button class="c-link-button">Click me, I'm Irish</button>
-//
-// Styleguide 6.1.1
-//
-.c-link-button {
-  @include underlined-link;
-  cursor: pointer;
-  line-height: normal;
-}
