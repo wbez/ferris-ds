@@ -1,5 +1,8 @@
-{% macro variableSwatch(name, default, description) %}
+{% from "./data-list.html" import dataList %}
+
+{% macro variableSwatch(name, default, description, githubData) %}
 <td>{{ name }}</td>
 <td>{{ default }}</td>
 <td>{{ description | safe }}</td>
+<td>{{ dataList(githubData) }}</td>
 {% endmacro %}

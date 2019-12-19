@@ -86,7 +86,7 @@
                 <div class="columns is-multiline">
                   {% for color in item.colors %}
                   <div class="column is-3">
-                    {{ colorSwatch(color.name, color.color, color.description)
+                    {{ colorSwatch(color.name, color.color, color.description, color.githubData)
                     }}
                   </div>
                   {% endfor %}
@@ -102,11 +102,12 @@
                   </th>
                   <th>Default</th>
                   <th>Description</th>
+                  <th></th>
                 </tr>
                 {% for variable in item.parameters %}
                 <tr>
                   {{ variableSwatch( variable.name, variable.defaultValue,
-                  variable.description ) }}
+                  variable.description, variable.githubData ) }}
                 </tr>
                 {% endfor %}
               </table>

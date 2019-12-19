@@ -85,7 +85,10 @@ const merge = async styles => {
 
       // set githubData
       let githubData = {};
-      if (typeof github[mainClass] !== 'undefined') {
+      if (
+        typeof github[mainClass] !== 'undefined' &&
+        !github[mainClass][0].isParameter
+      ) {
         githubData = github[mainClass][0].searchDataArr;
       }
 
@@ -103,10 +106,48 @@ const merge = async styles => {
         };
       });
 
+      // set parameters
+      const parameters = classInfo.parameters.map(parameter => {
+        const { name: className } = parameter;
+        let githubDataParam = {};
+        if (typeof github[mainClass] !== 'undefined') {
+          try {
+            githubDataParam = github[mainClass].find(
+              d => d.className === className
+            ).searchDataArr;
+          } catch (err) {
+            // do nothing
+          }
+        }
+
+        return {
+          ...parameter,
+          githubData: githubDataParam,
+        };
+      });
+
+      // set colors
+      const colors = classInfo.colors.map(color => {
+        const { name: className } = color;
+        let githubDataColor = {};
+        if (typeof github[mainClass] !== 'undefined') {
+          githubDataColor = github[mainClass].find(
+            d => d.className === className
+          ).searchDataArr;
+        }
+
+        return {
+          ...color,
+          githubData: githubDataColor,
+        };
+      });
+
       return {
         ...classInfo,
         githubData,
         modifiers,
+        parameters,
+        colors,
       };
     });
     return {

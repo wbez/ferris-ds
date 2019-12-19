@@ -1,4 +1,6 @@
-{% macro colorSwatch(name, color, description) %}
+{% from "./data-list.html" import dataList %}
+
+{% macro colorSwatch(name, color, description, githubData) %}
 <div class="card">
   <div class="section has-text-centered" style="background-color: {{ color }}">
     <code>{{ color }}</code>
@@ -8,4 +10,6 @@
     <p class="subtitle is-6">{{ description | safe }}</p>
   </div>
 </div>
+<div class="ds-breathe-vert"></div>
+{{ dataList(githubData) }}
 {% endmacro %}
