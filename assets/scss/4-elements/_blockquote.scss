@@ -8,7 +8,6 @@ blockquote {
   @include font-setting;
   border-left: solid 3px $color-primary;
   color: $color-black-off;
-  line-height: $line-height-b;
   padding: $size-s $size-l;
   width: 100%;
 }

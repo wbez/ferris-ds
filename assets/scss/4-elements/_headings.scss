@@ -8,7 +8,6 @@
   color: $color-black-pure;
   @include font-setting('primary');
   font-weight: 700;
-  line-height: $line-height-s;
   margin: $size-xxl 0 $size-tiny;
 
   &:first-child {

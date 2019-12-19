@@ -15,6 +15,7 @@ html {
 body {
   @include font-setting('primary');
   color: $color-black-off;
+  line-height: $line-height-s;
 }
 
 // We made some tag decisions here based on repeated overriding of browser defaults
@@ -57,13 +58,6 @@ ul {
 
 hr {
   border: 1px solid $color-gray-light;
-}
-
-// By default we add leading to paragraphs, lists, and captions
-p,
-ul,
-figcaption {
-  line-height: $line-height-b;
 }
 
 img {
