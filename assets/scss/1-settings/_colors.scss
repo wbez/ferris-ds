@@ -99,12 +99,14 @@ $color-feedburner: #1371bf;
 // These are special variables assigned to specific elements and states.
 //
 // Colors:
+// $color-link: #ec0101 - Same as $color-primary
 // $color-link-hover: #ec0101 - Same as $color-primary
 // $color-error: #f51c1c - Error
 // $color-success: #11a06b - Success
 //
 // Styleguide 1.1.4
 //
+$color-link: $color-primary;
 $color-link-hover: $color-primary;
 $color-error: #f51c1c;
 $color-success: #11a06b;

@@ -3,8 +3,8 @@
 // Apply this to a parent to have descendant `<a>` tags inherit the respective link style. See [elements/_links](/pages/elements/index.html#links) for default link styling.
 //
 // -subtle - Changes the color to `$color-link-hover` on hover/focus without underline
-// -subtle-underlined - Changes the color to `$color-link-hover` on hover/focus with underline
 // -underlined - Preserves the color, adds an underline on hover/focus
+// -subtle.-underlined - Changes the color to `$color-link-hover` on hover/focus with underline
 //
 // Markup: <p class="t-links {{ className }}">Block of text in a paragraph. <a href="#">This is what links with a parent of this style look like.</a></p>
 //
@@ -16,44 +16,21 @@
   // use default link styling
 
   &.-subtle {
-    a {
-      color: currentColor;
-      text-decoration: none; // disable default underline
-      transition: color 0.35s;
-
-      &:hover,
-      &:focus {
-        color: $color-link-hover;
-        transition: color 0.15s;
-      }
-    }
-  }
-
-  &.-subtle-underlined {
-    a {
-      color: currentColor;
-      transition: color 0.35s, text-decoration 0.35s;
-
-      &:hover,
-      &:focus {
-        color: $color-link-hover;
-        transition: color 0.15s, text-decoration 0.15s;
-      }
-    }
+    --color-link: currentColor;
+    --color-link-hover: #{$color-link-hover};
+    --color-link-underline: transparent;
+    --color-link-underline-hover: transparent;
   }
 
   &.-underlined {
-    a {
-      color: currentColor;
-      transition: text-decoration 0.35s;
+    --color-link: currentColor;
+    --color-link-hover: currentColor;
+    --color-link-underline: transparent;
+    --color-link-underline-hover: currentColor;
+  }
 
-      &:hover,
-      &:focus {
-        color: currentColor;
-        text-decoration: underline;
-        transition: text-decoration 0.15s;
-      }
-    }
+  &.-subtle.-underlined {
+    --color-link-hover: #{$color-link-hover};
   }
 }
 /* stylelint-enable  */

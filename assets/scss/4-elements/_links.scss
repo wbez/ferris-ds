@@ -4,17 +4,25 @@
 //
 // Styleguide 4.1.1
 //
+
+:root {
+  --color-link: #{$color-link};
+  --color-link-hover: #{$color-link-hover};
+  --color-link-underline: transparent;
+  --color-link-underline-hover: currentColor;
+}
+
 a {
-  color: $color-primary;
+  color: var(--color-link);
   text-decoration: underline;
-  text-decoration-color: transparent;
-  transition: text-decoration 0.35s;
+  text-decoration-color: var(--color-link-underline);
+  transition: color 0.35s, text-decoration 0.35s;
 
   &:hover,
   &:focus {
-    color: $color-link-hover;
-    text-decoration-color: currentColor;
-    transition: text-decoration 0.15s;
+    color: var(--color-link-hover);
+    text-decoration-color: var(--color-link-underline-hover);
+    transition: color 0.15s, text-decoration 0.15s;
   }
 
   @supports (text-decoration-skip-ink: auto) {
