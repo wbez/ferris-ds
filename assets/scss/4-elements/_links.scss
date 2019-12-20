@@ -8,12 +8,13 @@ a {
   color: $color-primary;
   text-decoration: underline;
   text-decoration-color: transparent;
-  transition: text-decoration 0.15s;
+  transition: text-decoration 0.35s;
 
   &:hover,
   &:focus {
     color: $color-link-hover;
     text-decoration-color: currentColor;
+    transition: text-decoration 0.15s;
   }
 
   @supports (text-decoration-skip-ink: auto) {

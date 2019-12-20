@@ -1,0 +1,59 @@
+// Links (t-links)
+//
+// Apply this to a parent to have descendant `<a>` tags inherit the respective link style. See [elements/_links](/pages/elements/index.html#links) for default link styling.
+//
+// -subtle - Changes the color to `$color-link-hover` on hover/focus without underline
+// -subtle-underlined - Changes the color to `$color-link-hover` on hover/focus with underline
+// -underlined - Preserves the color, adds an underline on hover/focus
+//
+// Markup: <p class="t-links {{ className }}">Block of text in a paragraph. <a href="#">This is what links with a parent of this style look like.</a></p>
+//
+//
+// Styleguide 5.3.1
+
+/* stylelint-disable no-descending-specificity  */
+.t-links {
+  // use default link styling
+
+  &.-subtle {
+    a {
+      color: currentColor;
+      text-decoration: none; // disable default underline
+      transition: color 0.35s;
+
+      &:hover,
+      &:focus {
+        color: $color-link-hover;
+        transition: color 0.15s;
+      }
+    }
+  }
+
+  &.-subtle-underlined {
+    a {
+      color: currentColor;
+      transition: color 0.35s, text-decoration 0.35s;
+
+      &:hover,
+      &:focus {
+        color: $color-link-hover;
+        transition: color 0.15s, text-decoration 0.15s;
+      }
+    }
+  }
+
+  &.-underlined {
+    a {
+      color: currentColor;
+      transition: text-decoration 0.35s;
+
+      &:hover,
+      &:focus {
+        color: currentColor;
+        text-decoration: underline;
+        transition: text-decoration 0.15s;
+      }
+    }
+  }
+}
+/* stylelint-enable  */
