@@ -12,6 +12,8 @@ const ora = require('ora');
 // html packages
 const nunjucks = require('nunjucks');
 
+const { mappedGithubData } = require('../paths.js');
+
 const processHTML = async dirMap => {
   try {
     const env = nunjucks.configure('./');
@@ -19,9 +21,17 @@ const processHTML = async dirMap => {
     // pass npm package version to template
     const { npm_package_version } = process.env; // eslint-disable-line camelcase
 
+    const { updated } = await fs.readJson(mappedGithubData.out);
+
+    const githubUpdated = new Date(updated).toLocaleDateString('en-us', {
+      timeZone: 'America/Chicago',
+      dateStyle: 'medium',
+    });
+
     const rendered = env.render(dirMap.in, {
       ...dirMap.data,
       npm_package_version,
+      githubUpdated,
     });
     fs.outputFile(dirMap.out, rendered);
     return `✓ ${dirMap.out}`;

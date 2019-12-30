@@ -73,7 +73,7 @@ const clean = async (html, deprecated) => {
 const merge = async styles => {
   let github = {};
   try {
-    github = await fs.readJson(mappedGithubData.out);
+    github = await fs.readJson(mappedGithubData.out).then(d => d.items);
   } catch (err) {
     // eslint-disable-next-line no-console
     console.error(err);
