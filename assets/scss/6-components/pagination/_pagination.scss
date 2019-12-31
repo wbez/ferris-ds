@@ -1,0 +1,28 @@
+// Pagination (c-pagination)
+//
+// A pagination nav. See [A11y Style Guide](https://a11y-style-guide.com/style-guide/section-navigation.html#kssref-navigation-pagination) for accessibility considerations.
+//
+// Markup: 6-components/pagination/pagination.html
+//
+// Styleguide 6.0.1
+
+$pagination-item-dimension: 2.5em;
+$pagination-item-margin: 0.1em;
+
+.c-pagination {
+  &__link {
+    height: $pagination-item-dimension;
+    min-width: $pagination-item-dimension;
+    margin: $pagination-item-margin;
+
+    &:hover,
+    &:focus {
+      border-bottom-color: $color-primary;
+    }
+  }
+
+  [aria-current] {
+    background: $color-primary;
+    color: $color-on-primary;
+  }
+}
