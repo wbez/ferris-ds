@@ -4,20 +4,6 @@
 //
 // Styleguide 4.1.1
 //
-%heading {  
-  color: $color-black-pure;
-  @include font-setting('primary');
-  font-weight: 700;
-  margin: $size-xxl 0 $size-tiny;
-
-  &:first-child {
-    margin-top: $size-tiny;
-  }
-
-  > b {
-    font-weight: inherit;
-  }
-}
 
 h1 {
   @extend %heading;
