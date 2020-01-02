@@ -12,7 +12,7 @@
     line-height: $line-height-m;
   }
 
-  > :not(:last-child) {
+  > :not(:last-child):not(hr) {
     margin-bottom: $size-s;
   }
 

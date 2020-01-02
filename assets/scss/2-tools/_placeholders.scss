@@ -4,10 +4,6 @@
   font-weight: 700;
   margin: $size-xxl 0 $size-tiny;
 
-  &:first-child {
-    margin-top: $size-tiny;
-  }
-
   > b {
     font-weight: inherit;
   }
