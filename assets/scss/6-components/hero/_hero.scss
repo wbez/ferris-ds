@@ -1,0 +1,70 @@
+// Hero (c-hero)
+//
+// A hero banner. Combine with `l-full`.
+// - `c-hero__backdrop`
+// - `c-hero__body`
+// - `c-hero__copy`
+//
+// Variations:
+// - `-blurred`
+// - `-fullheight`
+// - `-fullheight-minus-nav`
+//
+// Markup: 6-components/hero/hero.html
+//
+// Styleguide 6.1.3
+
+.c-hero {
+  --hero-spacing: calc(#{$size-giant} * 2);
+
+  // background properties... optionally set a background image to the element directly
+  background-color: $color-black-off;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: $color-white-off;
+  padding-top: var(--hero-spacing);
+  padding-bottom: var(--hero-spacing);
+  position: relative;
+
+  &__backdrop {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__body {
+    position: relative;
+  }
+
+  &__copy {
+    color: currentColor;
+  }
+
+  &.-blurred &__backdrop {
+    overflow: hidden;
+
+    img {
+      filter: blur(10px);
+      transform: scale(1.5);
+    }
+  }
+
+  &.-fullheight {
+    min-height: 100vh;
+  }
+
+  &.-fullheight-minus-nav {
+    min-height: calc(100vh - #{$navbar-height});
+  }
+}
