@@ -64,6 +64,10 @@ img {
   max-width: 100%;
 }
 
+figure img { 
+  display: block;
+}
+
 @import 'animation';
 @import 'blockquote';
 @import 'form';

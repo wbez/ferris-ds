@@ -9,10 +9,16 @@
 //
 //
 // Styleguide 7.0.5
+$story-narrow: px-to-rem($bp-default * (colspan(8,12) / 100%));
+
 .l-width-full {
   width: 100%;
 }
 
 .l-width-max {
   max-width: 100%;
+}
+
+.l-width-story {
+  max-width: $story-narrow;
 }
