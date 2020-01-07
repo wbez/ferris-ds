@@ -18,6 +18,7 @@
 // .has-text-instagram - instagram text color
 // .has-text-youtube - youtube text color
 // .has-text-feedburner - feedburner text color
+// .has-text-inherit - currentColor text color
 //
 // Markup: <p class="{{ className }}">Example</p>
 //
@@ -45,6 +46,7 @@
 // .has-text-hover-instagram - instagram text color
 // .has-text-hover-youtube - youtube text color
 // .has-text-hover-feedburner - feedburner text color
+// .has-text-hover-inherit - currentColor text color
 //
 // Markup: <p class="{{ className }}">Hover me</p>
 //
@@ -72,6 +74,7 @@
 // .has-bg-instagram - instagram background color
 // .has-bg-youtube - youtube background color
 // .has-bg-feedburner - feedburner background color
+// .has-bg-inherit - currentColor background color
 //
 // Markup: <div class="has-padding {{ className }}">Example</div>
 //
@@ -99,6 +102,7 @@
 // .has-bg-hover-instagram - instagram background color
 // .has-bg-hover-youtube - youtube background color
 // .has-bg-hover-feedburner - feedburner background color
+// .has-bg-hover-inherit - currentColor background color
 //
 // Markup: <div class="has-padding {{ className }}">Hover me</div>
 //
@@ -124,7 +128,8 @@ $color-map: (
   'facebook': $color-facebook,
   'instagram': $color-instagram,
   'youtube': $color-youtube,
-  'feedburner': $color-feedburner
+  'feedburner': $color-feedburner,
+  'inherit': currentColor,
 );
 
 @each $color, $value in $color-map {

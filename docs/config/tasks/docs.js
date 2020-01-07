@@ -96,10 +96,19 @@ const merge = async styles => {
       const modifiers = classInfo.modifiers.map(modifier => {
         const { className } = modifier;
         let githubDataMod = {};
-        if (typeof github[mainClass] !== 'undefined') {
+
+        try {
           githubDataMod = github[mainClass].find(d => d.className === className)
             .searchDataArr;
+        } catch (err) {
+          if (err instanceof TypeError) {
+            // do nothing
+          } else {
+            // eslint-disable-next-line no-console
+            console.error(err);
+          }
         }
+
         return {
           ...modifier,
           githubData: githubDataMod,
@@ -110,13 +119,17 @@ const merge = async styles => {
       const parameters = classInfo.parameters.map(parameter => {
         const { name: className } = parameter;
         let githubDataParam = {};
-        if (typeof github[mainClass] !== 'undefined') {
-          try {
-            githubDataParam = github[mainClass].find(
-              d => d.className === className
-            ).searchDataArr;
-          } catch (err) {
+
+        try {
+          githubDataParam = github[mainClass].find(
+            d => d.className === className
+          ).searchDataArr;
+        } catch (err) {
+          if (err instanceof TypeError) {
             // do nothing
+          } else {
+            // eslint-disable-next-line no-console
+            console.error(err);
           }
         }
 
