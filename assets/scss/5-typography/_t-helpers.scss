@@ -98,3 +98,21 @@
 .t-weight-700 {
   @extend .t-weight-bold;
 }
+
+// Text truncate (t-truncate)
+//
+// Accessibly truncate a long list of items with an ellipsis.
+//
+// Markup: 5-typography/truncate.html
+//
+// Styleguide 5.2.7
+
+.t-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  &:focus-within {
+    white-space: normal;
+  }
+}
