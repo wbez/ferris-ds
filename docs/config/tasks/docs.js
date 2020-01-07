@@ -84,7 +84,7 @@ const merge = async styles => {
       const { mainClass } = classInfo;
 
       // set githubData
-      let githubData = {};
+      let githubData = [];
       if (
         typeof github[mainClass] !== 'undefined' &&
         !github[mainClass][0].isParameter
@@ -95,7 +95,7 @@ const merge = async styles => {
       // set modifiers
       const modifiers = classInfo.modifiers.map(modifier => {
         const { className } = modifier;
-        let githubDataMod = {};
+        let githubDataMod = [];
 
         try {
           githubDataMod = github[mainClass].find(d => d.className === className)
@@ -118,7 +118,7 @@ const merge = async styles => {
       // set parameters
       const parameters = classInfo.parameters.map(parameter => {
         const { name: className } = parameter;
-        let githubDataParam = {};
+        let githubDataParam = [];
 
         try {
           githubDataParam = github[mainClass].find(
@@ -142,7 +142,7 @@ const merge = async styles => {
       // set colors
       const colors = classInfo.colors.map(color => {
         const { name: className } = color;
-        let githubDataColor = {};
+        let githubDataColor = [];
         if (typeof github[mainClass] !== 'undefined') {
           githubDataColor = github[mainClass].find(
             d => d.className === className
@@ -155,8 +155,35 @@ const merge = async styles => {
         };
       });
 
+      // approximate github reference count
+      let githubUrls = [];
+
+      const getUrls = data =>
+        data
+          .map(d => d.results)
+          .flat()
+          .map(d => d.url);
+
+      githubUrls = githubUrls.concat(getUrls(githubData));
+
+      githubUrls = githubUrls.concat(
+        getUrls(modifiers.map(d => d.githubData).flat())
+      );
+
+      githubUrls = githubUrls.concat(
+        getUrls(parameters.map(d => d.githubData).flat())
+      );
+
+      githubUrls = githubUrls.concat(
+        getUrls(colors.map(d => d.githubData).flat())
+      );
+
+      const githubCount = [...new Set(githubUrls)].length;
+
+      // final return
       return {
         ...classInfo,
+        githubCount,
         githubData,
         modifiers,
         parameters,

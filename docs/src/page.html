@@ -50,7 +50,14 @@
               <li
                 class="has-text-weight-bold{% if item.deprecated %} ds-legacy{% endif %}{% if item.experimental %} ds-experimental{% endif %}"
               >
-                <a class="" href="#{{ item.slug }}"> {{ item.prettyName }} </a>
+                <a class="" href="#{{ item.slug }}">
+                  {{ item.prettyName }} 
+                  <span class="tag is-rounded">
+                    <strong class="{% if item.githubCount == 0 %}has-text-gray-light{% endif %}">
+                      {{ item.githubCount }}
+                    </strong>
+                  </span>
+                </a>
               </li>
               {% endif %} {% endfor %}
             </ul>
