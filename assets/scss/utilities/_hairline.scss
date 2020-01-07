@@ -1,0 +1,38 @@
+// Hairline (has-hairline)
+//
+// Accent element for adding separation to text. {{isHelper}}
+//
+// .has-hairline-top - Adds hairline top
+// .has-hairline-right - Adds hairline right
+// .has-hairline-bottom -  Adds hairline bottom
+// .has-hairline-left - Adds hairline left
+//
+// Markup: <div class="{{ className }}">Lorem ipsum dolor sit amet.</div>
+//
+//
+// Styleguide 9.0.3
+//
+
+.has-hairline {
+  &-top {
+    border-top: 1px solid $color-gray-light;
+  }
+
+  &-right {
+    border-right: 1px solid $color-gray-light;
+  }
+
+  &-bottom {
+    border-bottom: 1px solid $color-gray-light;
+    padding-bottom: $size-giant / 2;
+    margin-bottom: $size-giant / 2;
+
+    + * {
+      margin-top: $size-giant / 2;
+    }
+  }
+
+  &-left {
+    border-left: 1px solid $color-gray-light;
+  }
+}
