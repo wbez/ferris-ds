@@ -1,0 +1,38 @@
+// Flyout (c-flyout)
+//
+// See <a href="https://www.w3.org/WAI/tutorials/menus/flyout/">W3C fly-out menu tutorial</a> for an explanation of the implementation.
+//
+// Markup: 6-components/flyout/flyout.html
+//
+// Styleguide 6.0.1
+
+.c-flyout {
+  display: inline-block;
+  position: relative;
+
+  &__items {
+    background: white;
+    border-radius: $border-radius-b;
+    display: flex;
+    flex-direction: column;
+    padding: $size-tiny;
+    position: absolute;
+    top: calc(100% + #{$size-tiny});
+    right: 0;
+    width: max-content;
+    z-index: 2;
+    @include box-shadow-default;
+  }
+
+  &__toggle[aria-expanded='false'] + &__items {
+    display: none;
+  }
+
+  &__toggle[aria-expanded='true'] + &__items {
+    display: flex;
+  }
+
+  &__toggle .c-icon {
+    margin-left: $size-xxxs;
+  }
+}
