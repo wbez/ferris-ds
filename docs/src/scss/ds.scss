@@ -54,6 +54,14 @@
       margin-bottom: 0.5rem;
     }
   }
+
+  ul {
+    list-style: square;
+  }
+
+  ol {
+    list-style: decimal;
+  }
 }
 
 .ds-menu__child {

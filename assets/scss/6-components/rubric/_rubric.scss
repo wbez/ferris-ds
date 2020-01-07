@@ -1,0 +1,94 @@
+// Rubric (c-rubric)
+//
+// <abbr title="also known as">aka</abbr> the kicker
+//
+// - `c-rubric__item`
+//
+// .-first-only - ...
+// .-centered - ...
+// .-has-rule - ...
+// .-first-only.-has-rule - ...
+// .-centered.-has-rule - ...
+//
+// Markup: 6-components/rubric/rubric.html
+//
+// Styleguide 6.1.3
+
+.c-rubric {
+  color: $color-gray-medium;
+  font-weight: bold;
+  font-size: $size-xs;
+
+  min-height: 1em;
+  display: flex;
+  align-items: center;
+
+  &__item {
+    display: inline;
+
+    .c-icon {
+      margin-left: $size-tiny;
+    }
+
+    &:not(:last-child)::after {
+      // add inline bullets between items
+      content: '•';
+      margin: 0 $size-xxxs;
+      opacity: 0.8;
+    }
+  }
+
+  &.-first-only &__item {
+    &:not(:first-of-type) {
+      display: none;
+    }
+
+    &:first-of-type::after {
+      content: none;
+    }
+  }
+
+  &.-centered {
+    justify-content: center;
+
+    > :nth-last-child(1) {
+      margin-right: 0;
+    }
+  }
+
+  &.-has-rule {
+    &::after {
+      // add rule til the end
+      content: '';
+      height: 0;
+      border-top: 1px solid $color-gray-light;
+      flex-grow: 1;
+    }
+
+    > :nth-last-child(1) {
+      // add space b/w last child and rule
+      margin-right: $size-xxs;
+    }
+  }
+
+  &.-has-rule.-centered {
+    &::before,
+    &::after {
+      // add rule til the end
+      content: '';
+      height: 0;
+      border-top: 1px solid $color-gray-light;
+      flex-grow: 1;
+    }
+
+    > :nth-child(1) {
+      // add space b/w first child and rule
+      margin-left: $size-xxs;
+    }
+
+    > :nth-last-child(1) {
+      // add space b/w last child and rule
+      margin-right: $size-xxs;
+    }
+  }
+}
