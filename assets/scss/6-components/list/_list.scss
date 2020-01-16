@@ -11,7 +11,7 @@
 .c-list {
   padding-left: $size-b;
 
-  li {
+  &__item {
     list-style: disc;
   }
 
@@ -20,20 +20,24 @@
     flex-wrap: wrap;
     padding-left: 0;
     align-items: center;
+  }
 
-    li {
-      display: inline-flex;
+  &.-inline-bullet &__item {
+    display: inline-flex;
 
-      &::after {
-        content: '•';
-        margin-left: $size-xxxs;
-        margin-right: $size-xxxs;
-        opacity: 0.7;
-      }
-
-      &:last-child::after {
-        content: none;
-      }
+    &::after {
+      content: '•';
+      margin-left: $size-xxxs;
+      margin-right: $size-xxxs;
+      opacity: 0.7;
     }
+
+    &:last-child::after {
+      content: none;
+    }
+  }
+
+  li {
+    @extend .c-list__item;
   }
 }
