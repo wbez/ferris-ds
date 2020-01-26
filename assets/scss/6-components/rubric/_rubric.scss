@@ -26,10 +26,6 @@
   &__item {
     display: inline;
 
-    .c-icon {
-      margin-left: $size-tiny;
-    }
-
     &:not(:last-child)::after {
       // add inline bullets between items
       content: '•';

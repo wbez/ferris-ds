@@ -8,12 +8,13 @@
 // Styleguide 5.3.1
 .t-prose {
   > * {
-    margin: $size-b auto;
-    line-height: $line-height-m;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  > :not(:last-child):not(hr) {
-    margin-bottom: $size-s;
+  > * + * {
+    margin-top: $size-b;
+    line-height: $line-height-m;
   }
 
   > ul {

@@ -11,11 +11,9 @@
   position: relative;
 
   &__items {
-    background: white;
     border-radius: $border-radius-b;
     display: flex;
     flex-direction: column;
-    padding: $size-tiny;
     position: absolute;
     top: calc(100% + #{$size-tiny});
     right: 0;
@@ -30,9 +28,5 @@
 
   &__toggle[aria-expanded='true'] + &__items {
     display: flex;
-  }
-
-  &__toggle .c-icon {
-    margin-left: $size-xxxs;
   }
 }

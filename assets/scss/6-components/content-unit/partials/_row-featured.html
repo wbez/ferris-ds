@@ -28,15 +28,15 @@
     </div>
     <div class="c-content-unit__copy">
       {% if data.overline %}
-      <p class="c-content-unit__overline">
+      <p class="c-content-unit__overline mb-tiny">
         <a href="#">{{ data.overline }}</a>
       </p>
       {% endif %}
-      <h2 class="c-content-unit__headline t-headline">
+      <h2 class="c-content-unit__headline t-headline my-tiny t-size-m">
         <a href="#">{{ data.headline }}</a>
       </h2>
       {% if data.teaser %}
-      <p class="c-content-unit__teaser">{{ data.teaser }}</p>
+      <p class="c-content-unit__teaser t-size-xs my-tiny">{{ data.teaser }}</p>
       {% endif %} {% if data.datestamp %}
       <time class="t-datestamp">{{ data.datestamp }}</time> {% endif %}
     </div>

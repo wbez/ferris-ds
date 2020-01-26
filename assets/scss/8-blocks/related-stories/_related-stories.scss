@@ -9,7 +9,6 @@
   @include gap($size-m);
   grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
   justify-content: space-between;
-  margin: $size-s 0;
 
   .c-content-unit {
     max-width: unset;

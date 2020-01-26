@@ -99,7 +99,7 @@
   @extend .t-weight-bold;
 }
 
-// Text truncate (t-truncate)
+// Text ellipsis (t-ellipsis)
 //
 // Accessibly truncate a long list of items with an ellipsis.
 //
@@ -107,7 +107,7 @@
 //
 // Styleguide 5.2.7
 
-.t-truncate {
+.t-ellipsis {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

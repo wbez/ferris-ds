@@ -27,19 +27,10 @@
     color: inherit;
     font-size: inherit;
     line-height: $line-height-s;
-    margin: $size-tiny 0;
   }
 
   &__chevron {
     float: right;
-    margin-right: $size-xxs;
-    margin-left: $size-xxs;
-    margin-top: $size-b;
-  }
-
-  &__show-description {
-    font-size: $size-m;
-    padding: $size-xxs $size-s $size-b;
   }
 
   // LIVE SHOW //

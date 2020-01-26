@@ -19,33 +19,14 @@
     width: 100%;
   }
 
-  &__overline {
-    margin-bottom: $size-tiny;
-  }
-
-  &__headline {
-    margin: $size-tiny 0;
-  }
-
   // SKINNY //
   &.-skinny {
     max-width: 145px;
   }
 
-  &.-skinny &__copy {
-    padding: $size-tiny 0;
-  }
-
-  &.-skinny &__overline {
-    font-size: $size-xs;
-  }
-
   &.-skinny &__headline {
-    font-size: $size-s;
-    font-weight: 400;
     height: auto;
     line-height: $line-height-s;
-    margin-bottom: 0;
   }
 
   // TILE //
@@ -60,49 +41,15 @@
     }
   }
 
-  &.-tile &__copy {
-    background: whitesmoke;
-    padding: $size-s;
-  }
-
-  &.-tile &__headline {
-    font-size: $size-l;
-    margin: $size-tiny 0;
-  }
-
-  // ROW //
-  &.-row &__headline,
-  &.-row-featured &__headline {
-    font-size: $size-m;
-  }
-
-  &.-row &__teaser,
-  &.-row-featured &__teaser {
-    font-size: $size-xs;
-    margin-top: $size-tiny;
-    margin-bottom: $size-tiny;
-  }
-
   // EVENT //
   &.-event {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-
-    .c-calendar-date {
-      margin-right: $size-b;
-      margin-bottom: $size-b;
-    }
   }
 
   &.-event &__copy {
     flex: 1 0 200px;
-  }
-
-  &.-event &__headline {
-    @include font-setting;
-    font-size: $size-xl;
-    margin: $size-s 0;
   }
 
   &.-event p {

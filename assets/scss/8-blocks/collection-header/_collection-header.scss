@@ -5,9 +5,6 @@
 // Styleguide 8.1.3
 
 .b-collection-header {
-  background: whitesmoke;
-  padding: $size-xxs;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -15,13 +12,10 @@
 
   &__image {
     flex: 0 0 200px;
-    margin: $size-xxs;
   }
 
   &__copy {
     flex: 1 0 250px;
-    margin: $size-xxs;
-    text-align: center;
 
     > * {
       margin: 0.5rem auto;
@@ -29,14 +23,7 @@
   }
 
   // PROFILE //
-  &.-profile &__title {
-    @include font-setting('primary');
-    margin-bottom: $size-tiny;
-  }
-
   &.-profile &__subtitle {
-    color: $color-gray-medium;
-    font-size: $size-l;
     line-height: $line-height-s;
   }
 

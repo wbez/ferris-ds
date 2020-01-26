@@ -11,18 +11,17 @@
         <span class="b-schedule__live-tag t-smallcaps">Live on air</span>
         {% endif %}
       </time>
-       <i class="b-schedule__chevron c-icon c-icon__inner t-size-b"
+       <i class="b-schedule__chevron c-icon c-icon__inner t-size-b mx-xxs mt-b"
         ><svg aria-hidden="true"><use xlink:href="#chevron-down"></use></svg
       ></i>
-      <h2 class="b-schedule__show-title t-headline">{{ title }}</h2>
+      <h2 class="b-schedule__show-title t-headline my-tiny">{{ title }}</h2>
     </summary>
 
     {% if hasAudio %}
     <div class="b-action-bar">
       <button class="c-button -round -primary -s">
         <i
-          class="c-icon c-button__inner t-size-b"
-          style="margin-right: .5rem;"
+          class="c-icon c-button__inner t-size-b mr-xxxs"
           ><svg aria-hidden="true"><use xlink:href="#play"></use></svg
         ></i>
         {% if isLive %}
@@ -34,7 +33,7 @@
     </div>
     {% endif %}
 
-    <div class="b-schedule__show-description t-prose">
+    <div class="b-schedule__show-description t-prose t-size-m pt-xxs px-s pb-b">
       {{ description | safe }}
     </div>
   </details>

@@ -65,7 +65,7 @@ $size-s: 0.92rem;
 $size-xs: 0.85rem;
 $size-xxs: 0.7rem;
 $size-xxxs: 0.55rem;
-$size-tiny: $size-b / 4;
+$size-tiny: 0.275rem; // $size-b / 4
 
 // Map of all sizes for easy iteration
 $size-map: (
@@ -81,12 +81,6 @@ $size-map: (
   xxs: $size-xxs,
   xxxs: $size-xxxs,
 );
-
-// Margin map
-$tiny-map: (
-  tiny: $size-tiny,
-);
-$margin-map: map-merge($size-map, $tiny-map);
 
 // Border radius
 //

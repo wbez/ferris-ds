@@ -10,7 +10,6 @@ $b-site-footer__color-background: $color-black-off;
 
 .b-site-footer {
   color: $b-site-footer__color-text;
-  padding: $size-s;
 
   a,
   .c-button {
@@ -20,12 +19,7 @@ $b-site-footer__color-background: $color-black-off;
   &__heading {
     color: transparentize($b-site-footer__color-link, 0.2);
     font-size: 1em;
-    margin-bottom: 0.5em;
     text-transform: uppercase;
-  }
-
-  &__row {
-    margin: $size-xl 0;
   }
 
   // Top //
@@ -45,12 +39,6 @@ $b-site-footer__color-background: $color-black-off;
       max-height: 2rem;
       width: auto;
     }
-  }
-
-  &__logo,
-  &__social-icons {
-    margin-top: $size-s;
-    margin-bottom: $size-s;
   }
 
   &__social-icon {
@@ -83,15 +71,10 @@ $b-site-footer__color-background: $color-black-off;
     flex-direction: column;
 
     .c-button {
-      font-size: $size-s;
-      margin-bottom: $size-tiny;
-      padding-top: $size-s;
-      padding-bottom: $size-s;
       text-decoration: none;
       width: 100%;
 
       span {
-        text-align: left;
         width: 140px;
       }
     }
@@ -118,7 +101,6 @@ $b-site-footer__color-background: $color-black-off;
   &__promo {
     background: $b-site-footer__color-background;
     border-radius: $border-radius-b;
-    padding: $size-b;
 
     p {
       margin-bottom: $size-l;
@@ -134,8 +116,6 @@ $b-site-footer__color-background: $color-black-off;
       border-color: $b-site-footer__color-link;
       color: $b-site-footer__color-link;
       flex: 0 0 auto;
-      font-size: $size-s;
-      margin-left: $size-s;
       line-height: 2em;
       height: 2em;
       box-sizing: content-box;

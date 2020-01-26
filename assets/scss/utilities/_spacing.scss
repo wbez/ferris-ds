@@ -21,7 +21,84 @@
 // Styleguide 9.0.1
 //
 
+// Margin map
+$tiny-map: (
+  tiny: $size-tiny,
+  0: 0,
+);
+$margin-map: map-merge($size-map, $tiny-map);
+$spacing-map: map-merge($size-map, $tiny-map);
+
 // hack - We need one more size for very small margins but only for margins
+@each $size-name, $size-value in $spacing-map {
+  .m-#{$size-name} {
+    margin: $size-value;
+  }
+
+  .mx-#{$size-name} {
+    margin-left: $size-value;
+    margin-right: $size-value;
+  }
+
+  .my-#{$size-name} {
+    margin-top: $size-value;
+    margin-bottom: $size-value;
+  }
+
+  .mt-#{$size-name} {
+    margin-top: $size-value;
+  }
+
+  .mb-#{$size-name} {
+    margin-bottom: $size-value;
+  }
+
+  .ml-#{$size-name} {
+    margin-left: $size-value;
+  }
+
+  .mr-#{$size-name} {
+    margin-right: $size-value;
+  }
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@each $size-name, $size-value in $spacing-map {
+  .p-#{$size-name} {
+    padding: $size-value;
+  }
+
+  .px-#{$size-name} {
+    padding-left: $size-value;
+    padding-right: $size-value;
+  }
+
+  .py-#{$size-name} {
+    padding-top: $size-value;
+    padding-bottom: $size-value;
+  }
+
+  .pt-#{$size-name} {
+    padding-top: $size-value;
+  }
+
+  .pb-#{$size-name} {
+    padding-bottom: $size-value;
+  }
+
+  .pl-#{$size-name} {
+    padding-left: $size-value;
+  }
+
+  .pr-#{$size-name} {
+    padding-right: $size-value;
+  }
+}
+
 @each $size-name, $size-value in $margin-map {
   .has-#{$size-name}-btm-marg {
     margin-bottom: $size-value;
