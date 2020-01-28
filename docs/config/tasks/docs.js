@@ -22,14 +22,10 @@ const {
 } = require('../paths.js');
 
 const COMPONENT_CSS_FILE = 'all.css';
-const LEGACY_CSS_FILE = 'all-legacy.css';
 const COMPONENT_CSS_PATH = './docs/dist/css';
 
-const clean = async (html, deprecated) => {
-  let css = COMPONENT_CSS_FILE;
-  if (deprecated) {
-    css = LEGACY_CSS_FILE;
-  }
+const clean = async html => {
+  const css = COMPONENT_CSS_FILE;
 
   const filePath = `${COMPONENT_CSS_PATH}/${css}`;
   const purgecss = new Purgecss({
@@ -279,11 +275,7 @@ module.exports = async () => {
   await htmlRunner(componentArr);
 
   // generate component CSS
-  await Promise.all(
-    componentArr.map(component =>
-      clean(component.out, component.data.deprecated)
-    )
-  );
+  await Promise.all(componentArr.map(component => clean(component.out)));
 
   // creates main
   const mainPathIn = './docs/src/index.html';
