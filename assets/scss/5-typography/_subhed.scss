@@ -8,8 +8,8 @@
 //
 // Markup: <h2 class="t-subhed {{ className }}">Story subhed text <a>with link.</a></h2>
 //
-//
 // Styleguide 5.3.1
+
 .t-subhed {
   @include font-setting;
   color: $color-black-off;

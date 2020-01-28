@@ -1,14 +1,15 @@
 // Width (l-width-<size>)
 //
-// Defines width settings. Helpful for responsive images. {{isHelper}}
+// Defines width settings. Helpful for responsive images. {{isHelper}} {{ isWide }}
 //
 // .l-width-full - Width is 100% of parent
 // .l-width-max - Max-width: 100%. Never greater than parent, but not stretched beyond its natural size.
+// .l-width-story - Max-width: Never greater than a story
 //
 // Markup: <div style="border:2px solid black"><img class="{{ className }}" src="https://static.texastribune.org/media/images/2015/10/22/SpaceJam_Nightscapes_BO_DSC02387.jpg"/></div>
 //
-//
 // Styleguide 7.0.5
+
 $story-narrow: px-to-rem($bp-default * (colspan(8,12) / 100%));
 
 .l-width-full {
@@ -21,4 +22,5 @@ $story-narrow: px-to-rem($bp-default * (colspan(8,12) / 100%));
 
 .l-width-story {
   max-width: $story-narrow;
+  width: 100%;
 }

@@ -1,3 +1,17 @@
+// Display (d-<display>)
+//
+// Todo: Display this page as a table. {{isHelper}}
+//
+// d-block - &nbsp;
+// d-inline - &nbsp;
+// d-inline-block - &nbsp;
+// d-flex - &nbsp;
+// d-inline-flex - &nbsp;
+//
+// Markup: <div class="{{ className }}">Lorem ipsum dolor sit amet.</div>
+//
+// Styleguide 9.0.3
+
 .d-block {
   display: block;
 }

@@ -8,10 +8,12 @@
 @import 'hairline';
 @import 'hidden';
 @import 'notch';
+@import 'screen-reader';
 @import 'shadows';
 @import 'spacing';
 @import 'vert-bar';
 
+// Deprecated
 .has-overlay-on-hover {
   &::before {
     background: rgba(233, 234, 235, 0.2);
@@ -30,19 +32,4 @@
       opacity: 1;
     }
   }
-}
-
-// https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html
-.sr-only {
-  clip: rect(0 0 0 0); 
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap; 
-  width: 1px;
-}
-
-.sr-only-focusable:not(:focus):not(:active) {
-  @extend .sr-only;
 }

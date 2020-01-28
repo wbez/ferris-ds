@@ -1,14 +1,15 @@
 // Hero (c-hero)
 //
 // A hero banner. Combine with `l-full`.
+//
+// Elements:
 // - `c-hero__backdrop`
 // - `c-hero__body`
 // - `c-hero__copy`
 //
-// Variations:
-// - `-blurred`
-// - `-fullheight`
-// - `-fullheight-minus-nav`
+// -blurred - Blur the backdrop
+// -fullheight - At least as tall as the page
+// -fullheight-minus-nav - At least as tall as the page minus $navbar-height
 //
 // Markup: 6-components/hero/hero.html
 //
@@ -17,7 +18,7 @@
 .c-hero {
   --hero-spacing: calc(#{$size-giant} * 2);
 
-  // background properties... optionally set a background image to the element directly
+  // background properties
   background-color: $color-black-off;
   background-position: center;
   background-repeat: no-repeat;

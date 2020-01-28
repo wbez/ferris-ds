@@ -10,6 +10,20 @@
 //
 //
 // Styleguide 5.3.1
+
+// duplicately define heading here, in case user imports this file but not elements
+%heading {  
+  color: $color-black-pure;
+  @include font-setting('primary');
+  font-weight: 700;
+  margin: $size-xxl 0 $size-tiny;
+
+  > b,
+  > strong {
+    font-weight: inherit;
+  }
+}
+
 .t-headline {
   @extend %heading;
 

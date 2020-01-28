@@ -16,9 +16,7 @@
 //
 // Markup: <span class="{{ className }} text-size-demo">Example text</span>
 //
-//
 // Styleguide 5.2.7
-//
 
 @each $type-set, $font-size in $size-map {
   .t-size-#{$type-set} {

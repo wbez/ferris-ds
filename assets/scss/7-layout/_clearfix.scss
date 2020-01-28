@@ -1,0 +1,23 @@
+// Clearfix  (l-clearfix)
+//
+// Clear out everything after a float.
+//
+// Markup: 7-layout/clearfix.html
+//
+// Styleguide 7.0.4
+
+.l-display-ib {
+  display: inline-block;
+}
+
+.l-display-block {
+  display: block;
+}
+
+.l-clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}

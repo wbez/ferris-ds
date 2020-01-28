@@ -20,7 +20,6 @@ $bp-l: 845px;
 $bp-xl: 1080px;
 $bp-xxl: 1300px;
 
-// $bp-default: 960px;
 $bp-default: $bp-xl;
 
 $mq-breakpoints: (
@@ -49,6 +48,7 @@ $mq-breakpoints: (
 // $size-xxs = .7rem - size xxs
 // $size-xxxs = .55rem - size xxxs
 // $size-tiny = .275rem - size tiny (only used for margin)
+// $size-0 = 0 - Zero. Zilch. Nada.
 //
 //
 // Styleguide 1.3.3
@@ -80,6 +80,8 @@ $size-map: (
   xs: $size-xs,
   xxs: $size-xxs,
   xxxs: $size-xxxs,
+  tiny: $size-tiny,
+  0: 0,
 );
 
 // Border radius

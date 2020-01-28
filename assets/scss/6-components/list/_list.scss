@@ -1,7 +1,8 @@
 // List (c-list)
 //
-// Our standard list is just plain ol' bullets
+// Our standard list is just plain ol' bullets. Children can be either `<li>` elements or have the class `.c-list__item`.
 //
+// .-inline - To display the list inline
 // .-inline-bullet - To display the list inline, with bullet separators
 //
 // Markup: 6-components/list/list.html
@@ -14,15 +15,27 @@
   &__item {
     list-style: disc;
   }
+}
 
-  &.-inline-bullet {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0;
-    align-items: center;
+.c-list.-inline {
+  list-style: none;
+  margin-left: -$size-tiny;
+  padding-left: 0;
+
+  .c-list__item {
+    display: inline-block;
+    padding-left: $size-tiny;
+    padding-right: $size-tiny;
   }
+}
 
-  &.-inline-bullet &__item {
+.c-list.-inline-bullet {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  align-items: center;
+
+  .c-list__item {
     display: inline-flex;
 
     &::after {
@@ -36,8 +49,8 @@
       content: none;
     }
   }
+}
 
-  li {
-    @extend .c-list__item;
-  }
+.c-list li {
+  @extend .c-list__item;
 }

@@ -1,6 +1,6 @@
-// Margin (has-<size>-btm-marg)
+// Margin (m<direction?>-<size>)
 //
-// Bottom margin only. Opt for these instead of adding margin-bottom to a new class. {{isHelper}}
+// Experimental: Bottom margin only. Opt for these instead of adding margin-bottom to a new class. (Todo: format for m and p helpers.) {{isHelper}}
 //
 // .has-xxxl-btm-marg -  Margin bottom with $size-xxxl
 // .has-giant-btm-marg -  Margin bottom with $size-giant
@@ -19,18 +19,9 @@
 //
 //
 // Styleguide 9.0.1
-//
 
-// Margin map
-$tiny-map: (
-  tiny: $size-tiny,
-  0: 0,
-);
-$margin-map: map-merge($size-map, $tiny-map);
-$spacing-map: map-merge($size-map, $tiny-map);
-
-// hack - We need one more size for very small margins but only for margins
-@each $size-name, $size-value in $spacing-map {
+// MARGIN
+@each $size-name, $size-value in $size-map {
   .m-#{$size-name} {
     margin: $size-value;
   }
@@ -67,7 +58,29 @@ $spacing-map: map-merge($size-map, $tiny-map);
   margin-right: auto;
 }
 
-@each $size-name, $size-value in $spacing-map {
+// Padding (p<direction?>-<size>)
+//
+// Experimental: Bottom margin only. Opt for these instead of adding margin-bottom to a new class. (Todo: format for m and p helpers.) {{isHelper}}
+//
+// .has-xxxl-btm-marg -  Margin bottom with $size-xxxl
+// .has-giant-btm-marg -  Margin bottom with $size-giant
+// .has-xxl-btm-marg -  Margin bottom with $size-xxl
+// .has-xl-btm-marg -  Margin bottom with $size-xl
+// .has-l-btm-marg -  Margin bottom with $size-l
+// .has-m-btm-marg -  Margin bottom with $size-m
+// .has-b-btm-marg -  Margin bottom with $size-b
+// .has-s-btm-marg -  Margin bottom with $size-s
+// .has-xs-btm-marg -  Margin bottom with $size-xs
+// .has-xxs-btm-marg -  Margin bottom with $size-xxs
+// .has-xxxs-btm-marg -  Margin bottom with $size-xxxs
+// .has-tiny-btm-marg -  Margin bottom with $size-tiny
+//
+// Markup: <ul><li class="{{ className }} margin-demo" style="border:2px solid black;">Example</li><li style="border:2px solid black;">Example</li></ul>
+//
+//
+// Styleguide 9.0.1
+
+@each $size-name, $size-value in $size-map {
   .p-#{$size-name} {
     padding: $size-value;
   }
@@ -96,71 +109,5 @@ $spacing-map: map-merge($size-map, $tiny-map);
 
   .pr-#{$size-name} {
     padding-right: $size-value;
-  }
-}
-
-@each $size-name, $size-value in $margin-map {
-  .has-#{$size-name}-btm-marg {
-    margin-bottom: $size-value;
-  }
-}
-
-// Padding (has-padding)
-//
-// Not all sizes are accounted for. Often, specific padding rules should go on a component. {{isHelper}}
-//
-// .has-padding -  All-around padding with $size-b
-// .has-xs-padding - All-around padding with $size-xs
-// .has-xl-padding - All-around padding with $size-xl
-// .has-page-padding - Left/right padding on small screens
-// .has-page-padding-at-bp-l - Custom setting for story page lead art
-// .has-section-padding - Top/bottom responsive padding
-//
-// Markup: <div style="border: 2px solid black; background: #eee" class="{{ className }}"><div style="background: black;color: #fff;">{{ className }}</div></div>
-//
-//
-// Styleguide 9.0.1
-//
-.has-padding {
-  padding: $size-b;
-}
-
-.has-xs-padding {
-  padding: $size-xs;
-}
-
-.has-xl-padding {
-  padding: $size-xl;
-}
-
-.has-reset-padding {
-  padding: 0;
-}
-
-.has-page-padding {
-  padding: 0 $size-xs;
-
-  @include breakpoint-range( bp-m, bp-xl ) {
-    padding: 0 $size-b;
-  }
-
-  @include breakpoint-min(bp-xl) {
-    padding: 0;
-  }
-}
-
-.has-page-padding-at-bp-l {
-  @include breakpoint-range( bp-l, bp-xl ) {
-    padding: 0 $size-b;
-  }
-}
-
-.has-section-padding {
-  padding-top: $size-xxxl;
-  padding-bottom: $size-xxxl;
-  
-  @include breakpoint-max(bp-m) {
-    padding-top: $size-xl;
-    padding-bottom: $size-xl;
   }
 }

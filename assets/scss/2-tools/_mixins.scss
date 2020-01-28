@@ -16,11 +16,15 @@
   }
   
   @if $type == 'sans' {
-    font-family: $font-family-primary;
+    font-family: $sans-type;
   }
   
   @if $type == 'serif' {
-    font-family: $font-family-secondary;
+    font-family: $serif-type;
+  }
+
+  @if $type == 'slab' {
+    font-family: $slab-type;
   }
 }
 

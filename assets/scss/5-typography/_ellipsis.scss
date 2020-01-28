@@ -1,0 +1,17 @@
+// Ellipsis (t-ellipsis)
+//
+// Accessibly truncate a long list of items with an ellipsis.
+//
+// Markup: 5-typography/ellipsis.html
+//
+// Styleguide 5.2.7
+
+.t-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  &:focus-within {
+    white-space: normal;
+  }
+}

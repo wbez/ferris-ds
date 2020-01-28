@@ -1,0 +1,19 @@
+// Screen reader (sr-only)
+//
+// Copied from [https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html](https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html)
+//
+// Styleguide 9.0.3
+
+.sr-only {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
+.sr-only-focusable:not(:focus):not(:active) {
+  @extend .sr-only;
+}

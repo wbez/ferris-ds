@@ -2,24 +2,37 @@
 //
 // {{isHelper}}
 //
-// .t-serif - Default serif
 // .t-sans - Default sans
+// .t-serif - Default serif
+// .t-slab - Default slab
 //
-// Markup: <h4 class="{{ className }}">Change inherit font family</h4>
-//
+// Markup: <p class="{{ className }}">Change inherit font family</p><h4 class="{{ className }}">Change inherit font family</h4>
 //
 // Styleguide 5.2.2
-.t-serif {
-  @include font-setting('secondary');
-}
 
 .t-sans {
-  @include font-setting;
+  @include font-setting('sans');
+}
+
+.t-serif {
+  @include font-setting('serif');
+}
+
+.t-slab {
+  @include font-setting('slab');
+}
+
+.t-primary {
+  @extend .t-sans;
+}
+
+.t-secondary {
+  @extend .t-serif;
 }
 
 // Text case (t-<case>)
 //
-// Adds new naming convention {{isHelper}}
+// {{isHelper}}
 //
 // .t-titlecase - Text transformed to Title Case
 // .t-uppercase - Text transformed to UPPERCASE
@@ -28,8 +41,8 @@
 //
 // Markup: <p class="{{ className }}">Text transform helper.</p>
 //
-//
 // Styleguide 5.2.5
+
 .t-titlecase {
   text-transform: capitalize;
 }
@@ -48,14 +61,13 @@
 
 // Text align (t-align-<dir>)
 //
-// Adds new naming convention {{isHelper}}
+// {{isHelper}}
 //
 // .t-align-left - Left aligned
 // .t-align-center - Center aligned
 // .t-align-right - Right aligned
 //
 // Markup: <p class="{{ className }}">Example</p>
-//
 //
 // Styleguide 5.2.7
 
@@ -80,9 +92,8 @@
 //
 // Markup: <p style="height: 100px" class="{{ className }} t-sans t-l">Texas again mistakenly flags voters for citizenship reviews</p>
 //
-//
 // Styleguide 5.2.7
-//
+
 .t-weight-normal {
   font-weight: 400;
 }
@@ -97,22 +108,4 @@
 
 .t-weight-700 {
   @extend .t-weight-bold;
-}
-
-// Text ellipsis (t-ellipsis)
-//
-// Accessibly truncate a long list of items with an ellipsis.
-//
-// Markup: 5-typography/truncate.html
-//
-// Styleguide 5.2.7
-
-.t-ellipsis {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-
-  &:focus-within {
-    white-space: normal;
-  }
 }

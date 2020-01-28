@@ -1,5 +1,5 @@
 {% from "../../src/macros/data-list.html" import dataList %}
-{% macro snippet(name, code, modifier, isFile, description, codeSnippet, mainClass) %}
+{% macro snippet(name, code, modifier, isFile, description, codeSnippet, mainClass, page) %}
 <div class="card">
   {% set className = modifier.className %}
   
@@ -11,7 +11,11 @@
   
   {% if mainClass %}
   <div class="card-header has-background-light">
+    {% if page === "Elements" %}
+    <pre class="has-text-info">&nbsp;</pre>
+    {% else %}
     <pre class="has-text-info">.{{mainClass}}</pre>
+    {% endif %}
     <div class="ds-icon buttons">
       <a
         class="button is-primary"

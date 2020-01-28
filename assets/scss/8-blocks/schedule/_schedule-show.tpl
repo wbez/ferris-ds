@@ -18,8 +18,8 @@
     </summary>
 
     {% if hasAudio %}
-    <div class="b-action-bar">
-      <button class="c-button -round -primary -s">
+    <div class="py-xxxs px-xs">
+      <button class="c-button -round -primary t-size-s">
         <i
           class="c-icon c-button__inner t-size-b mr-xxxs"
           ><svg aria-hidden="true"><use xlink:href="#play"></use></svg

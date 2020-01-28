@@ -1,19 +1,18 @@
 // Button (c-button)
 //
-// Buttons rely on color helpers for background and text color. The variations are simply sizes. One catch is that are buttons run small in sizes so the names aren't true to their padding and font-size assignments.
+// Buttons rely on color helpers for background and text color.
 //
 // -primary - Red background
 // -dark - Dark background
 // -round - For the most part, buttons associated with the player are rounded.
 // -circle - Action icons, etc.
-// -s - Small button
-// -l - Large button
 // -no-border - Sets border-color to transparent
 // -outline - Hover effect of outline
 //
 // Markup: 6-components/button/button.html
 //
 // Styleguide 6.1.1
+
 .c-button {
   $button-height: 2em;
 
@@ -75,30 +74,6 @@
 
   &.-round {
     border-radius: $border-radius-l;
-  }
-
-  &.-xxs {
-    font-size: $size-xxs;
-  }
-
-  &.-xs {
-    font-size: $size-xs;
-  }
-
-  &.-s {
-    font-size: $size-s;
-  }
-
-  &.-m {
-    font-size: $size-m;
-  }
-
-  &.-l {
-    font-size: $size-l;
-  }
-
-  &.-xxl {
-    font-size: $size-xxl;
   }
 
   &.-no-border {

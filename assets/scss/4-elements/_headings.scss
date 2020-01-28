@@ -1,9 +1,22 @@
 // Headings
 //
+// Default style for headings, i.e. `<h1>` – `<h6>`
+//
 // Markup: 4-elements/headings.html
 //
 // Styleguide 4.1.1
 //
+%heading {  
+  color: $color-black-pure;
+  @include font-setting('primary');
+  font-weight: 700;
+  margin: $size-xxl 0 $size-tiny;
+
+  > b,
+  > strong {
+    font-weight: inherit;
+  }
+}
 
 h1 {
   @extend %heading;

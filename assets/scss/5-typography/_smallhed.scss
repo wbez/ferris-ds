@@ -1,4 +1,4 @@
-// Subhed (t-smallhed)
+// Smallhed (t-smallhed)
 //
 // Our default smallhed formatting. Does not include size.
 //
@@ -8,8 +8,8 @@
 //
 // Markup: <h3 class="t-smallhed {{ className }}">Story subhed text <a>with link.</a></h3>
 //
-//
 // Styleguide 5.3.1
+
 .t-smallhed {
   @include font-setting;
   color: $color-black-off;
