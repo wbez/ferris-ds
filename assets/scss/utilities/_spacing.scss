@@ -25,7 +25,9 @@
   .m-#{$size-name} {
     margin: $size-value;
   }
+}
 
+@each $size-name, $size-value in $size-map {
   .mx-#{$size-name} {
     margin-left: $size-value;
     margin-right: $size-value;
@@ -35,7 +37,14 @@
     margin-top: $size-value;
     margin-bottom: $size-value;
   }
+}
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@each $size-name, $size-value in $size-map {
   .mt-#{$size-name} {
     margin-top: $size-value;
   }
@@ -53,11 +62,6 @@
   }
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 // Padding (p<direction?>-<size>)
 //
 // Experimental: (Todo: format for m and p helpers.) {{isHelper}}
@@ -71,7 +75,9 @@
   .p-#{$size-name} {
     padding: $size-value;
   }
+}
 
+@each $size-name, $size-value in $size-map {
   .px-#{$size-name} {
     padding-left: $size-value;
     padding-right: $size-value;
@@ -81,7 +87,9 @@
     padding-top: $size-value;
     padding-bottom: $size-value;
   }
+}
 
+@each $size-name, $size-value in $size-map {
   .pt-#{$size-name} {
     padding-top: $size-value;
   }
