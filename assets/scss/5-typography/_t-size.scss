@@ -13,6 +13,7 @@
 // .t-size-xxl - xxl size
 // .t-size-giant - giant size
 // .t-size-xxxl - xxxl size
+// .t-size-inherit - 1em
 //
 // Markup: <span class="{{ className }} text-size-demo">Example text</span>
 //
@@ -22,4 +23,8 @@
   .t-size-#{$type-set} {
     font-size: $font-size;
   }
+}
+
+.t-size-inherit {
+  font-size: 1em;
 }
