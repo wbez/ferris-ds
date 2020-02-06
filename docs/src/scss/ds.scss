@@ -1,3 +1,4 @@
+// stylelint-disable no-descending-specificity, selector-max-id
 .button {
   text-decoration: none;
   transition: all 0.2s;
@@ -36,17 +37,22 @@
 }
 
 .ds-desc {
+  line-height: 1.5;
+
+  > :first-child {
+    font-size: 1.2rem;
+  }
+
+  > * + * {
+    margin-top: 1rem;
+  }
+
   a {
     font-weight: bold;
   }
 
-  p {
-    margin-bottom: 1rem;
-  }
-
   ol,
   ul {
-    margin: 0.5rem;
     padding-left: 2rem;
     font-size: medium;
 
@@ -180,8 +186,6 @@ strong {
   height: 95vh;
 }
 
-// stylelint-disable selector-max-id
-
 .ds-legacy,
 .ds-experimental,
 // .ds-version-tag,
@@ -237,8 +241,6 @@ strong {
   margin-left: 0.5em;
 }
 
-// stylelint-enable
-
 // Hide arrow for HTML code snippet
 ::-webkit-details-marker {
   display: none;
@@ -271,3 +273,4 @@ main .menu-list {
   overflow-y: scroll;
   padding: 3px;
 }
+// stylelint-enable

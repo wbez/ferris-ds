@@ -1,22 +1,47 @@
-// Margin (m<direction?>-<size>)
+// Spacing (<property><sides?>-<size>)
 //
-// Experimental: Bottom margin only. Opt for these instead of adding margin-bottom to a new class. (Todo: format for m and p helpers.) {{isHelper}}
+// Shorthand margin and padding utility classes, based on [Bootstrap's spacing utilities](https://getbootstrap.com/docs/4.0/utilities/spacing/). The classes are named using the format `.{property}{sides}-{size}`.
 //
-// .has-xxxl-btm-marg -  Margin bottom with $size-xxxl
-// .has-giant-btm-marg -  Margin bottom with $size-giant
-// .has-xxl-btm-marg -  Margin bottom with $size-xxl
-// .has-xl-btm-marg -  Margin bottom with $size-xl
-// .has-l-btm-marg -  Margin bottom with $size-l
-// .has-m-btm-marg -  Margin bottom with $size-m
-// .has-b-btm-marg -  Margin bottom with $size-b
-// .has-s-btm-marg -  Margin bottom with $size-s
-// .has-xs-btm-marg -  Margin bottom with $size-xs
-// .has-xxs-btm-marg -  Margin bottom with $size-xxs
-// .has-xxxs-btm-marg -  Margin bottom with $size-xxxs
-// .has-tiny-btm-marg -  Margin bottom with $size-tiny
+// Where *property* is one of:
+// - `m` - for classes that set `margin`
+// - `p` - for classes that set `padding`
 //
-// Markup: <ul><li class="{{ className }} margin-demo" style="border:2px solid black;">Example</li><li style="border:2px solid black;">Example</li></ul>
+// Where *sides* is one of:
+// - blank - set `margin` or `padding` on all 4 sides
+// - `x` - set both `*-left` and `*-right`
+// - `y` - set both `*-top` and `*-bottom`
+// - `t` - set `*-top`
+// - `b` - set `*-bottom`
+// - `r` - set `*-right`
+// - `l` - set `*-left`
 //
+// Where *size* is one of our [size units](/pages/settings/index.html#size-units).
+//
+// ---
+// 
+// Some illustrative examples:
+// ```css
+// .mt-0 {
+//   margin-top: 0;
+// }
+// ```
+//
+// ```css
+// .mx-xs {
+//   margin-left: $size-xs;
+//   margin-right: $size-xs;
+// }
+// ```
+//
+// ```css
+// .p-giant {
+//   padding: $size-giant;
+// }
+// ```
+//
+// ---
+//
+// Additionally, we include an `.mx-auto` class, which is the same as `margin-left: auto; margin-right: auto;`.
 //
 // Styleguide 9.0.1
 
@@ -62,15 +87,7 @@
   }
 }
 
-// Padding (p<direction?>-<size>)
-//
-// Experimental: (Todo: format for m and p helpers.) {{isHelper}}
-//
-// Markup: <ul><li class="{{ className }} margin-demo" style="border:2px solid black;">Example</li><li style="border:2px solid black;">Example</li></ul>
-//
-//
-// Styleguide 9.0.1
-
+// PADDING
 @each $size-name, $size-value in $size-map {
   .p-#{$size-name} {
     padding: $size-value;
