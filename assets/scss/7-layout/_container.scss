@@ -6,7 +6,7 @@
 //
 // Styleguide 7.0.1
 
-@include grid( l-container );
+@include grid(l-container);
 
 .l-container {
   position: relative;
@@ -17,6 +17,11 @@
 
   > :last-child {
     margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $max-width) {
+    width: $max-width;
+    max-width: 100%;
   }
 }
 
