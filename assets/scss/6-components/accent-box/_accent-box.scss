@@ -5,8 +5,13 @@
 // Styleguide 6.0.1
 
 .c-accent-box {
-  background: $color-white-off;
-  border: 1px solid $color-gray-light;
+  @include font-setting(sans);
+  border: 1px solid rgba(180, 180, 180, 0.35);
   display: block;
-  padding: $size-b;
+  filter: contrast(0.7);
+  padding: $size-l $size-b;
+
+  > :first-child {
+    margin-top: 0;
+  }
 }
