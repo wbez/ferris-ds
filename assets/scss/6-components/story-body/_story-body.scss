@@ -32,6 +32,13 @@ $story-narrow: px-to-rem($bp-default * (colspan(8, 12) / 100%));
         $bp-default * (colspan(10, 12) - 2 * colspan(p, 12)) / 100%
       );
     }
+
+    &:not([class*='-align-']) {
+      @include breakpoint-min(bp-s) {
+        margin-top: $size-xxl;
+        margin-bottom: $size-l;
+      }
+    }
   }
 
   > figure > figcaption {
