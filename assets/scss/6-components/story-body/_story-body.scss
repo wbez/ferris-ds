@@ -53,4 +53,9 @@ $story-narrow: px-to-rem($bp-default * (colspan(8, 12) / 100%));
       max-width: $story-narrow + 2 * $size-s;
     }
   }
+
+  > .c-table {
+    margin-top: $size-giant;
+    margin-bottom: $size-xxl;
+  }
 }

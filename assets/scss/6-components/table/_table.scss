@@ -1,0 +1,60 @@
+// Table (c-table)
+//
+// Markup: 6-components/table/table.html
+//
+// Styleguide 6.0.1
+
+table.c-table {
+  font-size: $size-s;
+  @include font-setting(sans);
+  line-height: $line-height-s;
+  // Remove most spacing between table cells.
+  border-collapse: collapse;
+  border-spacing: 0;
+  // Prevent cramped-looking tables.
+  width: 100%;
+
+  caption {
+    color: $color-gray-medium;
+    font-weight: bold;
+    padding: $size-tiny;
+    text-align: left;
+  }
+
+  tbody > tr + tr {
+    border-top: 1px solid $color-gray-light;
+  }
+
+  tbody:last-child {
+    border-bottom: 1px solid $color-gray-light;
+  }
+
+  td {
+    padding: $size-xxxs $size-tiny;
+    vertical-align: top;
+  }
+
+  th {
+    padding: $size-xxxs $size-tiny;
+    font-weight: bold;
+    letter-spacing: $font-letter-spacing-b;
+    text-align: left;
+  }
+
+  thead {
+    border-bottom: 1px solid $color-gray-medium;
+
+    th {
+      hyphens: auto;
+      vertical-align: bottom;
+    }
+  }
+
+  tfoot {
+    border-top: 1px solid $color-gray-medium;
+
+    th {
+      vertical-align: top;
+    }
+  }
+}
