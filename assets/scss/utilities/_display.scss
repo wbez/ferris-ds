@@ -12,22 +12,24 @@
 //
 // Styleguide 9.0.3
 
+// stylelint-disable declaration-no-important
 .d-block {
-  display: block;
+  display: block !important;
 }
 
 .d-inline {
-  display: inline;
+  display: inline !important;
 }
 
 .d-inline-block {
-  display: inline-block;
+  display: inline-block !important;
 }
 
 .d-flex {
-  display: flex;
+  display: flex !important;
 }
 
 .d-inline-flex {
-  display: inline-flex;
+  display: inline-flex !important;
 }
+// stylelint-enable declaration-no-important
