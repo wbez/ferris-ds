@@ -27,19 +27,22 @@ $story-narrow: px-to-rem($bp-default * (colspan(8, 12) / 100%));
     margin-top: $size-b;
     margin-bottom: $size-b;
 
+    // set a default width for images that don't have a defined width
     &:not([class*='-is-']) {
       max-width: px-to-rem(
         $bp-default * (colspan(10, 12) - 2 * colspan(p, 12)) / 100%
       );
     }
 
-    &:not([class*='-align-']) {
+    // add margins to images that aren't aligned left or right
+    &:not(.-align-left):not(.-align-right) {
       @include breakpoint-min(bp-s) {
         margin-top: $size-xxl;
         margin-bottom: $size-l;
       }
     }
 
+    // add special padding and margins for full-bleed captions
     &.-is-full .c-caption {
       width: $bp-default;
       max-width: calc(100% - 2 * #{$size-s});

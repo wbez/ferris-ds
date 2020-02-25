@@ -5,7 +5,7 @@
 // -subtle - Changes the color to `$color-link-hover` on hover/focus without underline
 // -underlined - Preserves the color, adds an underline on hover/focus
 // -subtle.-underlined - Changes the color to `$color-link-hover` on hover/focus with underline
-// -story - Changes the color and style.
+// -story - A special link treatment specific to stories.
 //
 // Markup: <p class="t-links {{ className }}">Block of text in a paragraph. <a href="#">This is what links with a parent of this style look like.</a></p>
 //
@@ -37,15 +37,16 @@
     --color-link: #048282;
     --color-link-hover: #048282;
 
-    a:not(.c-button) {
+    a:not(.c-button):not(.t-unlink) {
+      // add dotted "underline" using border-bottom
       border-bottom: 1px dotted currentColor;
       box-shadow: 0 1px 0 0 transparent;
       text-decoration: none;
-
       transition: box-shadow 0.1s linear;
 
       &:hover,
       &:focus {
+        // make "underline" solid and thicker by fading in a box-shadow
         border-bottom: 1px solid currentColor;
         box-shadow: 0 1px 0 0 currentColor;
       }
