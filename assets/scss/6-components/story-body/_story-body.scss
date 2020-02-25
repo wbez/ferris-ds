@@ -39,12 +39,28 @@ $story-narrow: px-to-rem($bp-default * (colspan(8, 12) / 100%));
         margin-bottom: $size-l;
       }
     }
-  }
 
-  > figure > figcaption {
-    max-width: $story-narrow;
-    margin-left: auto;
-    margin-right: auto;
+    &.-is-full .c-caption {
+      width: $bp-default;
+      max-width: calc(100% - 2 * #{$size-s});
+
+      box-sizing: content-box;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: colspan(m, 4);
+      padding-right: colspan(m, 4);
+
+      @include breakpoint-min(bp-s) {
+        padding-left: colspan(m, 6);
+        padding-right: colspan(m, 6);
+      }
+
+      @include breakpoint-min(bp-l) {
+        padding-left: colspan(m, 12);
+        padding-right: colspan(m, 12);
+        margin-left: 0;
+      }
+    }
   }
 
   .c-accent-box {
@@ -64,5 +80,10 @@ $story-narrow: px-to-rem($bp-default * (colspan(8, 12) / 100%));
   > .c-table {
     margin-top: $size-giant;
     margin-bottom: $size-xxl;
+  }
+
+  > hr {
+    margin-top: $size-giant;
+    margin-bottom: $size-giant;
   }
 }
