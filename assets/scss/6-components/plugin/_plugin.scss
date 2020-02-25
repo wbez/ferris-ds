@@ -9,16 +9,16 @@
 $story-narrow: px-to-rem($bp-default * (colspan(8,12) / 100%));
 
 .c-plugin {
+  &.-is-full {
+    @include full-width;
+    max-width: none;
+  }
+
   @include breakpoint-min(bp-l) {
     &.-is-fit {
       margin-left: auto;
       margin-right: auto;
       width: $story-narrow;
-    }
-
-    &.-is-full {
-      @include full-width;
-      max-width: none;
     }
 
     &.-is-half {
@@ -34,7 +34,7 @@ $story-narrow: px-to-rem($bp-default * (colspan(8,12) / 100%));
     &.-align-left {
       clear: left;
       float: left;
-      margin-right: colspan(g, 12);
+      margin-right: colspan(g, 12) + colspan(p, 12);
 
       + p {
         margin-top: 0;
@@ -44,7 +44,7 @@ $story-narrow: px-to-rem($bp-default * (colspan(8,12) / 100%));
     &.-align-right {
       clear: right;
       float: right;
-      margin-left: colspan(g, 12);
+      margin-left: colspan(g, 12) + colspan(p, 12);
 
       + p {
         margin-top: 0;

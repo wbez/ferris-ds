@@ -10,5 +10,10 @@
   color: $color-gray-medium;
   font-size: $size-xs;
   line-height: $line-height-s;
-  padding: $size-xxs 0;
+  margin: $size-xxs 0;
+
+  &__credit {
+    color: transparentize($color-gray-medium, 0.3);
+    font-size: small;
+  }
 }
