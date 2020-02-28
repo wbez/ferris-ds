@@ -1,0 +1,42 @@
+// Pullquote (wbz-pullquote)
+//
+// Pullquotes are short excerpts from the presented text. They are used to pull a text passage out of the reader’s flow and give it a more dominant position in the article. {{isWide}} {{isProse}}
+//
+// Add the `wbz-pullquote` class to an [`<aside>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside) HTML element; this indicates that the pullquote is separate from the main content.
+//
+// ---
+// 
+// ### Optional styled child elements:
+// - [`<footer>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer) — Information about the speaker of the pullquote, copyright data or links to related documents
+// - [`<cite>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite) — Citation element, to reference the source of the quoted material
+//
+// ---
+//
+// ### Class modifiers:
+// - `pull-right` — float the card right
+// - `pull-left` — float the card left
+//
+// pull-right - Card floated right
+// pull-left - Card floated left
+//
+// Markup: cookbook/pullquote/pullquote.html
+//
+// Styleguide 10.0.3
+
+.wbz-pullquote {
+  @include font-setting(sans);
+  font-size: $size-m;
+  font-weight: bold;
+  line-height: $line-height-s;
+
+  cite,
+  footer {
+    color: $color-gray-medium;
+    font-size: $size-s;
+    font-style: normal;
+    font-weight: normal;
+    line-height: $line-height-s;
+    margin-top: $size-s;
+    text-transform: uppercase;
+  }
+}

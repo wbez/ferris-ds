@@ -6,9 +6,11 @@
 //
 // Styleguide 4.1.1
 //
-%heading {  
+
+%heading {
   color: $color-black-pure;
-  font-weight: 700;
+  font-weight: bold;
+  line-height: $line-height-s;
 
   > b,
   > strong {
@@ -16,45 +18,90 @@
   }
 }
 
-h1 {
-  @extend %heading;
-  @include font-setting('primary');
+// Heading level 1
 
-  font-size: $size-giant;
+h1,
+.h1 {
+  @extend %heading;
 }
 
-h2 {
-  @extend %heading;
+h1:not(.h2, .h3, .h4, .h5, .h6),
+.h1 {
   @include font-setting('primary');
+  font-size: $size-giant;
+  line-height: 1.1;
+}
 
+// Heading level 2
+
+h2,
+.h2 {
+  @extend %heading;
+}
+
+h2:not(.h1, .h3, .h4, .h5, .h6),
+.h2 {
+  @include font-setting('primary');
   font-size: $size-xl;
 }
 
-h3 {
-  @extend %heading;
-  @include font-setting('primary');
+// Heading level 3
 
+h3,
+.h3 {
+  @extend %heading;
+}
+
+h3:not(.h1, .h2, .h4, .h5, .h6),
+.h3 {
+  @include font-setting('primary');
   font-size: $size-l;
 }
 
-h4 {
-  @extend %heading;
-  @include font-setting('primary');
+// Heading level 4
 
+h4,
+.h4 {
+  @extend %heading;
+}
+
+h4:not(.h1, .h2, .h3, .h5, .h6),
+.h4 {
+  @include font-setting('primary');
   font-size: $size-m;
 }
 
-h5 {
-  @extend %heading;
-  @include font-setting('secondary');
+// Heading level 5
 
-  font-size: $size-b;
+h5,
+.h5 {
+  @extend %heading;
 }
 
-h6 {
-  @extend %heading;
-  @include font-setting('secondary');
+h5:not(.h1, .h2, .h3, .h4, .h6),
+.h5 {
+  @include font-setting('sans');
+  color: $color-gray-medium;
+  font-size: $size-b;
+  font-weight: normal;
+  letter-spacing: $font-letter-spacing-b;
+  line-height: $line-height-m;
+  text-transform: uppercase;
+}
 
+// Heading level 6
+
+h6,
+.h6 {
+  @extend %heading;
+}
+
+h6:not(.h1, .h2, .h3, .h4, .h5),
+.h6 {
+  @include font-setting('sans');
+  color: $color-gray-medium;
   font-size: $size-s;
+  font-weight: bold;
+  line-height: $line-height-m;
   margin-bottom: $size-tiny;
 }

@@ -7,9 +7,9 @@
 // Styleguide 4.1.1
 //
 blockquote {
-  @include font-setting;
-  border-left: solid 3px $color-primary;
-  color: $color-black-off;
-  padding: $size-s $size-l;
-  width: 100%;
+  @include font-setting(sans);
+  border: none;
+  border-left: 3px solid $color-gray-light;
+  font-style: italic;
+  padding: 0 $size-l;
 }

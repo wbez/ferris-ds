@@ -50,3 +50,9 @@ marginHelpers.forEach(el => {
   var p = parentEl.querySelector('p');
   p.textContent = getSizes(el, 'margin-bottom');
 });
+
+// inject table class
+var descTables = document.querySelectorAll('.ds-desc table');
+descTables.forEach(el => {
+  el.classList.add('table');
+})

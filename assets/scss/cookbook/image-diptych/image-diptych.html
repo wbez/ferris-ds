@@ -1,0 +1,77 @@
+<hr class="wbz-hairline" />
+
+<h4 class="wbz-heading">Side by side images</h4>
+
+<p>
+  If you want to display two images with independent captions side-by-side, wrap
+  the two <code>&lt;figure&gt;</code> elements in a
+  <code>&lt;div&gt;</code> classed <code>wbz-diptych</code>.
+</p>
+
+<div class="wbz-diptych c-plugin">
+  <figure class="wbz-image">
+    <img src="https://picsum.photos/800/420?random" alt="Example image" />
+    <figcaption class="c-caption">
+      A: Terra cotta details hint at the businesses that formerly occupied these
+      spaces.
+      <span class="c-caption__credit">Jason Marck/WBEZ</span>
+    </figcaption>
+  </figure>
+  <figure class="wbz-image">
+    <img src="https://picsum.photos/800/420?random" alt="Example image" />
+    <figcaption class="c-caption">
+      B: Terra cotta details hint at the businesses that formerly occupied these
+      spaces.
+      <span class="c-caption__credit">Jason Marck/WBEZ</span>
+    </figcaption>
+  </figure>
+</div>
+
+<hr class="wbz-hairline" />
+
+<h4 class="wbz-heading">Side by side images, plus merged caption</h4>
+
+<p>
+  If you want to display two images side-by-side with a shared caption, wrap the
+  two <code>&lt;img&gt;</code> elements in a <code>&lt;figure&gt;</code> classed
+  <code>wbz-diptych</code>.
+</p>
+
+<figure class="wbz-image wbz-diptych c-plugin">
+  <img src="https://picsum.photos/800/420?random" alt="Example image" />
+  <img src="https://picsum.photos/800/420?random" alt="Example image" />
+  <figcaption class="c-caption">
+    Terra cotta details hint at the businesses that formerly occupied these
+    spaces.
+    <span class="c-caption__credit">Jason Marck/WBEZ</span>
+  </figcaption>
+</figure>
+
+<hr class="wbz-hairline" />
+
+<h4 class="wbz-heading">
+  Side by side images, plus merged caption, plus multiple sizes
+</h4>
+
+<p>
+  You can also nest a <code>&lt;div&gt;</code> classed <code>wbz-diptych</code>
+  <em>inside</em> of a <code>&lt;figure&gt;</code> element, creating a grid of
+  images.
+
+  <figure class="wbz-image c-plugin">
+    <img src="https://picsum.photos/1600/900?random" alt="Example image" />
+
+    <div class="wbz-diptych">
+      <img src="https://picsum.photos/800/420?random" alt="Example image" />
+      <img src="https://picsum.photos/800/420?random" alt="Example image" />
+    </div>
+
+    <figcaption class="c-caption">
+      Terra cotta details hint at the businesses that formerly occupied these
+      spaces.
+      <span class="c-caption__credit">Jason Marck/WBEZ</span>
+    </figcaption>
+  </figure>
+</p>
+
+<hr class="wbz-hairline" />

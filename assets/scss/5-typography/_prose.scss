@@ -7,8 +7,9 @@
 // Styleguide 5.3.1
 
 .t-prose {
+  line-height: $line-height-b;
+
   > * {
-    line-height: $line-height-b;
     margin-left: auto;
     margin-right: auto;
   }
@@ -19,17 +20,19 @@
 
   > ul {
     list-style: disc;
+    list-style-position: outside;
+    padding: 0 $size-b;
   }
 
   > ol {
     list-style: decimal;
+    list-style-position: outside;
+    padding: 0 $size-b;
   }
 
   > ul,
-  > ol {
-    list-style-position: outside;
-    padding: 0 $size-b;
-
+  > ol,
+  > dl {
     li {
       margin-left: 0;
       padding-left: 0;
@@ -45,6 +48,24 @@
 
     p {
       margin: $size-xxxs 0;
+    }
+
+    br {
+      content: '';
+      display: block;
+      margin: $size-xxxs 0;
+    }
+  }
+
+  dl {
+    ul,
+    ol {
+      margin: 0;
+      padding: 0 $size-xl;
+    }
+
+    li {
+      margin-bottom: 0;
     }
   }
 }

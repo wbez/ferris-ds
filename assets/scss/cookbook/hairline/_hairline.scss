@@ -1,0 +1,27 @@
+// Hairline (wbz-hairline)
+//
+// A thematic break between content sections. {{isProse}}
+//
+// This needs to be applied to an [`<hr>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr) element.
+//
+// ---
+//
+// ### CMS notes:
+// 
+// - **No need to use this class.** Our site applies the styles to `<hr>` elements automatically.
+//
+// Markup: <hr class="wbz-hairline" />
+//
+// Styleguide 10.0.3
+
+// this is a combination of default hr element style and c-story-body > hr
+hr.wbz-hairline {
+  border: 1px solid $color-gray-light;
+  margin-top: $size-xxl;
+  margin-bottom: $size-xxl;
+  width: calc((1 - 1/1.6) * 100%);
+
+  @media screen and (min-width: $story-narrow) {
+    width: (1 - 1/1.6) * $story-narrow;
+  }
+}

@@ -12,22 +12,19 @@
 // Styleguide 5.3.1
 
 // duplicately define heading here, in case user imports this file but not elements
-%heading {  
+.t-headline {
   color: $color-black-pure;
-  font-weight: 700;
+  font-weight: bold;
+  line-height: $line-height-s;
 
   > b,
   > strong {
     font-weight: inherit;
   }
-}
-
-.t-headline {
-  @extend %heading;
 
   &.-article {
     font-size: $size-xl;
-    
+
     @include breakpoint-min(bp-s) {
       font-size: $size-giant;
     }

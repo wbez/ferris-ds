@@ -124,7 +124,7 @@ We use a comment parser along with some [extra logic](https://github.com/wbez/fe
 ```scss
 // Title of Section (root-class-name)
 //
-// Description {{isWide}} {{isHelper}}
+// Description {{isWide}} {{isHelper}} {{isProse}}
 //
 // root-class-name-modifier - desc
 //
@@ -138,6 +138,7 @@ We use a comment parser along with some [extra logic](https://github.com/wbez/fe
 
 - `{{isWide}}` is used to display the demo of each modifier at full width
 - `{{isHelper}}` is used to hide main demo and only display modifiers
+- `{{isProse}}` is used to wrap the demo as if it were in a prose container
 - `// Deprecated` is used to signify a class to be removed.
 - `// Experimental` is used to signify a class we're considering.
 

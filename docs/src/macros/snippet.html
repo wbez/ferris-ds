@@ -1,5 +1,5 @@
 {% from "../../src/macros/data-list.html" import dataList %}
-{% macro snippet(name, code, modifier, isFile, description, codeSnippet, mainClass, page) %}
+{% macro snippet(name, code, modifier, isFile, isProse, description, codeSnippet, mainClass, page) %}
 <div class="card">
   {% set className = modifier.className %}
   
@@ -41,7 +41,25 @@
     <div
       class="box{% if modifier.isInverse %} has-background-black{% endif %} ds-grid-lines"
     >
+      {% if isProse %}
+      <div class="t-prose c-story-body l-clearfix">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices massa at
+          ante porta, at pellentesque tellus vulputate. Vivamus tempus tempor turpis sed
+          finibus. Ut pulvinar eros pulvinar turpis varius porttitor.
+        </p>
+      {% endif %}
+
       {% include "../../../assets/scss/" + code %}
+
+      {% if isProse %}
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices massa at
+          ante porta, at pellentesque tellus vulputate. Vivamus tempus tempor turpis sed
+          finibus. Ut pulvinar eros pulvinar turpis varius porttitor.
+        </p>
+      </div>
+      {% endif %}
     </div>
     {% if modifier %}{{ modifier.description | safe }}
     <div class="ds-breathe-vert"></div>
@@ -49,7 +67,25 @@
     <div
       class="box{% if modifier.isInverse %} has-background-black{% endif %} ds-grid-lines"
     >
+      {% if isProse %}
+      <div class="t-prose c-story-body l-clearfix">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices massa at
+          ante porta, at pellentesque tellus vulputate. Vivamus tempus tempor turpis sed
+          finibus. Ut pulvinar eros pulvinar turpis varius porttitor.
+        </p>
+      {% endif %}
+
       {{ modifier.markup | safe }}
+
+      {% if isProse %}
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices massa at
+          ante porta, at pellentesque tellus vulputate. Vivamus tempus tempor turpis sed
+          finibus. Ut pulvinar eros pulvinar turpis varius porttitor.
+        </p>
+      </div>
+      {% endif %}
     </div>
     {{ modifier.description | safe }}
     <div class="ds-breathe-vert"></div>
@@ -57,7 +93,25 @@
     <div
       class="box{% if modifier.isInverse %} has-background-black{% endif %} ds-grid-lines"
     >
+      {% if isProse %}
+      <div class="t-prose c-story-body l-clearfix">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices massa at
+          ante porta, at pellentesque tellus vulputate. Vivamus tempus tempor turpis sed
+          finibus. Ut pulvinar eros pulvinar turpis varius porttitor.
+        </p>
+      {% endif %}
+
       {{ code | safe }}
+
+      {% if isProse %}
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices massa at
+          ante porta, at pellentesque tellus vulputate. Vivamus tempus tempor turpis sed
+          finibus. Ut pulvinar eros pulvinar turpis varius porttitor.
+        </p>
+      </div>
+      {% endif %}
     </div>
     {% endif %} {% endif %} {% if codeSnippet %}
     <details>
