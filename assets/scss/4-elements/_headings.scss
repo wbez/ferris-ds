@@ -10,7 +10,9 @@
 %heading {
   color: $color-black-pure;
   font-weight: bold;
+  letter-spacing: 0;
   line-height: $line-height-s;
+  text-transform: none;
 
   > b,
   > strong {
@@ -23,10 +25,7 @@
 h1,
 .h1 {
   @extend %heading;
-}
-
-h1:not(.h2, .h3, .h4, .h5, .h6),
-.h1 {
+  
   @include font-setting('primary');
   font-size: $size-giant;
   line-height: 1.1;
@@ -37,10 +36,7 @@ h1:not(.h2, .h3, .h4, .h5, .h6),
 h2,
 .h2 {
   @extend %heading;
-}
-
-h2:not(.h1, .h3, .h4, .h5, .h6),
-.h2 {
+  
   @include font-setting('primary');
   font-size: $size-xl;
 }
@@ -50,10 +46,7 @@ h2:not(.h1, .h3, .h4, .h5, .h6),
 h3,
 .h3 {
   @extend %heading;
-}
-
-h3:not(.h1, .h2, .h4, .h5, .h6),
-.h3 {
+  
   @include font-setting('primary');
   font-size: $size-l;
 }
@@ -63,10 +56,7 @@ h3:not(.h1, .h2, .h4, .h5, .h6),
 h4,
 .h4 {
   @extend %heading;
-}
-
-h4:not(.h1, .h2, .h3, .h5, .h6),
-.h4 {
+  
   @include font-setting('primary');
   font-size: $size-m;
 }
@@ -76,10 +66,7 @@ h4:not(.h1, .h2, .h3, .h5, .h6),
 h5,
 .h5 {
   @extend %heading;
-}
-
-h5:not(.h1, .h2, .h3, .h4, .h6),
-.h5 {
+  
   @include font-setting('sans');
   color: $color-gray-medium;
   font-size: $size-b;
@@ -94,14 +81,10 @@ h5:not(.h1, .h2, .h3, .h4, .h6),
 h6,
 .h6 {
   @extend %heading;
-}
-
-h6:not(.h1, .h2, .h3, .h4, .h5),
-.h6 {
+  
   @include font-setting('sans');
   color: $color-gray-medium;
   font-size: $size-s;
   font-weight: bold;
   line-height: $line-height-m;
-  margin-bottom: $size-tiny;
 }
