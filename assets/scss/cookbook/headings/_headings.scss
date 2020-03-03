@@ -2,7 +2,7 @@
 //
 // The [`<h1>`–`<h6>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements) elements represent six levels of headings. {{isProse}} {{isHelper}}
 //
-// The `wbz-heading` class adds default margins to each heading level.
+// The `wbz-heading` class adds styling and default margins to each heading level.
 //
 // ---
 //
@@ -33,7 +33,21 @@
 //
 // Styleguide 10.0.3
 
+%heading {
+  color: $color-black-pure;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: $line-height-s;
+  text-transform: none;
+
+  > b,
+  > strong {
+    font-weight: inherit;
+  }
+}
+
 .wbz-heading {
+  // margin settings
   margin-bottom: 0.5em;
 
   + * {
@@ -42,5 +56,56 @@
 
   &:not(:first-child) {
     margin-top: 1.5em;
+  }
+
+  // Heading level 1
+  @at-root h1#{&},
+  &.h1 {
+    @extend %heading;
+    font-size: $size-giant;
+    line-height: 1.1;
+  }
+
+  // Heading level 2
+  @at-root h2#{&},
+  &.h2 {
+    @extend %heading;
+    font-size: $size-xl;
+  }
+
+  // Heading level 3
+  @at-root h3#{&},
+  &.h3 {
+    @extend %heading;  
+    font-size: $size-l;
+  }
+
+  // Heading level 4
+  @at-root h4#{&},
+  &.h4 {
+    @extend %heading;
+    font-size: $size-m;
+  }
+
+  // Heading level 5
+  @at-root h5#{&},
+  &.h5 {
+    @extend %heading; 
+    color: $color-gray-medium;
+    font-size: $size-b;
+    font-weight: normal;
+    letter-spacing: $font-letter-spacing-b;
+    line-height: $line-height-m;
+    text-transform: uppercase;
+  }
+
+  // Heading level 6
+  @at-root h6#{&},
+  &.h6 {
+    @extend %heading;
+    color: $color-gray-medium;
+    font-size: $size-s;
+    font-weight: bold;
+    line-height: $line-height-m;
   }
 }
