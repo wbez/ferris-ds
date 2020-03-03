@@ -1,6 +1,6 @@
 // Responsive embed (wbz-responsive-embed)
 //
-// Add the `wbz-responsive-embed` class to an element's container to preserve the element's aspect ratio on different screen widths.
+// Add the `wbz-responsive-embed` class to an element's container to preserve the element's aspect ratio on different screen widths. {{isProse}}
 //
 // ---
 //
@@ -28,6 +28,13 @@
 //      <iframe src="…"> 
 //    </div>
 //    ```
+//
+// ---
+//
+// ### Class modifiers:
+// - `no-gutter-mobile` — Stretch the embed to the full screen width on mobile. (Must be the child of a centered block to work properly.)
+//
+// no-gutter-mobile - &nbsp;
 //
 // Markup: cookbook/responsive-embed/responsive-embed.html
 //
