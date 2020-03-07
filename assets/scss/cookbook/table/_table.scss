@@ -18,6 +18,8 @@
   font-size: $size-s;
   @include font-setting(sans);
   line-height: $line-height-s;
+  margin-top: $size-xxl;
+  margin-bottom: $size-xxl;
   // Remove most spacing between table cells.
   border-collapse: collapse;
   border-spacing: 0;
@@ -26,7 +28,7 @@
 
   caption {
     color: $color-gray-medium;
-    padding: $size-b $size-tiny;
+    padding: 0 $size-tiny;
     text-align: left;
 
     &:first-child {

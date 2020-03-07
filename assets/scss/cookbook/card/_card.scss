@@ -30,9 +30,7 @@
   border: 1px solid rgba(180, 180, 180, 0.35);
   display: block;
   filter: contrast(0.7);
+  font-size: 1rem;
+  line-height: $line-height-m;
   padding: $size-l $size-b;
-
-  > :first-child {
-    margin-top: 0;
-  }
 }

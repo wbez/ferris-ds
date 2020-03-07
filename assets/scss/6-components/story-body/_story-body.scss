@@ -6,79 +6,88 @@
 //
 // Styleguide 6.1.3
 
-.c-story-body {
-  @extend .t-links.-story;
-  @include font-setting(serif);
+.c-content {
   font-size: $size-b;
 
-  > * {
-    max-width: $story-narrow;
-  }
-
-  .c-plugin,
-  [class^='c-plugin-'] {
-    max-width: unset;
-    margin-top: $size-giant;
-    margin-bottom: $size-xxl;
-  }
-
-  figure.c-plugin {
-    margin-top: $size-b;
-    margin-bottom: $size-b;
-
-    // set a default width for images that don't have a defined width
-    &:not([class*='-is-']) {
-      max-width: px-to-rem(
-        $bp-default * (colspan(10, 12) - 2 * colspan(p, 12)) / 100%
-      );
+  .pull-right {
+    @include breakpoint-max(bp-s) {
+      float: none;
     }
 
-    // add margins to images that aren't aligned left or right
-    &:not(.-align-left):not(.-align-right) {
-      @include breakpoint-min(bp-s) {
-        margin-top: $size-xxl;
-        margin-bottom: $size-l;
-      }
+    @include breakpoint-min(bp-s) {
+      margin-left: colspan(g, 6);
+      margin-top: $size-b;
+      margin-bottom: $size-b;
+      max-width: colspan(3, 6);
     }
 
-    // add special padding and margins for full-bleed captions
-    &.-is-full .c-caption {
-      width: $bp-default;
-      max-width: calc(100% - 2 * #{$size-s});
-
-      box-sizing: content-box;
-      margin-left: auto;
-      margin-right: auto;
-      padding-left: colspan(m, 4);
-      padding-right: colspan(m, 4);
-
-      @include breakpoint-min(bp-s) {
-        padding-left: colspan(m, 6);
-        padding-right: colspan(m, 6);
-      }
-
-      @include breakpoint-min(bp-l) {
-        padding-left: colspan(m, 12);
-        padding-right: colspan(m, 12);
-        margin-left: 0;
-      }
+    @include breakpoint-min(bp-l) {
+      margin-left: colspan(g, 8);
+      margin-top: $size-b;
+      margin-bottom: $size-b;
+      max-width: px-to-rem($bp-default * (colspan(4, 12) / 100%));
     }
   }
 
-  .c-accent-box {
-    margin-top: $size-l;
-    margin-bottom: $size-l;
-    padding: $size-l $size-s;
-
-    @media screen and (max-width: $story-narrow) {
-      @include full-width;
+  .pull-left {
+    @include breakpoint-max(bp-s) {
+      float: none;
     }
 
-    @media screen and (min-width: $story-narrow) {
-      max-width: $story-narrow + 2 * $size-s;
+    @include breakpoint-min(bp-s) {
+      margin-right: colspan(g, 6);
+      margin-top: $size-b;
+      margin-bottom: $size-b;
+      max-width: colspan(3, 6);
+    }
+
+    @include breakpoint-min(bp-l) {
+      margin-right: colspan(g, 8);
+      margin-top: $size-b;
+      margin-bottom: $size-b;
+      max-width: px-to-rem($bp-default * (colspan(4, 12) / 100%));
+    }
+  }
+}
+
+.c-content.-story {
+  @extend .t-links.-story;
+  @include font-setting(serif);
+  max-width: $story-narrow;
+  margin-left: auto;
+  margin-right: auto;
+
+  .fit-copy {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .fit-outer {
+    @include breakpoint-min(bp-l) {
+      margin-left: colspan(-1, 8) + colspan(g, 8) + colspan(p, 8);
+      margin-right: colspan(-1, 8) + colspan(g, 8) + colspan(p, 8);
+      // stylelint-disable-next-line declaration-no-important
+      width: colspan(10, 8) - 2 * colspan(p, 8) !important;
     }
   }
 
+  .pull-right {
+    // pull out of story well
+    @include breakpoint-min(bp-l) {
+      margin-right: colspan(-1, 8) + colspan(g, 8) + colspan(p, 8);
+    }
+  }
+
+  .pull-left {
+    // pull out of story well
+    @include breakpoint-min(bp-l) {
+      margin-left: colspan(-1, 8) + colspan(g, 8) + colspan(p, 8);
+    }
+  }
+}
+
+.c-story-body {
   > .c-table {
     margin-top: $size-giant;
     margin-bottom: $size-xxl;
@@ -87,47 +96,10 @@
   > hr {
     margin-top: $size-xxl;
     margin-bottom: $size-xxl;
-    width: calc((1 - 1/1.6) * 100%);
+    width: calc((1 - 1 / 1.6) * 100%);
 
     @media screen and (min-width: $story-narrow) {
       width: (1 - 1/1.6) * $story-narrow;
-    }
-  }
-
-  
-  > .pull-right {
-    @include breakpoint-max(bp-s) {
-      float: none;
-    }
-
-    @include breakpoint-min(bp-s) {
-      margin-left: colspan(g, 6);
-      margin-bottom: $size-b;
-      width: colspan(3, 6);
-    }
-    
-    @include breakpoint-min(bp-l) {
-      margin-left: $size-b;
-      margin-bottom: $size-b;
-      width: px-to-rem($bp-default * (colspan(4, 12) / 100%));
-    }
-  }
-
-  > .pull-left {
-    @include breakpoint-max(bp-s) {
-      float: none;
-    }
-
-    @include breakpoint-min(bp-s) {
-      margin-right: colspan(g, 6);
-      margin-bottom: $size-b;
-      width: colspan(3, 6);
-    }
-    
-    @include breakpoint-min(bp-l) {
-      margin-right: $size-b;
-      margin-bottom: $size-b;
-      width: px-to-rem($bp-default * (colspan(4, 12) / 100%));
     }
   }
 }

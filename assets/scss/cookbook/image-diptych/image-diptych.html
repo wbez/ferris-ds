@@ -8,7 +8,17 @@
   <code>&lt;div&gt;</code> classed <code>wbz-diptych</code>.
 </p>
 
-<div class="wbz-diptych c-plugin">
+<details>
+  <summary><strong>CMS implementation</strong></summary>
+  <pre class="hljs language-html">
+&lt;div class="wbz-diptych"&gt;
+  &lt;img src="&hellip;" data-img-id="&hellip;"&gt;
+  &lt;img src="&hellip;" data-img-id="&hellip;"&gt;
+&lt;/div&gt;</pre
+  >
+</details>
+
+<div class="wbz-diptych">
   <figure class="wbz-image">
     <img src="https://picsum.photos/800/420?random" alt="Example image" />
     <figcaption class="c-caption">
@@ -37,7 +47,18 @@
   <code>wbz-diptych</code>, within a <code>&lt;figure&gt;</code> element.
 </p>
 
-<figure class="wbz-image wbz-diptych c-plugin">
+<details>
+  <summary><strong>CMS implementation</strong></summary>
+  <pre class="hljs language-html">
+&lt;figure class="wbz-image wbz-diptych"&gt;
+  &lt;img src="&hellip;" data-img-id="&hellip;"&gt;
+  &lt;img src="&hellip;" data-img-id="&hellip;"&gt;
+  &lt;figcaption&gt;&hellip;&lt;/figcaption&gt;
+&lt;/figure&gt;</pre
+  >
+</details>
+
+<figure class="wbz-image wbz-diptych">
   <img src="https://picsum.photos/800/420?random" alt="Example image" />
   <img src="https://picsum.photos/800/420?random" alt="Example image" />
   <figcaption class="c-caption">
@@ -57,21 +78,37 @@
   You can also nest a <code>&lt;div&gt;</code> classed <code>wbz-diptych</code>
   <em>inside</em> of a <code>&lt;figure&gt;</code> element, creating a grid of
   images.
-
-  <figure class="wbz-image c-plugin">
-    <img src="https://picsum.photos/1600/900?random" alt="Example image" />
-
-    <div class="wbz-diptych">
-      <img src="https://picsum.photos/800/420?random" alt="Example image" />
-      <img src="https://picsum.photos/800/420?random" alt="Example image" />
-    </div>
-
-    <figcaption class="c-caption">
-      Terra cotta details hint at the businesses that formerly occupied these
-      spaces.
-      <span class="c-caption__credit">Jason Marck/WBEZ</span>
-    </figcaption>
-  </figure>
 </p>
+
+<details>
+  <summary><strong>CMS implementation</strong></summary>
+  <pre class="hljs language-html">
+&lt;figure class="wbz-image"&gt;
+  &lt;img src="&hellip;" data-img-id="&hellip;"&gt;
+
+  &lt;div class="wbz-diptych"&gt;
+    &lt;img src="&hellip;" data-img-id="&hellip;"&gt;
+    &lt;img src="&hellip;" data-img-id="&hellip;"&gt;
+  &lt;/div&gt;
+  
+  &lt;figcaption&gt;&hellip;&lt;/figcaption&gt;
+&lt;/figure&gt;</pre
+  >
+</details>
+
+<figure class="wbz-image">
+  <img src="https://picsum.photos/1600/900?random" alt="Example image" />
+
+  <div class="wbz-diptych">
+    <img src="https://picsum.photos/800/420?random" alt="Example image" />
+    <img src="https://picsum.photos/800/420?random" alt="Example image" />
+  </div>
+
+  <figcaption class="c-caption">
+    Terra cotta details hint at the businesses that formerly occupied these
+    spaces.
+    <span class="c-caption__credit">Jason Marck/WBEZ</span>
+  </figcaption>
+</figure>
 
 <hr class="wbz-hairline" />

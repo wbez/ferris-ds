@@ -17,8 +17,7 @@
 // this is a combination of default hr element style and c-story-body > hr
 hr.wbz-hairline {
   border: 1px solid $color-gray-light;
-  margin-top: $size-xxl;
-  margin-bottom: $size-xxl;
+  margin: $size-xxxl auto;
   width: calc((1 - 1/1.6) * 100%);
 
   @media screen and (min-width: $story-narrow) {
