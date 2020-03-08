@@ -2,13 +2,15 @@
 //
 // The cookbook includes a few utility classes, to be freely used within the CMS.
 //
-// Class          | Description
-// -------------- | ---
-// `center-block` | Centers the element, provided it has a defined width.
-// `clearfix`     | Apply to parent container of floated elements, to prevent float overflow
-// `pull-left`    | Float the element left
-// `pull-right`   | Float the element right
-// `sr-only`      | Visually hidden, but visible to screen readers
+// Class              | Description
+// ---                | ---
+// `center-block`     | Centers the element, provided it has a defined width.
+// `clearfix`         | Apply to parent container of floated elements, to prevent float overflow
+// `full-width`       | Full width
+// `no-gutter-mobile` | Full width, mobile only
+// `pull-left`        | Float the element left
+// `pull-right`       | Float the element right
+// `sr-only`          | Visually hidden, but visible to screen readers
 //
 // &nbsp;
 //
@@ -27,6 +29,18 @@
     content: '';
     display: table;
     clear: both;
+  }
+}
+
+.full-width {
+  @include full-width;
+  max-width: 100vw;
+}
+
+.no-gutter-mobile {
+  @include breakpoint-max(bp-s) {
+    @include full-width;
+    max-width: 100vw;
   }
 }
 
