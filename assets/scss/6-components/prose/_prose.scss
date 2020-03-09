@@ -1,13 +1,73 @@
-// Story body (c-story-body)
+// Prose (c-prose)
 //
 // Story bodies are a special component because we have limited control over the class names within them. We must deviate from BEM and create catch-all tag selectors to allow the greatest flexibility of the markup.
 //
-// Markup: 6-components/story-body/story-body.html
+// Markup: 6-components/prose/prose.html
 //
 // Styleguide 6.1.3
 
-.c-content {
-  font-size: $size-b;
+$story-narrow: px-to-rem($bp-default * (colspan(8, 12) / 100%));
+
+.c-prose {
+  line-height: $line-height-b;
+
+  * + * {
+    margin-top: $size-b;
+  }
+
+  ul {
+    list-style: disc;
+    list-style-position: outside;
+    padding: 0 $size-b;
+  }
+
+  ul ul,
+  ol ul,
+  dl ul {
+    list-style-type: circle;
+  }
+
+  ul ul ul,
+  ul ol ul,
+  ul dl ul,
+  ol ul ul,
+  ol ol ul,
+  ol dl ul,
+  dl ul ul,
+  dl ol ul,
+  dl dl ul {
+    list-style-type: square;
+  }
+
+  ol {
+    list-style: decimal;
+    list-style-position: outside;
+    padding: 0 $size-b;
+  }
+
+  ul ol,
+  ol ol,
+  dl ol {
+    list-style-type: lower-alpha;
+  }
+
+  li {
+    margin-top: $size-s;
+  }
+
+  dl {
+    dt {
+      font-weight: bold;
+    }
+  
+    dd {
+      margin-left: $size-s;
+    }
+  
+    dd + dt {
+      margin-top: $size-xxxs;
+    }
+  }
 
   .pull-right {
     @include breakpoint-max(bp-s) {
@@ -54,9 +114,10 @@
   }
 }
 
-.c-content.-story {
-  @extend .t-links.-story;
+.c-prose.-story {
+  @extend .t-links, .-story;
   @include font-setting(serif);
+  font-size: $size-b;
   max-width: $story-narrow;
   margin-left: auto;
   margin-right: auto;
@@ -89,21 +150,17 @@
       margin-left: colspan(-1, 8) + colspan(g, 8) + colspan(p, 8);
     }
   }
-}
 
-.c-story-body {
-  > .c-table {
-    margin-top: $size-giant;
-    margin-bottom: $size-xxl;
+  blockquote {
+    $blockquote-border-color: #048282;
+    $blockquote-selector: #{&};
+
+    @import '../../cookbook/blockquote/blockquote';
   }
 
-  > hr {
-    margin-top: $size-xxl;
-    margin-bottom: $size-xxl;
-    width: calc((1 - 1 / 1.6) * 100%);
+  hr {
+    $hr-selector: #{&};
 
-    @media screen and (min-width: $story-narrow) {
-      width: (1 - 1/1.6) * $story-narrow;
-    }
+    @import '../../cookbook/hairline/hairline'; 
   }
 }

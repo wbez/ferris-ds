@@ -19,6 +19,12 @@
 //
 // Styleguide 10.0.3
 
+.wbz-list {
+  li {
+    margin-top: $size-s;
+  }
+}
+
 ul.wbz-list {
   & { // stylelint-disable-line no-duplicate-selectors
     list-style-type: disc;
@@ -57,7 +63,7 @@ dl.wbz-list {
   }
 }
 
-.wbz-list.wbz-list-compact {
+.wbz-list-compact {
   li {
     margin-top: $size-tiny;
     margin-bottom: $size-tiny;

@@ -15,7 +15,10 @@
 // Styleguide 10.0.3
 
 // this is a combination of default hr element style and c-story-body > hr
-hr.wbz-hairline {
+
+$hr-selector: 'hr.wbz-hairline' !default;
+
+@at-root #{$hr-selector} {
   border: 1px solid $color-gray-light;
   clear: both;
   margin: $size-xxxl auto;

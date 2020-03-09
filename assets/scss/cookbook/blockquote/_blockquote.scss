@@ -20,17 +20,16 @@
 //
 // Styleguide 10.0.3
 
-blockquote.wbz-blockquote {
-  border-left: 3px solid $color-gray-light;
+$blockquote-border-color: $color-gray-light !default;
+$blockquote-selector: 'blockquote.wbz-blockquote' !default;
+
+@at-root #{$blockquote-selector} {
+  border-left: 3px solid $blockquote-border-color;
   padding: $size-tiny $size-m;
 
   @include breakpoint-min(bp-s) {
     margin-left: $size-xxl;
     margin-right: $size-l;
-  }
-
-  .c-content.-story & {
-    border-color: #048282;
   }
 
   cite,
