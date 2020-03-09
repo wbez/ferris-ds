@@ -1,0 +1,76 @@
+// Lists (wbz-list)
+//
+// Both bulleted (unordered) and numbered (ordered) lists should be given the `wbz-list` class.
+// 
+// The [`<ul>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul) element is an unordered list, typically represented as bullets. The [`<ol>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol) element is an ordered list, typically represented with numbers. {{isProse}}
+//
+// ---
+//
+// ### CMS notes:
+// 
+// - **No need to use this class.** Our site applies the styles to `<ul>` and `<ol>` elements automatically.
+// 
+// ---
+// 
+// ### Class modifiers:
+// - `wbz-list-compact` — reduces the whitespace between list items
+//
+// Markup: cookbook/lists/lists.html
+//
+// Styleguide 10.0.3
+
+.wbz-list {
+  li {
+    margin-top: $size-s;
+  }
+}
+
+ul.wbz-list {
+  & { // stylelint-disable-line no-duplicate-selectors
+    list-style-type: disc;
+  }
+
+  .wbz-list & {
+    list-style-type: circle;  
+  }
+
+  .wbz-list .wbz-list & {
+    list-style-type: square;
+  }
+}
+
+ol.wbz-list {
+  & { // stylelint-disable-line no-duplicate-selectors
+    list-style-type: decimal;
+  }
+
+  .wbz-list & {
+    list-style-type: lower-alpha;  
+  }
+}
+
+dl.wbz-list {
+  dt {
+    font-weight: bold;
+  }
+
+  dd {
+    margin-left: $size-s;
+  }
+
+  dd + dt {
+    margin-top: $size-xxxs;
+  }
+}
+
+.wbz-list-compact {
+  li {
+    margin-top: $size-tiny;
+    margin-bottom: $size-tiny;
+  }
+
+  ol, ul, dl {
+    margin-top: $size-tiny;
+    margin-bottom: $size-tiny;
+  }
+}

@@ -1,0 +1,73 @@
+// Dropcap (wbz-has-dropcap)
+//
+// Drop caps are illustrative elements to emphasize the beginnings of new sections. {{isProse}}
+//
+// The **preferred** way to add a drop cap is to add the class `wbz-has-dropcap` to the text element.
+//
+// ```html
+// <p class="wbz-has-dropcap">
+//   West of downtown Chicago, …
+// </p>
+// ```
+//
+// Alternately, add the class `wbz-dropcap` to a `<span>` element surrounding a single letter.
+//
+// ```html
+//  <p class="l-clearfix">
+//    <span class="wbz-dropcap">W</span>est of downtown Chicago, …
+//  </p>
+// ```
+//
+// ---
+//
+// ### Class modifiers:
+// - `sans` — use sans typeface
+// - `serif` — use serif typeface
+//
+// ---
+//
+// TK: Per-letter variants — [see here](https://www.smashingmagazine.com/2012/04/drop-caps-historical-use-and-current-best-practices/)
+//
+// sans - &nbsp;
+// serif - &nbsp;
+//
+// Markup: cookbook/dropcap/dropcap.html
+//
+// Styleguide 10.0.3
+
+@mixin dropcap {
+  float: left;
+  font-size: 3.5em;
+  line-height: 1;
+  margin-right: 0.15em;
+  margin-top: -0.1em;
+  margin-bottom: 0.02em;
+}
+
+.wbz-dropcap {
+  @include dropcap;
+}
+
+.wbz-has-dropcap {
+  &::first-letter {
+    @include dropcap;
+  }
+
+  &::after {
+    content: '';
+    display: table;
+    clear: left;
+  }
+}
+
+.wbz-has-dropcap.sans::first-letter,
+.wbz-dropcap.sans {
+  @include font-setting(sans);
+  font-size: 3.6em;
+  margin-top: -0.2em;
+}
+
+.wbz-has-dropcap.serif::first-letter,
+.wbz-dropcap.serif {
+  @include font-setting(serif);
+}

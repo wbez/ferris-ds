@@ -1,0 +1,65 @@
+// Utilities
+//
+// The cookbook includes a few utility classes, to be freely used within the CMS.
+//
+// Class              | Description
+// ---                | ---
+// `center-block`     | Centers the element, provided it has a defined width.
+// `clearfix`         | Apply to parent container of floated elements, to prevent float overflow
+// `full-width`       | Full width
+// `no-gutter-mobile` | Full width, mobile only
+// `pull-left`        | Float the element left
+// `pull-right`       | Float the element right
+// `sr-only`          | Visually hidden, but visible to screen readers
+//
+// &nbsp;
+//
+// Styleguide 10.0.3
+
+.center-block {
+  clear: both;
+  display: block;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.full-width {
+  @include full-width;
+  max-width: 100vw;
+}
+
+.no-gutter-mobile {
+  @include breakpoint-max(bp-s) {
+    @include full-width;
+    max-width: 100vw;
+  }
+}
+
+.pull-left {
+  clear: left;
+  float: left;
+}
+
+.pull-right {
+  clear: right;
+  float: right;
+}
+
+.sr-only {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}

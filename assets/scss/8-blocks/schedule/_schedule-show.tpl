@@ -33,7 +33,7 @@
     </div>
     {% endif %}
 
-    <div class="b-schedule__show-description t-prose t-size-m pt-xxs px-s pb-b">
+    <div class="b-schedule__show-description c-prose t-size-m pt-xxs px-s pb-b">
       {{ description | safe }}
     </div>
   </details>

@@ -16,7 +16,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
     <link rel="stylesheet" href="../../css/all.css" />
+    <link rel="stylesheet" href="../../css/cookbook.css" />
     <link rel="stylesheet" href="../../css/ds.css" />
   </head>
 
@@ -64,36 +68,52 @@
         </div>
         <div class="tile is-parent is-vertical is-9 ds-main">
           <main>
-            {% for item in list %} {% set markup = item.markup %} {% set isFile
-            = item.isFile %} {% set isWide = item.isWide %} {% set description =
-            item.cleanDesc %} {% set descriptionTags = item.description %} {%
-            set codeSnippet = item.codeSnippet %} {% set isTool = item.isTool %}
-            {# <span class="ds-breathe"></span> #} {% if item.depth !== 1 %}
+            {% for item in list %} 
+              {% set markup = item.markup %}
+              {% set isFile = item.isFile %}
+              {% set isWide = item.isWide %}
+              {% set isProse = item.isProse %}
+              {% set isElement = item.isElement %}
+              {% set description = item.cleanDesc %}
+              {% set descriptionTags = item.description %}
+              {% set codeSnippet = item.codeSnippet %}
+              {% set isTool = item.isTool %}
+              
+              {% if item.depth !== 1 %}
             <div
               class="section ds-spacer{% if item.deprecated %} ds-legacy{% endif %}{% if item.experimental %} ds-experimental{% endif %}"
             >
-              <a class="ds-anchor" id="{{ item.slug }}"></a> {{ titleBar(name,
-              item) }}
+              <a class="ds-anchor" id="{{ item.slug }}"></a>
+              
+              {{ titleBar(name, item) }}
+
               <div class="ds-breathe-vert">
                 <h2 class="title is-{{ item.depth }} is-spaced">
-                  {{ item.prettyName }} {% if item.experimental %}
-                  <span class="ds-version-tag"
-                    ><span class="tag is-info">Experimental</span></span
-                  >
-                  {% endif %} {% if item.deprecated %}
-                  <span class="ds-version-tag"
-                    ><span class="tag is-warning">Legacy</span></span
-                  >
+                  {{ item.prettyName }}
+                  
+                  {% if item.experimental %}
+                    <span class="ds-version-tag">
+                      <span class="tag is-info">Experimental</span>
+                    </span>
+                  {% endif %}
+                  
+                  {% if item.deprecated %}
+                    <span class="ds-version-tag">
+                      <span class="tag is-warning">Legacy</span>
+                    </span>
                   {% endif %}
                 </h2>
+
                 <div class="ds-desc">{{ descriptionTags | safe }}</div>
-                {% if item.isHelper %} <code>{{ item.mainClass }}</code> {%
-                endif %}
+
+                {% if item.isHelper %}
+                  <code>{{ item.mainClass }}</code>
+                {% endif %}
+
                 <div class="columns is-multiline">
                   {% for color in item.colors %}
                   <div class="column is-3">
-                    {{ colorSwatch(color.name, color.color, color.description, color.githubData)
-                    }}
+                    {{ colorSwatch(color.name, color.color, color.description, color.githubData) }}
                   </div>
                   {% endfor %}
                 </div>
@@ -127,8 +147,8 @@
               {% if markup %}
               <div class="columns is-multiline">
                 {% if not item.isHelper %}
-                <div class="column is-full">
-                  {{ snippet( item.header, markup, '', isFile, description,
+                <div class="column is-full {% if isProse %}ds-hide-grid{% endif %}">
+                  {{ snippet( item.header, markup, '', isFile, isProse, description,
                   codeSnippet, item.mainClass, name ) }}
                 </div>
                 {% else %}
@@ -157,9 +177,9 @@
                 </div>
                 {% else %} {% for modifier in item.modifiers %}
                 <div
-                  class="column {% if isWide %}is-full{% else %}is-half{% endif %}"
+                  class="column {% if isWide %}is-full{% else %}is-half{% endif %} {% if isProse %}ds-hide-grid{% endif %}"
                 >
-                  {{ snippet(item.header, markup, modifier, isFile) }}
+                  {{ snippet(item.header, markup, modifier, isFile, isProse) }}
                 </div>
                 {% endfor %} {% endif %}
               </div>

@@ -1,0 +1,111 @@
+// Headings (wbz-heading)
+//
+// The [`<h1>`–`<h6>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements) elements represent six levels of headings. {{isProse}} {{isHelper}}
+//
+// The `wbz-heading` class adds styling and default margins to each heading level.
+//
+// ---
+//
+// ### General notes:
+// - Avoid skipping heading levels: always start from `<h1>`, next use `<h2>` and so on. (Source: [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements))
+// - Do not use a heading element for restyling; use a heading class instead. (e.g. `<div class="wbz-heading h5">`)
+//
+// ---
+//
+// ### CMS notes:
+// 
+// - **No need to use this class.** Our site applies the styles to `<h1>`–`<h6>` elements automatically.
+// - Use `<h3>` and `<h4>` elements in the story editor; these are automatically converted to the appropriate level.
+// 
+// ---
+// 
+// ### Class modifiers:
+// - `h1`–`h6` — overrides the element heading style with the heading level styles (e.g. `<h2 class="h4">` will look like an `<h4>`)
+//
+// h1 - &nbsp;
+// h2 - &nbsp;
+// h3 - &nbsp;
+// h4 - &nbsp;
+// h5 - &nbsp;
+// h6 - &nbsp;
+//
+// Markup: <h5 class="wbz-heading {{ className }}">{{ className }}: Story headline text <a>with link.</a></h1>
+//
+// Styleguide 10.0.3
+
+%heading {
+  color: $color-black-pure;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: $line-height-s;
+  text-transform: none;
+
+  > b,
+  > strong {
+    font-weight: inherit;
+  }
+}
+
+.wbz-heading {
+  // margin settings
+  margin-bottom: 0.5em;
+
+  + * {
+    margin-top: 0;
+  }
+
+  &:not(:first-child) {
+    margin-top: 1.5em;
+  }
+
+  // Heading level 1
+  @at-root h1#{&},
+  &.h1 {
+    @extend %heading;
+    font-size: $size-giant;
+    line-height: 1.1;
+  }
+
+  // Heading level 2
+  @at-root h2#{&},
+  &.h2 {
+    @extend %heading;
+    font-size: $size-xl;
+  }
+
+  // Heading level 3
+  @at-root h3#{&},
+  &.h3 {
+    @extend %heading;  
+    font-size: $size-l;
+  }
+
+  // Heading level 4
+  @at-root h4#{&},
+  &.h4 {
+    @extend %heading;
+    font-size: $size-m;
+  }
+
+  // Heading level 5
+  @at-root h5#{&},
+  &.h5 {
+    @extend %heading; 
+    color: $color-gray-medium;
+    font-size: $size-b;
+    font-weight: normal;
+    letter-spacing: $font-letter-spacing-b;
+    line-height: $line-height-m;
+    text-transform: uppercase;
+  }
+
+  // Heading level 6
+  @at-root h6#{&},
+  &.h6 {
+    @extend %heading;
+    color: $color-gray-medium;
+    font-size: $size-s;
+    font-weight: bold;
+    line-height: $line-height-m;
+  }
+}

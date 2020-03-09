@@ -6,3 +6,5 @@
 @import 'functions';
 @import 'mixins';
 @import 'column-setter';
+
+$story-narrow: px-to-rem($bp-default * (colspan(8, 12) / 100%));

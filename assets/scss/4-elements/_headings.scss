@@ -6,9 +6,13 @@
 //
 // Styleguide 4.1.1
 //
-%heading {  
+
+%heading {
   color: $color-black-pure;
-  font-weight: 700;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: $line-height-s;
+  text-transform: none;
 
   > b,
   > strong {
@@ -16,45 +20,71 @@
   }
 }
 
-h1 {
-  @extend %heading;
-  @include font-setting('primary');
+// Heading level 1
 
+h1,
+.h1 {
+  @extend %heading;
+  
+  @include font-setting('primary');
   font-size: $size-giant;
+  line-height: 1.1;
 }
 
-h2 {
-  @extend %heading;
-  @include font-setting('primary');
+// Heading level 2
 
+h2,
+.h2 {
+  @extend %heading;
+  
+  @include font-setting('primary');
   font-size: $size-xl;
 }
 
-h3 {
-  @extend %heading;
-  @include font-setting('primary');
+// Heading level 3
 
+h3,
+.h3 {
+  @extend %heading;
+  
+  @include font-setting('primary');
   font-size: $size-l;
 }
 
-h4 {
-  @extend %heading;
-  @include font-setting('primary');
+// Heading level 4
 
+h4,
+.h4 {
+  @extend %heading;
+  
+  @include font-setting('primary');
   font-size: $size-m;
 }
 
-h5 {
-  @extend %heading;
-  @include font-setting('secondary');
+// Heading level 5
 
+h5,
+.h5 {
+  @extend %heading;
+  
+  @include font-setting('sans');
+  color: $color-gray-medium;
   font-size: $size-b;
+  font-weight: normal;
+  letter-spacing: $font-letter-spacing-b;
+  line-height: $line-height-m;
+  text-transform: uppercase;
 }
 
-h6 {
-  @extend %heading;
-  @include font-setting('secondary');
+// Heading level 6
 
+h6,
+.h6 {
+  @extend %heading;
+  
+  @include font-setting('sans');
+  color: $color-gray-medium;
   font-size: $size-s;
-  margin-bottom: $size-tiny;
+  font-weight: bold;
+  line-height: $line-height-m;
 }

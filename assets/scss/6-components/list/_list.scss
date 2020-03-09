@@ -2,6 +2,7 @@
 //
 // Our standard list is just plain ol' bullets. Children can be either `<li>` elements or have the class `.c-list__item`.
 //
+// .-compact - &nbsp;
 // .-inline - To display the list inline
 // .-inline-bullet - To display the list inline, with bullet separators
 //
@@ -14,6 +15,18 @@
 
   &__item {
     list-style: disc;
+  }
+}
+
+.c-list.-compact {
+  .c-list__item {
+    margin-top: $size-tiny;
+    margin-bottom: $size-tiny;
+  }
+
+  ol, ul, dl {
+    margin-top: $size-tiny;
+    margin-bottom: $size-tiny;
   }
 }
 

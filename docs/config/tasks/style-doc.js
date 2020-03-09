@@ -39,18 +39,28 @@ const processSection = (section, dir) => {
   const isWide = section.description.includes(isWideStr);
   const isHelperStr = '{{isHelper}}';
   const isHelper = section.description.includes(isHelperStr);
+  const isProseStr = '{{isProse}}';
+  const isProse = section.description.includes(isProseStr);
+  const isElementStr = '{{isElement}}';
+  const isElement = section.description.includes(isElementStr);
   const isTool = header.includes('@');
   const description = md.render(
-    section.description.replace(isWideStr, '').replace(isHelperStr, '')
+    section.description
+      .replace(isWideStr, '')
+      .replace(isHelperStr, '')
+      .replace(isProseStr, '')
+      .replace(isElementStr, '')
   );
   const cleanDesc = stripTags(description);
   const githubLink = `${GITHUB_URL}/${section.source.path}#L${section.source.line}`;
 
   // create an order number
   const ref = section.referenceURI;
+
   const orderNumber =
     section.depth === 1 ? Number(`${ref}00`) : Number(ref.replace(/-/gi, ''));
-  const group = ref[0];
+
+  const group = parseInt(ref, 10);
 
   // extract mainClass and prettyName (regex)
   let mainClass = slug;
@@ -90,6 +100,8 @@ const processSection = (section, dir) => {
     isFile,
     isWide,
     isHelper,
+    isProse,
+    isElement,
     isTool,
     cleanDesc,
     githubLink,

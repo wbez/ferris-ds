@@ -1,0 +1,36 @@
+// Card (wbz-card)
+//
+// Sections set apart from the main story text. {{isWide}} {{isProse}}
+//
+// Typically, we'll add the class to an [`<aside>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside) HTML element; this indicates that the card content is separate from the main content.
+//
+// ---
+//
+// ### Example uses:
+// - methodology box
+// - collection refer
+// - sidebar (in the newspaper sense of the word)
+//
+// ---
+//
+// ### Class modifiers:
+// - `pull-right` — float the card right
+// - `pull-left` — float the card left
+//
+// pull-right - Card floated right
+// pull-left - Card floated left
+//
+// Markup: cookbook/card/card.html
+//
+// Styleguide 10.0.3
+
+// This is a copy of 6-components/accent-box/c-accent-box
+.wbz-card {
+  @include font-setting(sans);
+  border: 1px solid rgba(180, 180, 180, 0.35);
+  display: block;
+  filter: contrast(0.7);
+  font-size: 1rem;
+  line-height: $line-height-m;
+  padding: $size-l $size-b;
+}

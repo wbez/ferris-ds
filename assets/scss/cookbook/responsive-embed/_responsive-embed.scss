@@ -1,0 +1,71 @@
+// Responsive embed (wbz-responsive-embed)
+//
+// Add the `wbz-responsive-embed` class to an element's container to preserve the element's aspect ratio on different screen widths. {{isProse}}
+//
+// ---
+//
+// ### Example uses:
+// - YouTube embed
+// - Facebook video embed
+//
+// ---
+// 
+// ### General notes:
+//
+// - The default aspect ratio is 16:9.
+// - To override the default aspect ratio, you have a couple of options:
+//   - Add an explicit `padding-bottom` style, representing the aspect ratio as height divided by width
+//    ```html
+//    <!-- 4:3 aspect ratio -->
+//    <div class="wbz-responsive-embed" style="padding-bottom: 75%;">
+//      <iframe src="…">
+//    </div>
+//    ```
+//   - Set the `--aspect-ratio` custom css property, representing the aspect ratio as width divided by height
+//    ```html
+//    <!-- 4:3 aspect ratio -->
+//    <div class="wbz-responsive-embed" style="--aspect-ratio: 4 / 3;">
+//      <iframe src="…"> 
+//    </div>
+//    ```
+//
+// ---
+//
+// ### Class modifiers:
+// - `no-gutter-mobile` — Stretch the embed to the full screen width on mobile. (Must be the child of a centered block to work properly.)
+//
+// no-gutter-mobile - &nbsp;
+//
+// Markup: cookbook/responsive-embed/responsive-embed.html
+//
+// Styleguide 10.0.1
+.wbz-responsive-embed {
+  --aspect-ratio: #{ 16 / 9 };
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    padding-bottom: calc(100% / (var(--aspect-ratio)));
+  }
+
+  &[style*='padding-bottom'],
+  &[style*='padding-top'] {
+    &::before {
+      content: none;
+    }
+  }
+
+  * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  img {
+    height: auto;
+    object-fit: cover;
+  }
+}

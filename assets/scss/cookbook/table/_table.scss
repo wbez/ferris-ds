@@ -1,0 +1,79 @@
+// Table (wbz-table)
+//
+// Add the class `wbz-table` to a [`<table>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table) element. {{isProse}}
+//
+// ---
+//
+// ### CMS notes:
+// 
+// - **No need to use this class.** Our site applies the styles automatically.
+//
+// Markup: cookbook/table/table.html
+//
+// Styleguide 10.0.3
+
+// This is a copy of 6-components/table
+.wbz-table {
+  display: table;
+  font-size: $size-s;
+  @include font-setting(sans);
+  line-height: $line-height-s;
+  margin-top: $size-xxl;
+  margin-bottom: $size-xxl;
+  // Remove most spacing between table cells.
+  border-collapse: collapse;
+  border-spacing: 0;
+  // Prevent cramped-looking tables.
+  width: 100%;
+
+  caption {
+    color: $color-gray-medium;
+    padding: 0 $size-tiny;
+    text-align: left;
+
+    &:first-child {
+      caption-side: top;
+    }
+
+    &:last-child {
+      caption-side: bottom;
+    }
+  }
+
+  tbody > tr + tr {
+    border-top: 1px solid $color-gray-light;
+  }
+
+  tbody:last-child {
+    border-bottom: 1px solid $color-gray-light;
+  }
+
+  td {
+    padding: $size-xxxs $size-tiny;
+    vertical-align: top;
+  }
+
+  th {
+    padding: $size-xxxs $size-tiny;
+    font-weight: bold;
+    letter-spacing: $font-letter-spacing-b;
+    text-align: left;
+  }
+
+  thead {
+    border-bottom: 1px solid $color-gray-medium;
+
+    th {
+      hyphens: auto;
+      vertical-align: bottom;
+    }
+  }
+
+  tfoot {
+    border-top: 1px solid $color-gray-medium;
+
+    th {
+      vertical-align: top;
+    }
+  }
+}

@@ -14,6 +14,14 @@ const mappedStyles = [
     out: `./assets/dist/css/all.css`,
   },
   {
+    in: './assets/scss/cookbook.scss',
+    out: `${buildDir}css/cookbook.css`,
+  },
+  {
+    in: './assets/scss/cookbook.scss',
+    out: `./assets/dist/css/cookbook.css`,
+  },
+  {
     in: './assets/scss/no-resets.scss',
     out: `${buildDir}css/no-resets.css`,
   },

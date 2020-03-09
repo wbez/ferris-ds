@@ -1,0 +1,39 @@
+// Blockquote (wbz-blockquote)
+//
+// Blockquotes refer to some external citation which isn’t already mentioned in the article. They are usually placed within the reader’s flow. {{isProse}}
+//
+// This class applies to [`<blockquote>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote) elements only. 
+//
+// ---
+//
+// ### CMS notes:
+// 
+// - **No need to use this class.** Our site applies the styles to `<blockquote>` elements automatically.
+//
+// ---
+// 
+// ### Optional styled child elements:
+// - [`<footer>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer) — Information about the author of the blockquote, copyright data or links to related documents
+// - [`<cite>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite) — Citation element, to reference the source of the quoted material
+//
+// Markup: cookbook/blockquote/blockquote.html
+//
+// Styleguide 10.0.3
+
+$blockquote-border-color: $color-gray-light !default;
+$blockquote-selector: 'blockquote.wbz-blockquote' !default;
+
+@at-root #{$blockquote-selector} {
+  border-left: 3px solid $blockquote-border-color;
+  padding: $size-tiny $size-m;
+
+  @include breakpoint-min(bp-s) {
+    margin-left: $size-xxl;
+    margin-right: $size-l;
+  }
+
+  cite,
+  footer {
+    margin-top: $size-s;
+  }
+}
