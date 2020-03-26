@@ -16,17 +16,17 @@
   // use default link styling
 
   &.-subtle {
-    --color-link: currentColor;
+    --color-link: 'currentColor'; // wrap in quotes for Edge custom properties
     --color-link-hover: #{$color-link-hover};
     --color-link-underline: transparent;
     --color-link-underline-hover: transparent;
   }
 
   &.-underlined {
-    --color-link: currentColor;
-    --color-link-hover: currentColor;
+    --color-link: 'currentColor';
+    --color-link-hover: 'currentColor';
     --color-link-underline: transparent;
-    --color-link-underline-hover: currentColor;
+    --color-link-underline-hover: 'currentColor';
   }
 
   &.-subtle.-underlined {
