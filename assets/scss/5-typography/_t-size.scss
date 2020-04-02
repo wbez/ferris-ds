@@ -21,10 +21,12 @@
 
 @each $type-set, $font-size in $size-map {
   .t-size-#{$type-set} {
-    font-size: $font-size;
+    // stylelint-disable-next-line declaration-no-important
+    font-size: $font-size !important;
   }
 }
 
 .t-size-inherit {
-  font-size: 1em;
+  // stylelint-disable-next-line declaration-no-important
+  font-size: 1em !important;
 }
