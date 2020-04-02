@@ -45,81 +45,85 @@
 //
 // Styleguide 9.0.1
 
+// stylelint-disable declaration-no-important
+
 // MARGIN
 @each $size-name, $size-value in $size-map {
   .m-#{$size-name} {
-    margin: $size-value;
+    margin: $size-value !important;
   }
 }
 
 @each $size-name, $size-value in $size-map {
   .mx-#{$size-name} {
-    margin-left: $size-value;
-    margin-right: $size-value;
+    margin-left: $size-value !important;
+    margin-right: $size-value !important;
   }
 
   .my-#{$size-name} {
-    margin-top: $size-value;
-    margin-bottom: $size-value;
+    margin-top: $size-value !important;
+    margin-bottom: $size-value !important;
   }
 }
 
 .mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 @each $size-name, $size-value in $size-map {
   .mt-#{$size-name} {
-    margin-top: $size-value;
+    margin-top: $size-value !important;
   }
 
   .mb-#{$size-name} {
-    margin-bottom: $size-value;
+    margin-bottom: $size-value !important;
   }
 
   .ml-#{$size-name} {
-    margin-left: $size-value;
+    margin-left: $size-value !important;
   }
 
   .mr-#{$size-name} {
-    margin-right: $size-value;
+    margin-right: $size-value !important;
   }
 }
 
 // PADDING
 @each $size-name, $size-value in $size-map {
   .p-#{$size-name} {
-    padding: $size-value;
+    padding: $size-value !important;
   }
 }
 
 @each $size-name, $size-value in $size-map {
   .px-#{$size-name} {
-    padding-left: $size-value;
-    padding-right: $size-value;
+    padding-left: $size-value !important;
+    padding-right: $size-value !important;
   }
 
   .py-#{$size-name} {
-    padding-top: $size-value;
-    padding-bottom: $size-value;
+    padding-top: $size-value !important;
+    padding-bottom: $size-value !important;
   }
 }
 
 @each $size-name, $size-value in $size-map {
   .pt-#{$size-name} {
-    padding-top: $size-value;
+    padding-top: $size-value !important;
   }
 
   .pb-#{$size-name} {
-    padding-bottom: $size-value;
+    padding-bottom: $size-value !important;
   }
 
   .pl-#{$size-name} {
-    padding-left: $size-value;
+    padding-left: $size-value !important;
   }
 
   .pr-#{$size-name} {
-    padding-right: $size-value;
+    padding-right: $size-value !important;
   }
 }
+
+// stylelint-enable declaration-no-important
