@@ -35,6 +35,13 @@ a {
     text-decoration: none;
   }
 
+  /* stylelint-disable declaration-no-important, no-descending-specificity */
+  u & {
+    text-decoration: inherit !important;
+    text-decoration-color: currentColor !important;
+  }
+  /* stylelint-enable declaration-no-important, no-descending-specificity */
+
   // disable link, as if no href is set
   &[aria-disabled] {
     pointer-events: none;

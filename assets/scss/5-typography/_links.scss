@@ -7,7 +7,7 @@
 // -subtle.-underlined - Changes the color to `$color-link-hover` on hover/focus with underline
 // -story - A special link treatment specific to stories.
 //
-// Markup: <p class="t-links {{ className }}">Block of text in a paragraph. <a href="#">This is what links with a parent of this style look like.</a></p>
+// Markup: <p class="t-links {{ className }}">Block of text in a paragraph. <a href="#">This is what links with a parent of this style look like.</a> <u><a href="#">This is what a link inside an underline looks like.</a></u></p>
 //
 // Styleguide 5.3.1
 
@@ -51,6 +51,13 @@
         box-shadow: 0 1px 0 0 currentColor;
       }
     }
+
+    // stylelint-disable declaration-no-important
+    u a {
+      border-bottom: none !important;
+      box-shadow: none !important;
+    }
+    // stylelint-enable declaration-no-important
   }
 }
 /* stylelint-enable  */
