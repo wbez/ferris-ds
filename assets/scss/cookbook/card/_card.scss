@@ -33,4 +33,12 @@
   font-size: 1rem;
   line-height: $line-height-m;
   padding: $size-l $size-b;
+
+  > :first-child {
+    margin-top: 0;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
 }

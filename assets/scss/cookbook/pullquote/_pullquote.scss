@@ -31,6 +31,14 @@
   margin: $size-xxl auto;
   padding: 0 $size-xl;
 
+  > :first-child {
+    margin-top: 0;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
   cite,
   footer {
     color: $color-gray-medium;

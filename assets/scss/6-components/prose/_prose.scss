@@ -11,8 +11,31 @@ $story-narrow: px-to-rem($bp-default * (colspan(8, 12) / 100%));
 .c-prose {
   line-height: $line-height-b;
 
-  * + * {
+  p,
+  blockquote,
+  ul,
+  ol,
+  dl,
+  pre,
+  figure,
+  table {
     margin-top: $size-b;
+    margin-bottom: $size-b;
+  }
+
+  figcaption {
+    margin-top: 0.5em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: $size-b;
+    margin-top: unquote('max(#{$size-b}, 1em)');
+    margin-bottom: $size-b;
   }
 
   ul {
@@ -111,6 +134,16 @@ $story-narrow: px-to-rem($bp-default * (colspan(8, 12) / 100%));
         $bp-default * ((colspan(4, 12) - colspan(g, 12)) / 100%)
       );
     }
+  }
+}
+
+.c-prose.-compact {
+  > :first-child {
+    margin-top: 0;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
   }
 }
 
