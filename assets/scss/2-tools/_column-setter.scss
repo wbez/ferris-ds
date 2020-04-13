@@ -103,7 +103,7 @@
       number or
       unitless(
       map-get(map-get($breakpoints, (nth(map-keys($breakpoints), $i))), cols)
-      ) ==
+    ) ==
       false
     {
       @warn 'Here is the bp-validator cols warning.';
@@ -197,7 +197,7 @@ $colspan-lesson: "A 'colspan' function call must include the unitless numeric co
       (type-of($container) != 'number' or unitless($container) == false)
     ) or
       (
-        $target ==
+      $target ==
           'm' and
           (type-of($container) != 'number' or unitless($container) == false)
       ) or
@@ -248,6 +248,8 @@ $colspan-lesson: "A 'colspan' function call must include the unitless numeric co
   width: auto;
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
+  padding-left: env(safe-area-inset-left, 0);
+  padding-right: env(safe-area-inset-right, 0);
 }
 
 // ----------------------------------------
