@@ -19,7 +19,7 @@ These are used in our build process.
 
 - `@texastribune/queso-tools`
 - `postcss`
-- `node-sass`
+- `sass`
 - `autoprefixer`
 - `@texastribune/postcss-amp`
 - `clean-css`

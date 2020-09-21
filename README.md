@@ -1,4 +1,4 @@
-# @wbez/ferris-ds 
+# @wbez/ferris-ds
 
 > Centralizing styles for product development at WBEZ
 
@@ -55,7 +55,7 @@ npm install @wbez/ferris-ds
 SCSS
 
 ```scss
-@import '~@wbez/ferris-ds';
+@import '@wbez/ferris-ds';
 ```
 
 CSS in `<head>` via CDN
