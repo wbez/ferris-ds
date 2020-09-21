@@ -9,8 +9,9 @@
 // Markup: <div style="border:2px solid black"><img class="{{ className }}" src="https://static.texastribune.org/media/images/2015/10/22/SpaceJam_Nightscapes_BO_DSC02387.jpg"/></div>
 //
 // Styleguide 7.0.5
+@use '../2-tools/column-setter' as cs;
 
-$story-narrow: px-to-rem($bp-default * (colspan(8,12) / 100%));
+$story-narrow: px-to-rem($bp-default * (cs.colspan(8, 12) / 100%));
 
 .l-width-full {
   width: 100%;

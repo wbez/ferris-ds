@@ -5,6 +5,7 @@
 // Markup: 7-layout/columns.html
 //
 // Styleguide 7.0.5
+@use '../2-tools/column-setter' as cs;
 
 @function mapReverse ($map) {
   $result: null;
@@ -44,12 +45,12 @@ $breakpoints-reversed: mapReverse($breakpoints);
 [class*='l-col-'] {
   // Create base styling -- 100% width, with default padding.
   @each $bp, $value in $breakpoints {
-    $total-cols: bp-attribute($bp, cols);
+    $total-cols: cs.bp-attribute($bp, cols);
 
-    @include breakpoint-min($bp) {
-      padding-left: colspan(p, $total-cols);
-      padding-right: colspan(p, $total-cols);
-      width: colspan($total-cols, $total-cols);
+    @include cs.breakpoint-min($bp) {
+      padding-left: cs.colspan(p, $total-cols);
+      padding-right: cs.colspan(p, $total-cols);
+      width: cs.colspan($total-cols, $total-cols);
     }
   }
 
@@ -61,23 +62,23 @@ $breakpoints-reversed: mapReverse($breakpoints);
 
 // Create `from` classes by iterating through breakpoints from least to greatest.
 @each $bp, $value in $breakpoints {
-  $total-cols: bp-attribute($bp, cols);
+  $total-cols: cs.bp-attribute($bp, cols);
   $current-index: index(($breakpoints), ($bp $value));
 
   @for $i from 1 through $total-cols {
     // e.g. .l-col-3-from-bp-s
-    @include breakpoint-min($bp) {
+    @include cs.breakpoint-min($bp) {
       .l-col-#{$i}-from-#{$bp} {
-        padding-left: colspan(p, $total-cols);
-        padding-right: colspan(p, $total-cols);
-        width: colspan($i, $total-cols);
+        padding-left: cs.colspan(p, $total-cols);
+        padding-right: cs.colspan(p, $total-cols);
+        width: cs.colspan($i, $total-cols);
 
         // e.g. .l-col-3-from-bp-s .l-col-1-from-bp-s
         @for $j from 1 through $i {
           .l-col-#{$j}-from-#{$bp} {
-            padding-left: colspan(p, $i);
-            padding-right: colspan(p, $i);
-            width: colspan($j, $i);
+            padding-left: cs.colspan(p, $i);
+            padding-right: cs.colspan(p, $i);
+            width: cs.colspan($j, $i);
           }
         }
       }
@@ -87,23 +88,23 @@ $breakpoints-reversed: mapReverse($breakpoints);
 
 // Create `to` classes by iterating through breakpoints from greatest to least.
 @each $bp, $value in $breakpoints-reversed {
-  $total-cols: bp-attribute($bp, cols);
+  $total-cols: cs.bp-attribute($bp, cols);
   $current-index: index(($breakpoints-reversed), ($bp $value));
 
   @for $i from 1 through $total-cols {
     // e.g. .l-col-3-until-bp-s
-    @include breakpoint-max($bp) {
+    @include cs.breakpoint-max($bp) {
       .l-col-#{$i}-until-#{$bp} {
-        padding-left: colspan(p, $total-cols);
-        padding-right: colspan(p, $total-cols);
-        width: colspan($i, $total-cols);
+        padding-left: cs.colspan(p, $total-cols);
+        padding-right: cs.colspan(p, $total-cols);
+        width: cs.colspan($i, $total-cols);
 
         // e.g. .l-col-3-until-bp-s .l-col-1-until-bp-s
         @for $j from 1 through $i {
           .l-col-#{$j}-until-#{$bp} {
-            padding-left: colspan(p, $i);
-            padding-right: colspan(p, $i);
-            width: colspan($j, $i);
+            padding-left: cs.colspan(p, $i);
+            padding-right: cs.colspan(p, $i);
+            width: cs.colspan($j, $i);
           }
         }
       }
@@ -113,43 +114,43 @@ $breakpoints-reversed: mapReverse($breakpoints);
 
 // Create `@` classes by iterating through breakpoints from least to greatest.
 @each $bp, $value in $breakpoints {
-  $total-cols: bp-attribute($bp, cols);
+  $total-cols: cs.bp-attribute($bp, cols);
   $current-index: index(($breakpoints), ($bp $value));
 
   @for $i from 1 through $total-cols {
     // e.g. .l-col-3@bp-s
     @if $current-index + 1 <= length(map-keys($breakpoints)) {
       $bp-next: nth(map-keys($breakpoints), $current-index + 1);
-      @include breakpoint-range($bp, $bp-next) {
+      @include cs.breakpoint-range($bp, $bp-next) {
         .l-col-#{$i}\@#{$bp} {
-          padding-left: colspan(p, $total-cols);
-          padding-right: colspan(p, $total-cols);
-          width: colspan($i, $total-cols);
+          padding-left: cs.colspan(p, $total-cols);
+          padding-right: cs.colspan(p, $total-cols);
+          width: cs.colspan($i, $total-cols);
 
           // e.g. .l-col-3@bp-s .l-col-1@bp-s
           @for $j from 1 through $i {
             .l-col-#{$j}\@#{$bp} {
-              padding-left: colspan(p, $i);
-              padding-right: colspan(p, $i);
-              width: colspan($j, $i);
+              padding-left: cs.colspan(p, $i);
+              padding-right: cs.colspan(p, $i);
+              width: cs.colspan($j, $i);
             }
           }
         }
       }
     } @else {
       // i.e. bp-xxl (or whatever the max bp is)
-      @include breakpoint-min($bp) {
+      @include cs.breakpoint-min($bp) {
         .l-col-#{$i}\@#{$bp} {
-          padding-left: colspan(p, $total-cols);
-          padding-right: colspan(p, $total-cols);
-          width: colspan($i, $total-cols);
+          padding-left: cs.colspan(p, $total-cols);
+          padding-right: cs.colspan(p, $total-cols);
+          width: cs.colspan($i, $total-cols);
 
           // e.g. .l-col-3@bp-s .l-col-1@bp-s
           @for $j from 1 through $i {
             .l-col-#{$j}\@#{$bp} {
-              padding-left: colspan(p, $i);
-              padding-right: colspan(p, $i);
-              width: colspan($j, $i);
+              padding-left: cs.colspan(p, $i);
+              padding-right: cs.colspan(p, $i);
+              width: cs.colspan($j, $i);
             }
           }
         }

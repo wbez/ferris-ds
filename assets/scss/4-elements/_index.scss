@@ -4,10 +4,12 @@
 
 /* purgecss start ignore */
 
+@use '../2-tools/column-setter' as cs;
+
 html {
   font-size: $font-root;
 
-  @include breakpoint-max(bp-s) {
+  @include cs.breakpoint-max(bp-s) {
     font-size: $font-root-mobile;
   }
 }

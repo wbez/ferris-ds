@@ -27,6 +27,7 @@
 //
 // Styleguide 9.0.1
 //
+@use '../2-tools/column-setter' as cs;
 
 .is-hidden,
 .hidden {
@@ -47,13 +48,13 @@
 
 @each $bp-name, $bp-value in $mq-breakpoints {
   .is-hidden-from-#{$bp-name} {
-    @include breakpoint-min(#{$bp-name}) {
+    @include cs.breakpoint-min(#{$bp-name}) {
       display: none !important;
     }
   }
 
   .is-hidden-until-#{$bp-name} {
-    @include breakpoint-max(#{$bp-name}) {
+    @include cs.breakpoint-max(#{$bp-name}) {
       display: none !important;
     }
   }

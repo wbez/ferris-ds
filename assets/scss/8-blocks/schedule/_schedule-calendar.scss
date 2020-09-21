@@ -1,3 +1,5 @@
+@use '../../2-tools/column-setter' as cs;
+
 @mixin fade-overflow {
   &::before,
   &::after {
@@ -37,7 +39,7 @@
     // Create a fade out effect for overflowing elements at the beginning and end of the visible section.
     @include fade-overflow;
 
-    @include breakpoint-min(bp-s) {
+    @include cs.breakpoint-min(bp-s) {
       position: sticky;
       top: 0;
       z-index: 3;
