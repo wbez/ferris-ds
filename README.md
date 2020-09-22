@@ -32,7 +32,7 @@ yarn
 yarn dev
 ```
 
-Visit http://wbez.local:3000
+Visit http://local.wbez.org:1234
 
 This spins up a browsersync server and watch task for all SCSS and HTML files.
 

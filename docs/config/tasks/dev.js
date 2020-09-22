@@ -29,7 +29,7 @@ async function dev() {
       logPrefix: 'ferris-ds',
       notify: false,
       open: false,
-      port: 3000,
+      port: 1234,
       server: {
         baseDir: ['./docs/dist'],
       },
