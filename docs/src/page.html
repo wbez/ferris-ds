@@ -71,10 +71,10 @@
           <main>
             {% for item in list %} 
               {% set markup = item.markup %}
+              {% set isElement = item.isElement %}
               {% set isFile = item.isFile %}
               {% set isWide = item.isWide %}
               {% set isProse = item.isProse %}
-              {% set isElement = item.isElement %}
               {% set description = item.cleanDesc %}
               {% set descriptionTags = item.description %}
               {% set codeSnippet = item.codeSnippet %}
@@ -149,7 +149,7 @@
               <div class="columns is-multiline">
                 {% if not item.isHelper %}
                 <div class="column is-full {% if isProse %}ds-hide-grid{% endif %}">
-                  {{ snippet( item.header, markup, '', isFile, isProse, description,
+                  {{ snippet( item.header, markup, '', isElement, isFile, isProse, description,
                   codeSnippet, item.mainClass, name ) }}
                 </div>
                 {% else %}
@@ -180,7 +180,7 @@
                 <div
                   class="column {% if isWide %}is-full{% else %}is-half{% endif %} {% if isProse %}ds-hide-grid{% endif %}"
                 >
-                  {{ snippet(item.header, markup, modifier, isFile, isProse) }}
+                  {{ snippet(item.header, markup, modifier, isElement, isFile, isProse) }}
                 </div>
                 {% endfor %} {% endif %}
               </div>

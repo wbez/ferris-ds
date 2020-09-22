@@ -1,0 +1,42 @@
+// Textarea (wbz-textarea)
+//
+// Markup: 9-form/textarea/index.html
+//
+// Styleguide 11.0.3
+
+@use '../../1-settings' as settings;
+@use '../utils' as *;
+@use '../input';
+@use 'sass:color';
+@use 'sass:map';
+
+$-inputTheme: map.get($theme, 'inputTheme');
+
+@mixin textarea($state: null) {
+  @if ($state == null) {
+    @include input.input;
+
+    height: auto;
+    line-height: 1.5;
+    padding: map.get($-inputTheme, 'paddingHorizontal');
+  } @else if ($state == 'error') {
+    @include input.input('error');
+  }
+}
+
+@if $includeStyles {
+  .wbz-textarea {
+    textarea {
+      @include textarea;
+    }
+
+    label,
+    .description {
+      padding: 0 input.$inputPaddingX;
+    }
+  }
+
+  .wbz-textarea.error textarea {
+    @include textarea('error');
+  }
+}

@@ -76,7 +76,7 @@
                       >
                         <a href="pages/{{ slug + '/index.html#' + rule.slug }}">
                           {{ rule.prettyName }}
-                          {% if item.name != "Starter CSS" and item.name != "Settings" and item.name != "Tools" and item.name != "Elements" %}|
+                          {% if item.name != "Starter CSS" and item.name != "Settings" and item.name != "Tools" and item.name != "Elements" and rule.isElement == false %}|
                             <span class="has-text-weight-semibold">.{{rule.mainClass}}</span>
                           {% endif %}
                         </a>

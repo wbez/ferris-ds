@@ -5,6 +5,7 @@
 // Markup: 7-layout/container.html
 //
 // Styleguide 7.0.1
+@use '../1-settings' as v;
 @use '../2-tools/column-setter' as cs;
 
 @include cs.grid(l-container);
@@ -20,8 +21,8 @@
     margin-bottom: 0;
   }
 
-  @media screen and (min-width: $max-width) {
-    width: $max-width;
+  @media screen and (min-width: v.$max-width) {
+    width: v.$max-width;
     max-width: 100%;
   }
 }
