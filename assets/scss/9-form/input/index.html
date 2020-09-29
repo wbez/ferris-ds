@@ -1,0 +1,107 @@
+{% if not className %}
+<div class="ds-control-group wbz-input">
+  <label for="ds-input-text">
+    First Name
+    <a
+      class="ds-pull-right t-weight-normal"
+      href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text"
+    >
+      text
+    </a>
+  </label>
+  <input type="text" id="ds-input-text" />
+</div>
+
+<div class="ds-control-group wbz-input" id="ds-input-text--disabled">
+  <label for="ds-input-text--disabled">
+    First Name
+  </label>
+  <input type="text" id="ds-input-text--disabled" disabled />
+</div>
+
+<div class="ds-control-group wbz-input">
+  <label for="ds-input-email">
+    Email
+    <a
+      class="ds-pull-right t-weight-normal"
+      href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email"
+    >
+      email
+    </a>
+  </label>
+  <input type="email" id="ds-input-email" />
+</div>
+
+<div class="ds-control-group wbz-input">
+  <label for="ds-input-number">
+    Number
+    <a
+      class="ds-pull-right t-weight-normal"
+      href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number"
+    >
+      number
+    </a>
+  </label>
+  <input type="number" id="ds-input-number" />
+</div>
+
+<div class="ds-control-group wbz-input">
+  <label for="ds-input-password">
+    Password
+    <a
+      class="ds-pull-right t-weight-normal"
+      href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/password"
+    >
+      password
+    </a>
+  </label>
+  <input type="password" id="ds-input-password" />
+</div>
+
+<div class="ds-control-group wbz-input">
+  <label for="ds-input-search">
+    Search
+    <a
+      class="ds-pull-right t-weight-normal"
+      href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search"
+    >
+      search
+    </a>
+  </label>
+  <input type="search" id="ds-input-search" />
+</div>
+
+<div class="ds-control-group wbz-input">
+  <label for="ds-input-tel">
+    Telephone
+    <a
+      class="ds-pull-right t-weight-normal"
+      href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel"
+    >
+      tel
+    </a>
+  </label>
+  <input type="tel" id="ds-input-tel" />
+</div>
+
+<div class="ds-control-group wbz-input">
+  <label for="ds-input-url">
+    URL
+    <a
+      class="ds-pull-right t-weight-normal"
+      href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/url"
+    >
+      url
+    </a>
+  </label>
+  <input type="url" id="ds-input-url" />
+</div>
+{% endif %} {% if className == "is-error" %}
+<div class="ds-control-group wbz-input is-error">
+  <label for="ds-input-text--error">First Name</label>
+  <input type="text" id="ds-input-text--error" />
+  <label for="ds-input-text--error" generated="true" class="error">
+    This field is required
+  </label>
+</div>
+{% endif %}

@@ -1,0 +1,91 @@
+// Radio tab (wbz-radio-tab)
+//
+// Button-like radio inputs. Wrap around the `<input type="radio">` HTML element. {{isWide}}
+//
+// Implement:
+// - Via classname: `<div class="wbz-radio-tab">`
+// - Via **@use**: `input[type="radio"] { @include ds.radio-tab; } `
+//
+// Optionally use in a column layout:
+// - Via classname modifier: `<div class="wbz-radio-tab is-column">`
+// - Via **@use**: @TODO
+//
+// is-column - Stretch box and vertically center label for use as a column
+//
+// Markup: 9-form/radio-tab/index.html
+//
+// Styleguide 9.0.3
+
+@use '../../1-settings' as settings;
+@use '../utils' as *;
+@use 'sass:color';
+@use 'sass:map';
+
+$-buttonTheme: map.get($theme, 'buttonTheme');
+$-activeButtonTheme: map.get($-buttonTheme, 'activeTheme');
+
+@mixin radio-tab {
+  // hide the actual input
+  opacity: 0;
+  position: absolute;
+
+  + label {
+    background: map.get($-buttonTheme, 'backgroundColor');
+    border-radius: map.get($-buttonTheme, 'borderRadius');
+    color: map.get($-buttonTheme, 'textColor');
+    cursor: pointer;
+    display: block;
+    font-size: 1em;
+    height: 100%;
+    line-height: map.get($-buttonTheme, 'lineHeight');
+    margin: 0;
+    overflow: hidden;
+    padding: map.get($-buttonTheme, 'paddingVertical')
+      map.get($-buttonTheme, 'paddingHorizontal');
+    text-align: center;
+  }
+
+  + label:hover {
+    background: color.adjust(
+      map.get($-buttonTheme, 'backgroundColor'),
+      $lightness: -5%
+    );
+  }
+
+  &:checked + label,
+  &:focus + label {
+    background: map.get($-activeButtonTheme, 'backgroundColor');
+    color: map.get($-activeButtonTheme, 'textColor');
+    cursor: default;
+    pointer-events: none;
+
+    > * {
+      color: map.get($-activeButtonTheme, 'textColor');
+      pointer-events: all;
+    }
+  }
+
+  &:focus + label {
+    box-shadow: 0 0 0 0.125em
+      focusring(map.get($-activeButtonTheme, 'backgroundColor'));
+  }
+}
+
+@if $includeStyles {
+  .wbz-radio-tab {
+    input[type='radio'] {
+      @include radio-tab;
+    }
+  }
+
+  .wbz-radio-tab.is-column {
+    display: table;
+    height: 100%;
+    margin: 0;
+
+    input[type='radio'] + label {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+}

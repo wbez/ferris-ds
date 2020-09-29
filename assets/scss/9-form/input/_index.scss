@@ -1,0 +1,149 @@
+// Input (wbz-input)
+//
+// Text-like inputs. Wrap around the `<input>` HTML element.
+//
+// By default, applies to inputs of type **email**, **number**, **password**, **search**, **tel**, **text**, and **url**.
+//
+// Implement:
+// - Via classname: `<div class="wbz-input">`
+// - Via **@use**: `#{ds.$inputSelectors} { @include ds.input; } `
+//
+// Handle errors:
+// - Via classname modifier: `<div class="wbz-input is-error">`
+// - Via **@use**: `.error { #{ds.$inputSelectors} { @include ds.input("error"); } }`
+//
+// is-error - Handle invalid value
+//
+// Markup: 9-form/input/index.html
+//
+// Styleguide 9.0.3
+
+@use '../../1-settings' as settings;
+@use '../utils' as *;
+@use 'sass:color';
+@use 'sass:list';
+@use 'sass:map';
+
+$-inputTheme: map.get($theme, 'inputTheme');
+$inputPaddingX: map.get($-inputTheme, 'paddingHorizontal');
+$inputPaddingY: map.get($-inputTheme, 'paddingVertical');
+$-inputHeight: 1.2 + 2 * $inputPaddingY;
+// {line-height} + {padding-top} + {padding-bottom}
+
+// construct list of text-like input selectors
+$-textLikeInputTypes: 'email', 'number', 'password', 'search', 'tel', 'text',
+  'url';
+$-selectors: ();
+
+@each $-type in $-textLikeInputTypes {
+  $-selectors: list.append(
+    $-selectors,
+    "input[type='#{$-type}']",
+    $separator: 'comma'
+  );
+}
+$inputSelectors: $-selectors;
+
+@mixin input($state: null) {
+  @if ($state == null) {
+    background: map.get($theme, 'backgroundColor');
+    border: 1px solid map.get($theme, 'borderColor');
+    box-shadow: inset 0 0.0625em 0.125em rgba(10, 10, 10, 0.05);
+    border-radius: map.get($-inputTheme, 'borderRadius');
+    height: $-inputHeight;
+    line-height: map.get($-inputTheme, 'lineHeight');
+    padding: $inputPaddingY $inputPaddingX;
+    width: 100%;
+
+    &:focus {
+      border-color: map.get($activeTheme, 'borderColor');
+      box-shadow: 0 0 0 0.125em focusring(map.get($activeTheme, 'borderColor'));
+      outline: none;
+    }
+
+    &[disabled] {
+      background: map.get($disabledTheme, 'backgroundColor');
+      cursor: not-allowed;
+    }
+
+    &:hover:not(:focus):not([disabled]) {
+      border-color: map.get($hoverTheme, 'borderColor');
+    }
+  } @else if ($state == 'error') {
+    // stylelint-disable-next-line declaration-no-important
+    border-color: map.get($errorTheme, 'borderColor') !important;
+    color: map.get($errorTheme, 'textColor');
+
+    &:focus {
+      box-shadow: 0 0 0 0.125em focusring(map.get($errorTheme, 'borderColor'));
+    }
+  }
+}
+
+@if $includeStyles {
+  .wbz-input {
+    #{$inputSelectors} {
+      @include input;
+    }
+
+    label,
+    .description {
+      padding: 0 $inputPaddingX;
+    }
+  }
+
+  .wbz-input.is-error {
+    #{$inputSelectors} {
+      @include input('error');
+    }
+  }
+}
+
+/**
+ * Prefix and suffix
+ */
+
+@mixin withPreAndPost(
+  $preSelector: '.field-prefix',
+  $postSelector: '.field-suffix'
+) {
+  #{$preSelector},
+  #{$postSelector} {
+    color: settings.$color-gray-medium;
+    font-size: 1em;
+    pointer-events: none;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    // center vertically
+    height: $-inputHeight;
+    line-height: $-inputHeight;
+
+    // center horizontally
+    text-align: center;
+  }
+
+  #{$preSelector} {
+    width: px-to-rem(20px);
+
+    ~ input {
+      padding-left: px-to-rem(20px);
+    }
+  }
+
+  #{$postSelector} {
+    left: auto;
+    right: 0.5em;
+    width: auto;
+    transform: scale(0.85);
+    transform-origin: center right;
+  }
+}
+
+@if $includeStyles {
+  .wbz-input {
+    @include withPreAndPost;
+  }
+}

@@ -157,13 +157,22 @@ const processComments = async dirMap => {
   // sort step 3 (convert back to arr)
   const nestedArr = [];
   Object.keys(nested).forEach(e => {
-    // Sort style data by reference number
+    // Sort style data by depth, then by name
     nested[e].list.sort((a, b) => {
-      const keyA = a.header;
-      const keyB = b.header;
+      // Compare depth
+      const o1 = a.depth;
+      const o2 = b.depth;
+
+      if (o1 < o2) return -1;
+      if (o1 > o2) return 1;
+
       // Compare the 2 names
-      if (keyA < keyB) return -1;
-      if (keyA > keyB) return 1;
+      const p1 = a.header;
+      const p2 = b.header;
+
+      if (p1 < p2) return -1;
+      if (p1 > p2) return 1;
+
       return 0;
     });
     nestedArr.push(nested[e]);

@@ -1,0 +1,82 @@
+{% if not className %}
+<div id="edit-submitted-donation-recurs-monthly">
+  <div class="ds-control-group wbz-radio-tab">
+    <input
+      type="radio"
+      id="edit-submitted-donation-recurs-monthly-1"
+      name="submitted[donation][recurs_monthly]"
+      value="recurs"
+      checked="checked"
+    />
+    <label class="option" for="edit-submitted-donation-recurs-monthly-1"
+      >Monthly Contribution
+    </label>
+  </div>
+  <div class="ds-control-group wbz-radio-tab">
+    <input
+      type="radio"
+      id="edit-submitted-donation-recurs-monthly-2"
+      name="submitted[donation][recurs_monthly]"
+      value="NO_RECURR"
+    />
+    <label class="option" for="edit-submitted-donation-recurs-monthly-2"
+      >One-time Donation
+    </label>
+  </div>
+  <div class="ds-control-group wbz-radio-tab">
+    <input
+      type="radio"
+      id="edit-submitted-donation-recurs-monthly-3"
+      name="submitted[donation][recurs_monthly]"
+      value="NO_RECURR"
+    />
+    <label class="option" for="edit-submitted-donation-recurs-monthly-3"
+      >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie,
+      mi in efficitur euismod, lorem neque fermentum elit, pharetra elementum.
+      This gift is in honor of <a href="#">someone</a>.
+    </label>
+  </div>
+</div>
+{% endif %} {% if className == "is-column" %}
+<div
+  id="edit-submitted-donation-recurs-monthly--grid"
+  style="display: grid; grid-template-columns: repeat(3, 1fr); column-gap: 1em;"
+>
+  <div class="ds-control-group wbz-radio-tab is-column">
+    <input
+      type="radio"
+      id="edit-submitted-donation-recurs-monthly-grid-1"
+      name="submitted[donation][recurs_monthly_grid]"
+      value="recurs"
+      checked="checked"
+    />
+    <label class="option" for="edit-submitted-donation-recurs-monthly-grid-1"
+      >Monthly Contribution
+    </label>
+  </div>
+  <div class="ds-control-group wbz-radio-tab is-column">
+    <input
+      type="radio"
+      id="edit-submitted-donation-recurs-monthly-grid-2"
+      name="submitted[donation][recurs_monthly_grid]"
+      value="NO_RECURR"
+    />
+    <label class="option" for="edit-submitted-donation-recurs-monthly-grid-2"
+      >One-time Donation
+    </label>
+  </div>
+  <div class="ds-control-group wbz-radio-tab is-column">
+    <input
+      type="radio"
+      id="edit-submitted-donation-recurs-monthly-grid-3"
+      name="submitted[donation][recurs_monthly_grid]"
+      value="NO_RECURR"
+    />
+    <label class="option" for="edit-submitted-donation-recurs-monthly-grid-3"
+      >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie,
+      mi in efficitur euismod, lorem neque fermentum elit, pharetra elementum.
+      This gift is in honor of <a href="#">someone</a>.
+    </label>
+  </div>
+</div>
+{% endif %}

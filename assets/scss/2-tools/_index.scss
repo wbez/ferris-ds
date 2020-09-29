@@ -4,6 +4,7 @@
 //
 // Styleguide 2.0.0
 @use './column-setter' as cs;
+@forward './column-setter';
 @import 'functions';
 @import 'mixins';
 

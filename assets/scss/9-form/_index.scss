@@ -1,0 +1,36 @@
+// Form
+//
+// Our **form controls**.
+//
+// These can be implemented via classnames, _or_ with [Sass modules](https://sass-lang.com/blog/the-module-system-is-launched) using [@use](http://www.sass-lang.com/documentation/at-rules/use).
+//
+// _Using as a Sass module:_
+// ```scss
+// @use "@wbez/ferris-ds/assets/scss/9-form" as ds with ($includeStyles: false);
+//
+// input[type="checkbox"] { @include ds.checkbox; }
+// ```
+//
+// @TODO: Document forwarded variables/themes
+//
+// Styleguide 9.0
+@use '../1-settings' as settings;
+
+$includeStyles: true !default;
+
+@forward 'utils' with ($includeStyles: $includeStyles);
+@forward 'input';
+@forward 'label';
+@forward 'select';
+@forward 'textarea';
+@forward 'checkbox';
+@forward 'radio-circle';
+@forward 'radio-tab';
+
+@if $includeStyles {
+  .ds-control-group {
+    margin-top: settings.$size-xs;
+    margin-bottom: settings.$size-xs;
+    position: relative;
+  }
+}

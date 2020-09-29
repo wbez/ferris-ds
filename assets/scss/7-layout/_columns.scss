@@ -5,6 +5,7 @@
 // Markup: 7-layout/columns.html
 //
 // Styleguide 7.0.5
+@use '../1-settings' as v;
 @use '../2-tools/column-setter' as cs;
 
 @function mapReverse ($map) {
@@ -33,7 +34,7 @@
   @return $result;
 }
 
-$breakpoints-reversed: mapReverse($breakpoints);
+$breakpoints-reversed: mapReverse(v.$breakpoints);
 
 .l-row {
   display: flex;
@@ -44,7 +45,7 @@ $breakpoints-reversed: mapReverse($breakpoints);
 .l-col,
 [class*='l-col-'] {
   // Create base styling -- 100% width, with default padding.
-  @each $bp, $value in $breakpoints {
+  @each $bp, $value in v.$breakpoints {
     $total-cols: cs.bp-attribute($bp, cols);
 
     @include cs.breakpoint-min($bp) {
@@ -61,9 +62,9 @@ $breakpoints-reversed: mapReverse($breakpoints);
 }
 
 // Create `from` classes by iterating through breakpoints from least to greatest.
-@each $bp, $value in $breakpoints {
+@each $bp, $value in v.$breakpoints {
   $total-cols: cs.bp-attribute($bp, cols);
-  $current-index: index(($breakpoints), ($bp $value));
+  $current-index: index((v.$breakpoints), ($bp $value));
 
   @for $i from 1 through $total-cols {
     // e.g. .l-col-3-from-bp-s
@@ -113,14 +114,14 @@ $breakpoints-reversed: mapReverse($breakpoints);
 }
 
 // Create `@` classes by iterating through breakpoints from least to greatest.
-@each $bp, $value in $breakpoints {
+@each $bp, $value in v.$breakpoints {
   $total-cols: cs.bp-attribute($bp, cols);
-  $current-index: index(($breakpoints), ($bp $value));
+  $current-index: index((v.$breakpoints), ($bp $value));
 
   @for $i from 1 through $total-cols {
     // e.g. .l-col-3@bp-s
-    @if $current-index + 1 <= length(map-keys($breakpoints)) {
-      $bp-next: nth(map-keys($breakpoints), $current-index + 1);
+    @if $current-index + 1 <= length(map-keys(v.$breakpoints)) {
+      $bp-next: nth(map-keys(v.$breakpoints), $current-index + 1);
       @include cs.breakpoint-range($bp, $bp-next) {
         .l-col-#{$i}\@#{$bp} {
           padding-left: cs.colspan(p, $total-cols);

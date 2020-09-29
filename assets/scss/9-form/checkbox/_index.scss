@@ -1,0 +1,167 @@
+// Checkbox (wbz-checkbox)
+//
+// The checkbox input. Wrap around the `<input type="checkbox">` HTML element. {{isWide}}
+//
+// Implement:
+// - Via classname: `<div class="wbz-checkbox">`
+// - Via **@use**: `input[type="checkbox"] { @include ds.checkbox; } `
+//
+// Optionally animate the checkmark:
+// - Via classname modifier: `<div class="wbz-checkbox is-animated">`
+// - Via **@use**: `input[type="checkbox"] { @include ds.checkbox($animate: true); } `
+//
+// is-animated - Animate the checkmark entrance.
+//
+// Markup: 9-form/checkbox/index.html
+//
+// Styleguide 9.0.3
+
+@use '../../1-settings' as settings;
+@use '../utils' as *;
+@use 'sass:color';
+@use 'sass:map';
+
+$-checkboxTheme: map.get($theme, 'checkboxTheme');
+$-inputTheme: map.get($theme, 'inputTheme');
+
+// shared styles for input[type="checkbox"] and input[type="radio"]
+// see: https://medium.com/claritydesignsystem/pure-css-accessible-checkboxes-and-radios-buttons-54063e759bb3
+@mixin toggle {
+  /* stylelint-disable no-descending-specificity */
+
+  // hide the actual input
+  opacity: 0;
+  position: absolute;
+
+  + label {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1em;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    padding-left: map.get($-checkboxTheme, 'paddingLeft');
+    position: relative;
+  }
+
+  + label::before,
+  + label::after {
+    content: '';
+    display: block;
+    height: 1em;
+    width: 1em;
+
+    position: absolute;
+    left: 0;
+    // vertically center... note that any other transforms need to start with translateY(-50%)
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  // create fake toggle outer
+  + label::before {
+    background: white;
+    border: 1px solid map.get($theme, 'borderColor');
+    box-shadow: inset 0 0.0625em 0.125em rgba(10, 10, 10, 0.05);
+    border-radius: map.get($-inputTheme, 'borderRadius');
+  }
+
+  + label:hover::before,
+  &:focus + label::before,
+  &.js-hover:not(:checked) + label::before {
+    background: map.get($hoverTheme, 'primaryColor');
+    border-color: map.get($hoverTheme, 'primaryColor');
+    box-shadow: 0 0 0 0.125em focusring(map.get($theme, 'primaryColor'));
+  }
+
+  &:checked + label::before {
+    background: map.get($theme, 'primaryColor');
+    border-color: map.get($theme, 'primaryColor');
+  }
+
+  &:focus + label::before {
+    box-shadow: 0 0 0 0.125em focusring(map.get($theme, 'primaryColor'));
+  }
+
+  // create fake toggle inner
+  + label::after {
+    opacity: 0;
+  }
+
+  &:checked + label::after {
+    opacity: 1;
+  }
+
+  &[disabled] + label {
+    color: color.scale(settings.$color-gray-medium, $lightness: 15%);
+    cursor: not-allowed;
+  }
+
+  &[disabled] + label::before {
+    background: map.get($disabledTheme, 'backgroundColor');
+    border-color: map.get($disabledTheme, 'borderColor');
+    box-shadow: none;
+  }
+
+  &[disabled]:checked + label::before {
+    background: map.get($disabledTheme, 'primaryColor');
+    border-color: map.get($disabledTheme, 'primaryColor');
+  }
+
+  /* stylelint-enable no-descending-specificity */
+}
+
+@mixin -animateCheckbox {
+  @keyframes slideCheckFromBottom {
+    from {
+      transform: translateY(-50%) translate(0.2em, 0.35em) rotate(-45deg);
+    }
+
+    to {
+      transform: translateY(-50%) translate(0.2em, -0.15em) rotate(-45deg);
+    }
+  }
+
+  &:checked + label::after {
+    animation-duration: 0.2s;
+    animation-name: slideCheckFromBottom;
+  }
+}
+
+@mixin checkbox($animate: false) {
+  @include toggle;
+
+  // create fake checkmark
+  + label::after {
+    height: 0.45em;
+    width: 0.65em;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    transform: translateY(-50%) translate(0.2em, -0.15em) rotate(-45deg);
+  }
+
+  &:not([disabled]) {
+    + label:hover::before,
+    &:focus + label::before,
+    &.js-hover:not(:checked) + label::before {
+      border-color: transparent;
+    }
+  }
+
+  @if $animate {
+    @include -animateCheckbox;
+  }
+}
+
+@if $includeStyles {
+  .wbz-checkbox {
+    input[type='checkbox'] {
+      @include checkbox;
+    }
+
+    &.is-animated input[type='checkbox'] {
+      @include -animateCheckbox;
+    }
+  }
+}

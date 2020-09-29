@@ -1,0 +1,78 @@
+@use '../1-settings' as settings;
+@use 'sass:color';
+
+@function focusring($color) {
+  $result: color.scale($color, $lightness: 10%, $alpha: -75%);
+
+  @return $result;
+}
+
+@function px-to-rem($pixel-size, $context: settings.$font-root) {
+  @return ($pixel-size / $context) * 1rem;
+}
+
+$-primaryColor: settings.$color-primary !default;
+$-textColor: settings.$color-gray-dark;
+$-borderColor: settings.$color-gray-light;
+$-borderRadius: settings.$border-radius-b;
+$-buttonTheme: (
+  backgroundColor: #e6e6e6,
+  borderColor: $-borderColor,
+  borderRadius: $-borderRadius,
+  lineHeight: 1.2,
+  paddingVertical: 0.75em,
+  paddingHorizontal: 1em,
+  textColor: $-textColor,
+  activeTheme: (
+    backgroundColor: $-primaryColor,
+    textColor: white,
+  ),
+);
+$-checkboxTheme: (
+  paddingLeft: 1.8em,
+);
+$-inputTheme: (
+  borderRadius: $-borderRadius,
+  lineHeight: 1.2,
+  paddingHorizontal: settings.$size-tiny,
+  paddingVertical: 0.75em,
+);
+$-labelTheme: (
+  textColor: settings.$color-gray-dark,
+  fontSize: settings.$size-xs,
+  lineHeight: 1.5,
+);
+
+$theme: (
+  primaryColor: $-primaryColor,
+  textColor: $-textColor,
+  backgroundColor: white,
+  borderColor: $-borderColor,
+  borderRadius: $-borderRadius,
+  buttonTheme: $-buttonTheme,
+  checkboxTheme: $-checkboxTheme,
+  inputTheme: $-inputTheme,
+  labelTheme: $-labelTheme,
+);
+
+$hoverTheme: (
+  primaryColor: color.scale($-primaryColor, $alpha: -50%),
+  borderColor: color.scale(settings.$color-gray-medium, $alpha: -25%),
+);
+
+$activeTheme: (
+  borderColor: settings.$color-gray-medium,
+);
+
+$disabledTheme: (
+  primaryColor: color.scale($-primaryColor, $lightness: 40%, $saturation: -25%),
+  backgroundColor: settings.$color-white-off,
+  borderColor: $-borderColor,
+);
+
+$errorTheme: (
+  borderColor: settings.$color-error,
+  textColor: settings.$color-error,
+);
+
+$includeStyles: true !default;

@@ -1,0 +1,67 @@
+<div class="ds-control-group wbz-checkbox {{ className }}">
+  <input
+    type="checkbox"
+    id="ds-checkbox-{{ index }}"
+    name="ds_checkbox[Y]"
+    value="Y"
+  />
+  <label for="ds-checkbox-{{ index }}">
+    This gift is in honor of <a href="#">someone</a>.
+  </label>
+</div>
+
+{% if not className %}
+<div class="ds-control-group wbz-checkbox {{ className }}">
+  <input
+    type="checkbox"
+    id="ds-checkbox-{{ index }}--checked"
+    name="ds_checkbox[Y]"
+    value="Y"
+    checked
+  />
+  <label for="ds-checkbox-{{ index }}--checked">
+    This gift is in honor of <a href="#">someone</a>.
+  </label>
+</div>
+
+<div class="ds-control-group wbz-checkbox {{ className }}">
+  <input
+    type="checkbox"
+    id="ds-checkbox-{{ index }}--disabled"
+    name="ds_checkbox[Y]"
+    value="Y"
+    disabled
+  />
+  <label for="ds-checkbox-{{ index }}--disabled">
+    This gift is in honor of <a href="#">someone</a>.
+  </label>
+</div>
+
+<div class="ds-control-group wbz-checkbox {{ className }}">
+  <input
+    type="checkbox"
+    id="ds-checkbox-{{ index }}--disabled-checked"
+    name="ds_checkbox[Y]"
+    value="Y"
+    checked
+    disabled
+  />
+  <label for="ds-checkbox-{{ index }}--disabled-checked">
+    This gift is in honor of <a href="#">someone</a>.
+  </label>
+</div>
+
+<div class="ds-control-group wbz-checkbox {{ className }}">
+  <input
+    type="checkbox"
+    id="ds-checkbox-{{ index }}--long"
+    name="ds_checkbox[Y]"
+    value="Y"
+  />
+  <label for="ds-checkbox-{{ index }}--long">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie, mi
+    in efficitur euismod, lorem neque fermentum elit, pharetra elementum. This
+    gift is in honor of <a href="#">someone</a>.
+  </label>
+</div>
+{% endif %}

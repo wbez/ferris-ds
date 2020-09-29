@@ -1,0 +1,83 @@
+// Label
+//
+// The various text labels associated with a form control. {{isElement}}
+//
+// - `<label>`
+// - `<div class="field-prefix">`
+// - `<div class="field-suffix">`
+// - `<div class="description">`
+// - `<label class="error">`
+//
+//
+// Implementation:
+// - Via classnames: The selectors are scoped by default for use with `.wbz-input`, `.wbz-select`, and `.wbz-textarea`.
+// - Via **@use**: @TODO
+//
+// Markup: 9-form/label/index.html
+//
+// Styleguide 9.0.3
+
+@use 'sass:map';
+@use '../../1-settings' as settings;
+@use '../utils' as *;
+
+$-labelTheme: map.get($theme, 'labelTheme');
+$-labelHeight: map.get($-labelTheme, 'fontSize') *
+  map.get($-labelTheme, 'lineHeight');
+// {font-size} * {line-height}
+
+@mixin description {
+  display: block;
+  font-size: settings.$size-xxs;
+  font-weight: normal;
+  line-height: 1.2;
+  margin: settings.$size-tiny 0;
+}
+
+@mixin label {
+  color: map.get($-labelTheme, 'textColor');
+  display: block;
+  font-size: map.get($-labelTheme, 'fontSize');
+  font-weight: bold;
+  height: $-labelHeight;
+  line-height: $-labelHeight;
+  margin-bottom: 0.1em;
+  max-width: 100%;
+}
+
+@if $includeStyles {
+  .wbz-input,
+  .wbz-select,
+  .wbz-textarea {
+    label {
+      @include label;
+    }
+
+    .description {
+      @include description;
+    }
+
+    label.error {
+      @include description;
+      color: map.get($errorTheme, 'textColor');
+    }
+  }
+
+  /**
+  * Prefix and suffix
+  */
+  .wbz-input {
+    // cut off with ellipsis for a fixed height
+    label {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    // offset the field-prefix, field-suffix based on label height
+    label ~ .field-prefix,
+    label ~ .field-suffix {
+      top: $-labelHeight;
+    }
+  }
+}

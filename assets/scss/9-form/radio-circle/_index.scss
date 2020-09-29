@@ -1,0 +1,95 @@
+// Radio circle (wbz-radio-circle)
+//
+// Radio circle inputs. Wrap around the `<input type="radio">` HTML element.
+//
+// Implement:
+// - Via classname: `<div class="wbz-radio-circle">`
+// - Via **@use**: `input[type="radio"] { @include ds.radio-circle; } `
+//
+// Markup: 9-form/radio-circle/index.html
+//
+// Styleguide 9.0.3
+
+@use '../checkbox';
+@use '../utils' as *;
+@use 'sass:color';
+@use 'sass:map';
+
+@mixin radio-circle {
+  @include checkbox.toggle;
+
+  /* stylelint-disable no-descending-specificity */
+
+  // create outer circle
+  + label::before {
+    // stylelint-disable-next-line declaration-no-important
+    background: white !important;
+    border-radius: 100%; // a circle
+  }
+
+  // create inner circle
+  + label::after {
+    background: map.get($theme, 'primaryColor');
+    border: 1px solid transparent;
+    border-radius: 100%;
+    transform: translateY(-50%) scale(0.7);
+    z-index: 1;
+  }
+
+  // show inner circle on user interaction
+  &:not(:checked) {
+    &.js-hover + label::after,
+    &:focus + label::after,
+    + label:hover::after {
+      opacity: 0.6;
+    }
+  }
+
+  &:checked {
+    + label {
+      cursor: default;
+      pointer-events: none;
+
+      > * {
+        pointer-events: all;
+      }
+    }
+
+    + label:hover::before {
+      box-shadow: none;
+    }
+
+    &.js-hover + label::after,
+    + label:hover::after {
+      opacity: 1;
+    }
+  }
+
+  &[disabled] {
+    + label::before {
+      // stylelint-disable-next-line declaration-no-important
+      background: map.get($disabledTheme, 'backgroundColor') !important;
+    }
+
+    + label::after {
+      background: transparent;
+    }
+  }
+
+  &[disabled]:checked {
+    + label::after {
+      background: map.get($disabledTheme, 'primaryColor');
+      opacity: 1;
+    }
+  }
+
+  /* stylelint-enable no-descending-specificity */
+}
+
+@if $includeStyles {
+  .wbz-radio-circle {
+    input[type='radio'] {
+      @include radio-circle;
+    }
+  }
+}

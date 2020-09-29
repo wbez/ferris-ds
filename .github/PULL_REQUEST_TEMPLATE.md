@@ -14,7 +14,7 @@
 
 `yarn dev`
 
-See: [your-link](http://wbez.local:3000/)
+See: [your-link](http://local.wbez.org:1234/)
 
 #### Does this introduce a breaking change where ferris-ds is used in the wild? If so, is there a relevant branch/PR to accompany this release?
 
