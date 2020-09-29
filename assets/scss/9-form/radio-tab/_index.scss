@@ -1,5 +1,17 @@
 // Radio tab (wbz-radio-tab)
 //
+// Button-like radio inputs. Wrap around the `<input type="radio">` HTML element. {{isWide}}
+//
+// Implement:
+// - Via classname: `<div class="wbz-radio-tab">`
+// - Via **@use**: `input[type="radio"] { @include ds.radio-tab; } `
+//
+// Optionally use in a column layout:
+// - Via classname modifier: `<div class="wbz-radio-tab is-column">`
+// - Via **@use**: @TODO
+//
+// is-column - Stretch box and vertically center label for use as a column
+//
 // Markup: 9-form/radio-tab/index.html
 //
 // Styleguide 9.0.3

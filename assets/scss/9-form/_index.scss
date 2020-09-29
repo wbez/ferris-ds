@@ -1,6 +1,17 @@
 // Form
 //
-// Helper overrides for various utilities. V2 will use prefixes of .l-, .has-, .is-
+// Our **form controls**.
+//
+// These can be implemented via classnames, _or_ with [Sass modules](https://sass-lang.com/blog/the-module-system-is-launched) using [@use](http://www.sass-lang.com/documentation/at-rules/use).
+//
+// _Using as a Sass module:_
+// ```scss
+// @use "@wbez/ferris-ds/assets/scss/9-form" as ds with ($includeStyles: false);
+//
+// input[type="checkbox"] { @include ds.checkbox; }
+// ```
+//
+// @TODO: Document forwarded variables/themes
 //
 // Styleguide 9.0
 @use '../1-settings' as settings;
@@ -17,7 +28,7 @@ $includeStyles: true !default;
 @forward 'radio-tab';
 
 @if $includeStyles {
-  .control-group {
+  .ds-control-group {
     margin-top: settings.$size-xs;
     margin-bottom: settings.$size-xs;
     position: relative;

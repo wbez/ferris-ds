@@ -1,5 +1,17 @@
 // Select (wbz-select)
 //
+// Dropdown selects. Wrap around the `<select>` HTML element. {{isWide}}
+//
+// Implement:
+// - Via classname: `<div class="wbz-select">`
+// - Via **@use**: `select { @include ds.select; } `
+//
+// Handle errors:
+// - Via classname modifier: `<div class="wbz-select is-error">`
+// - Via **@use**: `.error { select { @include ds.select("error"); } }`
+//
+// is-error - Handle invalid value
+//
 // Markup: 9-form/select/index.html
 //
 // Styleguide 9.0.3
@@ -31,7 +43,7 @@
     }
   }
 
-  .wbz-select.error select {
+  .wbz-select.is-error select {
     @include select('error');
   }
 }

@@ -1,5 +1,6 @@
+{% if not className %}
 <div
-  class="form-item webform-component webform-component-textarea control-group wbz-textarea"
+  class="ds-control-group wbz-textarea"
   id="webform-component-tell-us-what-inspired-you-to-donate-today"
 >
   <label for="edit-submitted-tell-us-what-inspired-you-to-donate-today"
@@ -16,7 +17,26 @@
 </div>
 
 <div
-  class="form-item webform-component webform-component-textarea control-group wbz-textarea error"
+  class="ds-control-group wbz-textarea"
+  id="webform-component-tell-us-what-inspired-you-to-donate-today--disabled"
+>
+  <label
+    for="edit-submitted-tell-us-what-inspired-you-to-donate-today--disabled"
+    >Tell us what inspired you to donate today:
+  </label>
+  <textarea
+    id="edit-submitted-tell-us-what-inspired-you-to-donate-today"
+    name="submitted[tell_us_what_inspired_you_to_donate_today]"
+    cols="60"
+    rows="5"
+    class="form-textarea"
+    disabled
+  ></textarea>
+  <div class="description">Responses will be kept confidential.</div>
+</div>
+{% endif %} {% if className == "is-error" %}
+<div
+  class="ds-control-group wbz-textarea is-error"
   id="webform-component-tell-us-what-inspired-you-to-donate-today--error"
 >
   <label for="edit-submitted-tell-us-what-inspired-you-to-donate-today--error"
@@ -37,22 +57,4 @@
     >This field is required</label
   >
 </div>
-
-<div
-  class="form-item webform-component webform-component-textarea control-group wbz-textarea"
-  id="webform-component-tell-us-what-inspired-you-to-donate-today--disabled"
->
-  <label
-    for="edit-submitted-tell-us-what-inspired-you-to-donate-today--disabled"
-    >Tell us what inspired you to donate today:
-  </label>
-  <textarea
-    id="edit-submitted-tell-us-what-inspired-you-to-donate-today"
-    name="submitted[tell_us_what_inspired_you_to_donate_today]"
-    cols="60"
-    rows="5"
-    class="form-textarea"
-    disabled
-  ></textarea>
-  <div class="description">Responses will be kept confidential.</div>
-</div>
+{% endif %}

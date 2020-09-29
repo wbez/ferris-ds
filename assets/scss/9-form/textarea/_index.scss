@@ -1,4 +1,16 @@
-// Textarea (wbz-textarea)
+// Text area (wbz-textarea)
+//
+// Wrap around the `<textarea>` HTML element. {{isWide}}
+//
+// Implement:
+// - Via classname: `<div class="wbz-textarea">`
+// - Via **@use**: `textarea { @include ds.textarea; } `
+//
+// Handle errors:
+// - Via classname modifier: `<div class="wbz-textarea is-error">`
+// - Via **@use**: `.error { textarea { @include ds.textarea("error"); } }`
+//
+// is-error - Handle invalid value
 //
 // Markup: 9-form/textarea/index.html
 //
@@ -36,7 +48,7 @@ $-inputTheme: map.get($theme, 'inputTheme');
     }
   }
 
-  .wbz-textarea.error textarea {
+  .wbz-textarea.is-error textarea {
     @include textarea('error');
   }
 }

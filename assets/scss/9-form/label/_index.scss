@@ -1,6 +1,17 @@
 // Label
 //
-// {{isElement}}
+// The various text labels associated with a form control. {{isElement}}
+//
+// - `<label>`
+// - `<div class="field-prefix">`
+// - `<div class="field-suffix">`
+// - `<div class="description">`
+// - `<label class="error">`
+//
+//
+// Implementation:
+// - Via classnames: The selectors are scoped by default for use with `.wbz-input`, `.wbz-select`, and `.wbz-textarea`.
+// - Via **@use**: @TODO
 //
 // Markup: 9-form/label/index.html
 //
@@ -11,7 +22,8 @@
 @use '../utils' as *;
 
 $-labelTheme: map.get($theme, 'labelTheme');
-$-labelHeight: map.get($-labelTheme, 'fontSize') * map.get($-labelTheme, 'lineHeight');
+$-labelHeight: map.get($-labelTheme, 'fontSize') *
+  map.get($-labelTheme, 'lineHeight');
 // {font-size} * {line-height}
 
 @mixin description {
@@ -44,11 +56,7 @@ $-labelHeight: map.get($-labelTheme, 'fontSize') * map.get($-labelTheme, 'lineHe
     .description {
       @include description;
     }
-  }
 
-  .wbz-input.error,
-  .wbz-select.error,
-  .wbz-textarea.error {
     label.error {
       @include description;
       color: map.get($errorTheme, 'textColor');

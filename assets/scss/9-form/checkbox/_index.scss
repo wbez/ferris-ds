@@ -1,5 +1,17 @@
 // Checkbox (wbz-checkbox)
 //
+// The checkbox input. Wrap around the `<input type="checkbox">` HTML element. {{isWide}}
+//
+// Implement:
+// - Via classname: `<div class="wbz-checkbox">`
+// - Via **@use**: `input[type="checkbox"] { @include ds.checkbox; } `
+//
+// Optionally animate the checkmark:
+// - Via classname modifier: `<div class="wbz-checkbox is-animated">`
+// - Via **@use**: `input[type="checkbox"] { @include ds.checkbox($animate: true); } `
+//
+// is-animated - Animate the checkmark entrance.
+//
 // Markup: 9-form/checkbox/index.html
 //
 // Styleguide 9.0.3
@@ -100,6 +112,23 @@ $-inputTheme: map.get($theme, 'inputTheme');
   /* stylelint-enable no-descending-specificity */
 }
 
+@mixin -animateCheckbox {
+  @keyframes slideCheckFromBottom {
+    from {
+      transform: translateY(-50%) translate(0.2em, 0.35em) rotate(-45deg);
+    }
+
+    to {
+      transform: translateY(-50%) translate(0.2em, -0.15em) rotate(-45deg);
+    }
+  }
+
+  &:checked + label::after {
+    animation-duration: 0.2s;
+    animation-name: slideCheckFromBottom;
+  }
+}
+
 @mixin checkbox($animate: false) {
   @include toggle;
 
@@ -121,27 +150,18 @@ $-inputTheme: map.get($theme, 'inputTheme');
   }
 
   @if $animate {
-    @keyframes slideCheckFromBottom {
-      from {
-        transform: translateY(-50%) translate(0.2em, 0.35em) rotate(-45deg);
-      }
-
-      to {
-        transform: translateY(-50%) translate(0.2em, -0.15em) rotate(-45deg);
-      }
-    }
-
-    &:checked + label::after {
-      animation-duration: 0.2s;
-      animation-name: slideCheckFromBottom;
-    }
+    @include -animateCheckbox;
   }
 }
 
 @if $includeStyles {
   .wbz-checkbox {
     input[type='checkbox'] {
-      @include checkbox($animate: true);
+      @include checkbox;
+    }
+
+    &.is-animated input[type='checkbox'] {
+      @include -animateCheckbox;
     }
   }
 }

@@ -1,5 +1,11 @@
 // Radio circle (wbz-radio-circle)
 //
+// Radio circle inputs. Wrap around the `<input type="radio">` HTML element.
+//
+// Implement:
+// - Via classname: `<div class="wbz-radio-circle">`
+// - Via **@use**: `input[type="radio"] { @include ds.radio-circle; } `
+//
 // Markup: 9-form/radio-circle/index.html
 //
 // Styleguide 9.0.3

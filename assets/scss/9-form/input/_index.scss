@@ -1,5 +1,19 @@
 // Input (wbz-input)
 //
+// Text-like inputs. Wrap around the `<input>` HTML element.
+//
+// By default, applies to inputs of type **email**, **number**, **password**, **search**, **tel**, **text**, and **url**.
+//
+// Implement:
+// - Via classname: `<div class="wbz-input">`
+// - Via **@use**: `#{ds.$inputSelectors} { @include ds.input; } `
+//
+// Handle errors:
+// - Via classname modifier: `<div class="wbz-input is-error">`
+// - Via **@use**: `.error { #{ds.$inputSelectors} { @include ds.input("error"); } }`
+//
+// is-error - Handle invalid value
+//
 // Markup: 9-form/input/index.html
 //
 // Styleguide 9.0.3
@@ -7,6 +21,7 @@
 @use '../../1-settings' as settings;
 @use '../utils' as *;
 @use 'sass:color';
+@use 'sass:list';
 @use 'sass:map';
 
 $-inputTheme: map.get($theme, 'inputTheme');
@@ -14,6 +29,20 @@ $inputPaddingX: map.get($-inputTheme, 'paddingHorizontal');
 $inputPaddingY: map.get($-inputTheme, 'paddingVertical');
 $-inputHeight: 1.2 + 2 * $inputPaddingY;
 // {line-height} + {padding-top} + {padding-bottom}
+
+// construct list of text-like input selectors
+$-textLikeInputTypes: 'email', 'number', 'password', 'search', 'tel', 'text',
+  'url';
+$-selectors: ();
+
+@each $-type in $-textLikeInputTypes {
+  $-selectors: list.append(
+    $-selectors,
+    "input[type='#{$-type}']",
+    $separator: 'comma'
+  );
+}
+$inputSelectors: $-selectors;
 
 @mixin input($state: null) {
   @if ($state == null) {
@@ -53,9 +82,7 @@ $-inputHeight: 1.2 + 2 * $inputPaddingY;
 
 @if $includeStyles {
   .wbz-input {
-    input[type='text'],
-    input[type='email'],
-    input[type='tel'] {
+    #{$inputSelectors} {
       @include input;
     }
 
@@ -65,10 +92,8 @@ $-inputHeight: 1.2 + 2 * $inputPaddingY;
     }
   }
 
-  .wbz-input.error {
-    input[type='text'],
-    input[type='email'],
-    input[type='tel'] {
+  .wbz-input.is-error {
+    #{$inputSelectors} {
       @include input('error');
     }
   }

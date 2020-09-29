@@ -1,7 +1,6 @@
+{% if not className %}
 <div id="edit-submitted-donation-recurs-monthly">
-  <div
-    class="form-item form-type-radio form-item-submitted-donation-recurs-monthly control-group wbz-radio-tab"
-  >
+  <div class="ds-control-group wbz-radio-tab">
     <input
       type="radio"
       id="edit-submitted-donation-recurs-monthly-1"
@@ -13,9 +12,7 @@
       >Monthly Contribution
     </label>
   </div>
-  <div
-    class="form-item form-type-radio form-item-submitted-donation-recurs-monthly control-group wbz-radio-tab"
-  >
+  <div class="ds-control-group wbz-radio-tab">
     <input
       type="radio"
       id="edit-submitted-donation-recurs-monthly-2"
@@ -26,9 +23,7 @@
       >One-time Donation
     </label>
   </div>
-  <div
-    class="form-item form-type-radio form-item-submitted-donation-recurs-monthly control-group wbz-radio-tab"
-  >
+  <div class="ds-control-group wbz-radio-tab">
     <input
       type="radio"
       id="edit-submitted-donation-recurs-monthly-3"
@@ -42,14 +37,12 @@
     </label>
   </div>
 </div>
-
+{% endif %} {% if className == "is-column" %}
 <div
   id="edit-submitted-donation-recurs-monthly--grid"
   style="display: grid; grid-template-columns: repeat(3, 1fr); column-gap: 1em;"
 >
-  <div
-    class="form-item form-type-radio form-item-submitted-donation-recurs-monthly control-group wbz-radio-tab is-column"
-  >
+  <div class="ds-control-group wbz-radio-tab is-column">
     <input
       type="radio"
       id="edit-submitted-donation-recurs-monthly-grid-1"
@@ -61,9 +54,7 @@
       >Monthly Contribution
     </label>
   </div>
-  <div
-    class="form-item form-type-radio form-item-submitted-donation-recurs-monthly control-group wbz-radio-tab is-column"
-  >
+  <div class="ds-control-group wbz-radio-tab is-column">
     <input
       type="radio"
       id="edit-submitted-donation-recurs-monthly-grid-2"
@@ -74,9 +65,7 @@
       >One-time Donation
     </label>
   </div>
-  <div
-    class="form-item form-type-radio form-item-submitted-donation-recurs-monthly control-group wbz-radio-tab is-column"
-  >
+  <div class="ds-control-group wbz-radio-tab is-column">
     <input
       type="radio"
       id="edit-submitted-donation-recurs-monthly-grid-3"
@@ -90,3 +79,4 @@
     </label>
   </div>
 </div>
+{% endif %}
