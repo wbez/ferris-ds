@@ -12,6 +12,8 @@
 //
 // Styleguide 9.0.3
 //
+@use '../2-tools/column-setter' as cs;
+
 $vert-bar-base: 5px;
 $vert-bar-thin: 4px;
 
@@ -31,7 +33,7 @@ $vert-bar-thin: 4px;
     padding-left: $size-xxl;
   }
 
-  @include breakpoint-max(bp-s) {
+  @include cs.breakpoint-max(bp-s) {
     &.-from-bp-s {
       padding-left: 0;
       border-left: 0;

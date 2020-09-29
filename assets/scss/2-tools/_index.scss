@@ -3,8 +3,8 @@
 // These are mixins and functions
 //
 // Styleguide 2.0.0
+@use './column-setter' as cs;
 @import 'functions';
 @import 'mixins';
-@import 'column-setter';
 
-$story-narrow: px-to-rem($bp-default * (colspan(8, 12) / 100%));
+$story-narrow: px-to-rem($bp-default * (cs.colspan(8, 12) / 100%));

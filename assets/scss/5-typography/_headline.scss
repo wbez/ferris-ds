@@ -10,6 +10,7 @@
 //
 //
 // Styleguide 5.3.1
+@use '../2-tools/column-setter' as cs;
 
 // duplicately define heading here, in case user imports this file but not elements
 .t-headline {
@@ -25,7 +26,7 @@
   &.-article {
     font-size: $size-xl;
 
-    @include breakpoint-min(bp-s) {
+    @include cs.breakpoint-min(bp-s) {
       font-size: $size-giant;
     }
   }

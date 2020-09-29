@@ -47,6 +47,7 @@
 // Markup: cookbook/image/image.html
 //
 // Styleguide 10.0.1
+@use '../../2-tools/column-setter' as cs;
 
 figure.wbz-image {
   * + * {
@@ -61,9 +62,9 @@ figure.wbz-image {
 
 .no-gutter-mobile {
   figcaption {
-    @include breakpoint-max(bp-s) {
-      padding-left: colspan(m, 4);
-      padding-right: colspan(m, 4);
+    @include cs.breakpoint-max(bp-s) {
+      padding-left: cs.colspan(m, 4);
+      padding-right: cs.colspan(m, 4);
     }
   }
 }
@@ -80,17 +81,17 @@ figure.wbz-image.l-full {
     max-width: calc(100% - 2 * #{$size-s});
 
     box-sizing: content-box;
-    margin-left: colspan(m, 4);
-    margin-right: colspan(m, 4);
+    margin-left: cs.colspan(m, 4);
+    margin-right: cs.colspan(m, 4);
 
-    @include breakpoint-min(bp-s) {
-      margin-left: colspan(m, 6);
-      margin-right: colspan(m, 6);
+    @include cs.breakpoint-min(bp-s) {
+      margin-left: cs.colspan(m, 6);
+      margin-right: cs.colspan(m, 6);
     }
 
-    @include breakpoint-min(bp-l) {
-      margin-left: colspan(m, 12);
-      margin-right: colspan(m, 12);
+    @include cs.breakpoint-min(bp-l) {
+      margin-left: cs.colspan(m, 12);
+      margin-right: cs.colspan(m, 12);
     }
   }
 }

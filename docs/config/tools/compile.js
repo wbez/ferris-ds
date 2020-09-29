@@ -1,12 +1,10 @@
 // source: https://github.com/texastribune/queso-tools/blob/master/lib/compile.js
-// Modified to use tildeImporter
 
 const postCSS = require('postcss');
-const sass = require('node-sass');
+const sass = require('sass');
 const autoprefixer = require('autoprefixer');
 const postAMP = require('@texastribune/postcss-amp');
 const CleanCSS = require('clean-css');
-const tildeImporter = require('node-sass-tilde-importer');
 
 let postCSSPlugins = [autoprefixer({ grid: true })];
 
@@ -16,13 +14,13 @@ module.exports = async config => {
   const { isAmp, isMin, outFile, sourceMapOn, file } = config;
 
   try {
-    compiled = await sass.renderSync({
+    compiled = sass.renderSync({
       file,
       outFile,
       sourceComments: sourceMapOn,
       sourceMap: sourceMapOn,
       sourceMapEmbed: sourceMapOn,
-      importer: tildeImporter,
+      includePaths: ['node_modules'],
     });
   } catch (err) {
     throw err;

@@ -5,8 +5,9 @@
 // Markup: 7-layout/container.html
 //
 // Styleguide 7.0.1
+@use '../2-tools/column-setter' as cs;
 
-@include grid(l-container);
+@include cs.grid(l-container);
 
 .l-container {
   position: relative;
@@ -30,19 +31,19 @@
 }
 
 .l-full {
-  @include full-width;
+  @include cs.full-width;
 }
 
 @each $bp-name, $bp-value in $mq-breakpoints {
   .l-full-from-#{$bp-name} {
-    @include breakpoint-min(#{$bp-name}) {
-      @include full-width;
+    @include cs.breakpoint-min(#{$bp-name}) {
+      @include cs.full-width;
     }
   }
 
   .l-full-until-#{$bp-name} {
-    @include breakpoint-max(#{$bp-name}) {
-      @include full-width;
+    @include cs.breakpoint-max(#{$bp-name}) {
+      @include cs.full-width;
     }
   }
 }

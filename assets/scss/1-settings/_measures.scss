@@ -1,9 +1,6 @@
-// sass-mq settings
-$mq-responsive: true;
-
 // Breakpoints
 //
-// We import the sass-mq library for our responsive utilities. Our own custom breakpoints are as follows:
+// We import the column-setter library for our responsive utilities. Our own custom breakpoints are as follows:
 //
 // $bp-xs = 320px - Mobile
 // $bp-s = 520px - Mobile
@@ -166,7 +163,7 @@ $breakpoints: (
   bp-default: (
     cols: 12,
     min-width: $bp-default,
-  )
+  ),
 );
 
 $max-width: $bp-default; // For no max-width, use $max-width: null;

@@ -19,6 +19,7 @@
 // Markup: cookbook/blockquote/blockquote.html
 //
 // Styleguide 10.0.3
+@use '../../2-tools/column-setter' as cs;
 
 $blockquote-border-color: $color-gray-light !default;
 $blockquote-selector: 'blockquote.wbz-blockquote' !default;
@@ -27,7 +28,7 @@ $blockquote-selector: 'blockquote.wbz-blockquote' !default;
   border-left: 3px solid $blockquote-border-color;
   padding: $size-tiny $size-m;
 
-  @include breakpoint-min(bp-s) {
+  @include cs.breakpoint-min(bp-s) {
     margin-left: $size-xxl;
     margin-right: $size-l;
   }
