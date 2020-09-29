@@ -39,15 +39,16 @@ This spins up a browsersync server and watch task for all SCSS and HTML files.
 **Requirements**
 
 - node >=8.11.3
+- [Dart Sass](https://github.com/sass/dart-sass)
 
 ## Installing as a dependency
 
 ```sh
-yarn add @wbez/ferris-ds
+yarn add --dev @wbez/ferris-ds sass
 ```
 
 ```sh
-npm install @wbez/ferris-ds
+npm install --save-dev @wbez/ferris-ds sass
 ```
 
 ## Using assets
