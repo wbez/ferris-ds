@@ -1,14 +1,14 @@
-// Swatch set - Branding - Primary
+// Swatch set - Branding - Core
 //
 // Colors specific to our brand.
 //
 // Colors:
 // $color-wbez-black: #252525 - Body copy
 // $color-wbez-black-dark: #000000 - Black
-// $color-wbez-red: #ec0101 - Primary branding, aka $color-primary
-// $color-wbez-red-dark: #cf0000 - aka $color-primary-dark
-// $color-wbez-gray: #f5f5f5 - Whitesmoke
-// $color-wbez-gray-dark: #64686e
+// $color-wbez-red: #ed0000 - Primary branding
+// $color-wbez-red-dark: #cf0000 - Darker primary variant
+// $color-wbez-gray-light: #dcddde - Light gray
+// $color-wbez-gray-medium: #636466 - Medium gray
 // $color-on-primary: #ffffff - White
 //
 // Styleguide 1.1.1
@@ -16,41 +16,51 @@
 $color-wbez-black: #252525;
 $color-wbez-black-dark: black;
 
-$color-wbez-red: #ec0101;
+$color-wbez-red: #ed0000;
 $color-primary: $color-wbez-red;
 $color-wbez-red-dark: #cf0000;
 $color-primary-dark: $color-wbez-red-dark;
 
-$color-wbez-gray: #f5f5f5;
-$color-wbez-gray-dark: #64686e;
+$color-wbez-gray-light: #dcddde;
+$color-wbez-gray-medium: #636466;
 
 $color-on-primary: white;
 $color-on-primary-dark: transparentize(white, 0.02);
 
-// Swatch set - Branding - Secondary
+// Swatch set - Branding - Tertiary
 //
-// Colors specific to our brand.
+// Colors to be used as a complement or contrast to the core colors.
+// 
+// For detailed guidance and accessibility guidelines, see the [WBEZ color palette document](https://chicagopublicmedia.sharepoint.com/:b:/s/WBEZLogos/EdIwVz0A5OZOo9N1J1lbJLoB9HLJl0geGbVCFAAyzNoS5A?e=d8CipJ).
 //
 // Colors:
-// $color-teal: #72a2a9
-// $color-teal-dark: #5c8e96
-// $color-gold: #f9b816
-// $color-gold-dark: #e3a816
-// $color-bluegray: #888b90
-// $color-bluegray-dark: #6d6f73
-// $color-lightgray: #c5c5c5
-// $color-lightgray-dark: #b1b1b1
+// $color-gold: #ffd03d - Complementary
+// $color-teal: #24bcb7 - Complementary
+// $color-periwinkle: #5151bd - Complementary
+// $color-light-blue: #1d9cd3 - Complementary
+// $color-cotton-candy: #ffd7ff - Bright contrast
+// $color-lime: #adf45b - Bright contrast
+// $color-lavender: #99a8ff - Bright contrast
+// $color-sky: #88f7ff - Bright contrast
+// $color-marigold: #f79e1c - Dark contrast
+// $color-peacock: #016480 - Dark contrast
+// $color-royal-purple: #5f2b7b - Dark contrast
+// $color-royal-blue: #263c80 - Dark contrast
 //
 // Styleguide 1.1.1
 //
-$color-teal: #72a2a9;
-$color-teal-dark: #5c8e96;
-$color-gold: #f9b816;
-$color-gold-dark: #e3a816;
-$color-bluegray: #888b90;
-$color-bluegray-dark: #6d6f73;
-$color-lightgray: #c5c5c5;
-$color-lightgray-dark: #b1b1b1;
+$color-gold: #ffd03d;
+$color-teal: #24bcb7;
+$color-periwinkle: #5151bd;
+$color-light-blue: #1d9cd3;
+$color-cotton-candy: #ffd7ff;
+$color-lime: #adf45b;
+$color-lavender: #99a8ff;
+$color-sky: #88f7ff;
+$color-marigold: #f79e1c;
+$color-peacock: #016480;
+$color-royal-purple: #5f2b7b;
+$color-royal-blue: #263c80;
 
 // Swatch set - Grays
 //
@@ -59,8 +69,8 @@ $color-lightgray-dark: #b1b1b1;
 // Colors:
 // $color-white-pure: #ffffff - White
 // $color-white-off: #f3f3f3 - Kinda white
-// $color-gray-light: #d0d0d0 - Gray light
-// $color-gray-medium: #595959 - A little bit darker now
+// $color-gray-light: #dcddde - Gray light
+// $color-gray-medium: #636466 - A little bit darker now
 // $color-gray-dark: #4a4a4a - A little bit darker now
 // $color-black-off: #252525 - A little bit darker now
 // $color-black-pure: #000000 - True black
@@ -69,8 +79,8 @@ $color-lightgray-dark: #b1b1b1;
 //
 $color-white-pure: white;
 $color-white-off: #f3f3f3;
-$color-gray-light: #d0d0d0;
-$color-gray-medium: #595959;
+$color-gray-light: #dcddde; // same as $color-wbez-gray-light
+$color-gray-medium: #636466; // same as $color-wbez-gray-medium
 $color-gray-dark: #4a4a4a;
 $color-black-off: #252525; // same as $color-wbez-dark
 $color-black-pure: black;
