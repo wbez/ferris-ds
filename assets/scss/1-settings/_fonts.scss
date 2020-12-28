@@ -3,14 +3,14 @@
 // Two font variables used throughout our CSS
 //
 // $sans-type = 'Source Sans Pro', Arial, sans-serif - &nbsp;
-// $slab-type = 'ITC Charter Std', 'Palatino Bold', serif - &nbsp;
+// $slab-type = 'Charter', 'Palatino Bold', serif - &nbsp;
 // $font-family-primary = $sans-type - Main font applied to :root.
 // $font-family-secondary = $slab-type - Accent font in our case used for editorial purposes.
 //
 // Styleguide 1.2.1
 $sans-type: 'Source Sans Pro', Arial, sans-serif;
 $serif-type: Georgia, serif;
-$slab-type: 'ITC Charter Std', 'Palatino Bold', serif;
+$slab-type: 'Charter', 'Palatino Bold', serif;
 $font-family-primary: $sans-type;
 $font-family-secondary: $serif-type;
 
