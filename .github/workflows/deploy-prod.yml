@@ -1,0 +1,19 @@
+name: Deploy Production
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  deploy:
+    # Don't deploy to production if prerelease.
+    # see: https://github.community/t5/GitHub-Actions/Release-Prerelease-action-triggers/m-p/42177/highlight/true#M4892
+    if: >
+      (github.event_name == 'release' && !github.event.release.prerelease)
+    name: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger AWS Amplify Webhook
+        uses: joelwmale/webhook-action@master
+        with:
+          url: ${{ secrets.AWS_AMPLIFY_WEBHOOK_URL }}

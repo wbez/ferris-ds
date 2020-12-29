@@ -7,7 +7,7 @@
     "dev": "node docs/config/tasks/dev.js",
     "test": "yarn run build",
     "prettify": "prettier --write \"./**/*.{js,html,json,md}\"",
-    "release": "np --any-branch"
+    "release": "release-it"
   },
   "style": "/assets/dist/css/all.css",
   "sass": "/assets/scss/all.scss",
@@ -20,14 +20,12 @@
   },
   "license": "MIT",
   "author": "CPM Digital Development <webteam@wbez.org>",
-  "bugs": {
-    "url": "https://github.com/wbez/ferris-ds/issues"
-  },
   "homepage": "https://github.com/wbez/ferris-ds#readme",
   "devDependencies": {
     "@texastribune/postcss-amp": "^1.4.0",
     "@texastribune/queso-tools": "1.3.0",
     "autoprefixer": "^9.6.1",
+    "axios": "^0.21.1",
     "browser-sync": "^2.26.3",
     "clean-css": "^4.2.1",
     "eslint": "^5.16.0",
@@ -42,16 +40,18 @@
     "husky": "^3.0.5",
     "kss": "https://github.com/kss-node/kss-node",
     "lint-staged": "^9.2.5",
+    "lodash": "^4.17.20",
     "markdown-it": "^8.4.2",
     "node-html-parser": "^1.1.16",
-    "np": "^5.0.3",
     "nunjucks": "^3.1.7",
     "ora": "^3.4.0",
     "postcss": "^7.0.18",
     "prettier": "^1.18.2",
     "purgecss": "^1.3.0",
     "purgecss-from-html": "^1.1.0",
+    "release-it": "^14.2.2",
     "sass": "^1.26.11",
+    "simple-git": "^2.31.0",
     "stylelint": "^11.0.0",
     "stylelint-config-recommended-scss": "^3.3.0",
     "stylelint-scss": "^3.11.0",
@@ -81,5 +81,20 @@
       "stylelint --fix",
       "git add"
     ]
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "🔖 Release ${version}",
+      "requireBranch": "main",
+      "requireCleanWorkingDir": true
+    },
+    "npm": {
+      "publish": true
+    },
+    "github": {
+      "release": true,
+      "releaseNotes": "npx ./scripts/generate-release-notes.js ${latestVersion} ${version}",
+      "draft": true
+    }
   }
 }

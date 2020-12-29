@@ -25,11 +25,11 @@ This repo is forked from [texastribune/queso-ui@v3.2.0](https://github.com/texas
 To preview these assets and accompanying docs locally, run the following commands:
 
 ```sh
-yarn
+npm i
 ```
 
 ```sh
-yarn dev
+npm run dev
 ```
 
 Visit http://local.wbez.org:1234
@@ -238,10 +238,18 @@ This system is experimental and under rapid development. Use it in situations wh
 
 ## Publishing
 
+Make sure you have a [personal access token](https://github.com/settings/tokens) for GitHub and that token is available as the environment variable `GITHUB_TOKEN`.
+
+Also make sure you have a [personal access token](https://app.clubhouse.io/chicagopublicmedia/settings/account/api-tokens) for Clubhouse and that token is available as the environment variable `CLUBHOUSE_API_TOKEN`.
+
 Make sure you're authenticated for npm publishing.
 
 1. `npm login` - then follow the prompts
-2. `npm run release` - There's a [bug](https://github.com/sindresorhus/np/issues/420#issuecomment-499273013) in the `np` publishing tool we use where `yarn` commands don't seem to work.
+2. `npm run release`
+
+This invokes [release-it](https://github.com/release-it/release-it), which automatically bumps the `package.json` version and drafts a release in GitHub.
+
+The release will deploy to the production env when published.
 
 ### Semantic versioning
 
