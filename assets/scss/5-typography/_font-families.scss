@@ -1,17 +1,17 @@
 @font-face {
   font-display: swap;
-  font-family: 'ITC Charter Std';
-  src: url('https://cdn.wbez.org/fonts/itccharterstd-bold.woff2') format('woff2'),
-    url('https://cdn.wbez.org/fonts/itccharterstd-bold.woff') format('woff');
+  font-family: Charter;
+  src: url('https://cdn.wbez.org/fonts/charter-bold.woff2') format('woff2'),
+    url('https://cdn.wbez.org/fonts/charter-bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-display: swap;
-  font-family: 'ITC Charter Std';
-  src: url('https://cdn.wbez.org/fonts/itccharterstd-bolditalic.woff2') format('woff2'),
-    url('https://cdn.wbez.org/fonts/itccharterstd-bolditalic.woff') format('woff');
+  font-family: Charter;
+  src: url('https://cdn.wbez.org/fonts/charter-bolditalic.woff2') format('woff2'),
+    url('https://cdn.wbez.org/fonts/charter-bolditalic.woff') format('woff');
   font-weight: 700;
   font-style: italic;
 }
