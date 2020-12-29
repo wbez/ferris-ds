@@ -25,11 +25,11 @@ This repo is forked from [texastribune/queso-ui@v3.2.0](https://github.com/texas
 To preview these assets and accompanying docs locally, run the following commands:
 
 ```sh
-yarn
+npm i
 ```
 
 ```sh
-yarn dev
+npm run dev
 ```
 
 Visit http://local.wbez.org:1234
