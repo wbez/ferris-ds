@@ -20,9 +20,6 @@
   },
   "license": "MIT",
   "author": "CPM Digital Development <webteam@wbez.org>",
-  "bugs": {
-    "url": "https://github.com/wbez/ferris-ds/issues"
-  },
   "homepage": "https://github.com/wbez/ferris-ds#readme",
   "devDependencies": {
     "@texastribune/postcss-amp": "^1.4.0",
