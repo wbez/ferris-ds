@@ -54,4 +54,7 @@ These are used to test and lint our code, executed through autoconfigured git ho
 
 These are used to manage package deployment.
 
-- `np`
+- `axios`
+- `lodash`
+- `release-it`
+- `simple-git`
