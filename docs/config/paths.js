@@ -35,19 +35,19 @@ const docsStyles = './assets/scss';
 
 const mappedIcons = [
   {
-    in: './assets/icons/marketing/',
+    in: './assets/icons/marketing',
     out: `${buildDir}sprites/marketing.svg`,
   },
   {
-    in: './assets/icons/marketing/',
+    in: './assets/icons/marketing',
     out: `./assets/dist/sprites/marketing.svg`,
   },
   {
-    in: './assets/icons/wbez/',
+    in: './assets/icons/wbez',
     out: `${buildDir}sprites/wbez.svg`,
   },
   {
-    in: './assets/icons/wbez/',
+    in: './assets/icons/wbez',
     out: `./assets/dist/sprites/wbez.svg`,
   },
 ];
