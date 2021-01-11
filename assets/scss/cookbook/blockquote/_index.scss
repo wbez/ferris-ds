@@ -19,22 +19,33 @@
 // Markup: cookbook/blockquote/blockquote.html
 //
 // Styleguide 11.0.3
+// @use "../../1-settings" as *;
+@use '../../1-settings' as var;
 @use '../../2-tools/column-setter' as cs;
 
-$blockquote-border-color: $color-gray-light !default;
-$blockquote-selector: 'blockquote.wbz-blockquote' !default;
+$-border-color: var.$color-gray-light !default;
 
-@at-root #{$blockquote-selector} {
-  border-left: 3px solid $blockquote-border-color;
-  padding: $size-tiny $size-m;
+@mixin configure($border-color: null) {
+  @if $border-color {
+    $-border-color: $border-color !global;
+  }
+}
+
+@mixin styles {
+  border-left: 3px solid $-border-color;
+  padding: var.$size-tiny var.$size-m;
 
   @include cs.breakpoint-min(bp-s) {
-    margin-left: $size-xxl;
-    margin-right: $size-l;
+    margin-left: var.$size-xxl;
+    margin-right: var.$size-l;
   }
 
   cite,
   footer {
-    margin-top: $size-s;
+    margin-top: var.$size-s;
   }
+}
+
+blockquote.wbz-blockquote {
+  @include styles;
 }

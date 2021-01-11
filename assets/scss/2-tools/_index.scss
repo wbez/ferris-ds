@@ -7,5 +7,3 @@
 @forward './column-setter';
 @import 'functions';
 @import 'mixins';
-
-$story-narrow: px-to-rem($bp-default * (cs.colspan(8, 12) / 100%));

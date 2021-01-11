@@ -6,6 +6,8 @@
 //
 // Styleguide 6.1.3
 @use '../../2-tools/column-setter' as cs;
+@use '../../cookbook/blockquote';
+@use '../../cookbook/hairline';
 
 $story-narrow: px-to-rem($bp-default * (cs.colspan(8, 12) / 100%));
 
@@ -186,15 +188,11 @@ $story-narrow: px-to-rem($bp-default * (cs.colspan(8, 12) / 100%));
   }
 
   blockquote {
-    $blockquote-border-color: #048282;
-    $blockquote-selector: #{&};
-
-    @import '../../cookbook/blockquote';
+    @include blockquote.configure($border-color: #048282);
+    @include blockquote.styles;
   }
 
   hr {
-    $hr-selector: #{&};
-
-    @import '../../cookbook/hairline';
+    @include hairline.styles;
   }
 }

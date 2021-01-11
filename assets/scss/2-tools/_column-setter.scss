@@ -1,4 +1,4 @@
-@use '../1-settings' as v;
+@use '../1-settings' as *;
 
 // COLUMN SETTER SETTINGS
 
@@ -26,35 +26,35 @@ $-breakpoints: (
   ),
   bp-xs: (
     cols: 4,
-    min-width: v.$bp-xs,
+    min-width: $bp-xs,
   ),
   bp-s: (
     cols: 6,
-    min-width: v.$bp-s,
+    min-width: $bp-s,
   ),
   bp-m: (
     cols: 6,
-    min-width: v.$bp-m,
+    min-width: $bp-m,
   ),
   bp-l: (
     cols: 12,
-    min-width: v.$bp-l,
+    min-width: $bp-l,
   ),
   bp-xl: (
     cols: 12,
-    min-width: v.$bp-xl,
+    min-width: $bp-xl,
   ),
   bp-xxl: (
     cols: 12,
-    min-width: v.$bp-xxl,
+    min-width: $bp-xxl,
   ),
   bp-default: (
     cols: 12,
-    min-width: v.$bp-default,
+    min-width: $bp-default,
   ),
 );
 
 @forward '../vendor/column-setter' with (
   $breakpoints: $-breakpoints,
-  $max-width: v.$bp-default,
+  $max-width: $bp-default,
 );
