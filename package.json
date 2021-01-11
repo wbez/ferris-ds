@@ -95,7 +95,7 @@
       "release": true,
       "releaseName": "v${version}",
       "releaseNotes": "npx ./scripts/generate-release-notes.js v${latestVersion} v${version}",
-      "draft": true
+      "draft": false
     }
   }
 }
