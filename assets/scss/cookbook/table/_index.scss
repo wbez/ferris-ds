@@ -13,13 +13,16 @@
 // Styleguide 11.0.3
 
 // This is a copy of 6-components/table
-.wbz-table {
+@use '../../1-settings' as var;
+
+@mixin styles {
   display: table;
-  font-size: $size-s;
-  @include font-setting(sans);
-  line-height: $line-height-s;
-  margin-top: $size-xxl;
-  margin-bottom: $size-xxl;
+  /* stylelint-disable-next-line */
+  font-family: var.$sans-type;
+  font-size: var.$size-s;
+  line-height: var.$line-height-s;
+  margin-top: var.$size-xxl;
+  margin-bottom: var.$size-xxl;
   // Remove most spacing between table cells.
   border-collapse: collapse;
   border-spacing: 0;
@@ -27,8 +30,8 @@
   width: 100%;
 
   caption {
-    color: $color-gray-medium;
-    padding: 0 $size-tiny;
+    color: var.$color-gray-medium;
+    padding: 0 var.$size-tiny;
     text-align: left;
 
     &:first-child {
@@ -41,27 +44,27 @@
   }
 
   tbody > tr + tr {
-    border-top: 1px solid $color-gray-light;
+    border-top: 1px solid var.$color-gray-light;
   }
 
   tbody:last-child {
-    border-bottom: 1px solid $color-gray-light;
+    border-bottom: 1px solid var.$color-gray-light;
   }
 
   td {
-    padding: $size-xxxs $size-tiny;
+    padding: var.$size-xxxs var.$size-tiny;
     vertical-align: top;
   }
 
   th {
-    padding: $size-xxxs $size-tiny;
+    padding: var.$size-xxxs var.$size-tiny;
     font-weight: bold;
-    letter-spacing: $font-letter-spacing-b;
+    letter-spacing: var.$font-letter-spacing-b;
     text-align: left;
   }
 
   thead {
-    border-bottom: 1px solid $color-gray-medium;
+    border-bottom: 1px solid var.$color-gray-medium;
 
     th {
       hyphens: auto;
@@ -70,10 +73,14 @@
   }
 
   tfoot {
-    border-top: 1px solid $color-gray-medium;
+    border-top: 1px solid var.$color-gray-medium;
 
     th {
       vertical-align: top;
     }
   }
+}
+
+.wbz-table {
+  @include styles;
 }
