@@ -65,8 +65,8 @@ async function main() {
   const storyToString = story => {
     let output = `- [[ch${story.id}]](${story.app_url}) ${story.name}`;
 
-    story.external_tickets.forEach((d, i) => {
-      if (d.external_url) output += ` [[${i + 1}]](${d.external_url})`;
+    story.external_links.forEach((url, i) => {
+      if (url) output += ` [[${i + 1}]](${url})`;
     });
 
     return output;
