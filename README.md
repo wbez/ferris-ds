@@ -240,7 +240,7 @@ This system is experimental and under rapid development. Use it in situations wh
 
 Make sure you have a [personal access token](https://github.com/settings/tokens) for GitHub and that token is available as the environment variable `GITHUB_TOKEN`.
 
-Also make sure you have a [personal access token](https://app.clubhouse.io/chicagopublicmedia/settings/account/api-tokens) for Clubhouse and that token is available as the environment variable `CLUBHOUSE_API_TOKEN`.
+Also make sure you have a [personal access token](https://app.shortcut.com/chicagopublicmedia/settings/account/api-tokens) for Shortcut and that token is available as the environment variable `SHORTCUT_API_TOKEN`.
 
 Make sure you're authenticated for npm publishing.
 

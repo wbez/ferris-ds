@@ -46,24 +46,24 @@ async function main() {
       .then(d => d.all);
   }
 
-  // get clubhouse story ids from commits
-  const clubhouseStoryIds = _.flow(
-    _.map(commit => commit.message.match(/(?<=ch)\d+/gi)),
+  // get shortcut story ids from commits
+  const shortcutStoryIds = _.flow(
+    _.map(commit => commit.message.match(/(?<=(ch|sc)-?)\d+/gi)),
     _.filter(d => d !== null),
     _.flatten,
     _.uniq
   )(commits);
 
-  // get story objects from clubhouse api
-  const clubhouseStories = await Promise.all(
-    clubhouseStoryIds.map(fetchClubhouseStory)
+  // get story objects from shortcut api
+  const shortcutStories = await Promise.all(
+    shortcutStoryIds.map(fetchShortcutStory)
   )
     .then(_.orderBy(['estimate', 'updated_at'], ['desc', 'desc']))
     .then(_.groupBy('story_type'));
 
   // write final release notes
   const storyToString = story => {
-    let output = `- [[ch${story.id}]](${story.app_url}) ${story.name}`;
+    let output = `- [[sc-${story.id}]](${story.app_url}) ${story.name}`;
 
     story.external_links.forEach((url, i) => {
       if (url) output += ` [[${i + 1}]](${url})`;
@@ -72,25 +72,25 @@ async function main() {
     return output;
   };
 
-  if (clubhouseStories.feature) {
+  if (shortcutStories.feature) {
     process.stdout.write('### ✨ Features\n');
-    clubhouseStories.feature
+    shortcutStories.feature
       .map(storyToString)
       .forEach(str => process.stdout.write(str + '\n'));
     process.stdout.write('\n');
   }
 
-  if (clubhouseStories.bug) {
+  if (shortcutStories.bug) {
     process.stdout.write('### 🐛 Bug fixes\n');
-    clubhouseStories.bug
+    shortcutStories.bug
       .map(storyToString)
       .forEach(str => process.stdout.write(str + '\n'));
     process.stdout.write('\n');
   }
 
-  if (clubhouseStories.chore) {
+  if (shortcutStories.chore) {
     process.stdout.write('### 🛠️ Chores\n');
-    clubhouseStories.chore
+    shortcutStories.chore
       .map(storyToString)
       .forEach(str => process.stdout.write(str + '\n'));
     process.stdout.write('\n');
@@ -98,7 +98,7 @@ async function main() {
 
   // and the rest
   const untaggedCommits = commits.filter(
-    commit => !commit.message.match(/(?<=ch)\d+/gi)
+    commit => !commit.message.match(/(?<=(ch|sc)-?)\d+/gi)
   );
 
   if (untaggedCommits.length > 0) {
@@ -110,10 +110,11 @@ async function main() {
   }
 }
 
-async function fetchClubhouseStory(id) {
+async function fetchShortcutStory(id) {
   return await axios
-    .get(`https://api.clubhouse.io/api/v3/stories/${id}`, {
-      params: { token: process.env.CLUBHOUSE_API_TOKEN },
+    .get(`/api/v3/stories/${id}`, {
+      baseURL: 'https://api.app.shortcut.com/',
+      headers: { 'Shortcut-Token': process.env.SHORTCUT_API_TOKEN },
     })
     .then(res => res.data);
 }
