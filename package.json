@@ -94,7 +94,7 @@
     "github": {
       "release": true,
       "releaseName": "v${version}",
-      "releaseNotes": "npx ./scripts/generate-release-notes.js v${latestVersion} v${version}",
+      "releaseNotes": "node ./scripts/generate-release-notes.js v${latestVersion} v${version}",
       "draft": false
     }
   }
