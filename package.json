@@ -51,7 +51,7 @@
     "purgecss-from-html": "^1.1.0",
     "release-it": "^14.2.2",
     "sass": "^1.26.11",
-    "simple-git": "^2.31.0",
+    "simple-git": "^3.15.0",
     "stylelint": "^11.0.0",
     "stylelint-config-recommended-scss": "^3.3.0",
     "stylelint-scss": "^3.11.0",
