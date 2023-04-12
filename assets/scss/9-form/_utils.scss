@@ -1,3 +1,5 @@
+@use "sass:math";
+
 @use '../1-settings' as settings;
 @use 'sass:color';
 
@@ -8,7 +10,7 @@
 }
 
 @function px-to-rem($pixel-size, $context: settings.$font-root) {
-  @return ($pixel-size / $context) * 1rem;
+  @return math.div($pixel-size, $context) * 1rem;
 }
 
 $-primaryColor: settings.$color-primary !default;

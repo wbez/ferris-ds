@@ -10,6 +10,8 @@
 //
 // Styleguide 5.3.1
 
+@use "sass:math";
+
 .t-smallhed {
   @include font-setting;
   color: $color-black-off;
@@ -20,7 +22,7 @@
     font-size: $size-b;
     line-height: $line-height-s;
     margin-top: $size-l;
-    margin-bottom: $size-l / 3;
+    margin-bottom: math.div($size-l, 3);
 
     + * {
       margin-top: 0;

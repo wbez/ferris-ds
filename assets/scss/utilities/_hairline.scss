@@ -24,11 +24,11 @@
 
   &-bottom {
     border-bottom: 1px solid $color-gray-light;
-    padding-bottom: $size-giant / 2;
-    margin-bottom: $size-giant / 2;
+    padding-bottom: $size-giant * 0.5;
+    margin-bottom: $size-giant * 0.5;
 
     + * {
-      margin-top: $size-giant / 2;
+      margin-top: $size-giant * 0.5;
     }
   }
 
