@@ -45,16 +45,16 @@
     "node-html-parser": "^1.1.16",
     "nunjucks": "^3.1.7",
     "ora": "^3.4.0",
-    "postcss": "^7.0.18",
+    "postcss": "^8.3.3",
     "prettier": "^1.18.2",
     "purgecss": "^1.3.0",
     "purgecss-from-html": "^1.1.0",
     "release-it": "^14.2.2",
-    "sass": "^1.26.11",
+    "sass": "^1.62.0",
     "simple-git": "^2.31.0",
-    "stylelint": "^11.0.0",
-    "stylelint-config-recommended-scss": "^3.3.0",
-    "stylelint-scss": "^3.11.0",
+    "stylelint": "^14.16.1",
+    "stylelint-config-standard-scss": "^6.0.0",
+    "stylelint-scss": "^4.0.1",
     "svgo": "^1.3.0",
     "svgstore": "^3.0.0-2"
   },
@@ -62,7 +62,7 @@
     "normalize.css": "^8.0.1"
   },
   "peerDependencies": {
-    "sass": "^1.26.11"
+    "sass": "^1.62.0"
   },
   "husky": {
     "hooks": {
