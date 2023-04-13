@@ -7,7 +7,9 @@
     "dev": "node docs/config/tasks/dev.js",
     "test": "npm run build",
     "prettify": "prettier --write \"./**/*.{js,html,json,md}\"",
-    "release": "release-it"
+    "release": "release-it",
+    "lint": "stylelint \"./**/*.scss\" ",
+    "lint:fix": "stylelint --fix \"./**/*.scss\" "
   },
   "style": "/assets/dist/css/all.css",
   "sass": "/assets/scss/all.scss",
@@ -78,6 +80,7 @@
       "git add"
     ],
     "*.scss": [
+      "stylelint --fix",
       "git add"
     ]
   },
