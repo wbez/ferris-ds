@@ -5,11 +5,13 @@
 // Markup: 6-components/prose/prose.html
 //
 // Styleguide 6.1.3
+@use "sass:math";
+
 @use '../../2-tools/column-setter' as cs;
 @use '../../cookbook/blockquote';
 @use '../../cookbook/hairline';
 
-$story-narrow: px-to-rem($bp-default * (cs.colspan(8, 12) / 100%));
+$story-narrow: px-to-rem($bp-default * math.div(cs.colspan(8, 12), 100%));
 
 .c-prose {
   line-height: $line-height-b;
@@ -112,7 +114,7 @@ $story-narrow: px-to-rem($bp-default * (cs.colspan(8, 12) / 100%));
       margin-top: $size-b;
       margin-bottom: $size-b;
       max-width: px-to-rem(
-        $bp-default * ((cs.colspan(4, 12) - cs.colspan(g, 12)) / 100%)
+        $bp-default * math.div(cs.colspan(4, 12) - cs.colspan(g, 12), 100%)
       );
     }
   }
@@ -134,7 +136,7 @@ $story-narrow: px-to-rem($bp-default * (cs.colspan(8, 12) / 100%));
       margin-top: $size-b;
       margin-bottom: $size-b;
       max-width: px-to-rem(
-        $bp-default * ((cs.colspan(4, 12) - cs.colspan(g, 12)) / 100%)
+        $bp-default * math.div(cs.colspan(4, 12) - cs.colspan(g, 12), 100%)
       );
     }
   }
